@@ -40,7 +40,7 @@
         <p>
         Nightly snapshots of <carrot-text /> are available at:
         <a href="http://carrot.cs.put.poznan.pl">http://carrot.cs.put.poznan.pl</a>. Because
-        nightly snapshots are what they are (automatic checkouts from the CVS), this site may be down
+        nightly snapshots are what they are (automatic checkouts from the repository), this site may be down
         or during a failed run (although it happens very rarely).
         </p>
     </chapter>

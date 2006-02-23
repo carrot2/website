@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <newslist>
+	<news date="2006-02-23">
+		<head>
+			Source code repository moved from CVS to Subversion.
+		</head>
+	</news>
+
 	<news date="2006-02-02">
 		<head>
 			Tweak and minor enhancements release: 1.0.1 is out. Check out the

@@ -27,8 +27,8 @@
             <name>Mailing lists</name>
         </section>
 
-        <section location="http://sourceforge.net/cvs/?group_id=85379">
-            <name>CVS access</name>
+        <section location="http://sourceforge.net/svn/?group_id=85379">
+            <name>SVN access</name>
         </section>
     </section>
 
