@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <newslist>
+	<news date="2006-02-24">
+		<head>
+			A new clustering algorithm HAOG (hierarchical
+			extension of STC) has been added to the CVS and the
+			WebStart version.
+		</head>
+	</news>
+
 	<news date="2006-02-23">
 		<head>
 			Source code repository moved from CVS to Subversion.
