@@ -10,17 +10,9 @@
             <title><carrot-text/> project</title>
 
             <p>
-            <carrot-text/> is a research framework for experimenting with automated querying of
+            <carrot-text/> is a framework for experimenting with automated querying of
             various data sources (such as search engines), processing search results and
             their visualization.
-            </p><p>
-            Under the term &quot;research&quot;, we understand that the architecture
-            of the system is oriented mostly toward flexibility, sometimes at
-            a price of performance losses. Mechanisms such as
-            data exchange via XML language, dynamically loaded components
-            accessible via HTTP protocol, the use of Java as primary language
-            of implementation -- they all make the system very easy to tailor
-            to one's needs.
             </p><p>
             <carrot-text/> was primarily built with search results clustering in mind, but it can
             be easily configured to do other, interesting things.         
@@ -34,7 +26,7 @@
             All news and other messages are distributed using a mailing list at SourceForge:
             <a href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers">carrot2-developers@lists.sourceforge.net</a>.
             </p>
-    
+
             <p>
             Please direct your questions or concerns to the mailing list (subscription is required to limit spam).
             </p>
@@ -50,6 +42,25 @@
             <illustration alt="Carrot2 demo screenshot" src="/gfx/screen/carrot2-demo-screenshot.gif">
                 <description>Search result clustered using Carrot<sup>2</sup></description>
             </illustration>
+        </chapter>
+        
+        <chapter level="1">
+            <title>Commercial Carrot<sup>2</sup> Spin-off</title>
+    
+    		<p>
+    		Carrot<sup>2</sup> framework is used in a commercial spin-off company
+    		called <a href="http://www.carrot-search.com">Carrot Search</a>.
+    		We are very devoted to our open source framework and we use it extensively
+    		in our production installations.
+    		</p>
+    		
+    		<p>
+			The commercial company provides consulting services, installation, maintenance
+			and text clustering expertise, but most of all <b>an rewritten and much faster</b>
+			version of the open source Lingo algorithm. If you need performance, hierarchical
+			clustering, ontologies and much advanced tuning capabilities, see
+			<a href="http://www.carrot-search.com">Carrot Search</a> Web site for contant information.
+    		</p>
         </chapter>
     </td>
     <td width="170" style="padding-left: 20px;" valign="top">
