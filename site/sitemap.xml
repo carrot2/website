@@ -40,9 +40,11 @@
         <name>Demo</name>
     </section>
 
+<!--
     <section id="publications" location="/publications.xml">
         <name>Publications</name>
     </section>
+-->
 
     <section id="download" location="/download.xml">
         <name>Download</name>
