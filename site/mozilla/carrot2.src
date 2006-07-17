@@ -3,7 +3,7 @@
 <search 
 	name = "Carrot2"
     description = "Carrot2 clustering engine (on-line nightly checkout demo)"
-	method = "get"
+	method = "GET"
 	action = "http://carrot.cs.put.poznan.pl/carrot2-demo-webapp/search"
     queryEncoding="utf-8"
     queryCharset="utf-8">
@@ -15,5 +15,5 @@
 <browser
       update="http://www.carrot2.org/website/site/mozilla/carrot2.src" 
       updateIcon="http://www.carrot2.org/website/site/mozilla/carrot2.gif" 
-      updateCheckDays="3"
+      updateCheckDays="1"
 >

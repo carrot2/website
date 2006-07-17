@@ -70,7 +70,7 @@
         <include file="news/news.xml" />
 
         <quote-html>
-        <div style="margin-top: 60px; font-size: 10pt; color: gray;">sponsors and donors</div>
+        <div style="margin-top: 60px; text-align: center; font-size: 8pt; color: gray;">sponsors and donors</div>
         <div style="text-align: center;">
         <a class="none" href="http://www.cs.put.poznan.pl"><img src="http://www.carrot2.org/website/site/gfx/carrot2/logo_pp.gif" border="0" alt="Poznan University of Technology Logo" /></a><br/><br/>                 
         
