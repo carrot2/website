@@ -6,18 +6,12 @@
     <chapter level="1">
         <title>Architecture</title>
 
-    <p><carrot-text/> is based on a concept of separate components, which communicate
-       only by passing XML data. The communication protocol is restricted to HTTP,
-       POST method specifically. This allows for great flexibility in adding new components,
-       as the language of implementation and physical location may remain unknown.
+    <p><carrot-text/> is based on a concept of components, which communicate
+       by passing objects from one to another in a pipeline.
     </p>
 
-    <illustration src="/gfx/carrot2/figures/components-dataflow.gif">
-        <description>1: A scenario of data flow in <carrot-text/> architecture</description>
-    </illustration>
-
     <p>
-    There are four component types in Carrot<sup>2</sup>:
+    There are four types of components in Carrot<sup>2</sup>:
         <ul>
             <li><b>Input</b> - This type of component accepts user query request (wrapped
             in standard XML and passed via HTTP POST), and is in charge of producing some
@@ -36,19 +30,14 @@
             of this type usually interact with Controllers to present processing results to the user.
             </li>
             <li><b>Controller</b> - A component, which binds all other together to form a processing stream.
-            Carrot<sup>2</sup> is a Controller component, because it allows to select input, filter and
-            output components and facilitates communication among them. However, other controller
-            components are possible, such as command-line processors, or local application (as opposed to
-            Web-accessible) controllers.
+            Carrot<sup>2</sup> contains a pre-written controller component, which assembles and manages
+            inputs, filters and outputs.
             </li>
         </ul>
-        
-     It should be clearly stated that the scenario of data flow presented in figure 1
-     is not optimal (because data is sent back and forth between components and the controller),
-     but it was a design-decision to simplify component-side programming.
     </p>
+
     <p>
-    A detailed description of architecture, data exchange protocols and other elements of the
+    A more detailed description of architecture, data exchange protocols and other elements of the
     framework is given in the <a href="/developers/index.xml">documentation</a>.
     </p>
     </chapter>

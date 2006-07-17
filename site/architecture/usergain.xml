@@ -11,6 +11,7 @@
         of building a search engine wrapper, incorporating stemming/ light language processing
         algorithms, and finally displaying a result of the algorithm in some form.
         </p>
+
         <p>
         In our opinion this is highly reduntant work and most of the components (wrappers, processing,
         displaying) can be reused. Thus, we think <carrot-text/> gives a number of possible 
@@ -22,15 +23,6 @@
             format can be proposed, which makes components using this format replaceable and reusable.
             We proposed such data exchange format for application in search results clustering -- 
             an XML-based query and search result.
-            </li>
-            <li><b>Platform and language independency</b> - data transmission protocol in <carrot-text/>
-            is fixed to HTTP POST. Almost any programming language can be adopted to work as a web server
-            or in web-server enabled mode (via CGI for instance). This allows for true independency of
-            components within the architecture -- they can be physically distributed and running
-            on different hardware platforms for instance. Also, the language of implementation does not matter,
-            so for research objectives slower, but more elegant languages can be used (Prolog, Lisp, Java?),
-            while for production systems, if ever, the code can be rewritten for performance and the component
-            reused without any changes to other parts of the system.
             </li>
             <li><b>Start your experiments fast</b> - because <carrot-text/> comes with a set of template
             component classes and utilities in Java, a researches can almost immediately set up his/ her own

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <page section="demo">
-	<title>Online demos</title>
+	<title>Demos</title>
+
+    <chapter level="1">
+        <title>On-line demo (nightly build)</title>
+        
+        <p>
+        Nightly snapshots of <carrot-text /> are available at:</p>
+
+        <b><a href="http://carrot.cs.put.poznan.pl">http://carrot.cs.put.poznan.pl</a></b>
+
+        <p>Because nightly snapshots are what they are (automatic checkouts from the repository), this site may be down
+        or during a failed run (although it happens very rarely).</p>
+    </chapter>
 
     <chapter level="1">
         <title>Stable builds (demos)</title>
@@ -32,16 +44,5 @@
         <illustration alt="Carrot2 in Mozilla" src="/gfx/screen/c2-mozilla.gif">
             <description><carrot-text/> Search box in Mozilla Firefox</description>
         </illustration>
-    </chapter>
-    
-    <chapter level="1">
-        <title>Nightly builds</title>
-        
-        <p>
-        Nightly snapshots of <carrot-text /> are available at:
-        <a href="http://carrot.cs.put.poznan.pl">http://carrot.cs.put.poznan.pl</a>. Because
-        nightly snapshots are what they are (automatic checkouts from the repository), this site may be down
-        or during a failed run (although it happens very rarely).
-        </p>
     </chapter>
 </page>
