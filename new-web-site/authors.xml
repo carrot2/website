@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="authors">
+  <heading>Carrot<sup>2</sup> Framework Authors</heading>
+
+  <content>
+         
+    <p class="author-profile">
+      <a href="http://www.cs.put.poznan.pl/dweiss"><img
+      src="img/dawid-weiss.jpg" style="float: left; margin-right: 10px"
+      class="author-photo" /> Dawid Weiss</a>, the founder of the
+      Carrot<sup>2</sup> project, is a researcher at the Laboratory of
+      Intelligent Decision Support Systems, Institute of Computing Science,
+      Poznan University of Technology, Poland.  
+    </p>
+
+    <p class="author-profile">
+      His research interest include
+      search results clustering, information retrieval, web mining, text
+      processing, data structures and algorithms, data compression,
+      linguistics, NLP. He received his PhD degree from Poznan University of
+      Technology, Poznań.
+    </p>
+
+    <p class="author-profile">
+      His responsibilities in the Carrot<sup>2</sup> project include: project management,
+      design and implementation of system core and components,
+      Carrot<sup>2</sup> community support.
+    </p>
+
+    <p style="clear: both; margin-top: 4ex" class="author-profile">
+      <a href="http://www.man.poznan.pl/~stachoo"><img src="img/stanislaw-osinski.jpg" style="float: left; margin-right: 10px" class="author-photo" /> 
+      Stanislaw Osinski</a> is a
+      research programmer at the Network Services Department of Poznan
+      Supercomputing and Networking Center, Poland.  
+    </p>
+
+    <p class="author-profile">
+      His research interests
+      include search results clustering, information retrieval, text mining,
+      user interface design and usability. He received his MSc degrees from
+      Poznan University of Technology and The University of Sheffield.
+    </p>
+
+    <p class="author-profile">
+      His responsibilities in the Carrot<sup>2</sup> project include: design
+      and implementation of the Lingo clustering algorithm and other
+      components, Carrot<sup>2</sup> web application User Interface design,
+      project website.
+    </p>
+
+    <p style="margin-top: 4ex">
+      Other contributors: 
+      
+      Karol Gołembniak, Irmina Masłowska (Poznan University of Technology
+      (PUT), Poland, HAOG clustering component, active since 2006), 
+      
+      Michał Wróblewski (PUT, Poland, AHC clustering components, not active),
+
+      Paweł Kowalik (PUT, Poland, Inductive search engine wrapper, not active),
+
+      Steven Schockaert (University of Gent, Belgium, Fuzzy Ants clustering component, not active),
+
+      Lang Ngo Chi (Warsaw University, Poland, Fuzzy Rough set clustering component, not active),
+
+      <a href="http://www.dcs.shef.ac.uk/cgi-bin/makeperson?J.Nioche">Julien
+      Nioche</a> (The University of Sheffield, UK, OpenSearch input component).
+    </p>
+
+    <p style="margin-top: 4ex">
+      Carrot uses several open source projects -- we would like to thank
+      all the contributors and supporters of free and open source software. 
+    </p>
+  </content>
+</page>
