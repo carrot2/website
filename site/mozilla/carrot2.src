@@ -4,7 +4,7 @@
 	name = "Carrot2"
     description = "Carrot2 clustering engine (on-line nightly checkout demo)"
 	method = "GET"
-	action = "http://carrot.cs.put.poznan.pl/carrot2-demo-webapp/search"
+	action = "http://carrot.cs.put.poznan.pl/demo-stable/search"
     queryEncoding="utf-8"
     queryCharset="utf-8">
 
