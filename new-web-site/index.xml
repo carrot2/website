@@ -2,11 +2,8 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="home">
-  <heading>Carrot<sup>2</sup>: Search Results Clustering Framework</heading>
-
   <content>
     <div style="float: right">
-      
       <div class="side">
         <h2>News</h2>
        
@@ -28,12 +25,12 @@
           
     <p>
       Carrot<sup>2</sup> is an Open Source <b>Search Results Clustering
-      Engine</b>. It can automatically organize search results into thematic
-      categories, called clusters.
+      Engine</b>. It can automatically organize (cluster) search results into thematic
+      categories:
     </p>
 
     <p style="text-align: center; width: 420px">
-      <a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=carrot2+search+results+clustering&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></a><br />
+      <a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=carrot2+search+results+clustering&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></a>
       Search results clustered with Carrot<sup>2</sup> (<a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=carrot2+search+results+clustering&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">live demo</a>)
     </p>
          
