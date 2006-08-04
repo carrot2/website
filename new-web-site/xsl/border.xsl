@@ -67,7 +67,7 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">#</xsl:with-param>
+                    <xsl:with-param name="url">demos.xml</xsl:with-param>
                     <xsl:with-param name="text">Live demos</xsl:with-param>
                     <xsl:with-param name="section">demo</xsl:with-param>
                   </xsl:call-template>
