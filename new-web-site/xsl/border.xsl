@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+  <xsl:param name="content-extension">xml</xsl:param>
 
   <xsl:template match="/page">
 <html style="height: 100%">
@@ -14,7 +15,7 @@
     <div id="results-utils">
       <a href="http://www.carrot-search.com">About</a> |
       <a href="http://www.carrot-search.com">Demo</a> |
-      <a href="http://www.carrot-search.com">Contect</a> |
+      <a href="http://www.carrot-search.com">Contact</a> |
       <a href="http://www.carrot-search.com">Carrot2 @ sf.net</a> |
       <a href="http://www.carrot-search.com">Carrot Search</a>
     </div>
@@ -26,7 +27,7 @@
         <td>
           <table style="width: 100%; margin-top: 10px">
             <tr>
-              <td id="logo" rowspan="5"><img src="img/carrot2-logo.gif" /></td>
+              <td id="logo" rowspan="5"><a href="/"><img src="img/carrot2-logo.gif" /></a></td>
             </tr>
 
             <tr>
@@ -40,7 +41,7 @@
             </tr>
 
             <tr>
-              <td><img src="img/carrot2-text.gif" /></td>
+              <td><a href="/"><img src="img/carrot2-text.gif" /></a></td>
               <td><img src="img/top-header-1.gif" /></td>
               <td rowspan="2" colspan="2" id="top-header-space">
                 <img src="img/top-header-2.gif" />
@@ -48,7 +49,7 @@
             </tr>
 
             <tr>
-              <td colspan="2"><img src="img/carrot2-tagline.gif" /></td>
+              <td colspan="2"><a href="/"><img src="img/carrot2-tagline.gif" /></a></td>
             </tr>
           </table>
         </td>
@@ -61,21 +62,27 @@
               <td style="width: 171px; vertical-align: top" id="left-space">
                 <div id="menu">
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">index.xml</xsl:with-param>
+                    <xsl:with-param name="url">index</xsl:with-param>
                     <xsl:with-param name="text">Home</xsl:with-param>
                     <xsl:with-param name="section">home</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">demos.xml</xsl:with-param>
+                    <xsl:with-param name="url">demos</xsl:with-param>
                     <xsl:with-param name="text">Live demos</xsl:with-param>
                     <xsl:with-param name="section">demo</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">#</xsl:with-param>
+                    <xsl:with-param name="url">download</xsl:with-param>
                     <xsl:with-param name="text">Download</xsl:with-param>
                     <xsl:with-param name="section">download</xsl:with-param>
+                  </xsl:call-template>
+
+                  <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">license</xsl:with-param>
+                    <xsl:with-param name="text">License</xsl:with-param>
+                    <xsl:with-param name="section">license</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
@@ -85,19 +92,19 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">#</xsl:with-param>
+                    <xsl:with-param name="url">publications</xsl:with-param>
                     <xsl:with-param name="text">Publications</xsl:with-param>
-                    <xsl:with-param name="section">algorithms</xsl:with-param>
+                    <xsl:with-param name="section">publications</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">#</xsl:with-param>
                     <xsl:with-param name="text">Applications</xsl:with-param>
-                    <xsl:with-param name="section">license</xsl:with-param>
+                    <xsl:with-param name="section">applications</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">authors.xml</xsl:with-param>
+                    <xsl:with-param name="url">authors</xsl:with-param>
                     <xsl:with-param name="text">Authors</xsl:with-param>
                     <xsl:with-param name="section">authors</xsl:with-param>
                   </xsl:call-template>
@@ -151,7 +158,7 @@
     <xsl:param name="text" />
     <xsl:param name="section" />
 
-    <a href="{$url}">
+    <a href="{$url}.{$content-extension}">
       <xsl:if test="/page/@section = $section">
         <xsl:attribute name="class">active</xsl:attribute>
       </xsl:if>
@@ -159,10 +166,14 @@
     </a>
   </xsl:template>
 
+  <xsl:template match="a[@content]">
+    <a href="{@content}.{$content-extension}"><xsl:apply-templates /></a>
+  </xsl:template>
+
   <xsl:template match="title" />
 
   <!-- Certain HTML elements -->
-  <xsl:template match="p|table|tr|td|a|b|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup">
+  <xsl:template match="p|table|tr|td|a|b|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre">
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:apply-templates />

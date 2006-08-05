@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="publications">
+  <heading>Publications</heading>
+
+  <content>
+    <publication-group>
+      <title>Awards</title>
+
+      <custom>
+        <div style="margin: 0; margin-bottom: 3ex">
+          <a href="http://www.cs.put.poznan.pl/dweiss/xml/news/easa2004/index.xml?lang=en"><img style="float: right; margin-left: 15px" src="img/carrot2-easa-award.gif" class="pic" /></a>
+          In 2004 Carrot2 was awarded a special prize for research tools in the
+          finals of the <a href="http://www.easa-award.net/">EASA</a>
+          competition. <a href="http://www.cs.put.poznan.pl/dweiss/xml/news/easa2004/index.xml?lang=en">Report
+          from the finals (Polish only)</a>.
+        </div>
+      </custom>
+    </publication-group>
+  
+    <publication-group>
+      <title>Scientific papers</title>
+
+      <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/ecir/Osinski06"
+             paper="http://www.man.poznan.pl/~stachoo/papers/pdf/osinski-ecir2006.pdf"
+             slides="http://www.man.poznan.pl/~stachoo/papers/pdf/osinski-ecir2006-slides.pdf">
+        <authors>Stanisław Osiński</authors>
+        <title>Improving Quality of Search Results Clustering with Approximate Matrix Factorisations</title>
+        <where>
+          Springer Lecture Notes in Computer Science, vol. 3936, pp. 167—178,
+          Proceedings of the 28th European Conference on IR
+          Research (ECIR 2006), London, UK, April 10-12, 2006
+        </where>
+        <link href="http://www.springerlink.com/(kxz35u45ti1ggx55bnplxtin)/app/home/contribution.asp?referrer=parent&amp;backto=issue,16,69;journal,12,3805;linkingpublicationresults,1:105633,1">Springer (publisher)</link>
+      </paper>
+
+      <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/journals/expert/OsinskiW05">
+        <authors>Stanisław Osiński, Dawid Weiss</authors>
+        <title>A Concept-Driven Algorithm for Clustering Search Results</title>
+        <where>IEEE Intelligent Systems, May/June, 3 (vol. 20), 2005, pp. 48—54.</where>
+        <link href="http://www.computer.org/portal/site/intelligent/">IEEE Intelligent Systems (journal)</link>
+        <link href="http://doi.ieeecomputersociety.org/10.1109/MIS.2005.38">buy the article (IEEE)</link>
+      </paper>
+
+      <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/awic/OsinskiW05"
+             paper="http://www.cs.put.poznan.pl/dweiss/site/publications/download/dweiss-carrot2-poster-awic2005.pdf">
+        <authors>Stanisław Osiński, Dawid Weiss</authors>
+        <title>Carrot2: Design of a Flexible and Efficient Web Information Retrieval Framework</title>
+        <where>
+          Springer Lecture Notes in Computer Science, vol. 3528, pp. 439—444,
+          Proceedings of the third International Atlantic Web Intelligence
+          Conference (AWIC 2005), Łodź, Poland, 2005
+        </where>
+        <link href="http://www.springerlink.com/(tj5xdjzxihuo20i2wtm3tiy2)/app/home/contribution.asp?referrer=parent&amp;backto=issue,68,79;journal,396,3805;linkingpublicationresults,1:105633,1">Springer (publisher)</link>
+      </paper>
+
+      <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/iis/OsinskiSW04"
+             paper="http://www.cs.put.poznan.pl/dweiss/site/publications/download/iipwm-osinski-weiss-stefanowski-2004-lingo.pdf"
+             slides="http://www.cs.put.poznan.pl/dweiss/site/publications/slides/iipwm2004-dweiss-lingo.pdf">
+        <authors>Stanisław Osiński, Jerzy Stefanowski, Dawid Weiss</authors>
+        <title>Lingo: Search Results Clustering Algorithm Based on Singular Value Decomposition</title>
+        <where>
+          Advances in Soft Computing, Intelligent Information Processing and Web
+          Mining, Proceedings of the International IIS: IIPWM´04 Conference,
+          Zakopane, Poland, 2004, pp. 359—368
+        </where>
+      </paper>
+
+      <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/iis/OsinskiW04"
+             paper="http://www.cs.put.poznan.pl/dweiss/site/publications/download/iipwm-osinski-weiss-2004-lingoeval.pdf"
+             slides="http://www.cs.put.poznan.pl/dweiss/site/publications/slides/iipwm2004-dweiss-lingoeval.pdf">
+        <authors>Stanisław Osiński, Dawid Weiss</authors>
+        <title>Conceptual Clustering Using Lingo Algorithm: Evaluation on Open Directory Project Data</title>
+        <where>
+          Advances in Soft Computing, Intelligent Information Processing and Web
+          Mining, Proceedings of the International IIS: IIPWM´04 Conference,
+          Zakopane, Poland, 2004, pp. 369—378
+        </where>
+      </paper>
+
+      <poster poster="http://www.cs.put.poznan.pl/dweiss/site/publications/download/ecir-poster-web.jpg">
+        <authors>Stanisław Osiński, Dawid Weiss</authors>
+        <title>Carrot2: An Open Source Framework for Search Results Clustering</title>
+        <where>
+          26th European Conference on Information Retrieval (Poster session),
+          Sunderland, United Kingdom, 2004
+        </where>
+      </poster>
+
+      <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/awic/StefanowskiW03"
+             paper="http://www.carrot2.org/publications/stefanowski-weiss-awic-2003.pdf">
+        <authors>Jerzy Stefanowski, Dawid Weiss</authors>
+        <title>Carrot2 and Language Properties in Web Search Results Clustering</title>
+        <where>
+          Lecture Notes in Artificial Intelligence: Advances in Web Intelligence,
+          Proceedings of the First International Atlantic Web Intelligence
+          Conference, Madrit, Spain, 2663 (vol. —), 2003, pp. 240—249.
+        </where>
+      </paper>
+    </publication-group>
+
+    <publication-group>
+      <title>Theses</title>
+
+      <thesis thesis="http://www.carrot2.org/publications/osinski04-dimensionality.pdf">
+        <authors>Stanisław Osiński</authors>
+        <title>Dimensionality Reduction Techniques for Search Results Clustering</title>
+        <where>
+          Master thesis, Department of Computer Science, The University of Sheffield, UK, 2004
+        </where>
+      </thesis>
+
+      <thesis thesis="http://www.carrot2.org/publications/schockaert-2004-vaagmieren.pdf">
+        <authors>Steven Schockaert</authors>
+        <title>(in Dutch) Het Clusteren van Zoekresultaten met behulp van Vaagmieren (Clustering of Search Results using Fuzzy Ants)</title>
+        <where>
+          Master thesis, University of Ghent, 2004
+        </where>
+      </thesis>
+
+      <thesis thesis="http://www.carrot2.org/publications/chi-lang-ngo-2004.pdf">
+        <authors>Ngo Chi Lang</authors>
+        <title>A tolerance rough set approach to clustering web search results</title>
+        <where>
+          Master thesis, Faculty of Mathematics, Informatics and Mechanics, Warsaw University, 2004
+        </where>
+      </thesis>
+
+      <thesis thesis="http://www.carrot2.org/publications/rud-2004-reuse-support-system.pdf">
+        <authors>Laust Rud Jensen</authors>
+        <title>A reuse repository with automated synonym support and cluster generation</title>
+        <where>
+          Master thesis, Department of Computer Science at the Faculty of Science, University of Aarhus, Denmark, 2004
+        </where>
+      </thesis>
+
+      <thesis thesis="http://www.carrot2.org/publications/osinski-2003-lingo.pdf">
+        <authors>Stanisław Osiński</authors>
+        <title>An Algorithm for Clustering of Web Search Results</title>
+        <where>
+          Master thesis, Department of Computing Science, Poznań University of Technology, 2003
+        </where>
+      </thesis>
+
+      <thesis thesis="http://www.carrot2.org/publications/kowalik-2003-wrapit.pdf">
+        <authors>Paweł Kowalik</authors>
+        <title>(in Polish) Wspomaganie tworzenia analizatorów stron wyników z internetowych systemów wyszukujących (Automated support for search engine wrapper induction)</title>
+        <where>
+          Master thesis, Department of Computing Science, Poznań University of Technology
+        </where>
+      </thesis>
+
+      <thesis thesis="http://www.carrot2.org/publications/wroblewski-2003-ahc.pdf">
+        <authors>Michał Wróblewski</authors>
+        <title>A Hierarchical WWW Pages Clustering Algorithm Based on the Vector Space Model</title>
+        <where>
+          Master thesis, Department of Computing Science, Poznań University of Technology
+        </where>
+      </thesis>
+    </publication-group>
+  </content>
+</page>

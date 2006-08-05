@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page>
+  <heading>Release notes</heading>
+
+  <content>
+    <p style="margin-bottom: 0">
+      <b>The 2.0 Release of Carrot<sup>2</sup></b> brings a lot of additions and
+      improvements to the core framework, components and applications:
+    </p>
+
+    <ul>
+      <li>
+        Major refactoring and <b>simplification of the core API</b>, removal of
+        obsolete interfaces.
+      </li>
+
+      <li>
+        A <b>brand-new search clustering web application</b> featuring a more
+        usable user interface, much faster back-end and better support for adding new
+        data sources.
+      </li>
+
+      <li>
+        A major speed improvement of the build scripts.
+      </li>
+
+      <li>
+        A new look for the project website.
+      </li>
+
+      <li>
+        Added support for incremental document pushing to the <span
+        class="c2element">carrot2-input-lucene</span> component.
+      </li>
+
+      <li>
+        ...
+      </li>
+    </ul>
+  </content>
+</page>

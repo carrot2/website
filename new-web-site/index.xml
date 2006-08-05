@@ -8,8 +8,8 @@
         <h2>News</h2>
        
         <div>
-          <a href="#">Release 2.0</a> of Carrot<sup>2</sup> is out with a
-          major simplification of the API and a brand-new web application.
+          <a content="release-2.0-notes">Release 2.0</a> of Carrot<sup>2</sup> is out with a
+          major simplification of the API, a brand-new web application and more.
         </div>
       </div>
       
@@ -44,12 +44,13 @@
    
     <p>
       Thanks to its flexible architecture, high quality and a friendly BSD-like
-      <a href="#">license</a>, Carrot<sup>2</sup> has been successfully used in
-      a number of <a href="#">commercial</a> and <a href="#">research</a>
-      projects. To get started, please have a look at <a href="#">live
-      demos</a> and the <a href="#">downloads</a> section. If you have
-      any questions or comments about Carrot<sup>2</sup>, please <a
-      href="#">let us know</a>.
+      <a content="license">license</a>, Carrot<sup>2</sup> has been
+      successfully used in a number of commercial and research <a
+      href="#">applications</a> and resulted in a number of interesting <a
+      content="publications">publications</a>.  To get started, please have a
+      look at <a content="demos">live demos</a> and the <a
+      href="#">downloads</a> section. If you have any questions or comments
+      about Carrot<sup>2</sup>, please <a href="#">let us know</a>.
     </p>
 
     <div class="side" style="float: right">

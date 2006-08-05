@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="download">
+  <heading>Download</heading>
+
+  <content>
+    <p style="margin-bottom: 0ex">
+      <b>Compiled binaries</b> of the <a content="release-2.0-notes">Release 2.0</a> of Carrot<sup>2</sup>:
+    </p>
+
+    <ul>
+      <li>
+        <a href="">Carrot<sup>2</sup> search clusteing engine</a> (a WAR web application file)<br />
+        Please see the readme.txt file in the distribution archive for installation instructions.
+      </li>
+
+      <li>
+        <a href="">Carrot<sup>2</sup> clustering GUI tool</a><br />
+        Please see the readme.txt file in the distribution archive for information about running the tool.
+      </li>
+    </ul>
+
+    <p>
+      <b>Compiled binaries</b> of older Carrot<sup>2</sup> releases are
+      available from our <a href="#">SourceForge download area</a>.
+    </p>
+
+    <p>
+      <b>Complete source code</b> of Carrot<sup>2</sup> is available from our
+      <a href="http://sourceforge.net/svn/?group_id=85379">SourceForge Subversion respository</a>.
+    </p>
+  </content>
+</page>
