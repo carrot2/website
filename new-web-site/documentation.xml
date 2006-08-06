@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="documentation">
+  <heading>Documentation</heading>
+
+  <content>
+    <p>
+      <b>Carrot<sup>2</sup> documentation</b> is targetted mainly at developers
+      and includes information about building the sources and using
+      Carrot<sup>2</sup> core API. As the documentation may lag behind the
+      newest code base, if you have a problem or question that is not covered,
+      please <a content="support">contact us</a>.
+    </p>
+
+    <p style="margin-bottom: 0">
+      Carrot<sup>2</sup> developer documentation is available in the following formats:
+    </p>
+
+    <ul>
+      <li><a href="">One HTML file</a></li>
+      <li><a href="">HTML files split into sections</a></li>
+      <li><a href="">PDF file</a></li>
+    </ul>
+
+    <p>
+      Please also see Carrot<sup>2</sup> core <a href="#">API documentation</a>.
+    </p>
+  </content>
+</page>

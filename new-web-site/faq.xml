@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="faq">
+  <heading>FAQ</heading>
+
+  <content>
+    <p class="qa">
+      <div class="q">Can I use Carrot<sup>2</sup> in a commercial project?</div>
+      <div class="a">
+        Yes. The only requirement is that you properly acknowledge the use of
+        Carrot<sup>2</sup> and let us know about your project. Please also remember
+        to read the <a content="license">license</a>.
+      </div>
+    </p>
+
+    <p class="qa">
+      <div class="q">I'd like to add Carrot<sup>2</sup> clustering to my existing search engine. Where do I start?</div>
+      <div class="a">
+        You need to create an <a content="architecture">input component</a>
+        that gets search results from your engine and feeds them to
+        Carrot<sup>2</sup>. Please see the <a
+        content="documentation">documentation</a>, API reference and source
+        code of exising input components for useful hints. Then, you can reuse
+        some bits of the Carrot<sup>2</sup> web application (located in the
+        <span class="c2element">carrot2/ applications/
+        carrot2-demo-webapp</span> folder of the source repository) to
+        visualize the clusters. If you need more help, please <a
+        content="support">let us know</a>.
+      </div>
+    </p>
+
+    <p class="qa">
+      <div class="q">Can Carrot<sup>2</sup> crawl my website?</div>
+      <div class="a">
+        No. Carrot<sup>2</sup> can add clustering of search results to an
+        existing search engine. You can use an Open Source project called <a
+        href="http://www.nutch.org">Nutch</a> to crawl your website. Nutch has
+        a Carrot<sup>2</sup>-based search clustering plugin, so you'll get all
+        crawling, searching and clustering in one piece. If you need any help
+        with any of these, please <a content="support">contact us</a>.
+      </div>
+    </p>
+  </content>
+</page>

@@ -61,6 +61,7 @@
             <tr style="height: 100%">
               <td style="width: 171px; vertical-align: top" id="left-space">
                 <div id="menu">
+                  <div style="margin-bottom: 15px">
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">index</xsl:with-param>
                     <xsl:with-param name="text">Home</xsl:with-param>
@@ -74,21 +75,29 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">applications</xsl:with-param>
+                    <xsl:with-param name="text">Applications</xsl:with-param>
+                    <xsl:with-param name="section">applications</xsl:with-param>
+                  </xsl:call-template>
+
+                  <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">faq</xsl:with-param>
+                    <xsl:with-param name="text">FAQ</xsl:with-param>
+                    <xsl:with-param name="section">faq</xsl:with-param>
+                  </xsl:call-template>
+                  </div>
+
+                  <div style="margin-bottom: 15px">
+                  <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">download</xsl:with-param>
                     <xsl:with-param name="text">Download</xsl:with-param>
                     <xsl:with-param name="section">download</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">license</xsl:with-param>
-                    <xsl:with-param name="text">License</xsl:with-param>
-                    <xsl:with-param name="section">license</xsl:with-param>
-                  </xsl:call-template>
-
-                  <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">#</xsl:with-param>
-                    <xsl:with-param name="text">Architecture</xsl:with-param>
-                    <xsl:with-param name="section">algorithms</xsl:with-param>
+                    <xsl:with-param name="url">documentation</xsl:with-param>
+                    <xsl:with-param name="text">Documentation</xsl:with-param>
+                    <xsl:with-param name="section">documentation</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
@@ -98,10 +107,25 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">#</xsl:with-param>
-                    <xsl:with-param name="text">Applications</xsl:with-param>
-                    <xsl:with-param name="section">applications</xsl:with-param>
+                    <xsl:with-param name="url">license</xsl:with-param>
+                    <xsl:with-param name="text">License</xsl:with-param>
+                    <xsl:with-param name="section">license</xsl:with-param>
                   </xsl:call-template>
+                  </div>
+
+                  <div style="margin-bottom: 15px">
+                  <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">architecture</xsl:with-param>
+                    <xsl:with-param name="text">Architecture</xsl:with-param>
+                    <xsl:with-param name="section">architecture</xsl:with-param>
+                  </xsl:call-template>
+
+                  <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">algorithms</xsl:with-param>
+                    <xsl:with-param name="text">Algorithms</xsl:with-param>
+                    <xsl:with-param name="section">algorithms</xsl:with-param>
+                  </xsl:call-template>
+                  </div>
 
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">authors</xsl:with-param>
@@ -124,7 +148,7 @@
               </td>
 
               <td id="content">
-                <div style="width: 650px; margin-right: auto">
+                <div style="" id="content-inner">
                   <xsl:apply-templates select="content" />
                 </div>
               </td>
@@ -173,7 +197,7 @@
   <xsl:template match="title" />
 
   <!-- Certain HTML elements -->
-  <xsl:template match="p|table|tr|td|a|b|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre">
+  <xsl:template match="p|table|caption|tr|th|td|a|b|i|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre">
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:apply-templates />

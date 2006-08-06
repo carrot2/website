@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="algorithms">
+  <heading>Algorithms</heading>
+
+  <content>
+    <p>
+      Below is a summary of clustering algorithms that work within the Carrot<sup>2</sup> framework.
+    </p>
+  
+    <table class="algorithms">
+      <caption></caption>
+      <tr>
+        <th rowspan="2">Algorithm</th>
+        <th rowspan="2" style="width: 20%">Author</th>
+        <th colspan="3">Speed [s]*</th>
+        <th rowspan="2">Hierarchical<br />clustering</th>
+        <th rowspan="2" style="width: 25%">Other features</th>
+        <th rowspan="2">Example results</th>
+      </tr>
+
+      <tr>
+        <th>100</th>
+        <th>200</th>
+        <th>400</th>
+      </tr>
+
+      <tr>
+        <td>FuzzyAnts</td>
+        <td>Steven Schockaert</td>
+        <td>2.17</td>
+        <td>8.70</td>
+        <td>16.93</td>
+        <td>yes</td>
+        <td></td>
+        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=FuzzyAnts+%28%2BEnglish%29&amp;opts=s">london</a></td>
+      </tr>
+
+      <tr>
+        <td>HAOG-STC</td>
+        <td>Karol Gołembniak</td>
+        <td>0.04</td>
+        <td>0.11</td>
+        <td>0.28</td>
+        <td>yes</td>
+        <td></td>
+        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=HAOG-STC+%28%2BEnglish%29&amp;opts=s">london</a></td>
+      </tr>
+
+      <tr>
+        <td>Lingo**</td>
+        <td>Stanislaw Osinski</td>
+        <td>0.34</td>
+        <td>0.52</td>
+        <td>0.52</td>
+        <td>no</td>
+        <td>multilingual clustering</td>
+        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">london</a></td>
+      </tr>
+
+      <tr>
+        <td>Rough k-means</td>
+        <td>Ngo Chi Lang</td>
+        <td>1.38</td>
+        <td>6.76</td>
+        <td>27.73</td>
+        <td>no</td>
+        <td></td>
+        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=Rough+k-Means&amp;opts=s">london</a></td>
+      </tr>
+
+      <tr>
+        <td>STC</td>
+        <td>Oren Zamir<br />(impl: Dawid Weiss)</td>
+        <td>0.04</td>
+        <td>0.10</td>
+        <td>0.23</td>
+        <td>no</td>
+        <td></td>
+        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=STC+%28%2BEnglish%29&amp;opts=s">london</a></td>
+      </tr>
+
+      <tr>
+        <td>Lingo3G***</td>
+        <td>Stanisław Osiński<br />(Carrot Search)</td>
+        <td>0.06</td>
+        <td>0.10</td>
+        <td>0.17</td>
+        <td>yes</td>
+        <td>multilingual clustering, ontologies, synonyms, advanced tuning, scalability (5000 snippets in 1.7s*)</td>
+        <td><a href="http://demo.carrot-search.com/carrot2-webapp/search?q=london&amp;in=Yahoo%21&amp;s=200&amp;alg=Lingo+3G&amp;opts=h">london</a></td>
+      </tr>
+    </table>
+
+    <p style="margin-top: 2ex; margin-bottom: 2ex">
+      *) Clustering speed measurements were done for 100, 200, 400 snippets
+      downloaded from Yahoo! for query 'london', using the Carrot<sup>2</sup>
+      standalone GUI application. Benchmark environment: Pentium M 1.3 GHz, 768
+      MB RAM, Windows XP. Java Virtual Machine: Sun JDK 1.4.2, JVM switches:
+      -Xmx512m -Xms128m -XX:NewRatio=1 -server. Time presented in the table is
+      an average of 75 runs, for each algorithm time measurement was followed
+      by 25 untimed warm-up runs.
+    </p>
+
+    <p style="margin-bottom: 2ex">
+      **) Lingo is the default clustering algorithm used in the
+      Carrot<sup>2</sup> live demos.
+    </p>
+
+    <p>
+      ***) Lingo3G is a commercial clustering engine and is not available in the
+      Open Source part of Carrot<sup>2</sup>. Please contact <a
+      href="http://www.carrot-search.com">Carrot Search</a> for details.
+    </p>
+  </content>
+</page>

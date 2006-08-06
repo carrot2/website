@@ -35,11 +35,12 @@
     </p>
          
     <p>
-      Carrot<sup>2</sup> provides an <a href="#">architecture</a> for acquiring
-      search results from various sources (YahooAPI, GoogleAPI, OpenSearch,
-      Lucene index), clustering the results and visualising the clusters.
-      Currently, 5 <a href="#">clustering algorithms</a> are available that are
-      suitable for different kinds of document clustering tasks.
+      Carrot<sup>2</sup> provides an <a content="architecture">architecture</a>
+      for acquiring search results from various sources (YahooAPI, GoogleAPI,
+      OpenSearch, Lucene index), clustering the results and visualising the
+      clusters.  Currently, 5 <a content="algorithms">clustering algorithms</a>
+      are available that are suitable for different kinds of document
+      clustering tasks.
     </p>
    
     <p>

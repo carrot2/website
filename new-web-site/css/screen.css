@@ -94,6 +94,7 @@ td#top-header-space {
 
 #menu {
   background-image: url('../img/menu-bg.gif');
+  background-repeat: no-repeat;
   width: 171px;
   height: 333px;
   padding-top: 25px;
@@ -111,6 +112,16 @@ td#content {
   background-repeat: no-repeat;
   height: 100%;
   vertical-align: top;
+}
+
+#content-inner {
+  line-height: 155%;
+  padding: 25px 20px 10px 20px;
+  width: 650px; 
+  margin-right: auto;
+  background-image: url('../img/content-top-bg.gif');
+  background-position: top left;
+  background-repeat: no-repeat;
 }
 
 td#bottom-stroke-bg {
@@ -231,11 +242,6 @@ table.glow .r {
   margin-right: 10px;
 }
 
-#content {
-  padding: 25px 20px 10px 20px;
-  line-height: 155%;
-}
-
 * html #content {
   line-height: 170%;
 }
@@ -306,6 +312,10 @@ table.glow .r {
 
 #content li {
   padding-bottom: 1ex;
+}
+
+#content ul.compact li {
+  padding-bottom: 0ex;
 }
 
 .side {
@@ -381,4 +391,32 @@ html>body sub.bt {
 
 .publication-list img {
   display: inline;
+}
+
+/** Algorithms overview */
+table.algorithms {
+  width: 100%;
+}
+
+table.algorithms th {
+  background-color: #e8e8e8;
+}
+
+table.algorithms td, table.algorithms th {
+  border: 1px solid #d0d0d0;
+  padding: 4px;
+  text-align: center;
+}
+
+html>body .app-pic {
+  margin-bottom: 30px;
+}
+
+/** FAQ */
+div.q {
+  font-weight: bold;
+  margin-bottom: 1ex;
+}
+
+div.a {
 }
