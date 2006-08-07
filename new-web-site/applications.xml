@@ -16,9 +16,10 @@
 
     <p style="clear: both">
       <a href="http://www.openiris.com/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/openiris.gif" /> Iris</a>
-      is a semantic desktop application framework that enables users to create
-      a personal map across their office-related information objects. It <a
+      15px" class="pic app-pic" src="img/openiris.gif" /> Iris</a> is an Open
+      Source semantic desktop application framework that enables users to
+      create a personal map across their office-related information objects. It
+      <a
       href="http://www.openiris.org/screenshots/atct_album_image?b_start=9">uses
       Carrot<sup>2</sup>'s Lingo</a> algorithm to cluster web search results.
     </p>

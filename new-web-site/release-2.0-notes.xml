@@ -12,14 +12,16 @@
 
     <ul>
       <li>
-        Major refactoring and <b>simplification of the core API</b>, removal of
-        obsolete interfaces.
+        <a href="http://carrot.cs.put.poznan.pl"><img class="pic" src="img/carrot2-new-web-interface.gif" style="float:
+        right; margin-left: 10px;"/></a> A <b>brand-new search clustering web
+        application</b> (see on the right) featuring a more usable user
+        interface, much faster back-end and better support for adding new data
+        sources.
       </li>
 
       <li>
-        A <b>brand-new search clustering web application</b> featuring a more
-        usable user interface, much faster back-end and better support for adding new
-        data sources.
+        Major refactoring and <b>simplification of the core API</b>, removal of
+        obsolete interfaces.
       </li>
 
       <li>

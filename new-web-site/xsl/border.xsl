@@ -134,13 +134,13 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">#</xsl:with-param>
+                    <xsl:with-param name="url">support</xsl:with-param>
                     <xsl:with-param name="text">Support</xsl:with-param>
                     <xsl:with-param name="section">support</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">#</xsl:with-param>
+                    <xsl:with-param name="url">spin-off</xsl:with-param>
                     <xsl:with-param name="text">Spin-off</xsl:with-param>
                     <xsl:with-param name="section">spin-off</xsl:with-param>
                   </xsl:call-template>

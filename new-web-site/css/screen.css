@@ -418,5 +418,6 @@ div.q {
   margin-bottom: 1ex;
 }
 
-div.a {
+div.a p {
+  margin-bottom: 2ex;
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="support">
+  <heading>Support</heading>
+
+  <content>
+    <p>
+      If you have questions or comments about Carrot<sup>2</sup>, please
+      contact us through the <a
+      href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers">Carrot<sup>2</sup>-developers
+      mailing list</a> (subscription is required). For past messages circulated
+      to the mailing list, please <a
+      href="http://sourceforge.net/mailarchive/forum.php?forum_id=34187">see
+      the archive</a>.
+    </p>
+
+    <p>
+      If you would like to file a bug or a feature request, please use the <a
+      href="https://sourceforge.net/tracker/?group_id=85379">Carrot<sup>2</sup>
+      bug tracker</a>. Finally, if you need consultancy services in the area of
+      document clustering, text mining and Carrot<sup>2</sup> framework, please
+      contact the <a content="spin-off">Carrot<sup>2</sup> spin-off company</a>.
+    </p>
+  </content>
+</page>

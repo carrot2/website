@@ -17,16 +17,25 @@
     <p class="qa">
       <div class="q">I'd like to add Carrot<sup>2</sup> clustering to my existing search engine. Where do I start?</div>
       <div class="a">
-        You need to create an <a content="architecture">input component</a>
-        that gets search results from your engine and feeds them to
-        Carrot<sup>2</sup>. Please see the <a
-        content="documentation">documentation</a>, API reference and source
-        code of exising input components for useful hints. Then, you can reuse
-        some bits of the Carrot<sup>2</sup> web application (located in the
-        <span class="c2element">carrot2/ applications/
-        carrot2-demo-webapp</span> folder of the source repository) to
-        visualize the clusters. If you need more help, please <a
-        content="support">let us know</a>.
+        <p>
+          You need to create an <a content="architecture">input component</a>
+          that gets search results from your engine and feeds them to
+          Carrot<sup>2</sup>. Please see the <a
+          content="documentation">documentation</a>, API reference and source
+          code of existing input components for useful hints. Then, you can
+          reuse some bits of the Carrot<sup>2</sup> web application (located in
+          the <span class="c2element">carrot2/ applications/
+          carrot2-demo-webapp</span> folder of the source repository) to
+          visualize the clusters.
+        </p>
+
+        <p>
+          Alternatively, you can expose your search results as an <a
+          href="http://opensearch.a9.com/">OpenSearch</a> feed and use
+          Carrot<sup>2</sup>'s built-in OpenSearch input component. In any
+          case, if you need more help, please <a content="support">let us
+          know</a>.
+        </p>
       </div>
     </p>
 

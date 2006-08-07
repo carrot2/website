@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="spin-off">
+  <heading>Spin-off</heading>
+
+  <content>
+    <p>
+      <a href="http://www.carrot-search.com"><img src="img/carrot-search.gif"
+      style="float: right; margin-left: 15px" />Carrot Search</a> is a spin-off
+      company set up by the <a content="authors">authors</a> of the
+      Carrot<sup>2</sup> framework to provide professional installation,
+      maintenance, clustering and text mining consulting services based on the
+      Open Source framework.
+    </p>
+
+    <p>
+      Carrot Search offers <a
+      href="http://www.carrot-search.com/lingo-benefits.html">Lingo3G</a> --
+      the third generation high-performance document clustering engine
+      featuring multilingual and hierarchical clustering, ontologies, synonyms,
+      advanced tuning capabilities and more. For more details, please <a
+      href="http://www.carrot-search.com/contact.html">contact Carrot Search</a>.
+    </p>
+  </content>
+</page>
