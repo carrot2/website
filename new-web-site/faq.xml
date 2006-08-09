@@ -9,8 +9,9 @@
       <div class="q">Can I use Carrot<sup>2</sup> in a commercial project?</div>
       <div class="a">
         Yes. The only requirement is that you properly acknowledge the use of
-        Carrot<sup>2</sup> and let us know about your project. Please also remember
-        to read the <a content="license">license</a>.
+        Carrot<sup>2</sup> (on the project's website and documentation) and let
+        us know about your project. Please also remember to read the <a
+        content="license">license</a>.
       </div>
     </p>
 
@@ -46,7 +47,7 @@
         existing search engine. You can use an Open Source project called <a
         href="http://www.nutch.org">Nutch</a> to crawl your website. Nutch has
         a Carrot<sup>2</sup>-based search clustering plugin, so you'll get all
-        crawling, searching and clustering in one piece. If you need any help
+        crawling, searching and clustering in one piece. If you need help
         with any of these, please <a content="support">contact us</a>.
       </div>
     </p>

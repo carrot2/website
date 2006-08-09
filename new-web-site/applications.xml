@@ -8,7 +8,7 @@
     <p>
       <a href="http://www.mex-search.com/"><img style="float: left;
       margin-right: 15px" class="pic app-pic"
-      src="img/mex-search.gif" /> meX-Seach</a> is a clustering search engine
+      src="img/mex-search.gif" /> meX-Search</a> is a clustering search engine
       with a visually pleasing user interface (try version with the human
       agent!). meX-Search uses Carrot<sup>2</sup>'s Lingo algorithm to cluster
       search results.

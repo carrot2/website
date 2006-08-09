@@ -6,7 +6,7 @@
 
   <content>
     <p>
-      <b>Carrot<sup>2</sup> documentation</b> is targetted mainly at developers
+      <b>Carrot<sup>2</sup> documentation</b> is targeted mainly at developers
       and includes information about building the sources and using
       Carrot<sup>2</sup> core API. As the documentation may lag behind the
       newest code base, if you have a problem or question that is not covered,
@@ -18,9 +18,9 @@
     </p>
 
     <ul>
-      <li><a href="">One HTML file</a></li>
-      <li><a href="">HTML files split into sections</a></li>
-      <li><a href="">PDF file</a></li>
+      <li><a href="http://www.carrot2.org/manual/carrot2-documentation-single.html">One HTML file</a></li>
+      <li><a href="http://www.carrot2.org/manual/carrot2-documentation.html">HTML files split into sections</a></li>
+      <li><a href="http://www.carrot2.org/manual/carrot2-documentation.pdf">PDF file</a></li>
     </ul>
 
     <p>

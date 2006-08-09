@@ -13,10 +13,10 @@
 
   <body>
     <div id="results-utils">
-      <a href="http://www.carrot-search.com">About</a> |
-      <a href="http://www.carrot-search.com">Demo</a> |
-      <a href="http://www.carrot-search.com">Contact</a> |
-      <a href="http://www.carrot-search.com">Carrot2 @ sf.net</a> |
+      <a href="index.{$content-extension}">About</a> |
+      <a href="support.{$content-extension}">Contact</a> |
+      <a href="http://sf.net/projects/carrot2">Carrot2 @ sf.net</a> |
+      <a href="http://carrot.cs.put.poznan.pl">Search Clustering Engine</a> |
       <a href="http://www.carrot-search.com">Carrot Search</a>
     </div>
 
@@ -197,7 +197,7 @@
   <xsl:template match="title" />
 
   <!-- Certain HTML elements -->
-  <xsl:template match="p|table|caption|tr|th|td|a|b|i|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre">
+  <xsl:template match="p|table|caption|tr|th|td|a|b|i|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre|script">
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:apply-templates />

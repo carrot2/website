@@ -5,6 +5,26 @@
   <heading>Live demos</heading>
 
   <content>
+    <script type="text/javascript" language="JavaScript">
+        // <!--
+        function addEngine()
+        {
+            if ((typeof window.sidebar == "object") && (typeof window.sidebar.addSearchEngine == "function"))
+            {
+                window.sidebar.addSearchEngine(
+                    "http://www.carrot2.org/website/site/mozilla/carrot2.src",  /* engine URL */
+                    "http://www.carrot2.org/website/site/mozilla/carrot2.gif",  /* icon URL */
+                    "Carrot2",                                             /* engine name */
+                    "Web" );                                               /* category name */
+            }
+            else
+            {
+                alert("Mozilla M15 or later is required to add a search engine.");
+            }
+        }
+        // -->
+    </script>
+  
     <p>
       <a href="http://carrot.cs.put.poznan.pl"><img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-clustering-engine.gif" />
       On-line search clustering engine</a> based on Carrot<sup>2</sup>.
@@ -13,17 +33,17 @@
     </p>
 
     <p style="clear: both">
-      <a href="http://carrot.cs.put.poznan.pl"><img style="float: left; margin-right: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-webstart.gif" />
+      <a href="http://www.carrot2.org/webstart"><img style="float: left; margin-right: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-webstart.gif" />
       Standalone GUI clustering tool</a> for playing with Carrot<sup>2</sup> clustering
       algorithms. It will let you modify parameters of the
-      algorithms and watch the effects in real-time. <a href="#">Launch it!</a>
+      algorithms and watch the effects in real-time. <a href="http://www.carrot2.org/webstart">Launch it!</a>
       (requires <a href="http://java.sun.com/products/javawebstart/">Java Web Start</a>)
     </p>
 
     <p style="clear: both">
-      <a href="http://carrot.cs.put.poznan.pl"><img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/mozilla-firefox-clustering-plugin.gif" />
+      <a href="javascript:addEngine()"><img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/mozilla-firefox-clustering-plugin.gif" />
       Search plugin for Mozilla and Firefox</a> that will send queries directly from 
-      your browser to the Carrot<sup>2</sup> on-line search clustering engine. <a href="#">Get the plugin!</a>
+      your browser to the Carrot<sup>2</sup> on-line search clustering engine. <a href="javascript:addEngine()">Get the plugin!</a>
     </p>
   </content>
 </page>

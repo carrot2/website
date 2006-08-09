@@ -47,11 +47,11 @@
       Thanks to its flexible architecture, high quality and a friendly BSD-like
       <a content="license">license</a>, Carrot<sup>2</sup> has been
       successfully used in a number of commercial and research <a
-      href="#">applications</a> and resulted in a number of interesting <a
+      content="applications">applications</a> and resulted in a number of interesting <a
       content="publications">publications</a>.  To get started, please have a
       look at <a content="demos">live demos</a> and the <a
-      href="#">downloads</a> section. If you have any questions or comments
-      about Carrot<sup>2</sup>, please <a href="#">let us know</a>.
+      content="download">downloads</a> section. If you have any questions or comments
+      about Carrot<sup>2</sup>, please <a content="support">let us know</a>.
     </p>
 
     <div class="side" style="float: right">
@@ -65,9 +65,9 @@
     <p>
       For consulting services, installation, maintenance and text mining
       expertise, please contact the Carrot<sup>2</sup> spin-off company called
-      <a href="#">Carrot Search</a>. Carrot Search offers <a
-      href="">Lingo3G</a> -- the third generation high-performance <a
-      href="#">document clustering engine</a> featuring hierarchical
+      <a href="http://www.carrot-search.com">Carrot Search</a>. Carrot Search offers <a
+      href="http://www.carrot-search.com/lingo-benefits.html">Lingo3G</a> -- the third generation high-performance <a
+      href="http://www.carrot-search.com/lingo-benefits.html">document clustering engine</a> featuring hierarchical
       clustering, ontologies, synonyms and advanced tuning capabilities.
     </p>
   </content>
