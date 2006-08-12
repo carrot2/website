@@ -3,6 +3,7 @@
 
   <xsl:import href="params.xsl" />
   <xsl:import href="border.xsl" />
+  <xsl:import href="demos.xsl" />
   <xsl:import href="publications.xsl" />
 
   <xsl:strip-space elements="*"/>

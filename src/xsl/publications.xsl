@@ -28,7 +28,7 @@
           <a href="{@paper}">Paper <xsl:call-template name="pdf" /></a>
         </xsl:if>
         <xsl:if test="@paper-local">
-          <a href="{$carrot2.website.url}{@paper-local}">Paper <xsl:call-template name="pdf" /></a>
+          <a href="{$carrot2.website.url}/publications/{@paper-local}">Paper <xsl:call-template name="pdf" /></a>
         </xsl:if>
         <xsl:if test="@slides">
           <a href="{@slides}">Conference slides <xsl:call-template name="pdf" /></a>

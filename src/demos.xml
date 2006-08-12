@@ -5,26 +5,8 @@
   <heading>Live demos</heading>
 
   <content>
-    <script type="text/javascript" language="JavaScript">
-        // &lt;!--
-        function addEngine()
-        {
-            if ((typeof window.sidebar == "object") &amp;&amp; (typeof window.sidebar.addSearchEngine == "function"))
-            {
-                window.sidebar.addSearchEngine(
-                    "<carrot2-website-url />/mozilla/carrot2.src",  /* engine URL */
-                    "<carrot2-website-url />/mozilla/carrot2.gif",  /* icon URL */
-                    "Carrot2",                                             /* engine name */
-                    "Web" );                                               /* category name */
-            }
-            else
-            {
-                alert("Mozilla M15 or later is required to add a search engine.");
-            }
-        }
-        // --&gt;
-    </script>
-  
+    <mozilla-plugin-script />
+
     <p>
       <carrot2-webapp-link><img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-clustering-engine.gif" alt="Carrot2 clustering engine" />
       On-line search clustering engine</carrot2-webapp-link> based on Carrot<sup>2</sup>.

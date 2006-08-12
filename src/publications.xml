@@ -87,7 +87,7 @@
       </poster>
 
       <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/awic/StefanowskiW03"
-             paper-local="publications/stefanowski-weiss-awic-2003.pdf">
+             paper-local="stefanowski-weiss-awic-2003.pdf">
         <authors>Jerzy Stefanowski, Dawid Weiss</authors>
         <title>Carrot2 and Language Properties in Web Search Results Clustering</title>
         <where>
@@ -101,7 +101,7 @@
     <publication-group>
       <title>Theses</title>
 
-      <thesis thesis-local="publications/osinski04-dimensionality.pdf">
+      <thesis thesis-local="osinski04-dimensionality.pdf">
         <authors>Stanisław Osiński</authors>
         <title>Dimensionality Reduction Techniques for Search Results Clustering</title>
         <where>
@@ -109,7 +109,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="publications/schockaert-2004-vaagmieren.pdf">
+      <thesis thesis-local="schockaert-2004-vaagmieren.pdf">
         <authors>Steven Schockaert</authors>
         <title>(in Dutch) Het Clusteren van Zoekresultaten met behulp van Vaagmieren (Clustering of Search Results using Fuzzy Ants)</title>
         <where>
@@ -117,7 +117,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="publications/chi-lang-ngo-2004.pdf">
+      <thesis thesis-local="chi-lang-ngo-2004.pdf">
         <authors>Ngo Chi Lang</authors>
         <title>A tolerance rough set approach to clustering web search results</title>
         <where>
@@ -125,7 +125,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="publications/rud-2004-reuse-support-system.pdf">
+      <thesis thesis-local="rud-2004-reuse-support-system.pdf">
         <authors>Laust Rud Jensen</authors>
         <title>A reuse repository with automated synonym support and cluster generation</title>
         <where>
@@ -133,7 +133,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="publications/osinski-2003-lingo.pdf">
+      <thesis thesis-local="osinski-2003-lingo.pdf">
         <authors>Stanisław Osiński</authors>
         <title>An Algorithm for Clustering of Web Search Results</title>
         <where>
@@ -141,7 +141,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="publications/kowalik-2003-wrapit.pdf">
+      <thesis thesis-local="kowalik-2003-wrapit.pdf">
         <authors>Paweł Kowalik</authors>
         <title>(in Polish) Wspomaganie tworzenia analizatorów stron wyników z internetowych systemów wyszukujących (Automated support for search engine wrapper induction)</title>
         <where>
@@ -149,7 +149,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="publications/wroblewski-2003-ahc.pdf">
+      <thesis thesis-local="wroblewski-2003-ahc.pdf">
         <authors>Michał Wróblewski</authors>
         <title>A Hierarchical WWW Pages Clustering Algorithm Based on the Vector Space Model</title>
         <where>

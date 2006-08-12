@@ -2,10 +2,12 @@
 
 <project name="Carrot2 Website build/ publish script." default="help" basedir="." >
 
-  <property name="website.src" value="new-web-site" />
+  <property name="website.src" value="src" />
   <property name="stylesheet" location="${website.src}/xsl/page.xsl" />
 
   <property name="distribution.dir" value="tmp/dist" />
+
+  <property name="website.website.upload.dir" value="project.carrot2.org" />
 
   <property file="${user.home}/.carrot.website-upload.properties" />
 
