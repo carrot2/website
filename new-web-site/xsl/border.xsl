@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <xsl:param name="content-extension">xml</xsl:param>
 
   <xsl:template match="/page">
-<html style="height: 100%">
+<html>
   <head>
     <title>Carrot2 - Open Source Search Results Clustering Engine</title>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
-    <link rel="stylesheet" href="css/screen.css" />
+
+    <meta name="description" content="Carrot2 is an Open Source Search Results Clustering Engine. It can automatically organize (cluster) search results into thematic categories." />
+    <meta name="keywords" content="carrot2 framework, document clustering engine, search results clustering, text mining, open source, free software, bsd license" />
+    <meta name="copyright" content="Carrot2 Project, Stanislaw Osinski, Dawid Weiss" />
+    <meta name="author" content="Carrot2 Project, Stanislaw Osinski, Dawid Weiss" />
+	
+    <meta name="rating" content="GENERAL" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+	
+    <meta http-equiv="cache-control" content="public" />
+    <meta http-equiv="imagetoolbar" content="no" />
+	
+    <link rel="shortcut icon" href="favicon.ico" />
+	
+    <link rel="stylesheet" href="css/screen.css" type="text/css" media="all" title="Default" />
   </head>
 
 
   <body>
     <div id="results-utils">
-      <a href="index.{$content-extension}">About</a> |
+      <a href="{$carrot2.website.url}">About</a> |
       <a href="support.{$content-extension}">Contact</a> |
-      <a href="http://sf.net/projects/carrot2">Carrot2 @ sf.net</a> |
-      <a href="http://carrot.cs.put.poznan.pl">Search Clustering Engine</a> |
-      <a href="http://www.carrot-search.com">Carrot Search</a>
+      <a href="{$carrot2.sf.net.url}">Carrot2 @ sf.net</a> |
+      <a href="{$carrot2.webapp.url}">Search Clustering Engine</a> |
+      <a href="{$carrot-search.website.url}">Carrot Search</a>
     </div>
 
     <table id="heading"><tr><td><h1><xsl:apply-templates select="heading" /></h1></td></tr></table>
@@ -27,7 +40,7 @@
         <td>
           <table style="width: 100%; margin-top: 10px">
             <tr>
-              <td id="logo" rowspan="5"><a href="/"><img src="img/carrot2-logo.gif" /></a></td>
+              <td id="logo" rowspan="5"><a href="{$carrot2.website.url}"><img src="img/carrot2-logo.gif" alt="Carro2 Project logo" /></a></td>
             </tr>
 
             <tr>
@@ -35,21 +48,21 @@
             </tr>
 
             <tr>
-              <td colspan="2"><img src="img/top-stroke-1.gif" /></td>
-              <td><img src="img/top-stroke-2.gif" /></td>
+              <td colspan="2"><img alt="..." src="img/top-stroke-1.gif" /></td>
+              <td><img alt="..." src="img/top-stroke-2.gif" /></td>
               <td id="top-stroke-bg"></td>
             </tr>
 
             <tr>
-              <td><a href="/"><img src="img/carrot2-text.gif" /></a></td>
-              <td><img src="img/top-header-1.gif" /></td>
+              <td><a href="{$carrot2.website.url}"><img alt="Carrot2 Project" src="img/carrot2-text.gif" /></a></td>
+              <td><img alt="..." src="img/top-header-1.gif" /></td>
               <td rowspan="2" colspan="2" id="top-header-space">
-                <img src="img/top-header-2.gif" />
+                <img alt="..." src="img/top-header-2.gif" />
               </td>
             </tr>
 
             <tr>
-              <td colspan="2"><a href="/"><img src="img/carrot2-tagline.gif" /></a></td>
+              <td colspan="2"><a href="{$carrot2.website.url}"><img alt="Carrot2: open source framework for building search clustering engines" src="img/carrot2-tagline.gif" /></a></td>
             </tr>
           </table>
         </td>
@@ -162,17 +175,29 @@
           <table style="width: 100%">
             <tr>
               <td id="bottom-stroke-bg"></td>
-              <td id="bottom-stroke-1"><img src="img/bottom-stroke-1.gif" /></td>
+              <td id="bottom-stroke-1"><img alt="..." src="img/bottom-stroke-1.gif" /></td>
             </tr>
             
             <tr>
-              <td id="copyright" colspan="2">&#169; 2002-2006 <a href="http://www.carrot-search.com" target="_blank">Carrot Search</a>, Stanislaw Osinski, Dawid Weiss</td>  
+              <td id="copyright" colspan="2">
+              <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="img/css.gif" alt="Valid CSS" title="Valid CSS" class="valid" /></a>
+              <a href="http://validator.w3.org/check?uri=referer"><img src="img/xhtml.gif" alt="Valid XMLT 1.0 Transitional" title="Valid XMLT 1.0 Transitional" class="valid" /></a>
+              &#169; 2002-2006 <a href="http://www.man.poznan.pl/~stachoo/">Stanislaw Osinski</a>, <a href="http://www.cs.put.poznan.pl/dweiss/">Dawid Weiss</a><xsl:if test="$build.time">, updated:
+                <xsl:value-of select="$build.time" />
+              </xsl:if>
+              </td>  
             </tr>
           </table>
         </td>
       </tr>
     </table>
-    
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    _uacct = "UA-317750-1";
+    urchinTracker();
+    </script>
   </body>
 </html>
   </xsl:template>
@@ -186,12 +211,36 @@
       <xsl:if test="/page/@section = $section">
         <xsl:attribute name="class">active</xsl:attribute>
       </xsl:if>
-      <img src="img/menu-bullet.gif" class="menu-bullet" />&#160;<xsl:value-of select="$text" />
+      <img alt="bullet" src="img/menu-bullet.gif" class="menu-bullet" />&#160;<xsl:value-of select="$text" />
     </a>
   </xsl:template>
 
   <xsl:template match="a[@content]">
     <a href="{@content}.{$content-extension}"><xsl:apply-templates /></a>
+  </xsl:template>
+
+  <xsl:template match="carrot2-webapp-link">
+    <a href="{$carrot2.webapp.url}"><xsl:apply-templates /></a>
+  </xsl:template>
+
+  <xsl:template match="carrot2-webapp-results-link">
+    <a href="{$carrot2.webapp.results.url}{@query}"><xsl:apply-templates /></a>
+  </xsl:template>
+
+  <xsl:template match="carrot2-website-link">
+    <a href="{$carrot2.website.url}/{@extension}"><xsl:apply-templates /></a>
+  </xsl:template>
+
+  <xsl:template match="carrot-search-webapp-link">
+    <a href="{$carrot-search.webapp.url}"><xsl:apply-templates /></a>
+  </xsl:template>
+
+  <xsl:template match="carrot-search-webapp-results-link">
+    <a href="{$carrot-search.webapp.results.url}{@query}"><xsl:apply-templates /></a>
+  </xsl:template>
+
+  <xsl:template match="carrot-search-website-link">
+    <a href="{$carrot-search.website.url}/{@extension}"><xsl:apply-templates /></a>
   </xsl:template>
 
   <xsl:template match="title" />

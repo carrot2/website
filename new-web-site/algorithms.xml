@@ -34,7 +34,7 @@
         <td>16.93</td>
         <td>yes</td>
         <td></td>
-        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=FuzzyAnts+%28%2BEnglish%29&amp;opts=s">london</a></td>
+        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=FuzzyAnts+%28%2BEnglish%29&amp;opts=h">london</carrot2-webapp-results-link></td>
       </tr>
 
       <tr>
@@ -45,7 +45,7 @@
         <td>0.28</td>
         <td>yes</td>
         <td></td>
-        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=HAOG-STC+%28%2BEnglish%29&amp;opts=s">london</a></td>
+        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=HAOG-STC+%28%2BEnglish%29&amp;opts=h">london</carrot2-webapp-results-link></td>
       </tr>
 
       <tr>
@@ -56,7 +56,7 @@
         <td>0.84</td>
         <td>no</td>
         <td>multilingual clustering</td>
-        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">london</a></td>
+        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">london</carrot2-webapp-results-link></td>
       </tr>
 
       <tr>
@@ -67,7 +67,7 @@
         <td>27.73</td>
         <td>no</td>
         <td></td>
-        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=Rough+k-Means&amp;opts=s">london</a></td>
+        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=Rough+k-Means&amp;opts=h">london</carrot2-webapp-results-link></td>
       </tr>
 
       <tr>
@@ -78,7 +78,7 @@
         <td>0.23</td>
         <td>no</td>
         <td></td>
-        <td><a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=STC+%28%2BEnglish%29&amp;opts=s">london</a></td>
+        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=STC+%28%2BEnglish%29&amp;opts=h">london</carrot2-webapp-results-link></td>
       </tr>
 
       <tr>
@@ -89,7 +89,7 @@
         <td>0.17</td>
         <td>yes</td>
         <td>multilingual clustering, ontologies, synonyms, advanced tuning, scalability (5000 snippets in 1.7s*)</td>
-        <td><a href="http://demo.carrot-search.com/carrot2-webapp/search?q=london&amp;in=Yahoo%21&amp;s=200&amp;alg=Lingo+3G&amp;opts=h">london</a></td>
+        <td><carrot-search-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=200&amp;alg=Lingo+3G&amp;opts=h">london</carrot-search-webapp-results-link></td>
       </tr>
     </table>
 
@@ -109,9 +109,13 @@
     </p>
 
     <p>
-      ***) Lingo3G is a commercial clustering engine and is not available in the
-      Open Source part of Carrot<sup>2</sup>. Please contact <a
-      href="http://www.carrot-search.com">Carrot Search</a> for details.
+      ***) <carrot-search-website-link
+      extension="lingo-benefits.html">Lingo3G</carrot-search-website-link> is a
+      commercial <carrot-search-webapp-link>document clustering
+      engine</carrot-search-webapp-link> and is not available in the Open
+      Source part of Carrot<sup>2</sup>. Please contact
+      <carrot-search-website-link>Carrot Search</carrot-search-website-link>
+      for details.
     </p>
   </content>
 </page>

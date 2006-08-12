@@ -8,7 +8,7 @@
     <p>
       <a href="http://www.mex-search.com/"><img style="float: left;
       margin-right: 15px" class="pic app-pic"
-      src="img/mex-search.gif" /> meX-Search</a> is a clustering search engine
+      src="img/mex-search.gif" alt="meX-Search" title="meX-Search" /> meX-Search</a> is a clustering search engine
       with a visually pleasing user interface (try version with the human
       agent!). meX-Search uses Carrot<sup>2</sup>'s Lingo algorithm to cluster
       search results.
@@ -16,7 +16,7 @@
 
     <p style="clear: both">
       <a href="http://www.openiris.com/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/openiris.gif" /> Iris</a> is an Open
+      15px" class="pic app-pic" src="img/openiris.gif" alt="Iris" title="Iris" /> Iris</a> is an Open
       Source semantic desktop application framework that enables users to
       create a personal map across their office-related information objects. It
       <a
@@ -25,15 +25,15 @@
     </p>
 
     <p style="clear: both">
-      <a href="http://www.nutch.org/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/nutch.gif" /> Nutch</a>
+      <a href="http://www.nutch.org/"><img style="float: left; margin-right: 15px" 
+      class="pic app-pic" src="img/nutch.gif" alt="Nutch" title="Nutch" /> Nutch</a>
       is open source web-search software that features a clustering plugin
       powered by Carrot<sup>2</sup>'s Lingo algorithm.
     </p>
 
     <p style="clear: both">
       <a href="http://www.grokker.com/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/grokker.gif" />
+      15px" class="pic app-pic" src="img/grokker.gif" alt="Grokker" title="Grokker" />
       Grokker</a> is enterprise search management software that uses some parts
       of Carrot<sup>2</sup> infrastructure and the commercial version of the
       Lingo algorithm to cluster enterprise search results.

@@ -13,7 +13,7 @@
 </search>
 
 <browser
-      update="http://www.carrot2.org/website/site/mozilla/carrot2.src" 
-      updateIcon="http://www.carrot2.org/website/site/mozilla/carrot2.gif" 
+      update="http://project.carrot2.org/mozilla/carrot2.src" 
+      updateIcon="http://project.carrot2.org/mozilla/carrot2.gif" 
       updateCheckDays="1"
 >

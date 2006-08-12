@@ -2,81 +2,74 @@
 
 <project name="Carrot2 Website build/ publish script." default="help" basedir="." >
 
-  <!-- The root of the generated documentation -->
-  <property name="build.dir"        value="tmp/build" />
+  <property name="website.src" value="new-web-site" />
+  <property name="stylesheet" location="${website.src}/xsl/page.xsl" />
+
   <property name="distribution.dir" value="tmp/dist" />
 
-  <!-- ##################################### -->
-  <!-- ### {{{ CLEAN project             ### -->
-  <!-- ##################################### -->
+  <property file="${user.home}/.carrot.website-upload.properties" />
 
   <target name="clean" description="Removes all temporary files.">
         <delete failonerror="false" includeemptydirs="true" quiet="true">
             <fileset dir="tmp" />
         </delete>
   </target>
-  <!-- }}} -->
 
+  <target name="xslt" description="Transforms the website XML sources to HTML files">
+      <tstamp>
+          <format property="build.time" pattern="d MMMM yyyy" locale="en" />
+      </tstamp>
 
-  <!-- ######################################################### -->
-  <!-- ### {{{ copies all necessary files to build directory ### -->
-  <!-- ######################################################### -->
+      <xslt basedir="${website.src}" destdir="${distribution.dir}" style="${stylesheet}">
+          <include name="*.xml" />
 
-  <target name="prepare">
-    <mkdir dir="${build.dir}" />
-    <mkdir dir="${distribution.dir}" />
-    
-    <mkdir dir="${build.dir}/site" />
-    <copy filtering="false" includeemptydirs="true" todir="${build.dir}/site">
-        <fileset dir="site" />
-    </copy>
-    <copy filtering="false" includeemptydirs="true" todir="${build.dir}/xslt">
-        <fileset dir="xslt" />
-    </copy>
+          <outputproperty name="method" value="xhtml" />
+          <outputproperty name="standalone" value="yes"/>
+          <outputproperty name="encoding" value="UTF-8"/>
+          <outputproperty name="indent" value="no" />
+
+          <param name="content-extension" expression="html" />
+          <param name="build.time" expression="${build.time}" />
+      </xslt>
+      
+      <copy todir="${distribution.dir}" filtering="false">
+          <fileset dir="${website.src}">
+              <exclude name="**/*.bat" />
+              <exclude name="**/*.sh" />
+              <exclude name="**/*.swp" />
+              <exclude name="**/*.xml" />
+              <exclude name="**/*.xsl" />
+              <exclude name="xsl" />
+              <exclude name="xml" />
+              <exclude name="**/favicon.ico" />
+          </fileset>
+          <fileset dir="${website.src}/img">
+            <include name="favicon.ico" />
+          </fileset>
+      </copy>
   </target>
-  
-  
-  <!-- ######################################################### -->
-  <!-- ### {{{ Assembles a PHP structure of the web page     ### -->
-  <!-- ######################################################### -->
-  <target name="build.php" depends="prepare"
-          description="Assembles a PHP structure of the web page.">
-    <copy todir="${distribution.dir}" includeemptydirs="true">
-        <fileset dir="${build.dir}" includes="**/*" />
-    </copy>
-    <copy todir="${distribution.dir}" includeemptydirs="true">
-        <fileset dir="renderer-sin/php">
-            <include name="**/*" />
-            <include name=".htaccess" />
-        </fileset>
-    </copy>
+
+  <target name="upload" depends="xslt" description="Uploads the website to the server">
+    <fail unless="website.upload.host">Please define the website.upload.host variable</fail>
+    <fail unless="website.upload.user">Please define the website.upload.user variable</fail>
+    <fail unless="website.upload.password">Please define the website.upload.password variable</fail>
+    <fail unless="website.website.upload.dir">Please define the website.website.upload.dir variable</fail>
     <echo>
-*** IMPORTANT ***
-The Website uses PHP and SIN - an XSLT processing framework to run.
-XSLTPROC must be available on the server (in command line)
-and php's safe_mode must be turned off.
-    </echo>
+####
+Uploading website to: ${website.upload.host}/${website.website.upload.dir}
+####
+    </echo> 
+    <ftp server="${website.upload.host}"
+         userid="${website.upload.user}"
+         password="${website.upload.password}"
+         remotedir="${website.website.upload.dir}"
+         depends="no"
+         verbose="yes"
+         passive="yes">
+      <fileset dir="${distribution.dir}"/>
+    </ftp>
   </target>
-  <!-- }}} -->
 
-  
-  <!-- ######################################################### -->
-  <!-- ### {{{ Assembles a Java WAR structure of the web page### -->
-  <!-- ###                           (for previewing mostly) ### -->
-  <!-- ######################################################### -->
-  <target name="build.war" depends="prepare"
-          description="Assembles a WAR structure of the web page.">
-          
-    <delete failonerror="false" quiet="true" file="${distribution.dir}/carrot2-website.war" />
-    <copy file="renderer-sin/java/sin-java-base.zip" tofile="${distribution.dir}/carrot2-website.war" />
-    <zip basedir="${build.dir}" compress="true" update="true" zipfile="${distribution.dir}/carrot2-website.war" />
-  </target>
-  <!-- }}} -->
-
-  
-  <!-- ##################################### -->
-  <!-- ### {{{ HELP ON THIS FILE         ### -->
-  <!-- ##################################### -->
   <target name="help" description="Displays help on available targets.">
     <echo>
 

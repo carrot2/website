@@ -6,21 +6,24 @@
 
   <content>
     <p>
-      <a href="http://www.carrot-search.com"><img src="img/carrot-search.gif"
-      style="float: right; margin-left: 15px" />Carrot Search</a> is a spin-off
-      company set up by the <a content="authors">authors</a> of the
-      Carrot<sup>2</sup> framework to provide professional installation,
-      maintenance, clustering and text mining consulting services based on the
-      Open Source framework and proprietary software.
+      <carrot-search-website-link><img src="img/carrot-search.gif"
+      style="float: right; margin-left: 15px" alt="Carrot Search logo" />Carrot
+      Search</carrot-search-website-link> is a spin-off company set up by the
+      <a content="authors">authors</a> of the Carrot<sup>2</sup> framework to
+      provide professional installation, maintenance, clustering and text
+      mining consulting services based on the Open Source framework and
+      proprietary software.
     </p>
 
     <p>
-      Carrot Search offers <a
-      href="http://www.carrot-search.com/lingo-benefits.html">Lingo3G</a> --
-      the third generation high-performance document clustering engine
-      featuring multilingual and hierarchical clustering, ontologies, synonyms,
-      advanced tuning capabilities and more. For more details, please <a
-      href="http://www.carrot-search.com/contact.html">contact Carrot Search</a>.
+      Carrot Search offers <carrot-search-website-link
+      extension="lingo-benefits.html">Lingo3G</carrot-search-website-link> --
+      the third generation high-performance <carrot-search-webapp-link>document
+      clustering engine</carrot-search-webapp-link> featuring multilingual and
+      hierarchical clustering, ontologies, synonyms, advanced tuning
+      capabilities and more. For more details, please
+      <carrot-search-website-link extension="contact.html">contact Carrot
+      Search</carrot-search-website-link>.
     </p>
   </content>
 </page>

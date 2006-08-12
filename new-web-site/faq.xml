@@ -5,7 +5,7 @@
   <heading>FAQ</heading>
 
   <content>
-    <p class="qa">
+    <div class="qa">
       <div class="q">Can I use Carrot<sup>2</sup> in a commercial project?</div>
       <div class="a">
         Yes. The only requirement is that you properly acknowledge the use of
@@ -13,9 +13,9 @@
         us know about your project. Please also remember to read the <a
         content="license">license</a>.
       </div>
-    </p>
+    </div>
 
-    <p class="qa">
+    <div class="qa">
       <div class="q">I'd like to add Carrot<sup>2</sup> clustering to my existing search engine. Where do I start?</div>
       <div class="a">
         <p>
@@ -38,9 +38,9 @@
           know</a>.
         </p>
       </div>
-    </p>
+    </div>
 
-    <p class="qa">
+    <div class="qa">
       <div class="q">Can Carrot<sup>2</sup> crawl my website?</div>
       <div class="a">
         No. Carrot<sup>2</sup> can add clustering of search results to an
@@ -50,6 +50,6 @@
         crawling, searching and clustering in one piece. If you need help
         with any of these, please <a content="support">contact us</a>.
       </div>
-    </p>
+    </div>
   </content>
 </page>

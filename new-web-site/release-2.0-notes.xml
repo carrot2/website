@@ -6,14 +6,15 @@
 
   <content>
     <p style="margin-bottom: 0">
-      <b>The 2.0 Release of Carrot<sup>2</sup></b> brings a lot of additions and
-      improvements to the core framework, components and applications:
+      <b>The 2.0 Release of Carrot<sup>2</sup></b> will bring a lot of
+      additions and improvements to the core framework, components and
+      applications. Major improvements include:
     </p>
 
     <ul>
       <li>
-        <a href="http://carrot.cs.put.poznan.pl"><img class="pic" src="img/carrot2-new-web-interface.gif" style="float:
-        right; margin-left: 10px;"/></a> A <b>brand-new search clustering web
+        <carrot2-webapp-link><img class="pic" src="img/carrot2-new-web-interface.gif" style="float:
+        right; margin-left: 10px;" alt="Carrot2 Clustering Engine" /></carrot2-webapp-link> A <b>brand-new search clustering web
         application</b> (see on the right) featuring a more usable user
         interface, much faster back-end and better support for adding new data
         sources.
@@ -31,10 +32,27 @@
       <li>
         A new look for the project website.
       </li>
+    </ul>
+
+    <p style="margin-bottom: 0">
+      Smaller improvements include:
+    </p>
+   
+    <ul>
+      <li>
+        Autoloading of component descriptors. Now the majority of component
+        definitions can sit in their <i>home</i> projects and don't need 
+        to be declared in the applications that use them.
+      </li>
 
       <li>
         Added support for incremental document pushing to the <span
         class="c2element">carrot2-input-lucene</span> component.
+      </li>
+
+      <li>
+        Added support for incremental document pushing to the <span
+        class="c2element">carrot2-opensearch-lucene</span> component.
       </li>
     </ul>
   </content>

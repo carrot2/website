@@ -18,13 +18,13 @@
     </p>
 
     <ul>
-      <li><a href="http://www.carrot2.org/manual/carrot2-documentation-single.html">One HTML file</a></li>
-      <li><a href="http://www.carrot2.org/manual/carrot2-documentation.html">HTML files split into sections</a></li>
-      <li><a href="http://www.carrot2.org/manual/carrot2-documentation.pdf">PDF file</a></li>
+      <li><carrot2-website-link extension="manual/carrot2-documentation-single.html">One HTML file</carrot2-website-link></li>
+      <li><carrot2-website-link extension="manual/carrot2-documentation.html">HTML files split into sections</carrot2-website-link></li>
+      <li><carrot2-website-link extension="manual/carrot2-documentation.pdf">PDF file</carrot2-website-link></li>
     </ul>
 
     <p>
-      Please also see Carrot<sup>2</sup> core <a href="#">API documentation</a>.
+      Please also see Carrot<sup>2</sup> core <carrot2-website-link extension="api">API documentation</carrot2-website-link>.
     </p>
   </content>
 </page>

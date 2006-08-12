@@ -1,9 +1,0 @@
-WebStart demo
-Awards
-Publications
-Commercial deployments
-Interfaces/Integration
-documentation
-    short docbook document
-    JavaDoc for local core
-License

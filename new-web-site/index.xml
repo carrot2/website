@@ -8,8 +8,8 @@
         <h2>News</h2>
        
         <div>
-          <a content="release-2.0-notes">Release 2.0</a> of Carrot<sup>2</sup> is out with a
-          major simplification of the API, a brand-new web application and more.
+          <a content="release-2.0-notes">Release 2.0</a> of Carrot<sup>2</sup> is coming with a
+          major API simplification, a brand-new web application and more.
         </div>
       </div>
       
@@ -30,8 +30,8 @@
     </p>
 
     <p style="text-align: center; width: 420px">
-      <a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=salsa&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></a>
-      Search results clustered with Carrot<sup>2</sup> (<a href="http://carrot.cs.put.poznan.pl/demo-stable/search?q=salsa&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">live demo</a>)
+      <carrot2-webapp-results-link query="?q=salsa&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></carrot2-webapp-results-link>
+      Search results clustered with Carrot<sup>2</sup> (<carrot2-webapp-results-link query="?q=salsa&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">live demo</carrot2-webapp-results-link>)
     </p>
          
     <p>
@@ -58,17 +58,19 @@
       <h2>Spin-off company</h2>
      
       <div>
-        <a href="http://www.carrot-search.com"><img src="img/carrot-search.gif" style="margin-top: 15px; margin-bottom: 20px" alt="Carrot Search" title="Carrot Search" /></a> 
+        <carrot-search-website-link><img src="img/carrot-search.gif" style="margin-top: 15px; margin-bottom: 20px" alt="Carrot Search" title="Carrot Search" /></carrot-search-website-link> 
       </div>
     </div>
 
     <p>
       For consulting services, installation, maintenance and text mining
       expertise, please contact the Carrot<sup>2</sup> spin-off company called
-      <a href="http://www.carrot-search.com">Carrot Search</a>. Carrot Search offers <a
-      href="http://www.carrot-search.com/lingo-benefits.html">Lingo3G</a> -- the third generation high-performance <a
-      href="http://www.carrot-search.com/lingo-benefits.html">document clustering engine</a> featuring hierarchical
-      clustering, ontologies, synonyms and advanced tuning capabilities.
+      <carrot-search-website-link>Carrot Search</carrot-search-website-link>.
+      Carrot Search offers <carrot-search-website-link
+      extension="lingo-benefits.html">Lingo3G</carrot-search-website-link> -- the third generation
+      high-performance <carrot-search-webapp-link>document clustering
+      engine</carrot-search-webapp-link> featuring hierarchical clustering,
+      ontologies, synonyms and advanced tuning capabilities.
     </p>
   </content>
 </page>

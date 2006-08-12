@@ -46,13 +46,13 @@ p {
 }
 
 html>body sup {
-  line-height: 0;
+  line-height: 0%;
   position: relative;
   font-size: 80%;
 }
 
 * html sup {
-  line-height: 0;
+  line-height: 0%;
   position: relative;
   font-size: 80%;
   top: -0.2ex;
@@ -129,97 +129,13 @@ td#bottom-stroke-bg {
   width: 100%;
 }
 
-/** Borders */
-
-table.glow-small .cs {
-  height: 4px;
-  width: 4px;
-  background-image: url('../img/glow-small-corner.gif');
-}
-
-table.glow-small .hb {
-  height: 4px;
-  background-image: url('../img/glow-small-tb.gif');
-  background-repeat: repeat-x;
-}
-
-table.glow-small .vb {
-  width: 4px;
-  background-image: url('../img/glow-small-lr.gif');
-  background-repeat: repeat-y;
-}
-
-table.glow-big .cs {
-  height: 7px;
-  width: 7px;
-  background-image: url('../img/glow-big-corner.gif');
-}
-
-table.glow-big .hb {
-  height: 7px;
-  background-image: url('../img/glow-big-tb.gif');
-  background-repeat: repeat-x;
-}
-
-table.glow-big .vb {
-  width: 7px;
-  background-image: url('../img/glow-big-lr.gif');
-  background-repeat: repeat-y;
-}
-
-table.glow-big-sub .cs {
-  height: 7px;
-  width: 7px;
-  background-image: url('../img/glow-big-subtle-corner.gif');
-}
-
-table.glow-big-sub .hb {
-  height: 7px;
-  background-image: url('../img/glow-big-subtle-tb.gif');
-  background-repeat: repeat-x;
-}
-
-table.glow-big-sub .vb {
-  width: 7px;
-  background-image: url('../img/glow-big-subtle-lr.gif');
-  background-repeat: repeat-y;
-}
-
-table.glow .tl {
-}
-
-table.glow .tr {
-  background-position: right 0;
-}
-
-table.glow .bl {
-  background-position: 0 bottom;
-}
-
-table.glow .br {
-  background-position: right bottom;
-}
-
-table.glow .t {
-}
-
-table.glow .b {
-  background-position: 0 bottom;
-}
-
-table.glow .l {
-}
-
-table.glow .r {
-  background-position: right 0;
-}
-
 #copyright {
   padding-right: 10px;
   padding-bottom: 3px;
   font-size: 11px;
   color: #808080;
   text-align: right;
+  vertical-align: bottom;
 }
 
 #copyright a {
@@ -420,4 +336,14 @@ div.q {
 
 div.a p {
   margin-bottom: 2ex;
+}
+
+img.valid {
+  display: inline;
+  margin-left: 7px;
+  float: right;
+}
+
+div.qa {
+  margin-bottom: 4ex;
 }
