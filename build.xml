@@ -5,11 +5,12 @@
   <property name="website.src" value="src" />
   <property name="stylesheet" location="${website.src}/xsl/page.xsl" />
 
+  <property name="website.properties" value="${user.home}/.carrot.website-upload.properties" />
+  <property file="${website.properties}" />
+
   <property name="distribution.dir" value="tmp/dist" />
 
   <property name="website.website.upload.dir" value="project.carrot2.org" />
-
-  <property file="${user.home}/.carrot.website-upload.properties" />
 
   <target name="clean" description="Removes all temporary files.">
         <delete failonerror="false" includeemptydirs="true" quiet="true">
