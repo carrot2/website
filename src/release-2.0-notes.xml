@@ -26,10 +26,17 @@
       </li>
 
       <li>
+        Attractive <b>cluster visualization</b> added to the standalone GUI clustering
+        tool based on the <a href="http://www.aduna-software.com/products/developer_products/clustermap/overview.view">Aduna ClusterMap Library</a> (see on the right).
+      </li>
+
+      <li>
         A major speed improvement of the build scripts.
       </li>
 
       <li>
+        <a href="http://project.carrot2.org/webstart"><img class="pic"
+        src="img/carrot2-cluster-map.gif" style="float: right; margin-left: 10px; margin-bottom: 10px" alt="Carrot2 Clustering Engine" /></a>
         A new look for the project website.
       </li>
     </ul>

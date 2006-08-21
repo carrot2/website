@@ -5,7 +5,7 @@
   <xsl:param name="build.time"></xsl:param>
 
   <xsl:param name="carrot2.website.url">http://project.carrot2.org</xsl:param>
-  <xsl:param name="carrot2.webapp.url">http://carrot.cs.put.poznan.pl</xsl:param>
+  <xsl:param name="carrot2.webapp.url">http://demo.carrot2.org</xsl:param>
   <xsl:param name="carrot2.webapp.results.url"><xsl:value-of select="$carrot2.webapp.url" />/demo-stable/search</xsl:param>
   <xsl:param name="carrot2.sf.net.url">http://sf.net/projects/carrot2</xsl:param>
 
