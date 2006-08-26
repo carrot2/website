@@ -6,17 +6,17 @@
 
   <content>
     <p style="margin-bottom: 0ex">
-      <b>Compiled binaries</b> of the Release 1.0 of Carrot<sup>2</sup>:
+      <b>Compiled binaries</b> of the Release 2.0-RC1 of Carrot<sup>2</sup>:
     </p>
 
     <ul>
       <li>
-        <a href="http://prdownloads.sourceforge.net/carrot2/carrot2-remote-demo-1.0.1.zip?download">Carrot<sup>2</sup> search clusteing engine</a> (a WAR web application file)<br />
+        <a href="http://prdownloads.sourceforge.net/carrot2/carrot2-remote-demo-2.0-RC1.zip?download">Carrot<sup>2</sup> search clusteing engine</a> (a WAR web application file)<br />
         Please see the readme.txt file in the distribution archive for installation instructions.
       </li>
 
       <li>
-        <a href="http://prdownloads.sourceforge.net/carrot2/carrot2-local-demo-1.0.1.zip?download">Carrot<sup>2</sup> clustering GUI tool</a><br />
+        <a href="http://prdownloads.sourceforge.net/carrot2/carrot2-local-demo-2.0-RC1.zip?download">Carrot<sup>2</sup> clustering GUI tool</a><br />
         Please see the readme.txt file in the distribution archive for information about running the tool.
       </li>
     </ul>

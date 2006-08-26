@@ -66,7 +66,7 @@ Uploading website to: ${website.upload.host}/${website.website.upload.dir}
          userid="${website.upload.user}"
          password="${website.upload.password}"
          remotedir="${website.website.upload.dir}"
-         depends="no"
+         depends="yes"
          verbose="yes"
          passive="yes">
       <fileset dir="${distribution.dir}"/>
