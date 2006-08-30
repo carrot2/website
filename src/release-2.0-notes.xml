@@ -13,11 +13,12 @@
 
     <ul>
       <li>
-        <carrot2-webapp-link><img class="pic" src="img/carrot2-new-web-interface.gif" style="float:
-        right; margin-left: 10px;" alt="Carrot2 Clustering Engine" /></carrot2-webapp-link> A <b>brand-new search clustering web
-        application</b> (see on the right) featuring a more usable user
-        interface, much faster back-end and better support for adding new data
-        sources.
+        <carrot2-webapp-link><div class="rn-side"><img class="pic"
+        src="img/carrot2-new-web-interface.gif" alt="Carrot2 Clustering Engine"
+        />Brand-new web application</div></carrot2-webapp-link> A <b>brand-new
+        search clustering web application</b> (see on the right) featuring a
+        more usable user interface, much faster back-end and better support for
+        adding new data sources.
       </li>
 
       <li>
@@ -35,8 +36,8 @@
       </li>
 
       <li>
-        <a href="http://project.carrot2.org/webstart"><img class="pic"
-        src="img/carrot2-cluster-map.gif" style="float: right; margin-left: 10px; margin-bottom: 10px" alt="Carrot2 Clustering Engine" /></a>
+        <a href="http://project.carrot2.org/webstart"><div class="rn-side"><img class="pic"
+        src="img/carrot2-cluster-map.gif" alt="Carrot2 Clustering Engine" />New visualization (WebStart)</div></a>
         A new look for the project website.
       </li>
     </ul>

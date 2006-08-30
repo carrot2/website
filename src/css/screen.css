@@ -347,3 +347,10 @@ img.valid {
 div.qa {
   margin-bottom: 4ex;
 }
+
+.rn-side {
+  float: right; 
+  margin-left: 10px; 
+  text-align: right; 
+  text-decoration: underline;
+}
