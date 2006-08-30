@@ -51,5 +51,36 @@
         with any of these, please <a content="support">contact us</a>.
       </div>
     </div>
+    
+    <div class="qa">
+      <div class="q">How can I integrate Carrot<sup>2</sup> with my Web site/ software?</div>
+      <div class="a">
+        <p>
+        Such an integration depends on what existing infrastructure is already available in your project. Carrot<sup>2</sup>
+        requires a <emph>feed</emph> of documents (search results), so typically you'll need a search engine
+        that crawls your site. Such an engine can be indeed local to your Web site (proprietary solutions in intranets, 
+        search engines built on top of <a href="http://lucene.apache.org/nutch/">Nutch</a> or <a href="http://www.htdig.org/">ht://dig</a>),
+        but it can as well be a global search engine with searches restricted to your domain (Google, Yahoo).
+        </p>
+        
+        <p>
+        Once a search engine is available, the integration depends on the technology your site/ software uses
+        for rendering the user interface (or more accurately: for implementing application logic). Software written
+        in Java can use Carrot<sup>2</sup> directly. Sites written in Perl, PHP, .NET and other languages can utilize
+        different forms of data exchange available for Carrot<sup>2</sup>: SOAP, XML-RPC and even plain HTTP POST that
+        accepts and returns data encoded in XML.
+        </p>
+        
+        <p>
+        Note that Carrot<sup>2</sup> integration requires some Java development skills and familiarity with Java
+        development tools (Eclipse, Apache ANT). JUnit tests available in the open source project demonstrate various
+        ways of using Carrot<sup>2</sup>. The project's mailing list can also be of some help if you get stuck someplace.
+        </p>
+        
+        <p>If you'd rather pay for having the integration done quickly and professionally, <a href="http://www.carrot-search.com">Carrot Search</a>
+        provides consulting services (paid approximately 70 USD per hour).
+        </p>
+      </div>
+    </div>
   </content>
 </page>
