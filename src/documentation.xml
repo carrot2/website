@@ -24,7 +24,9 @@
     </ul>
 
     <p>
-      Please also see Carrot<sup>2</sup> core <carrot2-website-link extension="api">API documentation</carrot2-website-link>.
+      Please also see the densely commented <a href="http://svn.sourceforge.net/viewvc/carrot2/trunk/carrot2/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java?view=markup">example
+      Java code</a> and the Carrot<sup>2</sup> core <carrot2-website-link
+      extension="api">API documentation</carrot2-website-link>.
     </p>
   </content>
 </page>

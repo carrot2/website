@@ -16,31 +16,6 @@
     </div>
 
     <div class="qa">
-      <div class="q">I'd like to add Carrot<sup>2</sup> clustering to my existing search engine. Where do I start?</div>
-      <div class="a">
-        <p>
-          You need to create an <a content="architecture">input component</a>
-          that gets search results from your engine and feeds them to
-          Carrot<sup>2</sup>. Please see the <a
-          content="documentation">documentation</a>, API reference and source
-          code of existing input components for useful hints. Then, you can
-          reuse some bits of the Carrot<sup>2</sup> web application (located in
-          the <span class="c2element">carrot2/ applications/
-          carrot2-demo-webapp</span> folder of the source repository) to
-          visualize the clusters.
-        </p>
-
-        <p>
-          Alternatively, you can expose your search results as an <a
-          href="http://opensearch.a9.com/">OpenSearch</a> feed and use
-          Carrot<sup>2</sup>'s built-in OpenSearch input component. In any
-          case, if you need more help, please <a content="support">let us
-          know</a>.
-        </p>
-      </div>
-    </div>
-
-    <div class="qa">
       <div class="q">Can Carrot<sup>2</sup> crawl my website?</div>
       <div class="a">
         No. Carrot<sup>2</sup> can add clustering of search results to an
@@ -64,17 +39,29 @@
         </p>
         
         <p>
-        Once a search engine is available, the integration depends on the technology your site/ software uses
-        for rendering the user interface (or more accurately: for implementing application logic). Software written
-        in Java can use Carrot<sup>2</sup> directly. Sites written in Perl, PHP, .NET and other languages can utilize
-        different forms of data exchange available for Carrot<sup>2</sup>: SOAP, XML-RPC and even plain HTTP POST that
-        accepts and returns data encoded in XML.
+        Once a search engine is available, the integration depends on the
+        technology your site/ software uses for rendering the user interface
+        (or more accurately: for implementing application logic). Software
+        written in Java can use Carrot<sup>2</sup> directly in a way that is
+        shown in the end-to-end <a href="http://svn.sourceforge.net/viewvc/carrot2/trunk/carrot2/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java?view=markup">example
+        code</a> (<a href="http://project.carrot2.org/api/org/carrot2/apiexample/Example.html">JavaDoc</a>).
+        Sites written in Perl, PHP, .NET and other languages can utilize
+        different forms of data exchange available for Carrot<sup>2</sup>:
+        SOAP, XML-RPC and even plain HTTP POST that accepts and returns data
+        encoded in XML. Finally, in some cases you might want to re-use and
+        customize (through XSLT) some bits of Carrot<sup>2</sup>'s <carrot2-webapp-link>web
+        application</carrot2-webapp-link> (located in the <a href="http://svn.sourceforge.net/viewvc/carrot2/trunk/carrot2/applications/carrot2-demo-webapp/"><span
+        class="c2element">carrot2/applications/carrot2-demo-webapp</span></a>
+        folder of the source repository) to e.g. visualize clusters.
         </p>
         
         <p>
-        Note that Carrot<sup>2</sup> integration requires some Java development skills and familiarity with Java
-        development tools (Eclipse, Apache ANT). JUnit tests available in the open source project demonstrate various
-        ways of using Carrot<sup>2</sup>. The project's mailing list can also be of some help if you get stuck someplace.
+        Note that Carrot<sup>2</sup> integration requires some Java development
+        skills and familiarity with Java development tools (Eclipse, Apache
+        ANT). The example code and JUnit tests available in the open source project demonstrate
+        various ways of using Carrot<sup>2</sup>. The project's <a
+        href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers">mailing
+        list</a> can also be of some help if you get stuck someplace.
         </p>
         
         <p>If you'd rather pay for having the integration done quickly and professionally, <a href="http://www.carrot-search.com">Carrot Search</a>
