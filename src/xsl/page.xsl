@@ -5,6 +5,7 @@
   <xsl:import href="border.xsl" />
   <xsl:import href="demos.xsl" />
   <xsl:import href="publications.xsl" />
+  <xsl:import href="tags.xsl" />
 
   <xsl:strip-space elements="*"/>
 

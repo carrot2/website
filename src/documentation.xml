@@ -13,15 +13,21 @@
       please <a content="support">contact us</a>.
     </p>
 
-    <p style="margin-bottom: 0">
-      Carrot<sup>2</sup> developer documentation is available in the following formats:
+    <p style="margin-bottom: 0;">
+      Carrot<sup>2</sup> developer documentation (architecture overview) 
+      is available in the following documents:
     </p>
 
     <ul>
-      <li><carrot2-website-link extension="manual/carrot2-documentation-single.html">One HTML file</carrot2-website-link></li>
-      <li><carrot2-website-link extension="manual/carrot2-documentation.html">HTML files split into sections</carrot2-website-link></li>
-      <li><carrot2-website-link extension="manual/carrot2-documentation.pdf">PDF file</carrot2-website-link></li>
+      <li><carrot2-website-link extension="architecture.html">Short architecture introduction</carrot2-website-link></li>
+      <li><carrot2-website-link extension="architecture-design.html">Design requirements and architecture overview</carrot2-website-link></li>
     </ul>
+
+    <p>The source code includes a step-by-step example of using Carrot<sup>2</sup> API directly in a Java application.
+    Checkout the source code from a Subversion repository from:
+    <tt>https://svn.sourceforge.net/svnroot/carrot2/trunk</tt>
+    and look in the <tt>applications/carrot2-demo-api-example</tt> folder. The <tt>Example</tt> class provides verbose
+    JavaDoc and in-code comments.</p>
 
     <p>
       Please also see the densely commented <a href="http://svn.sourceforge.net/viewvc/carrot2/trunk/carrot2/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java?view=markup">example

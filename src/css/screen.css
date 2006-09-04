@@ -45,6 +45,11 @@ p {
   margin-bottom: 4ex;
 }
 
+span.tt {
+  font-family: monospace;
+  font-size: 90%;
+}
+
 html>body sup {
   line-height: 0%;
   position: relative;
@@ -232,6 +237,25 @@ td#bottom-stroke-bg {
 
 #content ul.compact li {
   padding-bottom: 0ex;
+}
+
+#content ul.morecompact, ol.morecompact {
+  margin: 0;
+  padding: 0;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  padding-left: 3ex;
+  margin-left: 3ex;
+}
+
+ul.morecompact li, ol.morecompact li {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.morecompact li p, ol.morecompact li p {
+    padding: 0px;
+    margin: 0px;
 }
 
 .side {

@@ -62,6 +62,8 @@
         various ways of using Carrot<sup>2</sup>. The project's <a
         href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers">mailing
         list</a> can also be of some help if you get stuck someplace.
+        We have also prepared a step-by-step example of using the Carrot<sup>2</sup> API directly, it is
+        available in the <a href="https://svn.sourceforge.net/svnroot/carrot2/trunk/carrot2/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java">source code repository</a>.
         </p>
         
         <p>If you'd rather pay for having the integration done quickly and professionally, <a href="http://www.carrot-search.com">Carrot Search</a>
