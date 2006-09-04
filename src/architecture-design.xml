@@ -198,7 +198,7 @@
 
     <p>Lifecycle of a component is regulated by a contract in <tt>LocalComponent</tt>
     interface. A state diagram for a lifecycle of a component is presented in
-    <xref linkend="figure:fig.statechart" />. Transitions in the diagram represent callback method 
+    the figure below. Transitions in the diagram represent callback method 
     calls from a process object (an instance of <tt>LocalProcess</tt>
     interface). All method names and the specifics of the contract are explained
     in JavaDoc documentation and are omitted here.</p>
