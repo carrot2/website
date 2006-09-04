@@ -43,15 +43,15 @@
         technology your site/ software uses for rendering the user interface
         (or more accurately: for implementing application logic). Software
         written in Java can use Carrot<sup>2</sup> directly in a way that is
-        shown in the end-to-end <a href="http://svn.sourceforge.net/viewvc/carrot2/trunk/carrot2/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java?view=markup">example
-        code</a> (<a href="http://project.carrot2.org/api/org/carrot2/apiexample/Example.html">JavaDoc</a>).
+        shown in the end-to-end <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java">example
+        code</carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/Example.html">JavaDoc</carrot2-api-link>).
         Sites written in Perl, PHP, .NET and other languages can utilize
         different forms of data exchange available for Carrot<sup>2</sup>:
         SOAP, XML-RPC and even plain HTTP POST that accepts and returns data
         encoded in XML. Finally, in some cases you might want to re-use and
         customize (through XSLT) some bits of Carrot<sup>2</sup>'s <carrot2-webapp-link>web
-        application</carrot2-webapp-link> (located in the <a href="http://svn.sourceforge.net/viewvc/carrot2/trunk/carrot2/applications/carrot2-demo-webapp/"><span
-        class="c2element">carrot2/applications/carrot2-demo-webapp</span></a>
+        application</carrot2-webapp-link> (located in the <carrot2-source-link dir="true" extension="/applications/carrot2-demo-webapp/"><span
+        class="c2element">carrot2/applications/carrot2-demo-webapp</span></carrot2-source-link>
         folder of the source repository) to e.g. visualize clusters.
         </p>
         
@@ -69,6 +69,16 @@
         <p>If you'd rather pay for having the integration done quickly and professionally, <a href="http://www.carrot-search.com">Carrot Search</a>
         provides consulting services (paid approximately 70 USD per hour).
         </p>
+      </div>
+    </div>
+    
+    <div class="qa">
+      <div class="q">How can I integrate Carrot<sup>2</sup> with my <a href="http://lucene.apache.org/">Lucene</a>-based application?</div>
+      <div class="a">
+        You can use Carrot<sup>2</sup>'s built-in <carrot2-api-link
+        extension="/org/carrot2/input/lucene/package-summary.html">Lucene input
+        component</carrot2-api-link> as shown in this well-commented
+        <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/LuceneExample.java">example code</carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/LuceneExample.html">JavaDoc</carrot2-api-link>).
       </div>
     </div>
   </content>

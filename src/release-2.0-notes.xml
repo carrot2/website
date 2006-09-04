@@ -62,6 +62,11 @@
         Added support for incremental document pushing to the <span
         class="c2element">carrot2-opensearch-lucene</span> component.
       </li>
+
+      <li>
+        Added a simple GUI for configuring a Lucene index as a data source for
+        the standalone GUI clustering tool.
+      </li>
     </ul>
   </content>
 </page>
