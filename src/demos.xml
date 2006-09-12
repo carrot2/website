@@ -27,5 +27,10 @@
       Search plugin for Mozilla and Firefox</a> that will send queries directly from 
       your browser to the Carrot<sup>2</sup> on-line search clustering engine. <a href="javascript:addEngine()">Get the plugin!</a>
     </p>
+    
+    <p style="clear: both">
+      You can also add a Carrot<sup>2</sup>-powered <a content="searchbox">search box</a> 
+      to your site.
+    </p>
   </content>
 </page>
