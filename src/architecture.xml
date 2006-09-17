@@ -29,6 +29,7 @@
     <ul class="compact">
       <li>Yahoo! search engine (using <a href="http://developer.yahoo.com/search/web/V1/webSearch.html">Yahoo Web Seach API</a>)</li>
       <li>Google search engine (using <a href="http://www.google.com/apis/">Google API</a>)</li>
+      <li>MSN search engine (using <a href="http://msdn.microsoft.com/live/gettingstarted/searchstart/default.aspx">MSN Search Web Services</a>)</li>
       <li><a href="http://opensearch.a9.com/">OpenSearch</a>-compliant search engine</li>
       <li><a href="http://lucene.apache.org/">Lucene</a> index (requires access to the index files)</li>
       <li>A local XML file</li>

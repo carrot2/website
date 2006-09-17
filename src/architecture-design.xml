@@ -16,7 +16,7 @@
          clustered. Each snippet consists of a unique URL, a title and                               
          a fragment of text from the content of a document. Example input                            
          components available in Carrot<sup>2</sup> provide bridges to                               
-         existing major search engines (Yahoo, Google), open source                                  
+         existing major search engines (Yahoo, Google, MSN Search), open source                                  
          search engines (Lucene), but also adapt XMLs (such as RSS or OpenSearch).                   
          As a final resort, you can try to write your own input component                            
          using the examples available in the project.</p></li>                                           

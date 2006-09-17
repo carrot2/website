@@ -40,6 +40,12 @@
         src="img/carrot2-cluster-map.gif" alt="Carrot2 Clustering Engine" />New visualization (WebStart)</div></a>
         A new look for the project website.
       </li>
+
+      <li>
+        Added an input component (<span
+        class="c2element">carrot2-input-msnapi</span>) for fetching search
+        results from the MSN Search Engine.
+      </li>
     </ul>
 
     <p style="margin-bottom: 0">
