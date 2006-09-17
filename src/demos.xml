@@ -15,10 +15,10 @@
     </p>
 
     <p style="clear: both">
-      <carrot2-website-link extension="webstart"><img style="float: left; margin-right: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-webstart.gif" alt="Carrot2 GUI clustering tool" />
-      Standalone GUI clustering tool</carrot2-website-link> for playing with Carrot<sup>2</sup> clustering
+      <carrot2-webstart-link><img style="float: left; margin-right: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-webstart.gif" alt="Carrot2 GUI clustering tool" />
+      Standalone GUI clustering tool</carrot2-webstart-link> for playing with Carrot<sup>2</sup> clustering
       algorithms. It will let you modify parameters of the
-      algorithms and watch the effects in real-time. <carrot2-website-link extension="webstart">Launch it!</carrot2-website-link>
+      algorithms and watch the effects in real-time. <carrot2-webstart-link>Launch it!</carrot2-webstart-link>
       (requires <a href="http://java.sun.com/products/javawebstart/">Java Web Start</a>)
     </p>
 

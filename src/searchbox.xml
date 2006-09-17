@@ -16,7 +16,7 @@
     </div>
 
     <p>
-      Add a Carrot<sup>2</sup> searchbox to your Web site. Copy and paste the HTML code below
+      Add a <b>Carrot<sup>2</sup> searchbox</b> to your Web site. Copy and paste the HTML code below
       to your Web site's source code. Feel free to modify colors and visual appearance as needed, but
       please keep the Carrot<sup>2</sup> logo and link visible. The search box looks as shown below:
     </p>
@@ -33,16 +33,15 @@
         </form>
     </p>
 
-    <textarea style="margin-top: 10px; width: 100%; font-size: 11px; height: 200px;" readonly="true"><![CDATA[
-        <form method="GET" action="http://demo.carrot2.org/demo-stable/search">
-        <table cellspacing="0" cellpadding="0" style="padding: 4 2 4 4;">
-               <tr>
-               	<td valign="middle"><a href="http://www.carrot2.org"><img border="0" src="http://project.carrot2.org/img/carrot2.gif" width="22" height="21" alt="Carrot2" /></a></td>
-                <td valign="middle" style="padding-right: 2px; padding-left: 4px;"><input type="text" name="q" style="border: 1px solid gray; background-color: #f0f0a0;" /></td>
-                <td valign="middle"><input type="submit" value="Search" style="border: 1px solid gray;" /></td>
-               </tr>
-        </table>
-        </form>
+    <textarea style="margin-top: 20px; width: 100%; font-size: 11px; height: 200px;" readonly="true"><![CDATA[<form method="GET" action="http://demo.carrot2.org/demo-stable/search">
+  <table cellspacing="0" cellpadding="0" style="padding: 4 2 4 4;">
+    <tr>
+      <td valign="middle"><a href="http://www.carrot2.org"><img border="0" src="http://project.carrot2.org/img/carrot2.gif" width="22" height="21" alt="Carrot2" /></a></td>
+      <td valign="middle" style="padding-right: 2px; padding-left: 4px;"><input type="text" name="q" style="border: 1px solid gray; background-color: #f0f0a0;" /></td>
+      <td valign="middle"><input type="submit" value="Search" style="border: 1px solid gray;" /></td>
+    </tr>
+  </table>
+</form>
     ]]></textarea>
     </content>
 </page>
