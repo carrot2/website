@@ -81,5 +81,74 @@
         <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/LuceneExample.java">example code</carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/LuceneExample.html">JavaDoc</carrot2-api-link>).
       </div>
     </div>
+    
+    <div class="qa">
+      <div class="q"><a style="color: black" name="running-in-eclipse">How can I run Carrot<sup>2</sup> demo browser from Eclipse?</a></div>
+      <div class="a">
+        To run Carrot<sup>2</sup> Demo Browser directly from Eclipse, please follow these steps:
+
+        <ol>
+          <li>
+            Check out Carrot<sup>2</sup> source code from the SVN repository:
+
+            <div class="cmd-line">
+              svn co https://svn.sourceforge.net/svnroot/carrot2/trunk carrot2
+            </div>
+          </li>
+
+          <li>
+            <img src="img\eclipse-import.gif" style="float: right; margin-bottom: 10px" class="pic" />
+            Import all Carrot2<sup>2</sup> projects into your workspace:
+
+            <ol>
+              <li>
+                From the Package Explorer's context menu choose <span class="gui-label">Import...</span>
+              </li>
+
+              <li>
+                In the first step of the Import wizard, choose <span
+                class="gui-label">General -> Existing projects into
+                Workspace</span> and click <span class="gui-label">Next</span>.
+              </li>
+
+              <li>
+                In the next step of the wizard, in the <span
+                class="gui-label">Select root directory</span> field provide
+                the path to your local Carrot<sup>2</sup> checkout and click
+                <span class="gui-label">Finish</span>.
+              </li>
+            </ol>
+          </li>
+
+          <li style="clear: both">
+            <img src="img\eclipse-classpath-variables.gif" style="float: right; margin-bottom: 10px" class="pic" />
+
+            The Eclipse compile process will fail because of undefined
+            classpath variables: <tt>ANT_HOME</tt> and
+            <tt>CARROT2_CHECKOUT_BASE</tt>. To define these variables open the
+            Preferences window (<span class="gui-label">Window ->
+            Preferences...</span>) and then go to (<span class="gui-label">Java
+            -> Build Path -> Classpath variables</span>). Make the
+            <tt>ANT_HOME</tt> variable point to your local Ant installation and
+            <tt>CARROT2_CHECKOUT_BASE</tt> to your local Carrot<sup>2</sup>
+            repository checkout.
+          </li>
+
+          <li style="clear: both">
+            Clean all projects (<span class="gui-label">Project ->
+            Clean...</span>) and let Eclipse compile everything again, this
+            time without errors.
+          </li>
+
+          <li>
+            <img src="img\eclipse-launch.gif" style="float: right; margin-bottom: 10px" class="pic"
+            /> Run Carrot<sup>2</sup> browser using the <span
+            class="gui-label">Run...</span> toolbar icon (Eclipse should have
+            automatically created the appropriate launch entry during project
+            import).
+          </li>
+        </ol>
+      </div>
+    </div>
   </content>
 </page>

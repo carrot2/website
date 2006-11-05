@@ -378,3 +378,16 @@ div.qa {
   text-align: right; 
   text-decoration: underline;
 }
+
+.cmd-line {
+  border: 1px solid #c0c0c0;
+  background-color: #f0f0f0;
+  padding: 0.5ex;
+  font-family: Courier, monospace;
+  margin: 2ex 0;
+}
+
+.gui-label {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+}
