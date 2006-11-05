@@ -97,7 +97,7 @@
           </li>
 
           <li>
-            <img src="img\eclipse-import.gif" style="float: right; margin-bottom: 10px" class="pic" />
+            <img src="img/eclipse-import.gif" style="float: right; margin-bottom: 10px" class="pic" />
             Import all Carrot2<sup>2</sup> projects into your workspace:
 
             <ol>
@@ -121,7 +121,7 @@
           </li>
 
           <li style="clear: both">
-            <img src="img\eclipse-classpath-variables.gif" style="float: right; margin-bottom: 10px" class="pic" />
+            <img src="img/eclipse-classpath-variables.gif" style="float: right; margin-bottom: 10px" class="pic" />
 
             The Eclipse compile process will fail because of undefined
             classpath variables: <tt>ANT_HOME</tt> and
@@ -141,7 +141,7 @@
           </li>
 
           <li>
-            <img src="img\eclipse-launch.gif" style="float: right; margin-bottom: 10px" class="pic"
+            <img src="img/eclipse-launch.gif" style="float: right; margin-bottom: 10px" class="pic"
             /> Run Carrot<sup>2</sup> browser using the <span
             class="gui-label">Run...</span> toolbar icon (Eclipse should have
             automatically created the appropriate launch entry during project
