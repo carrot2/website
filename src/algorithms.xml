@@ -88,7 +88,7 @@
         <td>0.10</td>
         <td>0.17</td>
         <td>yes</td>
-        <td>multilingual clustering, ontologies, synonyms, advanced tuning, scalability (5000 snippets in 1.7s*)</td>
+        <td>multilingual clustering, synonyms, advanced tuning, scalability (5000 snippets in 1.7s*)</td>
         <td><carrot-search-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=200&amp;alg=Lingo+3G&amp;opts=h">london</carrot-search-webapp-results-link></td>
       </tr>
     </table>

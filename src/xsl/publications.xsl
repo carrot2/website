@@ -58,6 +58,9 @@
       <span class="title"><xsl:value-of select="title" /></span>.
       <span class="where"><xsl:value-of select="where" /></span>
       <span class="links">
+        <xsl:if test="@bibtex">
+          <a href="{@bibtex}"><xsl:call-template name="bibtex" /></a>
+        </xsl:if>
         <xsl:if test="@thesis">
           <a href="{@thesis}">Thesis <xsl:call-template name="pdf" /></a>
         </xsl:if>

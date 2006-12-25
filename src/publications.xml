@@ -101,6 +101,15 @@
     <publication-group>
       <title>Theses</title>
 
+      <thesis thesis="http://www.cs.put.poznan.pl/dweiss/site/publications/download/dweiss-phd-thesis.pdf"
+              bibtex="http://www.cs.put.poznan.pl/dweiss/site/publications/bibtex/dweiss-phd-thesis.bib">
+        <authors>Dawid Weiss</authors>
+        <title>Descriptive Clustering as a Method for Exploring Text Collections</title>
+        <where>
+          PhD thesis, Poznań University of Technology, Poznań, Poland, 2006
+        </where>
+      </thesis>
+
       <thesis thesis-local="osinski04-dimensionality.pdf">
         <authors>Stanisław Osiński</authors>
         <title>Dimensionality Reduction Techniques for Search Results Clustering</title>
