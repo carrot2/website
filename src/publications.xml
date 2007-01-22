@@ -166,5 +166,17 @@
         </where>
       </thesis>
     </publication-group>
+
+    <publication-group>
+      <title>Presentations</title>
+
+      <presentation presentation-local="carrot2-dresden-2007.pdf">
+        <authors>Stanisław Osiński and Dawid Weiss</authors>
+        <title>Clustering Search Results with Carrot<sup>2</sup></title>
+        <where>
+          Presentation for the Biotec research group at the Technical University of Dresden
+        </where>
+      </presentation>
+    </publication-group>
   </content>
 </page>

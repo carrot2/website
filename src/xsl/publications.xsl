@@ -5,7 +5,7 @@
     <h2><xsl:value-of select="title" /></h2>
 
     <ol class="publication-list">
-      <xsl:apply-templates select="paper|poster|thesis|custom" />
+      <xsl:apply-templates select="paper|poster|thesis|custom|presentation" />
     </ol>
   </xsl:template>
 
@@ -66,6 +66,23 @@
         </xsl:if>
         <xsl:if test="@thesis-local">
           <a href="{$carrot2.website.url}/publications/{@thesis-local}">Thesis <xsl:call-template name="pdf" /></a>
+        </xsl:if>
+        <xsl:apply-templates select="link" />
+      </span>
+    </li>
+  </xsl:template>
+
+  <xsl:template match="presentation">
+    <li>
+      <span class="authors"><xsl:value-of select="authors" /></span>:
+      <span class="title"><xsl:value-of select="title" /></span>.
+      <span class="where"><xsl:value-of select="where" /></span>
+      <span class="links">
+        <xsl:if test="@presentation">
+          <a href="{@presentation}">Thesis <xsl:call-template name="pdf" /></a>
+        </xsl:if>
+        <xsl:if test="@presentation-local">
+          <a href="{$carrot2.website.url}/publications/{@presentation-local}">Presentation <xsl:call-template name="pdf" /></a>
         </xsl:if>
         <xsl:apply-templates select="link" />
       </span>
