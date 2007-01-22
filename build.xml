@@ -26,7 +26,7 @@
       <xslt basedir="${website.src}" destdir="${distribution.dir}" style="${stylesheet}">
           <include name="*.xml" />
 
-          <outputproperty name="method" value="xhtml" />
+          <outputproperty name="method" value="xml" />
           <outputproperty name="standalone" value="yes"/>
           <outputproperty name="encoding" value="UTF-8"/>
           <outputproperty name="indent" value="no" />
