@@ -17,8 +17,8 @@
 
     <p>
       If you would like to file a bug or a feature request, please use the <a
-      href="https://sourceforge.net/tracker/?group_id=85379">Carrot<sup>2</sup>
-      bug tracker</a>. Finally, if you need consultancy services in the area of
+      href="http://issues.carrot2.org">Carrot<sup>2</sup>
+      bug tracker</a> powered by <a href="http://www.atlassian.com/c/NPOS/10160">Atlassian JIRA</a>. Finally, if you need consultancy services in the area of
       document clustering, text mining and the Carrot<sup>2</sup> framework, please
       contact the <a content="spin-off">Carrot<sup>2</sup> spin-off company</a>.
     </p>
