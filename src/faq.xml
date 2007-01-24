@@ -150,5 +150,62 @@
         </ol>
       </div>
     </div>
+    
+    <div class="qa" style="clear: both">
+      <div class="q"><a style="color: black" name="lucene-in-demo-browser">How do I configure the Lucene input in Carrot<sup>2</sup> Tuning Browser?</a></div>
+      <div class="a">
+        To feed the Carrot<sup>2</sup> Demo Browser directly from a local Lucene index follow these steps:
+
+        <ol>
+          <li>
+            Run the Carrot<sup>2</sup> Demo Browser.
+          </li>
+
+          <li>
+            In the <span class="gui-label">Process</span> combo box select
+            <span class="gui-label">Lucene Index -- Lingo Classic
+            Clusterer</span>.
+          </li>
+
+          <li>
+            <img src="img/lucene-index-settings.png" style="float: right; margin-bottom: 10px" class="pic" />
+            Click the <span class="gui-label">Settings</span> button and then
+            the <span class="gui-label">Edit</span> button in the <span
+            class="gui-label">Lucene index location</span> section.
+
+            <ol>
+              <li>
+                In the file browser, provide the path to your Lucene
+                index directory. A dialog for configuring the index will appear.
+              </li>
+
+              <li>
+                In the <span class="gui-label">Search fields</span> section,
+                select the Lucene fields to be searched (hold down Ctrl key for
+                multiple selections).
+              </li>
+
+              <li>
+                In the <span class="gui-label">Results fields</span> section,
+                select which Lucene fields should be mapped to the URL,
+                document title and document snippet.
+              </li>
+
+              <li>
+                Finally, in the <span class="gui-label">Analyzer</span>
+                section, choose the analyzer to be used. If you would like your
+                own analyzer to appear in the combo box, please add a JAR file
+                containing this analyzer to the Tuning Browser's class path.
+              </li>
+
+              <li>
+                Click the <span class="gui-label">OK</span> buttons in the
+                index configuration and process configuration dialogs.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </div>
   </content>
 </page>
