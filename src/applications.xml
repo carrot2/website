@@ -48,10 +48,10 @@
     </p>
 
     <p style="clear: both">
-      <a href="http://www.xdefine.com/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/xdefine.gif" alt="xdefine" title="xdefine" />
-      xDefine</a> Social Networking website uses Carrot<sup>2</sup> to provide clustered
-      search results to the xDefine community.
+      <a href="http://www.sidekiq.com/"><img style="float: left; margin-right:
+      15px" class="pic app-pic" src="img/sidekiq.gif" alt="SideKiq" title="SideKiq" />
+      SideKiq</a> SideKiq can send queries to many different search engines and 
+      Carrot<sup>2</sup> is one of SideKiq's search engines showing clustered results.
     </p>
   </content>
 </page>
