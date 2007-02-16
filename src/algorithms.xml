@@ -84,11 +84,11 @@
       <tr>
         <td>Lingo3G***</td>
         <td>Stanisław Osiński<br />(Carrot Search)</td>
+        <td>0.03</td>
         <td>0.06</td>
-        <td>0.10</td>
-        <td>0.17</td>
+        <td>0.13</td>
         <td>yes</td>
-        <td>multilingual clustering, synonyms, advanced tuning, scalability (5000 snippets in 1.7s*)</td>
+        <td>multilingual clustering, synonyms, advanced tuning, scalability (5000 snippets in 1.3s*)</td>
         <td><carrot-search-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=200&amp;alg=Lingo+3G&amp;opts=h">london</carrot-search-webapp-results-link></td>
       </tr>
     </table>
