@@ -193,9 +193,7 @@
 
               <li>
                 Finally, in the <span class="gui-label">Analyzer</span>
-                section, choose the analyzer to be used. If you would like your
-                own analyzer to appear in the combo box, please add a JAR file
-                containing this analyzer to the Tuning Browser's class path.
+                section, choose the analyzer to be used.
               </li>
 
               <li>
