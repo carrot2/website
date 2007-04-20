@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="source">
+  <heading>Source code</heading>
+
+  <content>
+    <p>
+      <b>Complete source code</b> of Carrot<sup>2</sup> is available from our
+      <a href="http://sourceforge.net/svn/?group_id=85379">SourceForge Subversion respository</a>.
+      For more instructions on how to build the code, see the <a content="faq" anchor="compiling">FAQ</a> section.
+      Finally, Please make sure you read and comply with the <a content="license">license</a> terms.
+    </p>
+  </content>
+</page>

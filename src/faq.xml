@@ -26,6 +26,51 @@
         with any of these, please <a content="support">contact us</a>.
       </div>
     </div>
+
+    <div class="qa">
+      <div class="q"><a style="color: black" name="compiling">How do I compile Carrot<sup>2</sup> source code?</a></div>
+      <div class="a">
+        <ol>
+          <li>
+            In order to compile Carrot<sup>2</sup> you will need <a
+            href="http://java.sun.com/javase/downloads/index.jsp">Java Software
+            Developer Kit</a> in version 1.4.2 or newer and <a
+            href="http://ant.apache.org/">Apache Ant</a>.
+          </li>
+          <li>
+            Check out Carrot<sup>2</sup> source code from the SVN repository:
+
+            <div class="cmd-line">
+              svn co https://svn.sourceforge.net/svnroot/carrot2/trunk carrot2
+            </div>
+          </li>
+
+          <li>
+            To build all Carrot<sup>2</sup> components, go to the
+            <tt>trunk/carrot2</tt> directory and run:
+
+            <div class="cmd-line">
+              ant build
+            </div>
+          </li>
+
+          <li>
+            To build only one application, go to its directory (e.g.
+            <tt>trunk/carrot2/applications/carrot2-demo-dcs</tt>) run Ant with
+            the default target:
+
+            <div class="cmd-line">
+              ant build
+            </div>
+
+            In the application's <tt>tmp/dist</tt> directory you'll find the
+            compiled application. Please refer to the application's specific
+            <tt>readme.txt</tt> files for instructions on how to run the
+            application.
+          </li>
+        </ol>
+      </div>
+    </div>
     
     <div class="qa">
       <div class="q">How can I integrate Carrot<sup>2</sup> with my Web site/ software?</div>

@@ -108,15 +108,15 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">documentation</xsl:with-param>
-                    <xsl:with-param name="text">Documentation</xsl:with-param>
-                    <xsl:with-param name="section">documentation</xsl:with-param>
+                    <xsl:with-param name="url">source-code</xsl:with-param>
+                    <xsl:with-param name="text">Source Code</xsl:with-param>
+                    <xsl:with-param name="section">source</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">publications</xsl:with-param>
-                    <xsl:with-param name="text">Publications</xsl:with-param>
-                    <xsl:with-param name="section">publications</xsl:with-param>
+                    <xsl:with-param name="url">documentation</xsl:with-param>
+                    <xsl:with-param name="text">Documentation</xsl:with-param>
+                    <xsl:with-param name="section">documentation</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
@@ -137,6 +137,12 @@
                     <xsl:with-param name="url">algorithms</xsl:with-param>
                     <xsl:with-param name="text">Algorithms</xsl:with-param>
                     <xsl:with-param name="section">algorithms</xsl:with-param>
+                  </xsl:call-template>
+
+                  <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">publications</xsl:with-param>
+                    <xsl:with-param name="text">Publications</xsl:with-param>
+                    <xsl:with-param name="section">publications</xsl:with-param>
                   </xsl:call-template>
                   </div>
 
@@ -216,7 +222,14 @@
   </xsl:template>
 
   <xsl:template match="a[@content]">
-    <a href="{@content}.{$content-extension}"><xsl:apply-templates /></a>
+    <xsl:choose>
+      <xsl:when test="@anchor">
+        <a href="{@content}.{$content-extension}#{@anchor}"><xsl:apply-templates /></a>
+      </xsl:when>
+      <xsl:otherwise>
+        <a href="{@content}.{$content-extension}"><xsl:apply-templates /></a>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="carrot2-webapp-link">
