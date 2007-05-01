@@ -15,4 +15,6 @@
     <i><xsl:value-of select="//*[@id = $linkend]/@xreflabel" /></i>
   </xsl:template>
 
+  <!-- Carrot2 -->
+  <xsl:template match="c2">Carrot<sup>2</sup></xsl:template>
 </xsl:stylesheet>

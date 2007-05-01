@@ -370,6 +370,14 @@ img.valid {
 
 div.qa {
   margin-bottom: 4ex;
+  clear: both;
+}
+
+div.qa-index {
+  margin-bottom: 6ex;
+}
+
+div.qa-index a {
 }
 
 .rn-side {

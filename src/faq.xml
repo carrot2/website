@@ -5,31 +5,32 @@
   <heading>FAQ</heading>
 
   <content>
-    <div class="qa">
-      <div class="q">Can I use Carrot<sup>2</sup> in a commercial project?</div>
-      <div class="a">
+    <faqs>
+    <faq id="commercial">
+      <question>Can I use Carrot<sup>2</sup> in a commercial project?</question>
+      <answer>
         Yes. The only requirement is that you properly acknowledge the use of
         Carrot<sup>2</sup> (on the project's website and documentation) and let
         us know about your project. Please also remember to read the <a
         content="license">license</a>.
-      </div>
-    </div>
+      </answer>
+    </faq>
 
-    <div class="qa">
-      <div class="q">Can Carrot<sup>2</sup> crawl my website?</div>
-      <div class="a">
+    <faq id="crawling">
+      <question>Can Carrot<sup>2</sup> crawl my website?</question>
+      <answer>
         No. Carrot<sup>2</sup> can add clustering of search results to an
         existing search engine. You can use an Open Source project called <a
         href="http://www.nutch.org">Nutch</a> to crawl your website. Nutch has
         a Carrot<sup>2</sup>-based search clustering plugin, so you'll get all
         crawling, searching and clustering in one piece. If you need help
         with any of these, please <a content="support">contact us</a>.
-      </div>
-    </div>
+      </answer>
+    </faq>
 
-    <div class="qa">
-      <div class="q"><a style="color: black" name="compiling">How do I compile Carrot<sup>2</sup> source code?</a></div>
-      <div class="a">
+    <faq id="compiling">
+      <question>How do I compile Carrot<sup>2</sup> source code?</question>
+      <answer>
         <ol>
           <li>
             In order to compile Carrot<sup>2</sup> you will need <a
@@ -69,12 +70,12 @@
             application.
           </li>
         </ol>
-      </div>
-    </div>
+      </answer>
+    </faq>
     
-    <div class="qa">
-      <div class="q">How can I integrate Carrot<sup>2</sup> with my Web site/ software?</div>
-      <div class="a">
+    <faq id="integration">
+      <question>How can I integrate Carrot<sup>2</sup> with my Web site/ software?</question>
+      <answer>
         <p>
         Such an integration depends on what existing infrastructure is already available in your project. Carrot<sup>2</sup>
         requires a <emph>feed</emph> of documents (search results), so typically you'll need a search engine
@@ -90,10 +91,9 @@
         written in Java can use Carrot<sup>2</sup> directly in a way that is
         shown in the end-to-end <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java">example
         code</carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/Example.html">JavaDoc</carrot2-api-link>).
-        Sites written in Perl, PHP, .NET and other languages can utilize
-        different forms of data exchange available for Carrot<sup>2</sup>:
-        SOAP, XML-RPC and even plain HTTP POST that accepts and returns data
-        encoded in XML. Finally, in some cases you might want to re-use and
+        Sites written in Perl, PHP, .NET and other languages can use the
+        <c2 /> Document Clustering Server, for more details see the <a href="#non-java-integration">dedicated FAQ</a>.
+        Finally, in some cases you might want to re-use and
         customize (through XSLT) some bits of Carrot<sup>2</sup>'s <carrot2-webapp-link>web
         application</carrot2-webapp-link> (located in the <carrot2-source-link dir="true" extension="/applications/carrot2-demo-webapp/"><span
         class="c2element">carrot2/applications/carrot2-demo-webapp</span></carrot2-source-link>
@@ -114,22 +114,47 @@
         <p>If you'd rather pay for having the integration done quickly and professionally, <a href="http://www.carrot-search.com">Carrot Search</a>
         provides consulting services (paid approximately 60 EUR per hour).
         </p>
-      </div>
-    </div>
+      </answer>
+    </faq>
     
-    <div class="qa">
-      <div class="q">How can I integrate Carrot<sup>2</sup> with my <a href="http://lucene.apache.org/">Lucene</a>-based application?</div>
-      <div class="a">
+    <faq id="non-java-integration">
+      <question>How can I integrate Carrot<sup>2</sup> with non-Java software?</question>
+      <answer>
+        <p>
+        Although <c2 /> does not have native ports on non-Java platforms, such
+        as .NET, PHP, Ruby, Perl etc., it can be easily integrated with them
+        using the <c2 /> Document Clustering Server (DCS). The DCS exposes <c2
+        /> clustering as an HTTP/REST service. Essentially, you make an
+        HTTP/POST request with an XML containing the documents you want to have
+        clustered and the DCS responds with an XML containing the clusters
+        created by Carrot2. For quick integration with Ruby, A JSON output
+        format is also available. Finally, for batch processing, a simple
+        command-line application is provided.
+        </p>
+
+        <p>
+        As the DCS is still at the development phase, you'll need to <a
+        href="#compiling">check out the source code and build it</a> on your
+        own. The source code of the DCS is located in the <tt>trunk/ carrot2/
+        applications/ carrot2-demo-dcs</tt> directory. See the <tt>readme.txt</tt> located
+        in that directory for further instructions.
+        </p>
+      </answer>
+    </faq>
+    
+    <faq id="lucene-integration">
+      <question>How can I integrate Carrot<sup>2</sup> with my Lucene-based application?</question>
+      <answer>
         You can use Carrot<sup>2</sup>'s built-in <carrot2-api-link
         extension="/org/carrot2/input/lucene/package-summary.html">Lucene input
         component</carrot2-api-link> as shown in this well-commented
         <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/LuceneExample.java">example code</carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/LuceneExample.html">JavaDoc</carrot2-api-link>).
-      </div>
-    </div>
+      </answer>
+    </faq>
     
-    <div class="qa">
-      <div class="q"><a style="color: black" name="running-in-eclipse">How can I run Carrot<sup>2</sup> demo browser from Eclipse?</a></div>
-      <div class="a">
+    <faq id="running-in-eclipse">
+      <question>How can I run Carrot<sup>2</sup> demo browser from Eclipse?</question>
+      <answer>
         To run Carrot<sup>2</sup> Demo Browser directly from Eclipse, please follow these steps:
 
         <ol>
@@ -193,12 +218,12 @@
             import).
           </li>
         </ol>
-      </div>
-    </div>
+      </answer>
+    </faq>
     
-    <div class="qa" style="clear: both">
-      <div class="q"><a style="color: black" name="lucene-in-demo-browser">How do I configure the Lucene input in Carrot<sup>2</sup> Tuning Browser?</a></div>
-      <div class="a">
+    <faq id="lucene-in-demo-browser">
+      <question>How do I configure the Lucene input in Carrot<sup>2</sup> Tuning Browser?</question>
+      <answer>
         To feed the Carrot<sup>2</sup> Demo Browser directly from a local Lucene index follow these steps:
 
         <ol>
@@ -248,7 +273,8 @@
             </ol>
           </li>
         </ol>
-      </div>
-    </div>
+      </answer>
+    </faq>
+    </faqs>
   </content>
 </page>
