@@ -16,7 +16,7 @@ our powered-by logos:
 
       <pre class="cmd-line">&lt;a href="http://www.carrot2.org"
    title="Carrot2 Search Results Clustering Engine">
-&lt;img src="http://project.carrot2.org/img/c2-powered-small.gif" 
+&lt;img border="0" src="http://project.carrot2.org/img/c2-powered-small.gif" 
      alt="Powered by Carrot2 Search Results Clustering Engine" />&lt;/a></pre>
     </p>
 
@@ -25,7 +25,7 @@ our powered-by logos:
 
       <pre class="cmd-line">&lt;a href="http://www.carrot2.org"
    title="Carrot2 Search Results Clustering Engine">
-&lt;img src="http://project.carrot2.org/img/c2-powered-big.gif" 
+&lt;img border="0" src="http://project.carrot2.org/img/c2-powered-big.gif" 
      alt="Powered by Carrot2 Search Results Clustering Engine" />&lt;/a></pre>
     </p>
   </content>
