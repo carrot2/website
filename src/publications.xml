@@ -33,7 +33,7 @@
         <link href="http://www.springerlink.com/(kxz35u45ti1ggx55bnplxtin)/app/home/contribution.asp?referrer=parent&amp;backto=issue,16,69;journal,12,3805;linkingpublicationresults,1:105633,1">Springer (publisher)</link>
       </paper>
 
-      <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/journals/expert/OsinskiW05">
+      <paper id="ieee-lingo" bibtex="http://dblp.uni-trier.de/rec/bibtex/journals/expert/OsinskiW05">
         <authors>Stanisław Osiński, Dawid Weiss</authors>
         <title>A Concept-Driven Algorithm for Clustering Search Results</title>
         <where>IEEE Intelligent Systems, May/June, 3 (vol. 20), 2005, pp. 48—54.</where>
@@ -86,7 +86,7 @@
         </where>
       </poster>
 
-      <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/awic/StefanowskiW03"
+      <paper id="lang-properties" bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/awic/StefanowskiW03"
              paper-local="stefanowski-weiss-awic-2003.pdf">
         <authors>Jerzy Stefanowski, Dawid Weiss</authors>
         <title>Carrot2 and Language Properties in Web Search Results Clustering</title>
@@ -118,7 +118,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="schockaert-2004-vaagmieren.pdf">
+      <thesis id="thesis-ants" thesis-local="schockaert-2004-vaagmieren.pdf">
         <authors>Steven Schockaert</authors>
         <title>(in Dutch) Het Clusteren van Zoekresultaten met behulp van Vaagmieren (Clustering of Search Results using Fuzzy Ants)</title>
         <where>
@@ -126,7 +126,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="chi-lang-ngo-2004.pdf">
+      <thesis id="thesis-roughkm" thesis-local="chi-lang-ngo-2004.pdf">
         <authors>Ngo Chi Lang</authors>
         <title>A tolerance rough set approach to clustering web search results</title>
         <where>
@@ -142,7 +142,7 @@
         </where>
       </thesis>
 
-      <thesis thesis-local="osinski-2003-lingo.pdf">
+      <thesis id="thesis-lingo" thesis-local="osinski-2003-lingo.pdf">
         <authors>Stanisław Osiński</authors>
         <title>An Algorithm for Clustering of Web Search Results</title>
         <where>

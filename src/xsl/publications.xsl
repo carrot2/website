@@ -16,6 +16,7 @@
   </xsl:template>
 
   <xsl:template match="paper">
+    <xsl:if test="@id"><a name="{@id}" /></xsl:if>
     <li>
       <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
@@ -39,6 +40,7 @@
   </xsl:template>
 
   <xsl:template match="poster">
+    <xsl:if test="@id"><a name="{@id}" /></xsl:if>
     <li>
       <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
@@ -53,6 +55,7 @@
   </xsl:template>
 
   <xsl:template match="thesis">
+    <xsl:if test="@id"><a name="{@id}" /></xsl:if>
     <li>
       <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
@@ -73,6 +76,7 @@
   </xsl:template>
 
   <xsl:template match="presentation">
+    <xsl:if test="@id"><a name="{@id}" /></xsl:if>
     <li>
       <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
