@@ -16,9 +16,15 @@
   </xsl:template>
 
   <xsl:template match="paper">
-    <xsl:if test="@id"><a name="{@id}" /></xsl:if>
     <li>
-      <span class="authors"><xsl:value-of select="authors" /></span>:
+      <xsl:choose>
+        <xsl:when test="@id">
+          <a class="name" name="{@id}"><span class="authors"><xsl:value-of select="authors" /></span></a>:
+        </xsl:when>
+        <xsl:otherwise>
+          <span class="authors"><xsl:value-of select="authors" /></span>
+        </xsl:otherwise>
+      </xsl:choose>
       <span class="title"><xsl:value-of select="title" /></span>.
       <span class="where"><xsl:value-of select="where" /></span>
       <span class="links">
@@ -40,8 +46,15 @@
   </xsl:template>
 
   <xsl:template match="poster">
-    <xsl:if test="@id"><a name="{@id}" /></xsl:if>
     <li>
+      <xsl:choose>
+        <xsl:when test="@id">
+          <a class="name" name="{@id}"><span class="authors"><xsl:value-of select="authors" /></span></a>:
+        </xsl:when>
+        <xsl:otherwise>
+          <span class="authors"><xsl:value-of select="authors" /></span>
+        </xsl:otherwise>
+      </xsl:choose>
       <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
       <span class="where"><xsl:value-of select="where" /></span>
@@ -55,8 +68,15 @@
   </xsl:template>
 
   <xsl:template match="thesis">
-    <xsl:if test="@id"><a name="{@id}" /></xsl:if>
     <li>
+      <xsl:choose>
+        <xsl:when test="@id">
+          <a class="name" name="{@id}"><span class="authors"><xsl:value-of select="authors" /></span></a>:
+        </xsl:when>
+        <xsl:otherwise>
+          <span class="authors"><xsl:value-of select="authors" /></span>
+        </xsl:otherwise>
+      </xsl:choose>
       <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
       <span class="where"><xsl:value-of select="where" /></span>
@@ -76,8 +96,15 @@
   </xsl:template>
 
   <xsl:template match="presentation">
-    <xsl:if test="@id"><a name="{@id}" /></xsl:if>
     <li>
+      <xsl:choose>
+        <xsl:when test="@id">
+          <a class="name" name="{@id}"><span class="authors"><xsl:value-of select="authors" /></span></a>:
+        </xsl:when>
+        <xsl:otherwise>
+          <span class="authors"><xsl:value-of select="authors" /></span>
+        </xsl:otherwise>
+      </xsl:choose>
       <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
       <span class="where"><xsl:value-of select="where" /></span>

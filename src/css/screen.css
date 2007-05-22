@@ -39,6 +39,10 @@ a:hover {
   color: #005393;
 }
 
+a.name, a.name:hover {
+  color: black;
+}
+
 p {
   text-align: justify;
   margin: 0;
