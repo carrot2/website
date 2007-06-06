@@ -83,13 +83,13 @@
 
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">demos</xsl:with-param>
-                    <xsl:with-param name="text">Live demos</xsl:with-param>
+                    <xsl:with-param name="text">Applications</xsl:with-param>
                     <xsl:with-param name="section">demo</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">applications</xsl:with-param>
-                    <xsl:with-param name="text">Applications</xsl:with-param>
+                    <xsl:with-param name="text">Powered by C<sup>2</sup></xsl:with-param>
                     <xsl:with-param name="section">applications</xsl:with-param>
                   </xsl:call-template>
 
