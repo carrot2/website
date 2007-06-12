@@ -403,3 +403,33 @@ div.qa-index a {
   font-family: Tahoma, sans-serif;
   font-weight: bold;
 }
+
+/** Bamboo build status */
+#buildStatus
+{
+  font-family:          Trebuchet MS, Tahoma, sans-serif;
+  font-size: 100%;
+	background-image: none;
+  color: black;
+  position: relative;
+  left: -12px;
+}
+
+#buildStatus strong {
+  font-weight: normal;
+}
+
+#buildStatusInner
+{
+	background-image: none;
+}
+
+#buildStatusInner2
+{
+	background-image: none;
+}
+
+#buildStatusInner3
+{
+	background-image: none;
+}

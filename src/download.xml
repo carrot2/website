@@ -5,11 +5,13 @@
   <heading>Download</heading>
 
   <content>
-    <p style="margin-bottom: 0ex">
-      <b>Compiled binaries</b> of the Release 2.0 of Carrot<sup>2</sup>:
-    </p>
+    <div style="margin-bottom: 0ex">
+      <b>Compiled binaries</b> of the Release 2.0.2 of Carrot<sup>2</sup> are
+      available from the <a href="http://demo.carrot2.org/stable/dist/">the
+      build server</a>:
+    </div>
 
-    <ul>
+    <ul style="margin-bottom: 5px">
       <li>
         <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-webapp-2.0.zip">Carrot<sup>2</sup> search clustering engine</a> (a WAR web application file)<br />
         Please see the readme.txt file in the distribution archive for installation instructions.
@@ -19,22 +21,45 @@
         <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-browser-2.0.zip">Carrot<sup>2</sup> clustering GUI tool</a><br />
         Please see the readme.txt file in the distribution archive for information about running the tool.
       </li>
+
+      <li>
+        <a href="http://demo.carrot2.org/stable/webstart/">Carrot<sup>2</sup> clustering GUI tool (WebStart)</a>
+      </li>
+
+      <li>
+        <a href="http://demo.carrot2.org/stable/api/">Carrot<sup>2</sup> API JavaDoc</a>
+      </li>
     </ul>
 
-    <p>
-      <b>Compiled binaries</b> of major Carrot<sup>2</sup> releases are
-      available from our <a href="http://sourceforge.net/project/showfiles.php?group_id=85379">SourceForge 
-      download area</a>. Most recent stable versions are also available on <a href="http://demo.carrot2.org/stable/dist/">the build server</a>.
-    </p>
+    <script type="text/javascript" src="http://builds.carrot2.org/js/showLatestBuildStatus.action?buildKey=C2STABLE-COMMIT">&#160;</script>
     
-    <p>
-      <b>Latest development version</b> of Carrot<sup>2</sup> is also available as part of our
-      continuous integration builds. Note that these binaries may not run as expected (or at
-      all). Latest 
-        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-webapp-head.zip">web application WAR</a>, 
-        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-browser-head.zip">clustering GUI tool</a>,
-        <a href="http://demo.carrot2.org/head/api/">JavaDoc API</a> and the
-        <a href="http://demo.carrot2.org/head/webstart/">WebStart demo</a>.
-    </p>
+    <div style="clear: both; margin-top: 70px">
+      <b>Latest development version</b> of Carrot<sup>2</sup> is also available
+      on our <a href="http://demo.carrot2.org/stable/dist/">the build
+      server</a>. Note that these binaries may not run as expected (or at
+      all):
+    </div>
+
+    <ul style="margin-bottom: 5px">
+      <li>
+        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-webapp-head.zip">Carrot<sup>2</sup> search clustering engine</a> (a WAR web application file)<br />
+        Please see the readme.txt file in the distribution archive for installation instructions.
+      </li>
+
+      <li>
+        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-browser-head.zip">Carrot<sup>2</sup> clustering GUI tool</a><br />
+        Please see the readme.txt file in the distribution archive for information about running the tool.
+      </li>
+
+      <li>
+        <a href="http://demo.carrot2.org/head/webstart/">Carrot<sup>2</sup> clustering GUI tool (WebStart)</a>
+      </li>
+
+      <li>
+        <a href="http://demo.carrot2.org/head/api/">Carrot<sup>2</sup> API JavaDoc</a>
+      </li>
+    </ul>
+
+    <script type="text/javascript" src="http://builds.carrot2.org/js/showLatestBuildStatus.action?buildKey=C2HEAD-COMMIT">&#160;</script>
   </content>
 </page>

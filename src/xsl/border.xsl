@@ -20,6 +20,7 @@
 	
     <link rel="shortcut icon" href="favicon.ico" />
 	
+    <link rel="stylesheet" href="http://builds.carrot2.org/styles/bamboo-status.css" type="text/css" media="all" title="Default" />
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="all" title="Default" />
   </head>
 
