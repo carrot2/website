@@ -76,9 +76,6 @@ Uploading website to: ${website.upload.host}/${website.website.upload.dir}
   <target name="help" description="Displays help on available targets.">
     <echo>
 
-    Project name: ${ant.project.name}
-    (c) Poznan University of Technology.
-
     Current JDK: ${ant.java.version}
     Basedir    : ${basedir}
     -----------------------------------------------------

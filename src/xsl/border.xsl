@@ -22,6 +22,16 @@
 	
     <link rel="stylesheet" href="http://builds.carrot2.org/styles/bamboo-status.css" type="text/css" media="all" title="Default" />
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="all" title="Default" />
+
+    <!-- All out-of-content scripts end up here. -->
+    <xsl:for-each select="/page/script">
+        <script>
+            <xsl:copy-of select="attribute::*" />
+            <!-- Leave src relative for now. -->
+            <xsl:attribute name="src"><xsl:value-of select="@src" /></xsl:attribute>
+            <xsl:comment>/* (force closing tag.) */</xsl:comment>
+        </script>
+    </xsl:for-each>
   </head>
 
 

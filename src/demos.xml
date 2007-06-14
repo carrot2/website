@@ -4,9 +4,9 @@
 <page section="demo">
   <heading>Applications</heading>
 
-  <content>
-    <mozilla-plugin-script />
+  <script type="text/javascript" src="mozilla/addSearchProvider.js" />
 
+  <content>
     <p>
       <carrot2-webapp-link><img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-clustering-engine.gif" alt="Carrot2 clustering engine" />
       On-line search clustering engine</carrot2-webapp-link> based on Carrot<sup>2</sup>.
@@ -25,9 +25,13 @@
     <p style="clear: both">
       <a href="javascript:addEngine()"><img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/mozilla-firefox-clustering-plugin.gif" alt="Carrot2 Mozilla/Firefox plugin" />
       Search plugin for Mozilla and Firefox</a> that will send queries directly from 
-      your browser to the Carrot<sup>2</sup> on-line search clustering engine. <a href="javascript:addEngine()">Get the plugin!</a>
+      your browser to the Carrot<sup>2</sup> on-line search clustering engine.
+      <ul>
+        <li><carrot2-sherlock-plugin-link>Get the plugin for Mozilla/Firefox 1.x</carrot2-sherlock-plugin-link></li>
+        <li><carrot2-opensearch-plugin-link>Get the plugin for Mozilla/Firefox 2.x/IE7+</carrot2-opensearch-plugin-link></li>
+      </ul>
     </p>
-    
+
     <p style="clear: both">
       You can also add a Carrot<sup>2</sup>-powered <a content="searchbox">search box</a> 
       to your site.
