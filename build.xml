@@ -40,7 +40,7 @@
               <exclude name="**/*.bat" />
               <exclude name="**/*.sh" />
               <exclude name="**/*.swp" />
-              <exclude name="**/*.xml" />
+              <exclude name="*.xml" />
               <exclude name="**/*.xsl" />
               <exclude name="xsl" />
               <exclude name="xml" />
