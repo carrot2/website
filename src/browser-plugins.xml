@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
-<page section="applications">
+<page section="demos">
   <heading>Browser plugins</heading>
 
   <script type="text/javascript" src="mozilla/addSearchProvider.js" />
