@@ -15,6 +15,14 @@
     </p>
 
     <p style="clear: both">
+      <a href="http://www.etools.ch/"><img style="float: left; margin-right:
+      15px" class="pic app-pic" src="img/etools.gif" alt="eTools.ch" title="eTools.ch" /> eTools.ch</a> is 
+      a fast meta search engine developed in Switzerland that uses bits of
+      <c2 /> infrastructure and the commercial version of the Lingo algotithm
+      to group search results by topic.
+    </p>
+
+    <p style="clear: both">
       <a href="http://www.openiris.org/"><img style="float: left; margin-right:
       15px" class="pic app-pic" src="img/openiris.gif" alt="Iris" title="Iris" /> Iris</a> is an Open
       Source semantic desktop application framework that enables users to
