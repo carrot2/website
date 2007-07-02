@@ -44,11 +44,12 @@
          
     <p>
       Carrot<sup>2</sup> provides an <a content="architecture">architecture</a>
-      for acquiring search results from various sources (YahooAPI, GoogleAPI, MSN Search API,
-      OpenSearch, Lucene index), clustering the results and visualising the
-      clusters.  Currently, 5 <a content="algorithms">clustering algorithms</a>
-      are available that are suitable for different kinds of document
-      clustering tasks.
+      for acquiring search results from various sources (YahooAPI, GoogleAPI,
+      MSN Search API, <a href="http://www.etools.ch">eTools Meta Search</a>,
+      Alexa Web Search, PubMed, OpenSearch, Lucene index, SOLR), clustering the
+      results and visualising the clusters.  Currently, 5 <a
+      content="algorithms">clustering algorithms</a> are available that are
+      suitable for different kinds of document clustering tasks.
     </p>
    
     <p>

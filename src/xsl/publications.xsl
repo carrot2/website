@@ -22,7 +22,7 @@
           <a class="name" name="{@id}"><span class="authors"><xsl:value-of select="authors" /></span></a>:
         </xsl:when>
         <xsl:otherwise>
-          <span class="authors"><xsl:value-of select="authors" /></span>
+          <span class="authors"><xsl:value-of select="authors" /></span>:
         </xsl:otherwise>
       </xsl:choose>
       <span class="title"><xsl:value-of select="title" /></span>.
@@ -52,7 +52,7 @@
           <a class="name" name="{@id}"><span class="authors"><xsl:value-of select="authors" /></span></a>:
         </xsl:when>
         <xsl:otherwise>
-          <span class="authors"><xsl:value-of select="authors" /></span>
+          <span class="authors"><xsl:value-of select="authors" /></span>:
         </xsl:otherwise>
       </xsl:choose>
       <span class="authors"><xsl:value-of select="authors" /></span>:
@@ -74,7 +74,7 @@
           <a class="name" name="{@id}"><span class="authors"><xsl:value-of select="authors" /></span></a>:
         </xsl:when>
         <xsl:otherwise>
-          <span class="authors"><xsl:value-of select="authors" /></span>
+          <span class="authors"><xsl:value-of select="authors" /></span>:
         </xsl:otherwise>
       </xsl:choose>
       <span class="authors"><xsl:value-of select="authors" /></span>:
@@ -102,7 +102,7 @@
           <a class="name" name="{@id}"><span class="authors"><xsl:value-of select="authors" /></span></a>:
         </xsl:when>
         <xsl:otherwise>
-          <span class="authors"><xsl:value-of select="authors" /></span>
+          <span class="authors"><xsl:value-of select="authors" /></span>:
         </xsl:otherwise>
       </xsl:choose>
       <span class="authors"><xsl:value-of select="authors" /></span>:

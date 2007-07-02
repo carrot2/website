@@ -199,7 +199,7 @@
               <td id="copyright" colspan="2">
               <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="img/css.gif" alt="Valid CSS" title="Valid CSS" class="valid" /></a>
               <a href="http://validator.w3.org/check?uri=referer"><img src="img/xhtml.gif" alt="Valid XMLT 1.0 Transitional" title="Valid XMLT 1.0 Transitional" class="valid" /></a>
-              &#169; 2002-2006 <a href="http://www.man.poznan.pl/~stachoo/">Stanislaw Osinski</a>, <a href="http://www.cs.put.poznan.pl/dweiss/">Dawid Weiss</a><xsl:if test="$build.time">, updated:
+              &#169; 2002-<xsl:value-of select="$copyright.year" />&#160;<a href="http://stanislaw.osinski.name">Stanislaw Osinski</a>, <a href="http://www.cs.put.poznan.pl/dweiss/">Dawid Weiss</a><xsl:if test="$build.time">, updated:
                 <xsl:value-of select="$build.time" />
               </xsl:if>
               </td>  

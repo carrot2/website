@@ -22,6 +22,9 @@
       <tstamp>
           <format property="build.time" pattern="d MMMM yyyy" locale="en" />
       </tstamp>
+      <tstamp>
+          <format property="copyright.year" pattern="yyyy" locale="en" />
+      </tstamp>
 
       <xslt basedir="${website.src}" destdir="${distribution.dir}" style="${stylesheet}">
           <include name="*.xml" />
@@ -33,6 +36,7 @@
 
           <param name="content-extension" expression="html" />
           <param name="build.time" expression="${build.time}" />
+          <param name="copyright.year" expression="${copyright.year}" />
       </xslt>
       
       <copy todir="${distribution.dir}" filtering="false">

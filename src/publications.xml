@@ -20,9 +20,18 @@
     <publication-group>
       <title>Scientific papers</title>
 
+      <paper paper="http://stanislaw.osinski.name/papers/pdf/osinski-oss2007.pdf">
+        <authors>Stanisław Osiński and Dawid Weiss</authors>
+        <title>Introducing Usability Practices to OSS: The Insiders' Experience</title>
+        <where>
+          Open Source Development, Adoption and Innovation, Proceedings of the Third
+          International Conference on Open Source Systems, Springer
+        </where>
+      </paper>
+
       <paper bibtex="http://dblp.uni-trier.de/rec/bibtex/conf/ecir/Osinski06"
-             paper="http://www.man.poznan.pl/~stachoo/papers/pdf/osinski-ecir2006.pdf"
-             slides="http://www.man.poznan.pl/~stachoo/papers/pdf/osinski-ecir2006-slides.pdf">
+             paper="http://stanislaw.osinski.name/papers/pdf/osinski-ecir2006.pdf"
+             slides="http://stanislaw.osinski.name/papers/pdf/osinski-ecir2006-slides.pdf">
         <authors>Stanisław Osiński</authors>
         <title>Improving Quality of Search Results Clustering with Approximate Matrix Factorisations</title>
         <where>

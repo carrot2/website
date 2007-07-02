@@ -29,7 +29,7 @@
     </p>
 
     <p style="clear: both; margin-top: 4ex" class="author-profile">
-      <a href="http://www.man.poznan.pl/~stachoo"><img src="img/stanislaw-osinski.jpg" style="float: left; margin-right: 10px" class="author-photo" alt="Stanislaw Osinski photo" /> 
+      <a href="http://stanislaw.osinski.name"><img src="img/stanislaw-osinski.jpg" style="float: left; margin-right: 10px" class="author-photo" alt="Stanislaw Osinski photo" /> 
       Stanislaw Osinski</a> is a
       research programmer at the Network Services Department of Poznan
       Supercomputing and Networking Center, Poland.  
@@ -64,7 +64,11 @@
       Lang Ngo Chi (Warsaw University, Poland, Fuzzy Rough set clustering component, not active),
 
       <a href="http://www.dcs.shef.ac.uk/cgi-bin/makeperson?J.Nioche">Julien
-      Nioche</a> (The University of Sheffield, UK, OpenSearch input component).
+      Nioche</a> (The University of Sheffield, UK, OpenSearch input component),
+
+      Reinhard Schwab (improvements to the Lingo clustering algorithm),
+
+      Sairaj Sunil (enhancements to the Lucene input component).
     </p>
 
     <p style="margin-top: 4ex">
