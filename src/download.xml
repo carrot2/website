@@ -55,7 +55,7 @@
       </li>
 
       <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-dcs-head.zip">Carrot<sup>2</sup> stand-alone document clustering engine</a> 
+        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-dcs-head.zip">Carrot<sup>2</sup> stand-alone document clustering engine</a> 
         (a web application context with built-in Jetty server)<br />
         Please see the readme.txt file in the distribution archive for further instructions.
       </li>
