@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page>
+  <heading>Release notes</heading>
+
+  <content>
+    <p style="margin-bottom: 0">
+      <b>The 2.1 Release of Carrot<sup>2</sup></b> brings a number of new
+      components and applications as well as important improvements to the
+      existing features.
+    </p>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">Document Clustering Server</td>
+
+        <td>
+          The 2.1 release of <c2 /> comes with a completely new application,
+          the Document Clustering Server (DCS). The DCS exposes <c2 />'s
+          clustering capabilities as an HTTP/REST or XML/RPC service. For the
+          former, XML and JSON data formats are supported. Addicionally, the
+          DCS contains a simple command line application for calling <c2 />
+          clustering in batch mode.
+
+          <img class="pic rn" src="img/carrot2-dcs.gif" alt="Document Clustering Server" />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">New sources of search results</td>
+
+        <td>
+          New supported sources of search results include: eTools meta search
+          engine (<a href="http://issues.carrot2.org/browse/CARROT-36">CARROT-36</a>),
+          Alexa Web Search (<a href="http://issues.carrot2.org/browse/CARROT-81">CARROT-81</a>),
+          PubMed database and the SOLR engine (<a href="http://issues.carrot2.org/browse/CARROT-17">CARROT-17</a>).
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">Infrastructure</td>
+
+        <td>
+          JIRA, Bamboo
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">Cluster word highlighting</td>
+
+        <td>
+          Cluster work highlighting has been added to the demo web application.
+          This will further speed-up scanning of search results within
+          clusters (<a href="http://issues.carrot2.org/browse/CARROT-16">CARROT-16</a>).
+
+          <img class="pic rn" src="img/release-2.1/highlighting.png" alt="Highlighting of cluster labels" />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">More search sources</td>
+
+        <td>
+          More search sources are now available in the demo web application,
+          including the eTools meta search engine and the PubMed database.
+          Additionally, a simple mechanism for customizing the search tabs
+          was added (<a href="http://issues.carrot2.org/browse/CARROT-8">CARROT-8</a>).
+
+          <img class="pic rn" src="img/release-2.1/more-tabs.png" alt="More search sources" />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">Cluster tree improvements</td>
+
+        <td>
+          The cluster tree display DHTML component has been improved, including
+          the "all clusters" option for showing all clusters (<a
+          href="http://issues.carrot2.org/browse/CARROT-20">CARROT-20</a>), an
+          option for always showing all clusters (<a
+          href="http://issues.carrot2.org/browse/CARROT-21">CARROT-21</a>),
+          support for cluster selection bookmarking and using the browser's
+          <span class="gui-label">Back</span> and <span
+          class="gui-label">Forward</span> buttons to navigate through cluster
+          selections (<a
+          href="http://issues.carrot2.org/browse/CARROT-63">CARROT-63</a>).
+
+          <img class="pic rn" src="img/release-2.1/cluster-tree.png" alt="Cluster tree improvements" />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">Document fetching and clustering time</td>
+
+        <td>
+          The web application now shows how long it took to fetch search
+          results and cluster them (<a href="http://issues.carrot2.org/browse/CARROT-77">CARROT-77</a>).
+
+          <img class="pic rn" src="img/release-2.1/time.png" alt="Document fetching and clustering time" />
+        </td>
+      </tr>
+    </table>
+  </content>
+</page>

@@ -404,6 +404,23 @@ div.qa-index a {
   font-weight: bold;
 }
 
+/** Release notes */
+table.release-notes {
+  margin-top: 2ex;
+}
+
+table.release-notes td.head {
+  font-weight: bold;
+  width: 14em;
+  vertical-align: top;
+  text-align: right;
+  padding-right: 1em;
+}
+
+img.rn {
+  margin: 2ex 0;
+}
+
 /** Bamboo build status */
 #buildStatus
 {
