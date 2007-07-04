@@ -23,7 +23,8 @@
           DCS contains a simple command line application for calling <c2 />
           clustering in batch mode.
 
-          <img class="pic rn" src="img/carrot2-dcs.gif" alt="Document Clustering Server" />
+          <a href="http://demo.carrot2.org/head/dist/carrot2-demo-dcs-head.zip">
+            <img class="pic rn" src="img/carrot2-dcs.gif" alt="Document Clustering Server" /></a>
         </td>
       </tr>
 
@@ -39,10 +40,21 @@
       </tr>
 
       <tr>
-        <td class="head">Infrastructure</td>
+        <td class="head">JIRA and Bamboo</td>
 
         <td>
-          JIRA, Bamboo
+          Now <c2 /> infrastructure is powered by Atlassian JIRA and Bamboo.
+          Feel free to go to <a
+          href="http://issues.carrot2.org">http://issues.carrot2.org</a> to
+          file bugs and feature requests, or to <a
+          href="http://builds.carrot2.org">http://builds.carrot2.org</a> to see
+          how <c2 /> builds are doing.
+
+          <a href="http://issues.carrot2.org">
+            <img class="pic rn" src="img/release-2.1/jira.png" alt="Carrot2 Issues tracked by JIRA" /></a>
+
+          <a href="http://builds.carrot2.org">
+            <img class="pic rn" src="img/release-2.1/bamboo.png" alt="Carrot2 builds managed by Bamboo" /></a>
         </td>
       </tr>
 
@@ -98,6 +110,16 @@
           results and cluster them (<a href="http://issues.carrot2.org/browse/CARROT-77">CARROT-77</a>).
 
           <img class="pic rn" src="img/release-2.1/time.png" alt="Document fetching and clustering time" />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">Other improvemetns</td>
+
+        <td>
+          For other bug fixes and improvements, please see the <a
+          href="http://issues.carrot2.org/secure/ReleaseNote.jspa?projectId=10000&amp;styleName=Html&amp;version=10001">JIRA
+          Release Notes</a>.
         </td>
       </tr>
     </table>

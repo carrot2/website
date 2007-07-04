@@ -13,13 +13,13 @@
 
     <ul style="margin-bottom: 5px">
       <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-webapp-2.0.zip">Carrot<sup>2</sup> search clustering engine</a> (a WAR web application file)<br />
+        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-webapp-2.0.zip">Carrot<sup>2</sup> search clustering web application</a> (a WAR web application file)<br />
         Please see the readme.txt file in the distribution archive for installation instructions.
       </li>
 
       <!--
       <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-dcs-2.0.zip">Carrot<sup>2</sup> stand-alone document clustering engine</a> 
+        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-dcs-2.0.zip">Carrot<sup>2</sup> Document Clustering Server</a> 
         (a web application context with built-in Jetty server)<br />
         Please see the readme.txt file in the distribution archive for further instructions.
       </li>
@@ -50,12 +50,12 @@
 
     <ul style="margin-bottom: 5px">
       <li>
-        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-webapp-head.zip">Carrot<sup>2</sup> search clustering engine</a> (a WAR web application file)<br />
+        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-webapp-head.zip">Carrot<sup>2</sup> search clustering web application</a> (a WAR web application file)<br />
         Please see the readme.txt file in the distribution archive for installation instructions.
       </li>
 
       <li>
-        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-dcs-head.zip">Carrot<sup>2</sup> stand-alone document clustering engine</a> 
+        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-dcs-head.zip">Carrot<sup>2</sup> Document Clustering Server</a> 
         (a web application context with built-in Jetty server)<br />
         Please see the readme.txt file in the distribution archive for further instructions.
       </li>

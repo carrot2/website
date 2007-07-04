@@ -409,6 +409,10 @@ table.release-notes {
   margin-top: 2ex;
 }
 
+table.release-notes td {
+  padding-bottom: 2ex;
+}
+
 table.release-notes td.head {
   font-weight: bold;
   width: 14em;
