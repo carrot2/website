@@ -19,7 +19,7 @@
           The 2.1 release of <c2 /> comes with a completely new application,
           the Document Clustering Server (DCS). The DCS exposes <c2 />'s
           clustering capabilities as an HTTP/REST or XML/RPC service. For the
-          former, XML and JSON data formats are supported. Addicionally, the
+          former, XML and JSON data formats are supported. Additionally, the
           DCS contains a simple command line application for calling <c2 />
           clustering in batch mode.
 
