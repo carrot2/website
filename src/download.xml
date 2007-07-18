@@ -43,7 +43,7 @@
     
     <div style="clear: both; margin-top: 70px">
       <b>Latest development version</b> of Carrot<sup>2</sup> is also available
-      on our <a href="http://demo.carrot2.org/stable/dist/">the build
+      on our <a href="http://demo.carrot2.org/head/dist/">the build
       server</a>. Note that these binaries may not run as expected (or at
       all):
     </div>
