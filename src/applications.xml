@@ -18,25 +18,16 @@
       <a href="http://www.etools.ch/"><img style="float: left; margin-right:
       15px" class="pic app-pic" src="img/etools.gif" alt="eTools.ch" title="eTools.ch" /> eTools.ch</a> is 
       a fast meta search engine developed in Switzerland that uses bits of
-      <c2 /> infrastructure and the commercial version of the Lingo algotithm
+      <c2 /> infrastructure and the commercial version of the Lingo algorithm
       to group search results by topic.
     </p>
 
     <p style="clear: both">
-      <a href="http://www.openiris.org/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/openiris.gif" alt="Iris" title="Iris" /> Iris</a> is an Open
-      Source semantic desktop application framework that enables users to
-      create a personal map across their office-related information objects. It
-      <a
-      href="http://www.openiris.org/screenshots/atct_album_image?b_start=9">uses
-      Carrot<sup>2</sup>'s Lingo</a> algorithm to cluster web search results.
-    </p>
-
-    <p style="clear: both">
-      <a href="http://www.nutch.org/"><img style="float: left; margin-right: 15px" 
-      class="pic app-pic" src="img/nutch.gif" alt="Nutch" title="Nutch" /> Nutch</a>
-      is open source web-search software that features a clustering plugin
-      powered by Carrot<sup>2</sup>'s Lingo algorithm.
+      <a href="http://www.searchblox.com/"><img style="float: left; margin-right: 15px" class="pic app-pic" src="img/searchblox.gif" alt="SearchBlox" title="SearchBlox" />
+      SearchBlox</a> is a high-performance Content Search Software
+      designed for corporate intranets, websites, portals and
+      custom-applications, which offers <c2 />-powered clustered search results
+      presentation as an option.
     </p>
 
     <p style="clear: both">
@@ -58,8 +49,32 @@
     <p style="clear: both">
       <a href="http://www.sidekiq.com/"><img style="float: left; margin-right:
       15px" class="pic app-pic" src="img/sidekiq.gif" alt="SideKiq" title="SideKiq" />
-      SideKiq</a> SideKiq can send queries to many different search engines and 
+      SideKiq</a> can send queries to many different search engines and 
       Carrot<sup>2</sup> is one of SideKiq's search engines showing clustered results.
+    </p>
+
+    <p style="clear: both">
+      <a href="http://www.greenona.com/"><img style="float: left; margin-right:
+      15px" class="pic app-pic" src="img/greenona.gif" alt="Greenona"
+      title="Greenona" /> Greenona</a> features a SearchBlox search engine with
+      <c2 />-powered search results clustering.
+    </p>
+
+    <p style="clear: both">
+      <a href="http://www.nutch.org/"><img style="float: left; margin-right: 15px" 
+      class="pic app-pic" src="img/nutch.gif" alt="Nutch" title="Nutch" /> Nutch</a>
+      is open source web-search software that features a clustering plugin
+      powered by Carrot<sup>2</sup>'s Lingo algorithm.
+    </p>
+
+    <p style="clear: both">
+      <a href="http://www.openiris.org/"><img style="float: left; margin-right:
+      15px" class="pic app-pic" src="img/openiris.gif" alt="Iris" title="Iris" /> Iris</a> is an Open
+      Source semantic desktop application framework that enables users to
+      create a personal map across their office-related information objects. It
+      <a
+      href="http://www.openiris.org/screenshots/atct_album_image?b_start=9">uses
+      Carrot<sup>2</sup>'s Lingo</a> algorithm to cluster web search results.
     </p>
   </content>
 </page>
