@@ -281,9 +281,16 @@ ul.morecompact li p, ol.morecompact li p {
   margin-bottom: 2px;
 }
 
-.donor-logo {
-  margin: 5px;
-  margin-left: 20px;
+td.donor-logo { 
+  vertical-align: middle;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+td.donor-text {
+  vertical-align: middle;
+  padding-bottom: 30px;
 }
 
 .author-photo {

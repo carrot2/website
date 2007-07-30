@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="applications">
+  <heading>Sponsors of C2</heading>
+
+  <content>
+    <table>
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.cs.put.poznan.pl"><img src="img/pp-logo.gif" style="display: inline"
+          alt="Institute of Computing Science, Poznań University
+          of Technology" title="Institute of Computing Science, Poznań
+          University of Technology" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.cs.put.poznan.pl"> The Institute of Computing
+          Science</a> at Poznan University of Technology generously provides an
+          infrastructure for <c2 />&#160;<a
+          href="http://issues.carrot2.org">issue tracking</a> and <a
+          href="http://builds.carrot2.org">continuous integration services</a>.     
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://sourceforge.net"><img
+          src="http://sourceforge.net/sflogo.php?group_id=85379&amp;type=1"
+          alt="SourceForge.net" title="SourceForge.net"
+          /></a>          
+        </td>
+
+        <td class="donor-text">
+          <a href="http://sourceforge.net">SourceForge.net</a> hosts <c2 />'s
+          <a href="http://sourceforge.net/svn/?group_id=85379">source code
+          repository</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.yourkit.com"><img src="img/yourkit-logo.gif"
+          alt="YourKit Java Profiler"
+          title="YourKit Java Profiler" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.yourkit.com">YourKit</a> is kindly supporting
+          open source projects with its full-featured Java Profiler.<br />
+          YourKit, LLC is creator of innovative and intelligent tools for
+          profiling Java and .NET applications. Take a look at YourKit's
+          leading software products: <a
+          href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java
+          Profiler</a> and <a
+          href="http://www.yourkit.com/.net/profiler/index.jsp">YourKit .NET
+          Profiler</a>. 
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.atlassian.com/c/NPOS/10160"><img src="img/jira.gif" title="JIRA" alt="JIRA" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.atlassian.com/c/NPOS/10160">Atlassian</a>
+          supports our efforts by contributing their bug tracking and issue
+          tracking application, JIRA, to our project.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.atlassian.com/software/bamboo/"><img src="img/bamboo.gif" title="Bamboo" alt="Bamboo" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.atlassian.com/software/bamboo/">Atlassian</a>
+          supports our efforts by contributing their continuous integration
+          software, Bamboo, to our project.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.sourcekibitzer.org/index.php?option=com_skproject&amp;task=view&amp;projectid=carrot2"><img src="img/source-kibitzer.gif" class="donor-logo" alt="SourceKibitzer" title="SourceKibitzer" /></a> 
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.sourcekibitzer.org/index.php?option=com_skproject&amp;task=view&amp;projectid=carrot2">SourceKibitzer</a>
+          provides real-time software metrics for the <c2 /> project.
+        </td>
+      </tr>
+    </table>
+  </content>
+</page>

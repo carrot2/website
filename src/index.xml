@@ -19,16 +19,26 @@
         </div>
       </div>
       
-      <div class="side" style="margin-top: 40px; margin-bottom: 10px">
+      <div class="side" style="margin-top: 40px; margin-bottom: 10px; text-align: left">
         <h2>Sponsors and donors</h2>
-     
+
+        <c2 /> is kindly supported by a number of <a content="sponsors">companies and organizations</a>
+    <!-- 
         <a href="http://www.cs.put.poznan.pl"><img src="img/pp-logo.gif" class="donor-logo" style="margin-left: 27px" alt="Institute of Computing Science, Poznań University of Technology" title="Institute of Computing Science, Poznań University of Technology" /></a> <br />
         <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=85379&amp;type=1" class="donor-logo" alt="SourceForge.net" title="SourceForge.net" /></a> <br />
         <a href="http://www.yourkit.com"><img src="img/yourkit-logo.gif" class="donor-logo" alt="YourKit Java Profiler" title="YourKit Java Profiler" /></a><br />
         <a href="http://www.atlassian.com/c/NPOS/10160"><img src="img/jira.gif" class="donor-logo" alt="Atlassian supports our efforts by contributing their bug tracking and issue tracking application, JIRA, to our project." title="Atlassian supports our efforts by contributing their bug tracking and issue tracking application, JIRA, to our project." /></a><br />
         <a href="http://www.sourcekibitzer.org/index.php?option=com_skproject&amp;task=view&amp;projectid=carrot2"><img src="img/source-kibitzer.gif" class="donor-logo" alt="SourceKibitzer" title="SourceKibitzer" /></a> 
+        -->
       </div>
 
+      <div class="side" style="margin-top: 40px; margin-bottom: 10px;">
+        <h2>Spin-off company</h2>
+       
+        <div>
+          <carrot-search-website-link><img src="img/carrot-search.gif" style="margin-top: 15px; margin-bottom: 20px" alt="Carrot Search" title="Carrot Search" /></carrot-search-website-link> 
+        </div>
+      </div>
     </div>
           
     <p>
@@ -62,14 +72,6 @@
       content="download">downloads</a> section. If you have any questions or comments
       about Carrot<sup>2</sup>, please <a content="support">let us know</a>.
     </p>
-
-    <div class="side" style="float: right">
-      <h2>Spin-off company</h2>
-     
-      <div>
-        <carrot-search-website-link><img src="img/carrot-search.gif" style="margin-top: 15px; margin-bottom: 20px" alt="Carrot Search" title="Carrot Search" /></carrot-search-website-link> 
-      </div>
-    </div>
 
     <p>
       For consulting services, installation, maintenance and text mining
