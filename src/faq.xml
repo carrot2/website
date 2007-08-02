@@ -287,6 +287,34 @@
         </ol>
       </answer>
     </faq>
+    
+    <faq id="corrupted-characters">
+      <question>Why do I see "?" characters instead of my Chinese/ Polish/ other Unicode characters?</question>
+      <answer>
+        <p>The demo application running under a Web application container (such as Tomcat)
+        relies on proper decoding of Unicode characters from the request URI. This decoding
+        is done by the container and must be properly configured <b>at the container level</b>.</p>
+
+        <p>Unfortunately, this configuration for each container is a bit different (it
+        is not part of the J2EE standard).</p>
+        
+        <p>For Tomcat, you can enforce the URI decoding codepage at the connector configuration
+        level. Locate <tt>server.xml</tt> file inside Tomcat's <tt>conf</tt> folder
+        and add the following attribute to the <tt>Connector</tt> section:</p>
+
+        <pre class="codeblock">URIEncoding="UTF-8"</pre>
+        
+        <p>An example connector configuration should look like this:</p>
+	
+        <pre class="codeblock"><![CDATA[
+<Connector port="8080"
+    maxThreads="25" minSpareThreads="5" maxSpareThreads="10"
+    minProcessors="5" maxProcessors="25" enableLookups="false"
+    redirectPort="8443" acceptCount="10" debug="0" connectionTimeout="20000" 
+    URIEncoding="UTF-8" />]]></pre>
+      </answer>
+    </faq>
+   
     </faqs>
   </content>
 </page>
