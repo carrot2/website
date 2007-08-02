@@ -265,7 +265,7 @@
 
   <xsl:template match="carrot2-source-link">
     <xsl:variable name="suffix"><xsl:if test="not(@dir)">?view=markup</xsl:if></xsl:variable>
-    <a href="http://svn.sourceforge.net/viewvc/carrot2/trunk/carrot2{@extension}{$suffix}"><xsl:apply-templates /></a>
+    <a href="http://carrot2.svn.sourceforge.net/viewvc/carrot2/trunk/carrot2{@extension}{$suffix}"><xsl:apply-templates /></a>
   </xsl:template>
 
   <xsl:template match="carrot-search-webapp-link">
