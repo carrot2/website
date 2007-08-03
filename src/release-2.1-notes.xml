@@ -75,9 +75,10 @@
 
         <td>
           More search sources are now available in the demo web application,
-          including the eTools meta search engine and the PubMed database.
-          Additionally, a simple mechanism for customizing the search tabs
-          was added (<a href="http://issues.carrot2.org/browse/CARROT-8">CARROT-8</a>).
+          including the eTools meta search engine, Yahoo! News and the PubMed
+          database.  Additionally, a simple mechanism for customizing the
+          search tabs was added (<a
+          href="http://issues.carrot2.org/browse/CARROT-8">CARROT-8</a>).
 
           <img class="pic rn" src="img/release-2.1/more-tabs.png" alt="More search sources" />
         </td>
