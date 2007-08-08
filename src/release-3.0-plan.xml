@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page>
+  <heading>Release 3.0 plan</heading>
+
+  <content>
+    <h1 style="margin-top: 0">Introduction</h1>
+  
+    <p>
+      For the <b>release 3.0 of <c2 /></b> we are planning large changes that
+      will make <c2 /> better suited as a base for innovative applications of
+      search and document clustering technologies. The change would therefore
+      be best characterised by the following <b>vision statement</b>: 
+    </p>
+
+    <p style="font-style: italic; margin: 2em">
+      Make Carrot2 a suite of components and tools that enables building
+      innovative production-quality applications based on <c2 />'s search
+      results and document clustering technologies.
+    </p>
+
+    <p>
+      Essentially, <c2 /> has followed the above vision statement since
+      release 2.0, but large core-level changes are required to enable further
+      growth of <c2 /> and make it even more friendly for developers of
+      clustering applications (i.e. those using <c2 /> as a library). 
+    </p>
+
+    <h1>Themes and priorities</h1>
+
+    <p>
+      Below is a summary of the key 'themes' worth addressing. I guess when
+      these actions "stabilise", we can pick those that constitute closed work
+      items and file them as JIRA issues (and assign priorities).
+    </p>
+
+    <h2>Legacy</h2>
+
+    <p>
+      This theme is about removing components and tools that are not
+      maintained anymore or that to not present a real value from the vision
+      statement point of view. Specific actions could include:
+    </p>
+
+    <ul>
+      <li>
+        Consider removing several clustering algorithms that are not
+        supported anymore, such: as: FuzzyAnts
+        (<tt>carrot2-filter-fuzzyants</tt>) or TRC
+        (<tt>carrot2-filter-trc</tt>).
+      </li>
+
+      <li>
+        Remove the ODP-related tools for measuring the quality of clustering
+        in terms of the purity/coverage measures (<tt>carrot2-odp-core</tt>,
+        <tt>carrot2-odp-tools</tt>).
+      </li>
+    </ul>
+
+    <p>
+      Refactoring on the framework core could also fall into the legacy
+      category, but due to the large size of the task, it's been promoted to
+      be a separate theme.
+    </p>
+
+    <h2>Framework core</h2>
+
+    <p>
+      This theme is about refactoring the core of the framework to remove the
+      traces of legacy interfaces and possibly to simplify the learning curve
+      for the new adopters. Changes could include:
+    </p>
+
+    <ul>
+      <li>
+        Look once again into the principles of what's now known as the local
+        interfaces architecture. In particular, we could consider introducing
+        a notion of an <i>ad hoc</i> process, so that clustering can be done
+        using an arbitrary combination of input and output components. We've
+        been doing these kind of things on the application level (e.g.
+        <tt>carrot2-demo-webapp</tt> or <tt>carrot2-demo-dcs</tt>), so we
+        might want to shift that to the core level.
+      </li>
+
+      <li>
+        Remove the "*Local*" legacy in class/ interface naming.
+      </li>
+
+      <li>
+        I observed that most algorithms require a pretty much "hardwired" set
+        of preceding filters, so maybe we could get rid of the notion of a
+        generic filter at all? The only problematic filters in this case may
+        be the <tt>StripHTMLLocalFilterComponent</tt> and
+        <tt>SaveXmlFilterComponent</tt>.
+      </li>
+
+      <li>
+        Rethink preprocessing issues. It would be nice to have a common and
+        robust preprocessing infrastructure, including language recognition,
+        tokenization, case normalization and (possibly!) stop word marking and
+        stemming. This would include a variety of problems:
+        
+        <ul>
+          <li>
+            If we wanted to make this code fast, assuming processing of short
+            documents, all tokenization and case normalization would be done
+            as operations on arrays of Strings/char[], which may be difficult/
+            unnatural to encapsulate in a filter component. 
+          </li>
+
+          <li>
+            In the light of the previous item, we need to rethink the
+            <tt>org.carrot2.core.linguistic</tt> package, which contains a
+            multitude of different classes, token types etc., which is nice
+            and flexible, but not terribly efficient (especially the
+            <tt>ExtendedToken</tt>, what a miserable mistake of mine [so]!).
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        Rethink the <tt>org.carrot2.core.clustering</tt> package. We need to
+        decide if we need a notion of a raw and tokenized document. More
+        importantly, we could add support for a greater variety of input
+        document fields, something more than title/snippet/url, maybe
+        something generic, or title/snippet/url + generic. One example is to
+        allow to attach an image URL that is provided by Yahoo! News I guess,
+        so that the web application can display that image. Obviously, we'll
+        need to provide a mechanism for the clustering algorithms to decide
+        which fields they should use.
+      </li>
+
+      <li>
+        Rethink the <tt>org.carrot2.core.profiling</tt> package. It just
+        doesn't look nice to me anymore :)
+      </li>
+
+      <li>
+        Rethink processing parameters framework. Using String keys and
+        constants seems fine, but it's terrible from the documentation (other
+        than JavaDoc) and extensibility/genericity standpoint. For Lingo3G I
+        created a parameter framework that's very easy to maintain when adding
+        new parameters -- you just need to add a Java constant and a metadata
+        entry (e.g. human readable label/description) in an XML file, and
+        everything then happens automatically, from generation of controls on
+        the settings panel, to DocBook documentation. We might want move this
+        framework to the <c2 /> repository, but it would need a number of
+        extensions:
+
+        <ul>
+          <li>
+            Support for input/output component parameters, now only Lingo3G
+            parameters were supported, hence there is no field in a parameter
+            descriptor that informs to which category (input/filter/output)
+            the parameter belongs
+          </li>
+
+          <li>
+            Support for inheritance in XML files with parameter values. This
+            is useful to express that a set of parameters is based on another
+            set of parameters with only one parameter value changed. This is
+            useful when manually editing parameters, and should be easily
+            handled when saving parameters using an external tool.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Application suite</h2>
+
+    <p>
+      This theme describes something we've been doing for a long time now, but
+      I guess it's worth stating in an explicit way. It might be a good idea 
+      to keep the applications developed around the framework in <c2 />
+      repository as 1) a showcase of the <c2 /> technology, 2) as a base for
+      applications featuring Lingo3G (our commercial clustering algorithm) and
+      also other customized applications we do at Carrot Search.
+    </p>
+
+    <ul>
+      <li>
+        Improve build scripts for easier customization. Take this scenario: we
+        need to release a DCS with Lingo3G further customized for one of our
+        clients -- this would be triple inheritance: <c2 /> DCS --> Lingo3G
+        DCS --> Custom DCS. It's tempting to come up with some clever solution
+        to that problem.
+      </li>
+
+      <li>
+        Think where <tt>carrot2-demo-webapp</tt> ends and
+        <tt>carrot2-demo-dcs</tt> begins. The DCS can now only handle
+        documents provided by the caller, but what stops us from enabling the
+        usual query-based processing? My rough idea for a demarcation line
+        between the webapp and the dcs is data formats and request types: DCS
+        data formats should be fairly stable and include both documents
+        (optionally) and clusters, while the data formats (XML) used for the
+        webapp should allow more flexibility in order to provide everything
+        needed to construct a fancy user interface (actually, this has been
+        happening for a while now anyway).
+      </li>
+
+      <li>
+        Think of better customizability of the <tt>carrot2-demo-webapp</tt>.
+        We've had at least a few instances in which we built a web application
+        for search results clustering by customizing (in a rather hacky way)
+        the main web application. It might be a good idea do allow greater
+        customization through: 1) exposing more CSS properties and a specific
+        customization stylesheet, 2) allowing to embed only the clusters and
+        documents frames in a totally custom main page (not sure if this will
+        work after the changes I did for the 2.1 release).
+      </li>
+    </ul>
+
+    <h2>Improved clustering</h2>
+
+    <p>
+      I'm thinking of improving Lingo Classic a little bit, e.g. by adding some
+      simple leading/trailing/regexp label filters. This won't make it faster
+      (this is where Lingo3G reigns :), but should improve the labels here and
+      there. Further improvements should come from introducing common
+      preprocessing infastructure to Lingo Classic, including the case
+      normalizer.
+    </p>
+
+    <h2>Documentation</h2>
+
+    <p>
+      Let's face it, we <b>do</b> need some documentation. Hopefully, when we
+      strip the legacy overhead and simplify the core, there won't be too much
+      to write. I'd see two main lines of documentation: 1) Carrot2
+      Application Suite (or whatever we call that) Documentation, 2) some
+      limited Carrot2 Developer Documentation. If we include the API example
+      as part of the Application Suite, 2) will essentially be part of 1). A
+      few ideas for the documentation:
+
+      <ul>
+        <li>
+          Automate as much as possible. This may seem like a Holy Grail, but
+          it would be really helpful to have the documentation (DocBook),
+          readme.txt files, FAQ section on the webapp etc. generated based on
+          a common source of data, such as: parameter metadata files etc. Part
+          of that I've done for Lingo3G, so we're not starting from scratch.
+        </li>
+
+        <li>
+          Parts of the Application Suite documentation are already written for
+          Lingo3G. Following the customization theme, we could have some
+          master documentation for the <c2 /> Application Suite and Lingo3G
+          documentation as a customized instance of it.
+        </li>
+      </ul>
+    </p>
+
+    <h2>Release strategy</h2>
+
+    <p>
+      We should think how to organize work with head and stable branches of
+      both the <c2 /> and commercial repository. No major ideas here, besides
+      a gut feeling that always releasing Lingo3G from head is not a good
+      idea...
+    </p>
+
+    <h1>Doubts</h1>
+
+    <p>
+      [so] <b>I have doubts about going into <i>document</i> clustering</b>.
+      On the one hand, it might be a nice goal for the future work, I guess
+      there is still place for an efficient large-scale document clustering
+      algorithm on the Open Source arena. On the other hand, large-scale
+      document clustering is a long-term goal, but its consequences will be
+      visible from day one in the architecture of the framework (think:
+      Readers instead of Strings/char[] for content).
+    </p>
+
+    <p>
+      [so] Another important point is <b>how to interact/ integrate with the
+      Open Source Machine Learning initiatives being formed</b>, e.g.
+      ml4apache. On the one hand, <c2 /> has its "brand" and it would be nice
+      to keep it and capitalize on it. On the other, some parts of <c2 />
+      could be reused there and <i>vice versa</i>.
+    </p>
+    
+  </content>
+</page>

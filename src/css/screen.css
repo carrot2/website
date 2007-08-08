@@ -74,6 +74,7 @@ img {
 h2 {
   margin: 0;
   font-size: 15px;
+  margin-bottom: 1.5ex;
 }
 
 /** Main layout */
@@ -226,13 +227,17 @@ td#bottom-stroke-bg {
 }
 
 
-#content ul {
+#content ul, #content ol {
   margin: 0;
   padding: 0;
   margin-top: 2ex;
-  margin-bottom: 4ex;
+  margin-bottom: 2ex;
   padding-left: 3ex;
   margin-left: 3ex;
+}
+
+li ul, li  ol {
+  margin-bottom: 0ex;
 }
 
 #content li {
