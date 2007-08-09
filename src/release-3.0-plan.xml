@@ -165,6 +165,17 @@
           </li>
         </ul>
       </li>
+
+      <li>
+        Rethink the kinds of information clustering algorithms may want to
+        return as a result. For example, because there is no standard
+        tokenization infrastructure, highlighing of label words in the web
+        application is done independently. One big disadvantege of this
+        approach is that if an algorithm supports synonyms or e.g. some
+        advanced stemming, there is no way to reflect that in cluster word
+        highlighting. So it might be a good idea to allow the clustering
+        algorithms to return this kind of information more precisely.
+      </li>
     </ul>
 
     <h2>Application suite</h2>
