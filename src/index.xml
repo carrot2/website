@@ -8,11 +8,13 @@
         <h2>News</h2>
        
         <div>
+          <a content="release-2.1-notes">Release 2.1</a> of Carrot<sup>2</sup> is out with a
+          brand-new Document Clustering Server and more!
+        <!--
           Read <a
           href="http://sourcekibitzer.org/InterviewPage2.ext">an
           interview</a> with the authors of Carrot<sup>2</sup> on <a
           href="http://sourcekibitzer.org">Sourcekibitzer.org</a>.
-        <!--
           <a content="release-2.0-notes">Release 2.0</a> of Carrot<sup>2</sup> is out with a
           simplified API, a brand-new web application and more.
         -->
