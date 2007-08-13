@@ -19,8 +19,12 @@
       Standalone GUI clustering tool</carrot2-webstart-link> for playing with Carrot<sup>2</sup> clustering
       algorithms. It will let you modify parameters of the
       algorithms and watch the effects in real-time. <carrot2-webstart-link>Launch it!</carrot2-webstart-link>
-      (requires <a href="http://java.sun.com/products/javawebstart/">Java Web Start</a>)
+      (requires <a href="http://java.sun.com/products/javawebstart/">Java Web start</a>).
     </p>
+
+    <p>Microsoft Vista users: see <a href="http://issues.carrot2.org/browse/CARROT-103">this bug</a>.</p>
+    
+    
 
     <p style="clear: both">
       <img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-dcs.gif" alt="Carrot2 Document Clustering Server" />

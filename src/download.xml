@@ -64,7 +64,8 @@
       </li>
 
       <li>
-        <a href="http://demo.carrot2.org/head/webstart/">Carrot<sup>2</sup> clustering GUI tool (WebStart)</a>
+        <a href="http://demo.carrot2.org/head/webstart/">Carrot<sup>2</sup> clustering GUI tool (WebStart)</a>,
+            <a href="http://demo.carrot2.org/head/webstart/index.php?purejava=true">[the same but with pure-Java HTML browser]</a>
       </li>
 
       <li>
