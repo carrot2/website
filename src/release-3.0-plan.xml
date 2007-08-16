@@ -117,6 +117,20 @@
             <tt>ExtendedToken</tt>, what a miserable mistake of mine [so]!).
           </li>
         </ul>
+
+        One possible way to go will be to base the new design on Lucene's
+        Analyzers. This might bring a number of benefits:
+
+        <ul>
+          <li>
+            Flatter learning curve -- many people are familiar with Lucene API.
+          </li>
+
+          <li>
+            Re-use of some of the nice Lucene analyzers, such as key word
+            extracting analyzer or synonym-aware analyzer.
+          </li>
+        </ul>
       </li>
 
       <li>
