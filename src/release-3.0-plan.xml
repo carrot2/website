@@ -177,6 +177,12 @@
             useful when manually editing parameters, and should be easily
             handled when saving parameters using an external tool.
           </li>
+
+          <li>
+            Come up with a consistent parameter naming scheme, something
+            along the lines of org.carrot2.input.solr.title-field or
+            com.carrotsearch.lingo3g.max-improvement-iterations.
+          </li>
         </ul>
       </li>
 
