@@ -292,6 +292,13 @@
       idea...
     </p>
 
+    <p>
+      With the aim of simplifying the use of Carrot2 by developers, we could
+      think of distributing it as a single JAR file (with the most common
+      API components inside) and then placing the JAR in such repositories
+      as Maven.
+    </p>
+
     <h1>Doubts</h1>
 
     <p>
