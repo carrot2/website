@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
-<page section="applications">
+<page section="home">
   <heading>Sponsors of C2</heading>
 
   <content>
@@ -35,6 +35,20 @@
           <a href="http://sourceforge.net">SourceForge.net</a> hosts <c2 />'s
           <a href="http://sourceforge.net/svn/?group_id=85379">source code
           repository</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.deepvertical.com/"><img src="img/dv-small.gif"
+          alt="deepVertical"
+          title="deepVertical" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.deepvertical.com/">deepVertical</a> has kindly
+          donated the Alexa and input aggregator components to <c2 /> open
+          source code base.
         </td>
       </tr>
 
