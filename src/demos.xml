@@ -27,10 +27,10 @@
     
 
     <p style="clear: both">
-      <img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-dcs.gif" alt="Carrot2 Document Clustering Server" />
-      <c2 /> Document Clustering Server exposes the clustering capabilities of
+      <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-dcs-2.1.1.zip"><img style="float: right; margin-left: 15px; margin-bottom: 30px" class="pic" src="img/carrot2-dcs.gif" alt="Carrot2 Document Clustering Server" />
+      <c2 /> Document Clustering Server</a> exposes the clustering capabilities of
       <c2 /> as an HTTP/REST service. The DCS exposes the clustering results in
-      XML and JSON formats. <i>The DCS will be available for download as part of <c2 /> 2.1 release.</i>
+      XML and JSON formats.
     </p>
 
     <p style="clear: both">
