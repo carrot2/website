@@ -35,6 +35,30 @@
       items and file them as JIRA issues (and assign priorities).
     </p>
 
+    <h2>Beyond unsupervised clustering</h2>
+    
+    <p>
+      Prepare the architecture for some more complex clustering scenarios:
+      
+      <ul>
+        <li>
+          tagging-based domain-specific clustering (e.g. mark occurrences of
+          world region names and then turn them into groups)
+        </li>
+        
+        <li>
+          clustering into preexisting structures (though the data describing
+          specific structures will probably be different, e.g. labels, labels +
+          keywords, labels + example documents)
+        </li>
+        
+        <li>
+          semi-supervised clustering based on e.g. implicit and explicit user
+          feedback.
+        </li>
+      </ul>
+    </p>
+
     <h2>Legacy</h2>
 
     <p>
