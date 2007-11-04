@@ -306,12 +306,169 @@
         
         <p>An example connector configuration should look like this:</p>
 	
-        <pre class="codeblock"><![CDATA[
-<Connector port="8080"
+        <pre class="codeblock"><![CDATA[<Connector port="8080"
     maxThreads="25" minSpareThreads="5" maxSpareThreads="10"
     minProcessors="5" maxProcessors="25" enableLookups="false"
     redirectPort="8443" acceptCount="10" debug="0" connectionTimeout="20000" 
     URIEncoding="UTF-8" />]]></pre>
+      </answer>
+    </faq>
+    
+    <faq id="adding-removing-tabs-from-webapp">
+      <question>How do I add or remove search tabs from the <c2 /> web application?</question>
+      <answer>
+        <ol>
+          <li>
+            <a content="download">Download</a> the <c2 /> web application from
+            and extract the WAR file from the archive.
+          </li>
+
+          <li>
+            Unpack the WAR file using your favourite ZIP unpacker.
+          </li>
+
+          <li>
+            In order to remove a search tab, delete the corresponding
+            <tt>*.bsh</tt> file from the <tt>inputs/</tt> directory. For
+            example, to remove the Wiki tab, delete
+            <tt>05-input-yahooapi-wiki.bsh</tt>. Then, 
+          </li>
+
+          <li>
+            <p>
+              In order to add a new tab to the web application, assuming the
+              data source is already <a content="architecture">supported</a> by
+              <c2 />, it's best to clone and modify one of the existing
+              <tt>*.bsh</tt> files from the <tt>inputs/</tt> directory. 
+            </p>
+
+            <p>
+              Using the section shown below, you can customize:
+
+              <ul>
+                <li>
+                  <tt>tab.title</tt> -- title of the tab
+                </li>
+
+                <li>
+                  <tt>tab.accel</tt> -- shortcut key for the tab (make sure the
+                  letter is contained in the tab's name)
+                </li>
+
+                <li>
+                  <tt>tab.accel</tt> -- shortcut key for the tab (make sure the
+                  letter is contained in the tab's name)
+                </li>
+
+                <li>
+                  <tt>tab.description</tt> -- description of the tab to be shown as a tool tip
+                </li>
+
+                <li>
+                  <tt>tab.description.startup</tt> -- description of the tab to
+                  be shown on the startup screen
+                </li>
+
+                <li>
+                  <tt>tab.exampleQueries</tt> -- example queries to be shown on
+                  the startup screen, separated by the <tt>|</tt> character
+                </li>
+
+                <li>
+                  <tt>tab.icon</tt> -- a 16 x 16 icon displayed on the tab (put the file in the
+                  <tt>skins/fancy/inputs/</tt> directory)
+                </li>
+
+                <li>
+                  <tt>tab.ignoreOnError</tt> -- set to <tt>true</tt>, to hide
+                  the tab if an error occurs when initializing it
+                </li>
+
+                <li>
+                  <tt>tab.default</tt> -- set to <tt>true</tt> to make the tab the default active tab
+                </li>
+              </ul>
+            </p>
+            
+<pre class="codeblock"><![CDATA[loaded.setProperties(new String [][] {
+	{"tab.name", "Web"},
+	{"tab.accel", "W"},
+	{"tab.description", "Search the Web with www.etools.ch"},
+	{"tab.description.startup", "Carrot Clustering Engine will ..."},
+	{"tab.exampleQueries", "data mining|london|clustering"},
+	{"tab.icon", "web.gif"},
+	{"tab.ignoreOnError", "false" },
+	{"tab.default", "true"}
+});]]></pre>
+            
+            The
+            following data sources are already available:
+
+            <ul>
+              <li>
+                <tt>00-input-etools.bsh</tt> -- <w href="http://www.etools.com">eTools</w> meta search engine. 
+              </li>
+
+              <li>
+                <tt>01-input-yahooapi.bsh</tt> -- YahooAPI web search data source in its default configuration.
+              </li>
+
+              <li>
+                <tt>02-input-googleapi.bsh</tt> -- GoogleAPI web search
+                data source in its default configuration. Please note that this
+                data source is not supported by Google anymore.
+              </li>
+
+              <li>
+                <tt>03-input-msnapi.bsh</tt> -- MSN API web search data
+                source in its default configuration.
+              </li>
+
+              <li>
+                <tt>05-input-yahooapi-wiki.bsh</tt> -- YahooAPI web search
+                data source in a custom configuration. The options are
+                specified by the <tt>05-input-yahooapi-wiki.cfg</tt> file. For
+                a description of the parameters, please see <a
+                href="http://developer.yahoo.com/search/web/V1/webSearch.html">Yahoo
+                Web Search API documentation</a>.
+              </li>
+
+              <li>
+                <tt>06-input-odp.bsh</tt> -- tab based on a locally
+                available Lucene index. Specify the location of the index in
+                the <tt>odp.index.location</tt> system property or hardcode it in the
+                <tt>*.bsh</tt> file.
+              </li>
+
+              <li>
+                <tt>07-input-jobs.bsh</tt> -- tab based on an OpenSearch data
+                source. The URL for the OpenSearch data source can have the
+                following form (no line break):
+
+                <pre class="codeblock"><![CDATA[http://www.indeed.com/opensearch?
+q={searchTerms}&start={startIndex}&limit={count}]]></pre>
+
+                Elements marked by the curly braces will be replaced during
+                request time in the following way:
+
+                <ul>
+                  <li><tt>searchTerms</tt> -- the query user provided</li>
+                  <li><tt>startIndex</tt> -- the index of the first search result to be fetched</li>
+                  <li><tt>count</tt> -- the total number of search results to be fetched</li>
+                </ul>
+              </li>
+
+              <li>
+                <tt>08-input-pubmed.bsh</tt> -- tab based on the PubMed database.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Using your favourite tool, ZIP the all the files back to form a WAR
+            file and install the latter in your servlet container.
+          </li>
+        </ol>
       </answer>
     </faq>
    

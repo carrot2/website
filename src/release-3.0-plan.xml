@@ -343,5 +343,95 @@
       could be reused there and <i>vice versa</i>.
     </p>
     
+    <h2>Requirements/ assumptions for the new component architecture</h2>
+
+    <p>
+      Here is a short summary of the requirements/ assumptions for the new
+      component architecture as brainstormed during our meeting on the 26th of
+      Oct:
+    </p>
+
+    <ul>
+      <li>
+        New clustering components will be implemented very rarely, so it is not
+        a high priority to implement a fully configurable/ generic architecture
+        for implementing clustering algorthms. A simple util/ library approach
+        schould do.
+      </li>
+
+      <li>
+        It is more likely that new input components will be implemented/
+        donated by the community. Therefore, we should put some emphasis
+        (though still not too much) on documentation/ examples for this.
+      </li>
+
+      <li>
+        Should we totally get rid of explicit processing pipelines? If so, I'd
+        imagine that client's code would instantiate something that represents
+        a fully operational processing pipeline, including input, possible
+        preprocessing (e.g. HTML stripping) and clustering. A few possible
+        catches here:
+
+        <ul>
+          <li>
+            This would mean passing input name as a parameter. However, will
+            there be only one type of input? (think of inputs providing
+            snippets vs. longer documents) On the other hand, implementing
+            algorithms for full-text documents is not in the foreseeable
+            future...
+          </li>
+
+          <li>
+            What about optional preprocessing components, such as HTML
+            stripper?
+          </li>
+
+          <li>
+            If we want to enable each processing component to use any
+            (compatible) input, this will create a dependency on all available
+            inputs, not good...
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        Ideally, the new architecture would support the following parameter
+        management scenarios:
+
+        <ul>
+          <li>
+            A component declares that it exposes (and reacts on :) several
+            parameters, other components declaring using this component
+            automatically "inherit" these parameters
+          </li>
+
+          <li>
+            One question is whether to allow subclassing of components. If so, 
+            the subclass should inherit all the parameters of the super class.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>
+      A rough idea for implementation:
+    </p>
+
+    <ul>
+      <li>
+        Do not get rid of the idea of processing chains entirely. Instead,
+        allow "ad hoc" building of processing pipelines by providing: input
+        name, preprocessing, clustering algorithm, (postprocessing of
+        clusters?).
+      </li>
+
+      <li>
+        The entity representing the pipeline could also be a component similar
+        to those it consists of. In particular, the pipeline could "inherit"
+        all the parameters of its parts. The applications could query the
+        pipeline for all parameters it supports.
+      </li>
+    </ul>
+
   </content>
 </page>
