@@ -340,7 +340,13 @@
               data source is already <a content="architecture">supported</a> by
               <c2 />, it's best to clone and modify one of the existing
               <tt>*.bsh</tt> files from the <tt>inputs/</tt> directory. 
+              When cloning an existing file, please make sure to <strong>change the
+              component identifier</strong>:
             </p>
+            
+<pre class="codeblock">LoadedComponentFactory loaded = 
+	new LoadedComponentFactory("input-yahooapi-put<strong>-copy</strong>", factory);
+</pre>
 
             <p>
               Using the section shown below, you can customize:

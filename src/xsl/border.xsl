@@ -283,7 +283,7 @@
   <xsl:template match="title" />
 
   <!-- Certain HTML elements -->
-  <xsl:template match="p|table|caption|tr|th|td|a|b|i|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre|script|textarea|input|dl|dt|dd">
+  <xsl:template match="p|table|caption|tr|th|td|a|b|i|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre|script|textarea|input|dl|dt|dd|strong">
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:apply-templates />
