@@ -477,6 +477,15 @@ q={searchTerms}&start={startIndex}&limit={count}]]></pre>
         </ol>
       </answer>
     </faq>
+
+    <faq id="clustering-without-query">
+      <question>Can I perform clustering without specifying the query?</question>
+      <answer>
+        Yes. While the query is usually very helpful to get rid of the obvious
+        meanings related to the documents in the search results set, it is not
+        obligatory -- the clustering algorithms will cope without the query.
+      </answer>
+    </faq>
    
     </faqs>
   </content>
