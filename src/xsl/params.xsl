@@ -3,7 +3,7 @@
 
   <xsl:param name="content-extension">xml</xsl:param>
   <xsl:param name="build.time"></xsl:param>
-  <xsl:param name="copyright.year">2006</xsl:param>
+  <xsl:param name="copyright.year">2008</xsl:param>
 
   <xsl:param name="carrot2.website.url">http://project.carrot2.org</xsl:param>
   <xsl:param name="carrot2.webapp.url">http://demo.carrot2.org</xsl:param>
