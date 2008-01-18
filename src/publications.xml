@@ -20,6 +20,23 @@
     <publication-group>
       <title>Scientific papers</title>
 
+      <paper>
+        <authors>Andrea Passadore and Giorgio Pezzuto</authors>
+        <title>An indexing and clustering architecture to support document retrieval in the maintenance sector</title>
+        <where>
+          MM2007, Maintenance Management -- Third International Conference on
+          Maintenance and Facility Management, 27-28 September 2007
+        </where>
+      </paper>
+
+      <paper>
+        <authors>Andrea Passadore and Giorgio Pezzuto</authors>
+        <title>A multi-agent platform supporting maintenance companies on the field</title>
+        <where>
+          Proceedings of WOA 2007 workshop, Genova, 24-25 September 2007
+        </where>
+      </paper>
+
       <paper paper="http://stanislaw.osinski.name/papers/pdf/osinski-oss2007.pdf">
         <authors>Stanisław Osiński and Dawid Weiss</authors>
         <title>Introducing Usability Practices to OSS: The Insiders' Experience</title>
