@@ -6,25 +6,25 @@
 
   <content>
     <div style="margin-bottom: 0ex">
-      <b>Compiled binaries</b> of the Release 2.1.1 of Carrot<sup>2</sup> are
+      <b>Compiled binaries</b> of the Release 2.1.3 of Carrot<sup>2</sup> are
       available from the <a href="http://demo.carrot2.org/stable/dist/">the
       build server</a>:
     </div>
 
     <ul style="margin-bottom: 5px">
       <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-webapp-2.1.1.zip">Carrot<sup>2</sup> search clustering web application</a> (a WAR web application file)<br />
+        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-webapp-2.1.3.zip">Carrot<sup>2</sup> search clustering web application</a> (a WAR web application file)<br />
         Please see the readme.txt file in the distribution archive for installation instructions.
       </li>
 
       <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-dcs-2.1.1.zip">Carrot<sup>2</sup> Document Clustering Server</a> 
+        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-dcs-2.1.3.zip">Carrot<sup>2</sup> Document Clustering Server</a> 
         (a web application context with built-in Jetty server)<br />
         Please see the readme.txt file in the distribution archive for further instructions.
       </li>
 
       <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-browser-2.1.1.zip">Carrot<sup>2</sup> clustering GUI tool</a><br />
+        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-browser-2.1.3.zip">Carrot<sup>2</sup> clustering GUI tool</a><br />
         Please see the readme.txt file in the distribution archive for information about running the tool.
       </li>
 
