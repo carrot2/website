@@ -75,6 +75,13 @@
     </p>
 
     <p style="clear: both">
+      <a href="http://www.fivemushrooms.com/food/search.jsp?clustering=yes&amp;query=mozzarella"><img style="float: left; margin-right: 15px" 
+      class="pic app-pic" src="img/five-mushrooms.gif" alt="Five Mushrooms Culinary Search Engine" title="Five Mushrooms Culinary Search Engine" /> Five Mushrooms</a>
+      is a Nutch-based culinary search engine that offers search results clustering
+      powered by Carrot<sup>2</sup>'s Lingo algorithm.
+    </p>
+
+    <p style="clear: both">
       <a href="http://www.openiris.org/"><img style="float: left; margin-right:
       15px" class="pic app-pic" src="img/openiris.gif" alt="Iris" title="Iris" /> Iris</a> is an Open
       Source semantic desktop application framework that enables users to
