@@ -145,11 +145,38 @@
         </p>
 
         <p>
-        As the DCS is still at the development phase, you'll need to <a
-        href="#compiling">check out the source code and build it</a> on your
-        own. The source code of the DCS is located in the <tt>trunk/ carrot2/
-        applications/ carrot2-demo-dcs</tt> directory. See the <tt>readme.txt</tt> located
-        in that directory for further instructions.
+        To get started with the <c2 /> DCS, <a content="download">download</a>
+        the latest version and uncompress the archive to some local directory.
+        Run the DCS providing the port number it should bind to, e.g.:
+        </p>
+
+        <div class="cmd-line">
+          dcs -port 9090
+        </div>
+
+        <p>
+          When the DCS initializes correcty, you should see the following
+          messages on the console:
+        </p>
+
+        <pre class="codeblock">
+[11:28:35,734 INFO] Initializing components.
+[11:28:36,031 INFO] Loaded algorithm: haog-fi-en
+[11:28:36,046 INFO] Loaded algorithm: haog-stc-en
+[11:28:36,046 INFO] Setting the context-level default process id to: lingo-cla..
+[11:28:36,234 INFO] Loaded algorithm: lingo-classic
+[11:28:36,234 INFO] Loaded algorithm: rough-kmeans
+[11:28:36,250 INFO] Loaded algorithm: stc-en
+[11:28:36,250 INFO] Finished initializing components.
+[11:28:36,250 INFO] Starting standalone DCS server.
+[11:28:36,593 INFO] Console mode, skipping configuration in web.xml.
+[11:28:36,609 INFO] Accepting HTTP requests on port: 9090</pre>
+
+        <p>
+          Point your browser to <tt>http://localhost:9090/</tt>, where you will
+          find further instructions. See the <tt>examples/queries</tt>
+          directory of the DCS distribution for some example document sets in
+          the DCS format.
         </p>
       </answer>
     </faq>
@@ -298,7 +325,7 @@
         <p>Unfortunately, this configuration for each container is a bit different (it
         is not part of the J2EE standard).</p>
         
-        <p>For Tomcat, you can enforce the URI decoding codepage at the connector configuration
+        <p>For Tomcat, you can enforce the URI decoding codepage at the nonnector configuration
         level. Locate <tt>server.xml</tt> file inside Tomcat's <tt>conf</tt> folder
         and add the following attribute to the <tt>Connector</tt> section:</p>
 
