@@ -155,7 +155,7 @@
         </div>
 
         <p>
-          When the DCS initializes correcty, you should see the following
+          When the DCS initializes correctly, you should see the following
           messages on the console:
         </p>
 
@@ -325,14 +325,14 @@
         <p>Unfortunately, this configuration for each container is a bit different (it
         is not part of the J2EE standard).</p>
         
-        <p>For Tomcat, you can enforce the URI decoding codepage at the nonnector configuration
+        <p>For Tomcat, you can enforce the URI decoding codepage at the connector configuration
         level. Locate <tt>server.xml</tt> file inside Tomcat's <tt>conf</tt> folder
         and add the following attribute to the <tt>Connector</tt> section:</p>
 
         <pre class="codeblock">URIEncoding="UTF-8"</pre>
         
         <p>An example connector configuration should look like this:</p>
-	
+  
         <pre class="codeblock"><![CDATA[<Connector port="8080"
     maxThreads="25" minSpareThreads="5" maxSpareThreads="10"
     minProcessors="5" maxProcessors="25" enableLookups="false"
@@ -372,7 +372,7 @@
             </p>
             
 <pre class="codeblock">LoadedComponentFactory loaded = 
-	new LoadedComponentFactory("input-yahooapi-put<strong>-copy</strong>", factory);
+  new LoadedComponentFactory("input-yahooapi-put<strong>-copy</strong>", factory);
 </pre>
 
             <p>
@@ -424,14 +424,14 @@
             </p>
             
 <pre class="codeblock"><![CDATA[loaded.setProperties(new String [][] {
-	{"tab.name", "Web"},
-	{"tab.accel", "W"},
-	{"tab.description", "Search the Web with www.etools.ch"},
-	{"tab.description.startup", "Carrot Clustering Engine will ..."},
-	{"tab.exampleQueries", "data mining|london|clustering"},
-	{"tab.icon", "web.gif"},
-	{"tab.ignoreOnError", "false" },
-	{"tab.default", "true"}
+  {"tab.name", "Web"},
+  {"tab.accel", "W"},
+  {"tab.description", "Search the Web with www.etools.ch"},
+  {"tab.description.startup", "Carrot Clustering Engine will ..."},
+  {"tab.exampleQueries", "data mining|london|clustering"},
+  {"tab.icon", "web.gif"},
+  {"tab.ignoreOnError", "false" },
+  {"tab.default", "true"}
 });]]></pre>
             
             The
@@ -511,6 +511,42 @@ q={searchTerms}&start={startIndex}&limit={count}]]></pre>
         Yes. While the query is usually very helpful to get rid of the obvious
         meanings related to the documents in the search results set, it is not
         obligatory -- the clustering algorithms will cope without the query.
+      </answer>
+    </faq>
+
+    <faq id="lingo-parameters">
+      <question>What is the meaning of Lingo clustering algorithm's parameters?</question>
+      <answer>
+        Lingo has 3 parameters that influence the number and contents of
+        clusters is creates:
+
+        <ul>
+          <li>
+            <strong>Cluster Assignment Threshold</strong> &#8212; determines
+            how precise the assignment of documents to clusters should be. For
+            low values of this threshold, Lingo will assign more documents to
+            clusters, which will result in less documents ending up in "Other
+            topics", but also some irrelevant documents making its way to the
+            clusters. For high values of this parameter, Lingo will assign less
+            documents to clusters, which will result in better assignment
+            precision, but also more documents in "Other topics" and less
+            clusters being created.
+          </li>
+
+          <li>
+            <strong>Candidate cluster threshold</strong> &#8212; determines how
+            many clusters Lingo will try to create, higher values of the
+            parameter will give more clusters. However, it is not possible to
+            exactly predict the number of clusters based on the value of this
+            parameter before clustering is actually run.
+          </li>
+
+          <li>
+            <strong>Preferred cluster count</strong> &#8212; determines the
+            maximum number of clusters Lingo will create (excluding the "Other
+            topics" clusters).
+          </li>
+        </ul>
       </answer>
     </faq>
    
