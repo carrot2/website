@@ -55,7 +55,6 @@
           <span class="authors"><xsl:value-of select="authors" /></span>:
         </xsl:otherwise>
       </xsl:choose>
-      <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
       <span class="where"><xsl:value-of select="where" /></span>
       <span class="links">
@@ -77,7 +76,6 @@
           <span class="authors"><xsl:value-of select="authors" /></span>:
         </xsl:otherwise>
       </xsl:choose>
-      <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
       <span class="where"><xsl:value-of select="where" /></span>
       <span class="links">
@@ -105,7 +103,6 @@
           <span class="authors"><xsl:value-of select="authors" /></span>:
         </xsl:otherwise>
       </xsl:choose>
-      <span class="authors"><xsl:value-of select="authors" /></span>:
       <span class="title"><xsl:value-of select="title" /></span>.
       <span class="where"><xsl:value-of select="where" /></span>
       <span class="links">
