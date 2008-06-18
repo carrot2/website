@@ -178,6 +178,12 @@
           directory of the DCS distribution for some example document sets in
           the DCS format.
         </p>
+
+        <p>
+          You can also check <a
+          href="http://www.roryoung.co.uk/blog/post/playing-with-carrot2-clustering-in-php.html">Rob
+          Young's (mostly) Tech Blog</a> for an example of using Carrot2 DCS with PHP.
+        </p>
       </answer>
     </faq>
     

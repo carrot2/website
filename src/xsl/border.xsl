@@ -266,8 +266,8 @@ pageTracker._trackPageview();
   </xsl:template>
 
   <xsl:template match="carrot2-source-link">
-    <xsl:variable name="suffix"><xsl:if test="not(@dir)">?view=markup</xsl:if></xsl:variable>
-    <a href="http://carrot2.svn.sourceforge.net/viewvc/carrot2/trunk/carrot2{@extension}{$suffix}"><xsl:apply-templates /></a>
+    <xsl:variable name="suffix"><xsl:if test="not(@dir)">?r=trunk</xsl:if></xsl:variable>
+    <a href="http://fisheye3.atlassian.com/browse/carrot2/trunk/carrot2{@extension}{$suffix}"><xsl:apply-templates /></a>
   </xsl:template>
 
   <xsl:template match="carrot-search-webapp-link">

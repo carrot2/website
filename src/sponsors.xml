@@ -40,6 +40,60 @@
 
       <tr>
         <td class="donor-logo">
+          <a href="http://www.atlassian.com/c/NPOS/10160"><img src="img/jira.gif" title="Atlassian JIRA" alt="Atlassian JIRA" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.atlassian.com/c/NPOS/10160">Atlassian</a>
+          supports our efforts by contributing their bug tracking and issue
+          tracking application, JIRA, to our project. <c2 />'s instance of JIRA
+          is <a href="http://issues.carrot2.org">here</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.atlassian.com/software/bamboo/"><img src="img/bamboo.gif" title="Atlassian Bamboo" alt="Atlassian Bamboo" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.atlassian.com/software/bamboo/">Atlassian</a>
+          supports our efforts by contributing their continuous integration
+          software, Bamboo, to our project. <c2 />'s instance of Bamboo
+          is <a href="http://builds.carrot2.org">here</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.atlassian.com/software/clover/"><img src="img/clover.gif" title="Atlassian Clover" alt="Atlassian Clover" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.atlassian.com/software/clover/">Atlassian</a>
+          supports our efforts by contributing their code coverage analysis
+          software, Clover, to our project. Example Clover reports from <c2 /> 
+          are <a href="http://builds.carrot2.org">on our build server</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.atlassian.com/software/fisheye/"><img src="img/fisheye.gif" title="Atlassian FishEye" alt="Atlassian FishEye" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.atlassian.com/software/fisheye/">Atlassian</a>
+          supports our efforts by contributing their source code repository
+          browser software, FishEye, to our project. <c2 />'s source code can
+          be browsed on the <a
+          href="http://fisheye3.atlassian.com/browse/carrot2">FishEye
+          instance</a> hosted by Atlassian.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
           <a href="http://www.deepvertical.com/"><img src="img/dv-small.gif"
           alt="deepVertical"
           title="deepVertical" /></a>
@@ -69,30 +123,6 @@
           Profiler</a> and <a
           href="http://www.yourkit.com/.net/profiler/index.jsp">YourKit .NET
           Profiler</a>. 
-        </td>
-      </tr>
-
-      <tr>
-        <td class="donor-logo">
-          <a href="http://www.atlassian.com/c/NPOS/10160"><img src="img/jira.gif" title="JIRA" alt="JIRA" /></a>
-        </td>
-
-        <td class="donor-text">
-          <a href="http://www.atlassian.com/c/NPOS/10160">Atlassian</a>
-          supports our efforts by contributing their bug tracking and issue
-          tracking application, JIRA, to our project.
-        </td>
-      </tr>
-
-      <tr>
-        <td class="donor-logo">
-          <a href="http://www.atlassian.com/software/bamboo/"><img src="img/bamboo.gif" title="Bamboo" alt="Bamboo" /></a>
-        </td>
-
-        <td class="donor-text">
-          <a href="http://www.atlassian.com/software/bamboo/">Atlassian</a>
-          supports our efforts by contributing their continuous integration
-          software, Bamboo, to our project.
         </td>
       </tr>
 
