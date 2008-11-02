@@ -127,6 +127,14 @@
     <publication-group>
       <title>Theses</title>
 
+      <thesis thesis-local="krukar-2008-rcp.pdf">
+        <authors>Urszula Krukar</authors>
+        <title>Design and Implementation of a Text Processing Application in the Eclipse Rich Client Framework</title>
+        <where>
+          Master thesis, Poznań University of Technology, Poznań, Poland, 2008
+        </where>
+      </thesis>
+
       <thesis thesis="http://www.cs.put.poznan.pl/dweiss/site/publications/download/dweiss-phd-thesis.pdf"
               bibtex="http://www.cs.put.poznan.pl/dweiss/site/publications/bibtex/dweiss-phd-thesis.bib">
         <authors>Dawid Weiss</authors>
