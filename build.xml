@@ -5,8 +5,11 @@
   <property name="website.src" value="src" />
   <property name="stylesheet" location="${website.src}/xsl/page.xsl" />
 
-  <property name="website.properties" value="${user.home}/.carrot.website-upload.properties" />
+  <property name="website.properties" location="website.properties" />
   <property file="${website.properties}" />
+
+  <property file="etc/head/carrot2.version" />
+  <property file="etc/head/carrot2.basenames" />
 
   <property name="distribution.dir" value="tmp/dist" />
 
@@ -37,6 +40,16 @@
           <param name="content-extension" expression="html" />
           <param name="build.time" expression="${build.time}" />
           <param name="copyright.year" expression="${copyright.year}" />
+        
+          <param name="carrot2.java-api.base" expression="${carrot2.java-api.base}" />
+          <param name="carrot2.dcs.base" expression="${carrot2.dcs.base}" />
+          <param name="carrot2.webapp.base" expression="${carrot2.webapp.base}" />
+          <param name="carrot2.manual.base" expression="${carrot2.manual.base}" />
+          <param name="carrot2.workbench.base" expression="${carrot2.workbench.base}" />
+        
+          <param name="carrot2.version.head" expression="${carrot2.version.head}" />
+          <param name="head.dist.url" expression="${head.dist.url}" />
+          <param name="head.webapp.url" expression="${head.webapp.url}" />
       </xslt>
       
       <copy todir="${distribution.dir}" filtering="false">
@@ -48,6 +61,7 @@
               <exclude name="**/*.xsl" />
               <exclude name="xsl" />
               <exclude name="xml" />
+              <exclude name="img-src" />
               <exclude name="**/favicon.ico" />
           </fileset>
           <fileset dir="${website.src}/img">

@@ -8,6 +8,16 @@
   <xsl:import href="faq.xsl" />
   <xsl:import href="tags.xsl" />
 
+  <xsl:param name="carrot2.version.head" />
+  <xsl:param name="head.dist.url" />
+  <xsl:param name="head.webapp.url" />
+  
+  <xsl:param name="carrot2.java-api.base" />
+  <xsl:param name="carrot2.dcs.base" />
+  <xsl:param name="carrot2.webapp.base" />
+  <xsl:param name="carrot2.workbench.base" />
+  <xsl:param name="carrot2.manual.base" />
+  
   <xsl:strip-space elements="*"/>
 
   <xsl:output indent="yes" omit-xml-declaration="yes"

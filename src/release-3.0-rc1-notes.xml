@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.0">
+  <heading>Release 3.0 RC1</heading>
+
+  <content>
+    <para>
+      After <a href="http://fisheye3.atlassian.com/chart/~charttype=Area,stacktype=None/carrot2/branches/3.0-proto" target="_blank">12 months of hard work</a>,
+      we are proud to announce the <b>Release Candidate 1 of Carrot2 version 3.0</b>.
+      The 3.0 release introduces significant improvements in all areas of the framework:
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Simplified Java API
+          <head-java-api-download-link class="button download"><span>Download</span></head-java-api-download-link>
+          <div class="small-links">
+            <head-javadoc-link class="small">View JavaDocs online</head-javadoc-link><br />
+            <head-manual-link class="small" section="section.integration.compiling-java-program-with-carrot2">Getting started</head-manual-link><br />
+            <head-manual-link class="small" section="chapter.architecture">Architecture overview</head-manual-link>
+          </div>
+        </td>
+
+        <td>
+          With new adopters in mind, the 3.0 release significantly simplifies
+          the Java API of <c2 />. Three statements are enough to get started:
+
+          <pre class="codeblock"><![CDATA[Map<String, Object> attributes = 
+    new HashMap<String, Object>();
+attributes.put(AttributeNames.QUERY, "cluster me");
+
+List<Cluster> clusters = new SimpleController()
+  .process(attributes, YahooDocumentSource.class, 
+      LingoClusteringAlgorithm.class).getClusters();]]></pre>
+
+          In contrary to the 2.x line, the 3.0 release requires Java JDK 1.5 or higher.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Brand new <c2 /> Clustering Workbench
+          <head-workbench-download-link os="win32" wm="win32" class="button download"><span>Download</span></head-workbench-download-link>
+          <div class="small-links">
+            <head-workbench-download-link os="linux" wm="gtk" class="small"><span>Linux version</span></head-workbench-download-link><br />
+            <head-manual-link class="small" section="section.getting-started">Getting started</head-manual-link>
+          </div>
+        </td>
+
+        <td>
+          The 3.0 release introduces a brand new GUI application for
+          experimenting and tuning <c2 /> clustering.
+
+          <head-workbench-download-link os="win32" wm="win32"> 
+            <img class="pic rn" src="img/release-3.0/workbench.png" alt="Carrot2 Clustering Workbench" /></head-workbench-download-link>
+
+          You can use <c2 /> Clustering Workbench to quickly start clustering
+          your own data or to tune clustering results.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Brand new <c2 /> Web Application
+          <head-webapp-link class="button view"><span>View online</span></head-webapp-link>
+          <div class="small-links">
+            <head-webapp-download-link class="small"><span>Download WAR</span></head-webapp-download-link>
+          </div>
+        </td>
+
+        <td>
+          <c2 /> Web Application has been reimplemented for easier customization
+          and top front-end performance. We also included an attractive visualization.
+
+          <head-webapp-link>
+            <img class="pic rn" src="img/release-3.0/webapp-tree.png" alt="Carrot2 Web Application, cluster tree view" />
+            <img class="pic rn" src="img/release-3.0/webapp-circles.png" alt="Carrot2 Web Application, visualization view" /></head-webapp-link>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          User and Developer Manual
+          <head-manual-link class="button view" href="http://download.carrot2.org/head/manual/"><span>View online</span></head-manual-link>
+          <div class="small-links">
+            <head-manual-download-link class="small"><span>Download</span></head-manual-download-link>
+          </div>
+        </td>
+
+        <td>
+          <c2 /> now comes with an initial version of the user and developer manual.
+          We will be extending the manual based on the frequency of questions
+          on the mailing list.
+
+          <head-manual-link>
+            <img class="pic rn" src="img/release-3.0/manual.png" alt="Carrot2 User and Developer Manual" /></head-manual-link>
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      If you have concerns about choosing between the 2.x and 3.0 versions or migrating
+      from 2.x to 3.0, please see the <a content="release-3.0-faq">release 3.0 Frequently Asked Questions</a>.
+    </p>
+  </content>
+</page>

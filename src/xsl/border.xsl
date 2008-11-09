@@ -93,6 +93,13 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">release-3.0-rc1-notes</xsl:with-param>
+                    <xsl:with-param name="text">Release 3.0</xsl:with-param>
+                    <xsl:with-param name="section">release-3.0</xsl:with-param>
+                    <xsl:with-param name="class">hot</xsl:with-param>
+                  </xsl:call-template>
+
+                  <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">demos</xsl:with-param>
                     <xsl:with-param name="text">Applications</xsl:with-param>
                     <xsl:with-param name="section">demo</xsl:with-param>
@@ -225,10 +232,12 @@ pageTracker._trackPageview();
     <xsl:param name="url" />
     <xsl:param name="text" />
     <xsl:param name="section" />
+    <xsl:param name="class" />
 
     <a href="{$url}.{$content-extension}">
-      <xsl:if test="/page/@section = $section">
-        <xsl:attribute name="class">active</xsl:attribute>
+      <xsl:if test="(/page/@section = $section) or string-length($class) > 0">
+        <xsl:attribute name="class"><xsl:if test="/page/@section = $section">active </xsl:if>
+        <xsl:value-of select="$class" /></xsl:attribute>
       </xsl:if>
       <img alt="bullet" src="img/menu-bullet.gif" class="menu-bullet" />&#160;<xsl:value-of select="$text" />
     </a>
@@ -244,6 +253,79 @@ pageTracker._trackPageview();
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+
+  <xsl:template match="head-manual-link">
+    <a>
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:choose>
+        <xsl:when test="@section">
+          <xsl:attribute name="href"><xsl:value-of select="concat($head.dist.url, '/manual/index.html#', @section)" /></xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="href"><xsl:value-of select="concat($head.dist.url, '/manual/index.html')" /></xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="head-manual-download-link">
+    <a href="{$head.dist.url}/{$carrot2.manual.base}-{$carrot2.version.head}.zip">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="head-webapp-link">
+    <a href="{$head.webapp.url}">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="head-javadoc-link">
+    <a href="{$head.dist.url}/javadoc">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="head-java-api-download-link">
+    <a href="{$head.dist.url}/{$carrot2.java-api.base}-{$carrot2.version.head}.zip">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="head-workbench-download-link">
+    <a href="{$head.dist.url}/{$carrot2.workbench.base}-{@os}.{@wm}.x86.zip">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="head-dcs-download-link">
+    <a href="{$head.dist.url}/{$carrot2.dcs.base}-{$carrot2.version.head}.zip">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="head-webapp-download-link">
+    <a href="{$head.dist.url}/{$carrot2.webapp.base}-{$carrot2.version.head}.war">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
 
   <xsl:template match="carrot2-webapp-link">
     <a href="{$carrot2.webapp.url}"><xsl:apply-templates /></a>
