@@ -35,7 +35,7 @@ List<Cluster> clusters = new SimpleController()
   .process(attributes, YahooDocumentSource.class, 
       LingoClusteringAlgorithm.class).getClusters();]]></pre>
 
-          In contrary to the 2.x line, the 3.0 release requires Java JDK 1.5 or higher.
+          Contrary to the 2.x line, the 3.0 release requires Java JDK 1.5 or higher.
         </td>
       </tr>
 
