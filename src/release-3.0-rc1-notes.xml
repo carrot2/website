@@ -41,6 +41,23 @@ List<Cluster> clusters = new SimpleController()
 
       <tr>
         <td class="head">
+          Improved clustering quality
+          <div class="small-links">
+            <head-manual-link class="small" section="section.component.lingo">Lingo tuning attributes</head-manual-link><br />
+            <head-manual-link class="small" section="section.component.stc">STC tuning attributes</head-manual-link>
+          </div>
+        </td>
+
+        <td>
+          <c2 />'s default clustering algorithm, Lingo, has been re-implemented
+          for improved clustering quality and extensibility. For both Lingo and STC algorithms,
+          we have exposed a significant number of attributes that will allow you to fine-tune 
+          them for your needs.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
           Brand new <c2 /> Clustering Workbench
           <head-workbench-download-link os="win32" wm="win32" class="button download"><span>Download</span></head-workbench-download-link>
           <div class="small-links">
