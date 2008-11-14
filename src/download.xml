@@ -5,6 +5,12 @@
   <heading>Download</heading>
 
   <content>
+    <div style="width: 450px; padding: 5px 10px; background-color: white; border: 1px solid #fb8d49; margin-bottom: 15px; -moz-border-radius: 4px">
+      If you are new to <c2 />, please consider using the <a
+      content="release-3.0-rc1-notes">3.0 RC1 release</a>, 
+      which has much simpler API, better tuning applications and documentation.
+    </div>
+
     <div style="margin-bottom: 0ex">
       <b>Compiled binaries</b> of the Release 2.1.4 of Carrot<sup>2</sup> are
       available from the <a href="http://demo.carrot2.org/stable/dist/">the
