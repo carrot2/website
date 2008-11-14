@@ -91,14 +91,14 @@
                     <xsl:with-param name="text">Home</xsl:with-param>
                     <xsl:with-param name="section">home</xsl:with-param>
                   </xsl:call-template>
-<!--
+
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">release-3.0-rc1-notes</xsl:with-param>
                     <xsl:with-param name="text">Release 3.0</xsl:with-param>
                     <xsl:with-param name="section">release-3.0</xsl:with-param>
                     <xsl:with-param name="class">hot</xsl:with-param>
                   </xsl:call-template>
--->
+
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">demos</xsl:with-param>
                     <xsl:with-param name="text">Applications</xsl:with-param>
