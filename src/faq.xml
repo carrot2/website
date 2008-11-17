@@ -85,6 +85,39 @@
       </answer>
     </faq>
     
+    <faq id="maven">
+      <question>How do I get started if I use Maven?</question>
+      <answer>
+      <p>
+        Starting with version 3.0, Carrot<sup>2</sup> provides Maven2 artefacts and
+        an archetype project with examples of use.
+      </p>
+      <p>
+        To get started, issue the following command (line breaks for clarity):
+      </p>
+
+      <div class="cmd-line">mvn archetype:generate
+-DarchetypeRepository=http://download.carrot2.org/maven2/
+-DarchetypeGroupId=org.carrot2 
+-DarchetypeArtifactId=carrot2-example-archetype 
+-DarchetypeVersion=<span style="color: red;">3.0-rc1</span>
+-DgroupId=com.mycompany
+-DartifactId=myproject
+-DinteractiveMode=false</div>
+
+      <p>
+        Marked with red is the framework's release number you want to create the POM dependency 
+        against. Check out 
+        <a href="http://download.carrot2.org/maven2/org/carrot2/carrot2-example-archetype">the repository</a> for available version numbers.
+      </p>
+      <p>
+        After the project is created from a template, you can issue standard Maven goals, for instance generate
+        Eclipse project files with:
+      </p>
+      <div class="cmd-line">mvn eclipse:eclipse</div>      
+      </answer>
+    </faq>    
+    
     <faq id="integration">
       <question>How can I integrate Carrot<sup>2</sup> with my Web site/ software?</question>
       <answer>
