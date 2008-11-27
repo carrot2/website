@@ -8,7 +8,7 @@
         <h2>News</h2>
        
         <div>
-          <a content="#">Release 3.0 RC1</a> is available
+          <a content="release-3.0-rc1-notes">Release 3.0 RC1</a> is available
           with much cleaner API, brand new web and desktop application,
           a manual and much more!
         </div>
