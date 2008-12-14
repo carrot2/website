@@ -6,30 +6,11 @@
 
   <content>
     <faqs>
-    <faq id="stability">
-      <question>How stable is the 3.0 RC1 release?</question>
-      <answer>
-        We have been using and testing the 3.0 release for a few months
-        and <a target="_blank"
-        href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;&amp;type=1&amp;pid=10000&amp;resolution=1&amp;fixfor=10082&amp;fixfor=10070&amp;fixfor=10056&amp;fixfor=10055&amp;fixfor=10054&amp;sorter/field=priority&amp;sorter/order=DESC">fixed a
-        couple of bugs</a> during this period. We have not seen major bugs in
-        the system core for a while now and we consider it stable. If you find any issues, please <a
-        content="support">let us know</a>.
-      </answer>
-    </faq>
-
-    <faq id="release-date">
-      <question>When will the 3.0 version be officially released?</question>
-      <answer>
-        We are aiming to officially release the 3.0 version by the end of November 2008.
-      </answer>
-    </faq>
-
     <faq id="for-start">
-      <question>I am planning to start using <c2 />, should I choose 2.x or the 3.0 RC1 version?</question>
+      <question>I am planning to start using <c2 />, should I choose 2.x or the 3.0 version?</question>
       <answer>
-        By all means, start with the 3.0 RC1 version. It offers <head-javadoc-link>much simpler
-        Java API</head-javadoc-link>, better accompanying applications and <head-manual-link>documentation</head-manual-link>. The only
+        By all means, start with the 3.0 version. It offers <javadoc-link release="stable">much simpler
+        Java API</javadoc-link>, better accompanying applications and <manual-link>documentation</manual-link>. The only
         reason you might want to stick with the 2.x line is when your software
         must run under JDK 1.4, which <c2 /> v3.0 does not support.
       </answer>
@@ -47,19 +28,19 @@
       <question>How do I migrate my 2.x-based software to the 3.0 version?</question>
       <answer>
         If you are using <c2 /> Java API, download the 
-        <head-java-api-download-link>3.0 release Java API package</head-java-api-download-link>
+        <a content="download-java-api">3.0 release Java API package</a>
         and replace the calls to <c2 /> API in your software where appropriate. If you are using
         the Document Clustering Server (DCS), download the 
-        <head-dcs-download-link>3.0 release DCS</head-dcs-download-link> run your
+        <a content="download-dcs">3.0 release DCS</a> run your
         software against it. The changes in the DCS API were very minor, mainly to introduce
         consistent parameter naming.
       </answer>
     </faq>
 
     <faq id="2x-status">
-      <question>What will be the status of the 2.x version when 3.0 is officially released?</question>
+      <question>What is the status of the 2.x version?</question>
       <answer>
-        After the official release of <c2 /> v3.0, the 2.x line will enter the
+        The 2.x line entered the
         maintenance mode with all new features being added to the 3.x line and
         the 2.x line being limited to bug fixes only.
       </answer>

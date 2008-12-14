@@ -28,39 +28,13 @@
       </tr>
 
       <tr>
-        <td>FuzzyAnts</td>
-        <td>Steven Schockaert</td>
-        <td>2.17</td>
-        <td>8.70</td>
-        <td>16.93</td>
-        <td>yes</td>
-        <td></td>
-        <td>
-          <a content="publications" anchor="thesis-ants">[1]</a>
-        </td>
-        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=FuzzyAnts+%28%2BEnglish%29&amp;opts=h">london</carrot2-webapp-results-link></td>
-      </tr>
-
-      <tr>
-        <td>HAOG-STC</td>
-        <td>Karol Gołembniak</td>
-        <td>0.04</td>
-        <td>0.11</td>
-        <td>0.28</td>
-        <td>yes</td>
-        <td></td>
-        <td></td>
-        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=HAOG-STC+%28%2BEnglish%29&amp;opts=h">london</carrot2-webapp-results-link></td>
-      </tr>
-
-      <tr>
-        <td>Lingo**</td>
+        <td>Lingo***</td>
         <td>Stanislaw Osinski</td>
-        <td>0.34</td>
-        <td>0.52</td>
-        <td>0.84</td>
+        <td>0.48 0.16**</td>
+        <td>0.34 0.17**</td>
+        <td>0.74 0.31**</td>
         <td>no</td>
-        <td>multilingual clustering</td>
+        <td></td>
         <td>
           <a content="publications" anchor="ieee-lingo">[2]</a>
           <a content="publications" anchor="thesis-lingo">[3]</a>
@@ -69,25 +43,11 @@
       </tr>
 
       <tr>
-        <td>Rough k-means</td>
-        <td>Ngo Chi Lang</td>
-        <td>1.38</td>
-        <td>6.76</td>
-        <td>27.73</td>
-        <td>no</td>
-        <td></td>
-        <td>
-          <a content="publications" anchor="thesis-roughkm">[4]</a>
-        </td>
-        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=Rough+k-Means&amp;opts=h">london</carrot2-webapp-results-link></td>
-      </tr>
-
-      <tr>
         <td>STC</td>
         <td>Oren Zamir<br />(impl: Dawid Weiss)</td>
-        <td>0.04</td>
-        <td>0.10</td>
-        <td>0.23</td>
+        <td>0.01</td>
+        <td>0.02</td>
+        <td>0.06</td>
         <td>no</td>
         <td></td>
         <td>
@@ -97,11 +57,11 @@
       </tr>
 
       <tr>
-        <td>Lingo3G***</td>
+        <td>Lingo3G****</td>
         <td>Stanisław Osiński<br />(Carrot Search)</td>
+        <td>0.01</td>
         <td>0.03</td>
-        <td>0.06</td>
-        <td>0.13</td>
+        <td>0.05</td>
         <td>yes</td>
         <td>multilingual clustering, synonyms, advanced tuning, scalability (5000 snippets in 1.3s*)</td>
         <td></td>
@@ -111,24 +71,28 @@
 
     <p style="margin-top: 2ex; margin-bottom: 2ex">
       *) Clustering speed measurements were done for 100, 200, 400 snippets
-      downloaded from Yahoo! for query 'london', using the Carrot<sup>2</sup>
-      standalone GUI application. Benchmark environment: Pentium M 1.3 GHz, 768
-      MB RAM, Windows XP. Java Virtual Machine: Sun JDK 1.4.2, JVM switches:
-      -Xmx512m -Xms128m -XX:NewRatio=1 -server. Time presented in the table is
-      an average of 75 runs, for each algorithm time measurement was followed
-      by 25 untimed warm-up runs.
+      downloaded from Yahoo! for query 'lucene'. Benchmark environment: Intel Core2 Duo E8400 3GHz, 3GB
+      MB RAM, Windows XP. Java Virtual Machine: Sun JDK 1.6.0, JVM switches:
+      -server. Time presented in the table is
+      an average of 100 runs, for each algorithm time measurement was preceded
+      by 100 untimed warm-up runs.
     </p>
 
     <p style="margin-bottom: 2ex">
-      **) Lingo is the default clustering algorithm used in the
+      **) Clustering time when <manual-link section="section.advanced-topics.native-matrix-computations">native matrix computations</manual-link>
+      are enabled.
+    </p>
+
+    <p style="margin-bottom: 2ex">
+      ***) Lingo is the default clustering algorithm used in the
       Carrot<sup>2</sup> live demos.
     </p>
 
     <p>
-      ***) <carrot-search-website-link
-      extension="lingo-applications.html">Lingo3G</carrot-search-website-link> is a
-      commercial <carrot-search-webapp-link>document clustering
-      engine</carrot-search-webapp-link> and is not available in the Open
+      ****) Lingo3G is a
+      commercial <carrot-search-website-link
+      extension="lingo-applications.html">document clustering
+      engine</carrot-search-website-link> and is not available in the Open
       Source part of Carrot<sup>2</sup>. Please contact
       <carrot-search-website-link>Carrot Search</carrot-search-website-link>
       for details.

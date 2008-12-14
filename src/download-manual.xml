@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="download">
+  <head><dcs-download-refresh release="stable" wm="win32" os="win32" /></head>
+  <heading>Download</heading>
+
+  <content>
+    <strong>Downloading <c2 /> <man /></strong> for version 3.0...<br />
+    <span class="small">If the download does not start automatically, <manual-download-link release="stable">click here</manual-download-link></span>
+
+    <div id="download-info">
+      <img src="img/manual.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 User and Developer Manual Download" />
+
+      <strong>After download completes:</strong>
+
+      <ol>
+        <li>
+          Extract the archive to some local directory
+        </li>
+
+        <li>
+          Open <tt>index.html</tt>
+        </li>
+
+        <li>
+          If the manual does not cover some specific topic, please <a content="support">contact us</a>
+        </li>
+      </ol>
+    </div>
+  </content>
+</page>

@@ -2,24 +2,24 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="release-3.0">
-  <heading>Release 3.0 RC1</heading>
+  <heading>Release 3.0</heading>
 
   <content>
     <para>
       After <a href="http://fisheye3.atlassian.com/chart/~charttype=Area,stacktype=None/carrot2/branches/3.0-proto" target="_blank">12 months of hard work</a>,
-      we are proud to announce the <b>Release Candidate 1 of Carrot2 version 3.0</b>.
+      we are proud to announce the <b>release 3.0 of Carrot2</b>.
       The 3.0 release introduces significant improvements in all areas of the framework:
     </para>
 
     <table class="release-notes">
       <tr>
         <td class="head">
-          Simplified Java API
-          <head-java-api-download-link class="button download"><span>Download</span></head-java-api-download-link>
+          Simplified <ja />
+          <a content="download-java-api" class="button download"><span>Download</span></a>
           <div class="small-links">
-            <head-javadoc-link class="small">View JavaDocs online</head-javadoc-link><br />
-            <head-manual-link class="small" section="section.integration.compiling-java-program-with-carrot2">Getting started</head-manual-link><br />
-            <head-manual-link class="small" section="chapter.architecture">Architecture overview</head-manual-link>
+            <javadoc-link release="stable" class="small">View JavaDocs online</javadoc-link><br />
+            <manual-link class="small" section="section.integration.compiling-java-program-with-carrot2">Getting started</manual-link><br />
+            <manual-link class="small" section="chapter.architecture">Architecture overview</manual-link>
           </div>
         </td>
 
@@ -43,8 +43,8 @@ List<Cluster> clusters = new SimpleController()
         <td class="head">
           Improved clustering quality
           <div class="small-links">
-            <head-manual-link class="small" section="section.component.lingo">Lingo tuning attributes</head-manual-link><br />
-            <head-manual-link class="small" section="section.component.stc">STC tuning attributes</head-manual-link>
+            <manual-link class="small" section="section.component.lingo">Lingo tuning attributes</manual-link><br />
+            <manual-link class="small" section="section.component.stc">STC tuning attributes</manual-link>
           </div>
         </td>
 
@@ -58,11 +58,11 @@ List<Cluster> clusters = new SimpleController()
 
       <tr>
         <td class="head">
-          Brand new <c2 /> Clustering Workbench
-          <head-workbench-download-link os="win32" wm="win32" class="button download"><span>Download</span></head-workbench-download-link>
+          Brand new <c2 /> <dcw />
+          <a content="download-workbench-win32" class="button download"><span>Download</span></a>
           <div class="small-links">
-            <head-workbench-download-link os="linux" wm="gtk" class="small"><span>Linux version</span></head-workbench-download-link><br />
-            <head-manual-link class="small" section="section.getting-started">Getting started</head-manual-link>
+            <a content="download-workbench-linux" class="small"><span>Linux version</span></a><br />
+            <manual-link class="small" section="section.getting-started">Getting started</manual-link>
           </div>
         </td>
 
@@ -70,20 +70,20 @@ List<Cluster> clusters = new SimpleController()
           The 3.0 release introduces a brand new GUI application for
           experimenting and tuning <c2 /> clustering.
 
-          <head-workbench-download-link os="win32" wm="win32"> 
-            <img class="pic rn" src="img/release-3.0/workbench.png" alt="Carrot2 Clustering Workbench" /></head-workbench-download-link>
+          <a content="download-workbench-win32"> 
+            <img class="pic rn" src="img/workbench.png" alt="Carrot2 Clustering Workbench" /></a>
 
-          You can use <c2 /> Clustering Workbench to quickly start clustering
+          You can use <c2 /> <dcw /> to quickly start clustering
           your own data or to tune clustering results.
         </td>
       </tr>
 
       <tr>
         <td class="head">
-          Brand new <c2 /> Web Application
-          <head-webapp-link class="button view"><span>View online</span></head-webapp-link>
+          Brand new <c2 /> <wa />
+          <carrot2-webapp-link class="button view"><span>View online</span></carrot2-webapp-link>
           <div class="small-links">
-            <head-webapp-download-link class="small"><span>Download WAR</span></head-webapp-download-link>
+            <a content="download-webapp" class="small"><span>Download WAR</span></a>
           </div>
         </td>
 
@@ -91,18 +91,35 @@ List<Cluster> clusters = new SimpleController()
           <c2 /> Web Application has been reimplemented for easier customization
           and top front-end performance. We also included an attractive visualization.
 
-          <head-webapp-link>
-            <img class="pic rn" src="img/release-3.0/webapp-tree.png" alt="Carrot2 Web Application, cluster tree view" />
-            <img class="pic rn" src="img/release-3.0/webapp-circles.png" alt="Carrot2 Web Application, visualization view" /></head-webapp-link>
+          <carrot2-webapp-link>
+            <img class="pic rn" src="img/webapp-tree.png" alt="Carrot2 Web Application, cluster tree view" />
+            <img class="pic rn" src="img/webapp-circles.png" alt="Carrot2 Web Application, visualization view" /></carrot2-webapp-link>
         </td>
       </tr>
 
       <tr>
         <td class="head">
-          User and Developer Manual
-          <head-manual-link class="button view" href="http://download.carrot2.org/head/manual/"><span>View online</span></head-manual-link>
+          Improved <c2 /> <dcs />
+          <a content="download-dcs" class="button download"><span>Download</span></a>
+        </td>
+
+        <td>
+          The 3.0 release improves the <dcs /> by adding the ability to query external
+          document sources. It also adds a simple web-based quick start screen. 
+
+          <a content="download-dcs"> 
+            <img class="pic rn" src="img/dcs.png" alt="Carrot2 Document Clustering Workbench" /></a>
+
+          You can use <c2 /> <dcs /> to integrate <c2 /> with your non-Java software.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          <man />
+          <manual-link class="button view" href="http://download.carrot2.org/head/manual/"><span>View online</span></manual-link>
           <div class="small-links">
-            <head-manual-download-link class="small"><span>Download</span></head-manual-download-link>
+            <a content="download-manual" class="small"><span>Download</span></a>
           </div>
         </td>
 
@@ -111,8 +128,8 @@ List<Cluster> clusters = new SimpleController()
           We will be extending the manual based on the frequency of questions
           on the mailing list.
 
-          <head-manual-link>
-            <img class="pic rn" src="img/release-3.0/manual.png" alt="Carrot2 User and Developer Manual" /></head-manual-link>
+          <manual-link>
+            <img class="pic rn" src="img/manual.png" alt="Carrot2 User and Developer Manual" /></manual-link>
         </td>
       </tr>
     </table>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="download">
+  <head><java-api-download-refresh release="stable" /></head>
+  <heading>Download</heading>
+
+  <content>
+    <strong>Downloading <c2 /> <ja /></strong> version 3.0...<br />
+    <span class="small">If the download does not start automatically, <java-api-download-link release="stable">click here</java-api-download-link></span>
+
+    <div id="download-info">
+      <img src="img/java-api-in-eclipse.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Java API Download" />
+
+      <strong>After download completes:</strong>
+
+      <ol>
+        <li>
+          Extract the archive to some local directory
+        </li>
+
+        <li>
+          Look in the <tt>examples</tt> directory for code examples
+        </li>
+
+        <li>
+          See <c2 /> Manual for <manual-link target="_blank" section="section.integration.seting-up-c2-project-in-eclipse">instructions on how to set up
+          a <c2 /> project in Eclipse</manual-link>.
+        </li>
+      </ol>
+    </div>
+  </content>
+</page>

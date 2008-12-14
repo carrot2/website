@@ -43,6 +43,16 @@ a.name, a.name:hover {
   color: black;
 }
 
+hr {
+  height: 1px;
+  color: #e0e0e0;
+  background-color: #e0e0e0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin: 2ex 0;
+}
+
 p {
   text-align: justify;
   margin: 0;
@@ -433,6 +443,15 @@ table.release-notes td {
   padding-bottom: 2ex;
 }
 
+table.release-notes tr:last-child td {
+  padding-bottom: 0;
+}
+
+table.download tr:first-child td,
+table.release-notes tr:first-child td {
+  padding-top: 0;
+}
+
 table.release-notes td.head {
   font-weight: bold;
   width: 14em;
@@ -441,12 +460,56 @@ table.release-notes td.head {
   padding-right: 1em;
 }
 
+table.source-code td.head {
+  width: 12em;
+}
+
+table.download {
+  width: 100%;
+}
+
+table.download td {
+  padding-bottom: 2ex;
+  padding-top: 2ex;
+  vertical-align: top;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table.download td.head {
+  width: 400px;
+  width: 14em;
+  padding-right: 1em;
+}
+
+table.download li,
+table.download ul {
+  margin: 0 0 0 2ex !important;
+  padding: 0 !important;
+}
+
+table.download img.pic {
+  border: 1px solid #e0e0e0;
+}
+
+#buildStatus strong {
+  display: none;
+}
+
+#buildStatus p {
+  line-height: normal;
+  background-position: left 2px;
+  padding: 0 0 0 20px;
+}
+
+#buildStatusInner3 {
+  min-height: 0;
+}
+
 img.rn {
   margin: 2ex 0;
 }
 
 a.button {
-  background-image: url("../img/button-download.png");
   background-repeat: no-repeat;
   display: block;
   width: 90px;
@@ -461,16 +524,28 @@ a.view {
   background-image: url("../img/button-view.png");
 }
 
+a.button-large span,
 a.button span {
   visibility: hidden;
 }
 
-table.release-notes div.small-links {
+#main-download {
+  margin-bottom: 10px;
+  width: 186px;
+  height: 37px;
+  background-image: url("../img/button-download-large.png");
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+div.small-links {
   clear: both;
   padding-top: 3px;
   line-height: 1.15;
 }
 
+.small,
+.small a,
 a.small {
   color: #808080;
   font-size: 10px;
@@ -478,6 +553,7 @@ a.small {
   text-decoration: none;
 }
 
+.small a:hover,
 a.small:hover {
   text-decoration: underline;
 }
@@ -485,6 +561,21 @@ a.small:hover {
 table.release-notes a.button {
   float: right;
   margin-top: 4px;
+}
+
+#download-info {
+  margin-top: 4ex;
+}
+
+#download-info ul,
+#download-info ol {
+  margin-left: 0;
+}
+
+p.note {
+  font-size: 11px;
+  color: #404040;
+  text-align: left;
 }
 
 /** Bamboo build status */
@@ -516,3 +607,4 @@ table.release-notes a.button {
 {
 	background-image: none;
 }
+

@@ -6,541 +6,61 @@
 
   <content>
     <faqs>
-    <faq id="commercial">
-      <question>Can I use Carrot<sup>2</sup> in a commercial project?</question>
+    <faq id="testing">
+      <question>How can I try <c2 /> with my own data?</question>
       <answer>
-        Yes. The only requirement is that you properly acknowledge the use of
-        Carrot<sup>2</sup> (on the project's website and documentation) and let
-        us know about your project. Please also remember to read the <a
-        content="license">license</a>.
+        Please see <man /> for a number of 
+        <manual-link section="section.getting-started">typical <c2 /> testing scenarios</manual-link>.
       </answer>
     </faq>
-
-    <faq id="acknowledging">
-      <question>How can I acknowledge the use of Carrot<sup>2</sup> on my site?</question>
+    
+    <faq id="integration">
+      <question>How can I integrate <c2 /> with my software?</question>
       <answer>
-        Please put a statement equivalent to "This product includes software
-        developed by the Carrot2 Project" on your site and link it to
-        Carrot<sup>2</sup>'s website (<a
-        href="http://www.carrot2.org">http://www.carrot2.org</a>). Additionally,
-        you can use some of our <a content="acknowledging">powered-by logos</a>
-        if you like.
+        Please see <man /> for information about 
+        <manual-link section="section.integration">integrating <c2 /> with Java and non-Java software</manual-link>.
       </answer>
     </faq>
 
     <faq id="crawling">
-      <question>Can Carrot<sup>2</sup> crawl my website?</question>
+      <question>Can <c2 /> crawl my website?</question>
       <answer>
-        No. Carrot<sup>2</sup> can add clustering of search results to an
+        No. <c2 /> can add clustering of search results to an
         existing search engine. You can use an Open Source project called <a
         href="http://www.nutch.org">Nutch</a> to crawl your website. Nutch has
-        a Carrot<sup>2</sup>-based search clustering plugin, so you'll get all
+        a <c2 />-based search clustering plugin, so you'll get all
         crawling, searching and clustering in one piece. If you need help
         with any of these, please <a content="support">contact us</a>.
       </answer>
     </faq>
 
-    <faq id="compiling">
-      <question>How do I compile Carrot<sup>2</sup> source code?</question>
+    <faq id="crawling">
+      <question>Can I use <c2 /> to cluster something else than search results?</question>
       <answer>
-        <ol>
-          <li>
-            In order to compile Carrot<sup>2</sup> you will need <a
-            href="http://java.sun.com/javase/downloads/index.jsp">Java Software
-            Developer Kit</a> in version 1.4.2 or newer and <a
-            href="http://ant.apache.org/">Apache Ant</a>.
-          </li>
-          <li>
-            Check out Carrot<sup>2</sup> source code from the SVN repository:
-
-            <div class="cmd-line">
-              svn co https://carrot2.svn.sourceforge.net/svnroot/carrot2/trunk/ carrot2
-            </div>
-          </li>
-
-          <li>
-            To build all Carrot<sup>2</sup> components, go to the
-            <tt>trunk/carrot2</tt> directory and run:
-
-            <div class="cmd-line">
-              ant build
-            </div>
-          </li>
-
-          <li>
-            To build only one application, go to its directory (e.g.
-            <tt>trunk/carrot2/applications/carrot2-demo-dcs</tt>) run Ant with
-            the default target:
-
-            <div class="cmd-line">
-              ant build
-            </div>
-
-            In the application's <tt>tmp/dist</tt> directory you'll find the
-            compiled application. Please refer to the application's specific
-            <tt>readme.txt</tt> files for instructions on how to run the
-            application.
-          </li>
-        </ol>
+        Absolutely. <c2 /> came about as a framework for building search results clustering
+        engines but its algorithms should successfully cluster up to about a thousand
+        text documents, a few paragraphs each. 
       </answer>
     </faq>
-    
-    <faq id="maven">
-      <question>How do I get started if I use Maven?</question>
-      <answer>
-      <p>
-        Starting with version 3.0, Carrot<sup>2</sup> provides Maven2 artefacts and
-        an archetype project with examples of use.
-      </p>
-      <p>
-        To get started, issue the following command (line breaks for clarity):
-      </p>
 
-      <div class="cmd-line">mvn archetype:generate
--DarchetypeRepository=http://download.carrot2.org/maven2/
--DarchetypeGroupId=org.carrot2 
--DarchetypeArtifactId=carrot2-example-archetype 
--DarchetypeVersion=<span style="color: red;">3.0-rc1</span>
--DgroupId=com.mycompany
--DartifactId=myproject
--DinteractiveMode=false</div>
-
-      <p>
-        Marked with red is the framework's release number you want to create the POM dependency 
-        against. Check out 
-        <a href="http://download.carrot2.org/maven2/org/carrot2/carrot2-example-archetype">the repository</a> for available version numbers.
-      </p>
-      <p>
-        After the project is created from a template, you can issue standard Maven goals, for instance generate
-        Eclipse project files with:
-      </p>
-      <div class="cmd-line">mvn eclipse:eclipse</div>      
-      </answer>
-    </faq>    
-    
-    <faq id="integration">
-      <question>How can I integrate Carrot<sup>2</sup> with my Web site/ software?</question>
+    <faq id="crawling">
+      <question>Can I force <c2 /> to cluster my documents to some predefined clusters / labels?</question>
       <answer>
-        <p>
-        Such an integration depends on what existing infrastructure is already available in your project. Carrot<sup>2</sup>
-        requires a <emph>feed</emph> of documents (search results), so typically you'll need a search engine
-        that crawls your site. Such an engine can be indeed local to your Web site (proprietary solutions in intranets, 
-        search engines built on top of <a href="http://lucene.apache.org/nutch/">Nutch</a> or <a href="http://www.htdig.org/">ht://dig</a>),
-        but it can as well be a global search engine with searches restricted to your domain (Google, Yahoo).
-        </p>
-        
-        <p>
-        Once a search engine is available, the integration depends on the
-        technology your site/ software uses for rendering the user interface
-        (or more accurately: for implementing application logic). Software
-        written in Java can use Carrot<sup>2</sup> directly in a way that is
-        shown in the end-to-end <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java">example
-        code</carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/Example.html">JavaDoc</carrot2-api-link>).
-        Sites written in Perl, PHP, .NET and other languages can use the
-        <c2 /> Document Clustering Server, for more details see the <a href="#non-java-integration">dedicated FAQ</a>.
-        Finally, in some cases you might want to re-use and
-        customize (through XSLT) some bits of Carrot<sup>2</sup>'s <carrot2-webapp-link>web
-        application</carrot2-webapp-link> (located in the <carrot2-source-link dir="true" extension="/applications/carrot2-demo-webapp/"><span
-        class="c2element">carrot2/applications/carrot2-demo-webapp</span></carrot2-source-link>
-        folder of the source repository) to e.g. visualize clusters.
-        </p>
-        
-        <p>
-        Note that Carrot<sup>2</sup> integration requires some Java development
-        skills and familiarity with Java development tools (Eclipse, Apache
-        ANT). The example code and JUnit tests available in the open source project demonstrate
-        various ways of using Carrot<sup>2</sup>. The project's <a
-        href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers">mailing
-        list</a> can also be of some help if you get stuck someplace.
-        We have also prepared a step-by-step example of using the Carrot<sup>2</sup> API directly, it is
-        available in the <a href="https://carrot2.svn.sourceforge.net/svnroot/carrot2/trunk/carrot2/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java">source code repository</a>.
-        </p>
-        
-        <p>If you'd rather pay for having the integration done quickly and professionally, <a href="http://www.carrot-search.com">Carrot Search</a>
-        provides consulting services (paid approximately 60 EUR per hour).
-        </p>
+        No. Assigning documents to a set of predefined categories is a problem called
+        text classification / categorization and <c2 /> was not designed to solve it.
+        For text classification components you may want to see the 
+        <a href="http://alias-i.com/lingpipe/">LingPipe project</a>.
       </answer>
     </faq>
-    
-    <faq id="non-java-integration">
-      <question>How can I integrate Carrot<sup>2</sup> with non-Java software?</question>
+
+    <faq id="crawling">
+      <question>How does <c2 /> clustering scale with respect to the number and length of documents?</question>
       <answer>
-        <p>
-        Although <c2 /> does not have native ports on non-Java platforms, such
-        as .NET, PHP, Ruby, Perl etc., it can be easily integrated with them
-        using the <c2 /> Document Clustering Server (DCS). The DCS exposes <c2
-        /> clustering as an HTTP/REST service. Essentially, you make an
-        HTTP/POST request with an XML containing the documents you want to have
-        clustered and the DCS responds with an XML containing the clusters
-        created by Carrot2. For quick integration with Ruby, A JSON output
-        format is also available. Finally, for batch processing, a simple
-        command-line application is provided.
-        </p>
-
-        <p>
-        To get started with the <c2 /> DCS, <a content="download">download</a>
-        the latest version and uncompress the archive to some local directory.
-        Run the DCS providing the port number it should bind to, e.g.:
-        </p>
-
-        <div class="cmd-line">
-          dcs -port 9090
-        </div>
-
-        <p>
-          When the DCS initializes correctly, you should see the following
-          messages on the console:
-        </p>
-
-        <pre class="codeblock">
-[11:28:35,734 INFO] Initializing components.
-[11:28:36,031 INFO] Loaded algorithm: haog-fi-en
-[11:28:36,046 INFO] Loaded algorithm: haog-stc-en
-[11:28:36,046 INFO] Setting the context-level default process id to: lingo-cla..
-[11:28:36,234 INFO] Loaded algorithm: lingo-classic
-[11:28:36,234 INFO] Loaded algorithm: rough-kmeans
-[11:28:36,250 INFO] Loaded algorithm: stc-en
-[11:28:36,250 INFO] Finished initializing components.
-[11:28:36,250 INFO] Starting standalone DCS server.
-[11:28:36,593 INFO] Console mode, skipping configuration in web.xml.
-[11:28:36,609 INFO] Accepting HTTP requests on port: 9090</pre>
-
-        <p>
-          Point your browser to <tt>http://localhost:9090/</tt>, where you will
-          find further instructions. See the <tt>examples/queries</tt>
-          directory of the DCS distribution for some example document sets in
-          the DCS format.
-        </p>
-
-        <p>
-          You can also check <a
-          href="http://www.roryoung.co.uk/blog/post/playing-with-carrot2-clustering-in-php.html">Rob
-          Young's (mostly) Tech Blog</a> for an example of using Carrot2 DCS with PHP.
-        </p>
-      </answer>
-    </faq>
-    
-    <faq id="lucene-integration">
-      <question>How can I integrate Carrot<sup>2</sup> with my Lucene-based application?</question>
-      <answer>
-        You can use Carrot<sup>2</sup>'s built-in <carrot2-api-link
-        extension="/org/carrot2/input/lucene/package-summary.html">Lucene input
-        component</carrot2-api-link> as shown in this well-commented
-        <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/LuceneExample.java">example code</carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/LuceneExample.html">JavaDoc</carrot2-api-link>).
-      </answer>
-    </faq>
-    
-    <faq id="running-in-eclipse">
-      <question>How can I run Carrot<sup>2</sup> demo browser from Eclipse?</question>
-      <answer>
-        To run Carrot<sup>2</sup> Demo Browser directly from Eclipse, please follow these steps:
-
-        <ol>
-          <li>
-            Check out Carrot<sup>2</sup> source code from the SVN repository:
-
-            <div class="cmd-line">
-              svn co https://carrot2.svn.sourceforge.net/svnroot/carrot2/trunk/ carrot2
-            </div>
-          </li>
-
-          <li>
-            <img src="img/eclipse-import.gif" style="float: right; margin-bottom: 10px" class="pic" />
-            Import all Carrot<sup>2</sup> projects into your workspace:
-
-            <ol>
-              <li>
-                From the Package Explorer's context menu choose <span class="gui-label">Import...</span>
-              </li>
-
-              <li>
-                In the first step of the Import wizard, choose <span
-                class="gui-label">General -> Existing projects into
-                Workspace</span> and click <span class="gui-label">Next</span>.
-              </li>
-
-              <li>
-                In the next step of the wizard, in the <span
-                class="gui-label">Select root directory</span> field provide
-                the path to your local Carrot<sup>2</sup> checkout and click
-                <span class="gui-label">Finish</span>.
-              </li>
-            </ol>
-          </li>
-
-          <li style="clear: both">
-            <img src="img/eclipse-classpath-variables.gif" style="float: right; margin-bottom: 10px" class="pic" />
-
-            The Eclipse compile process will fail because of undefined
-            classpath variables: <tt>ANT_HOME</tt> and
-            <tt>CARROT2_CHECKOUT_BASE</tt>. To define these variables open the
-            Preferences window (<span class="gui-label">Window ->
-            Preferences...</span>) and then go to (<span class="gui-label">Java
-            -> Build Path -> Classpath variables</span>). Make the
-            <tt>ANT_HOME</tt> variable point to your local Ant installation and
-            <tt>CARROT2_CHECKOUT_BASE</tt> to your local Carrot<sup>2</sup>
-            repository checkout.
-          </li>
-
-          <li style="clear: both">
-            Clean all projects (<span class="gui-label">Project ->
-            Clean...</span>) and let Eclipse compile everything again, this
-            time without errors.
-          </li>
-
-          <li>
-            <img src="img/eclipse-launch.gif" style="float: right; margin-bottom: 10px" class="pic"
-            /> Run Carrot<sup>2</sup> browser using the <span
-            class="gui-label">Run...</span> toolbar icon (Eclipse should have
-            automatically created the appropriate launch entry during project
-            import).
-          </li>
-        </ol>
-      </answer>
-    </faq>
-    
-    <faq id="lucene-in-demo-browser">
-      <question>How do I configure the Lucene input in Carrot<sup>2</sup> Tuning Browser?</question>
-      <answer>
-        To feed the Carrot<sup>2</sup> Demo Browser directly from a local Lucene index follow these steps:
-
-        <ol>
-          <li>
-            Run the Carrot<sup>2</sup> Demo Browser.
-          </li>
-
-          <li>
-            In the <span class="gui-label">Process</span> combo box select
-            <span class="gui-label">Lucene Index -- Lingo Classic
-            Clusterer</span>.
-          </li>
-
-          <li>
-            <img src="img/lucene-index-settings.png" style="float: right; margin-bottom: 10px" class="pic" />
-            Click the <span class="gui-label">Settings</span> button and then
-            the <span class="gui-label">Edit</span> button in the <span
-            class="gui-label">Lucene index location</span> section.
-
-            <ol>
-              <li>
-                In the file browser, provide the path to your Lucene
-                index directory. A dialog for configuring the index will appear.
-              </li>
-
-              <li>
-                In the <span class="gui-label">Search fields</span> section,
-                select the Lucene fields to be searched (hold down Ctrl key for
-                multiple selections).
-              </li>
-
-              <li>
-                In the <span class="gui-label">Results fields</span> section,
-                select which Lucene fields should be mapped to the URL,
-                document title and document snippet.
-              </li>
-
-              <li>
-                Finally, in the <span class="gui-label">Analyzer</span>
-                section, choose the analyzer to be used.
-              </li>
-
-              <li>
-                Click the <span class="gui-label">OK</span> buttons in the
-                index configuration and process configuration dialogs.
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </answer>
-    </faq>
-    
-    <faq id="corrupted-characters">
-      <question>Why do I see "?" characters instead of my Chinese/ Polish/ other Unicode characters?</question>
-      <answer>
-        <p>The demo application running under a Web application container (such as Tomcat)
-        relies on proper decoding of Unicode characters from the request URI. This decoding
-        is done by the container and must be properly configured <b>at the container level</b>.</p>
-
-        <p>Unfortunately, this configuration for each container is a bit different (it
-        is not part of the J2EE standard).</p>
-        
-        <p>For Tomcat, you can enforce the URI decoding codepage at the connector configuration
-        level. Locate <tt>server.xml</tt> file inside Tomcat's <tt>conf</tt> folder
-        and add the following attribute to the <tt>Connector</tt> section:</p>
-
-        <pre class="codeblock">URIEncoding="UTF-8"</pre>
-        
-        <p>An example connector configuration should look like this:</p>
-  
-        <pre class="codeblock"><![CDATA[<Connector port="8080"
-    maxThreads="25" minSpareThreads="5" maxSpareThreads="10"
-    minProcessors="5" maxProcessors="25" enableLookups="false"
-    redirectPort="8443" acceptCount="10" debug="0" connectionTimeout="20000" 
-    URIEncoding="UTF-8" />]]></pre>
-      </answer>
-    </faq>
-    
-    <faq id="adding-removing-tabs-from-webapp">
-      <question>How do I add or remove search tabs from the <c2 /> web application?</question>
-      <answer>
-        <ol>
-          <li>
-            <a content="download">Download</a> the <c2 /> web application from
-            and extract the WAR file from the archive.
-          </li>
-
-          <li>
-            Unpack the WAR file using your favourite ZIP unpacker.
-          </li>
-
-          <li>
-            In order to remove a search tab, delete the corresponding
-            <tt>*.bsh</tt> file from the <tt>inputs/</tt> directory. For
-            example, to remove the Wiki tab, delete
-            <tt>05-input-yahooapi-wiki.bsh</tt>. Then, 
-          </li>
-
-          <li>
-            <p>
-              In order to add a new tab to the web application, assuming the
-              data source is already <a content="architecture">supported</a> by
-              <c2 />, it's best to clone and modify one of the existing
-              <tt>*.bsh</tt> files from the <tt>inputs/</tt> directory. 
-              When cloning an existing file, please make sure to <strong>change the
-              component identifier</strong>:
-            </p>
-            
-<pre class="codeblock">LoadedComponentFactory loaded = 
-  new LoadedComponentFactory("input-yahooapi-put<strong>-copy</strong>", factory);
-</pre>
-
-            <p>
-              Using the section shown below, you can customize:
-
-              <ul>
-                <li>
-                  <tt>tab.title</tt> -- title of the tab
-                </li>
-
-                <li>
-                  <tt>tab.accel</tt> -- shortcut key for the tab (make sure the
-                  letter is contained in the tab's name)
-                </li>
-
-                <li>
-                  <tt>tab.accel</tt> -- shortcut key for the tab (make sure the
-                  letter is contained in the tab's name)
-                </li>
-
-                <li>
-                  <tt>tab.description</tt> -- description of the tab to be shown as a tool tip
-                </li>
-
-                <li>
-                  <tt>tab.description.startup</tt> -- description of the tab to
-                  be shown on the startup screen
-                </li>
-
-                <li>
-                  <tt>tab.exampleQueries</tt> -- example queries to be shown on
-                  the startup screen, separated by the <tt>|</tt> character
-                </li>
-
-                <li>
-                  <tt>tab.icon</tt> -- a 16 x 16 icon displayed on the tab (put the file in the
-                  <tt>skins/fancy/inputs/</tt> directory)
-                </li>
-
-                <li>
-                  <tt>tab.ignoreOnError</tt> -- set to <tt>true</tt>, to hide
-                  the tab if an error occurs when initializing it
-                </li>
-
-                <li>
-                  <tt>tab.default</tt> -- set to <tt>true</tt> to make the tab the default active tab
-                </li>
-              </ul>
-            </p>
-            
-<pre class="codeblock"><![CDATA[loaded.setProperties(new String [][] {
-  {"tab.name", "Web"},
-  {"tab.accel", "W"},
-  {"tab.description", "Search the Web with www.etools.ch"},
-  {"tab.description.startup", "Carrot Clustering Engine will ..."},
-  {"tab.exampleQueries", "data mining|london|clustering"},
-  {"tab.icon", "web.gif"},
-  {"tab.ignoreOnError", "false" },
-  {"tab.default", "true"}
-});]]></pre>
-            
-            The
-            following data sources are already available:
-
-            <ul>
-              <li>
-                <tt>00-input-etools.bsh</tt> -- <w href="http://www.etools.com">eTools</w> meta search engine. 
-              </li>
-
-              <li>
-                <tt>01-input-yahooapi.bsh</tt> -- YahooAPI web search data source in its default configuration.
-              </li>
-
-              <li>
-                <tt>02-input-googleapi.bsh</tt> -- GoogleAPI web search
-                data source in its default configuration. Please note that this
-                data source is not supported by Google anymore.
-              </li>
-
-              <li>
-                <tt>03-input-msnapi.bsh</tt> -- MSN API web search data
-                source in its default configuration.
-              </li>
-
-              <li>
-                <tt>05-input-yahooapi-wiki.bsh</tt> -- YahooAPI web search
-                data source in a custom configuration. The options are
-                specified by the <tt>05-input-yahooapi-wiki.cfg</tt> file. For
-                a description of the parameters, please see <a
-                href="http://developer.yahoo.com/search/web/V1/webSearch.html">Yahoo
-                Web Search API documentation</a>.
-              </li>
-
-              <li>
-                <tt>06-input-odp.bsh</tt> -- tab based on a locally
-                available Lucene index. Specify the location of the index in
-                the <tt>odp.index.location</tt> system property or hardcode it in the
-                <tt>*.bsh</tt> file.
-              </li>
-
-              <li>
-                <tt>07-input-jobs.bsh</tt> -- tab based on an OpenSearch data
-                source. The URL for the OpenSearch data source can have the
-                following form (no line break):
-
-                <pre class="codeblock"><![CDATA[http://www.indeed.com/opensearch?
-q={searchTerms}&start={startIndex}&limit={count}]]></pre>
-
-                Elements marked by the curly braces will be replaced during
-                request time in the following way:
-
-                <ul>
-                  <li><tt>searchTerms</tt> -- the query user provided</li>
-                  <li><tt>startIndex</tt> -- the index of the first search result to be fetched</li>
-                  <li><tt>count</tt> -- the total number of search results to be fetched</li>
-                </ul>
-              </li>
-
-              <li>
-                <tt>08-input-pubmed.bsh</tt> -- tab based on the PubMed database.
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            Using your favourite tool, ZIP the all the files back to form a WAR
-            file and install the latter in your servlet container.
-          </li>
-        </ol>
+        The most important characteristic of <c2 /> algorithms to keep in mind
+        is that they perform in-memory clustering. For this reason, as a rule of thumb, <c2 /> should
+        successfully deal with up to a thousand of documents, a few paragraphs each.
+        For algorithms designed to process millions of documents, you may want to check 
+        out the <a href="http://lucene.apache.org/mahout/">Mahout project</a>.
       </answer>
     </faq>
 
@@ -552,43 +72,53 @@ q={searchTerms}&start={startIndex}&limit={count}]]></pre>
         obligatory -- the clustering algorithms will cope without the query.
       </answer>
     </faq>
-
-    <faq id="lingo-parameters">
-      <question>What is the meaning of Lingo clustering algorithm's parameters?</question>
+   
+    <faq id="compiling">
+      <question>How do I compile <c2 /> source code?</question>
       <answer>
-        Lingo has 3 parameters that influence the number and contents of
-        clusters is creates:
-
-        <ul>
-          <li>
-            <strong>Cluster Assignment Threshold</strong> &#8212; determines
-            how precise the assignment of documents to clusters should be. For
-            low values of this threshold, Lingo will assign more documents to
-            clusters, which will result in less documents ending up in "Other
-            topics", but also some irrelevant documents making its way to the
-            clusters. For high values of this parameter, Lingo will assign less
-            documents to clusters, which will result in better assignment
-            precision, but also more documents in "Other topics" and less
-            clusters being created.
-          </li>
-
-          <li>
-            <strong>Candidate cluster threshold</strong> &#8212; determines how
-            many clusters Lingo will try to create, higher values of the
-            parameter will give more clusters. However, it is not possible to
-            exactly predict the number of clusters based on the value of this
-            parameter before clustering is actually run.
-          </li>
-
-          <li>
-            <strong>Preferred cluster count</strong> &#8212; determines the
-            maximum number of clusters Lingo will create (excluding the "Other
-            topics" clusters).
-          </li>
-        </ul>
+        Please see <man /> for more information on 
+        <manual-link section="section.advanced-topics.building-from-source-code">compiling <c2 /> source code</manual-link>.
       </answer>
     </faq>
-   
+    
+    <faq id="maven">
+      <question>How do I get started if I use Maven2?</question>
+      <answer>
+        Please see <man /> for information about <manual-link section="section.integration.adding-to-maven-project">adding 
+        a <c2 /> dependency to an existing Maven2 project</manual-link> or <manual-link section="section.integration.setting-up-maven-project">setting up
+        a <c2 /> Maven2 project from scratch</manual-link>.
+      </answer>
+    </faq>    
+    
+    <faq id="corrupted-characters">
+      <question>Why do I see "?" characters instead of my Chinese/ Polish/ other Unicode characters?</question>
+      <answer>
+        Please see <man /> for 
+        <manual-link section="section.troubleshooting.webapp.uri-encoding">troubleshooting URI encoding problems</manual-link>.
+      </answer>
+    </faq>    
+
+    <faq id="commercial">
+      <question>Can I use <c2 /> in a commercial project?</question>
+      <answer>
+        Yes. The only requirement is that you properly acknowledge the use of
+        <c2 /> (on the project's website and documentation) and let
+        us know about your project. Please also remember to read the <a
+        content="license">license</a>.
+      </answer>
+    </faq>
+
+    <faq id="acknowledging">
+      <question>How can I acknowledge the use of <c2 /> on my site?</question>
+      <answer>
+        Please put a statement equivalent to "This product includes software
+        developed by the Carrot2 Project" on your site and link it to
+        <c2 />'s website (<a
+        href="http://www.carrot2.org">http://www.carrot2.org</a>). Additionally,
+        you can use some of our <a content="acknowledging">powered-by logos</a>
+        if you like.
+      </answer>
+    </faq>
     </faqs>
   </content>
 </page>

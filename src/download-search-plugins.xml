@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="download">
+  <head><script type="text/javascript" src="mozilla/addSearchProvider.js">&#160;</script></head>
+  <heading>Browser plugins</heading>
+
+  <content>
+    <strong><c2 /> Search Plugins</strong>: make <c2 /> searches straight from your browser!
+
+    <div id="download-info">
+      <img src="img/mozilla-firefox-clustering-plugin.gif" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Firefox and Internet Explorer Search Plugins Download" />
+
+      <ul>
+        <li>
+          <carrot2-opensearch-plugin-link>Install <c2 /> Plugin for Firefox 2.x or newer</carrot2-opensearch-plugin-link>
+        </li>
+
+        <li>
+          <carrot2-opensearch-plugin-link>Install <c2 /> Plugin for Internet Explorer 7 or newer</carrot2-opensearch-plugin-link>
+        </li>
+      </ul>
+    </div>
+  </content>
+</page>

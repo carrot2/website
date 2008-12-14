@@ -3,14 +3,18 @@
 
   <xsl:import href="params.xsl" />
   <xsl:import href="border.xsl" />
-  <xsl:import href="demos.xsl" />
   <xsl:import href="publications.xsl" />
   <xsl:import href="faq.xsl" />
   <xsl:import href="tags.xsl" />
 
+  <xsl:param name="carrot2.version.stable" />
   <xsl:param name="carrot2.version.head" />
+  <xsl:param name="stable.dist.url" />
+  <xsl:param name="stable.webapp.url" />
   <xsl:param name="head.dist.url" />
   <xsl:param name="head.webapp.url" />
+
+  <xsl:param name="legacy.dist.url" />
   
   <xsl:param name="carrot2.java-api.base" />
   <xsl:param name="carrot2.dcs.base" />

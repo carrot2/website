@@ -4,12 +4,17 @@
 <page section="home">
   <content>
     <div style="float: right">
-      <div class="side">
+      <div style="text-align: right">
+        <a content="download" id="main-download" class="button"><span>Download</span></a>
+        
+      </div>
+
+      <div class="side" style="clear: both">
         <h2>News</h2>
        
         <div>
-          <a content="release-3.0-rc1-notes">Release 3.0 RC1</a> is available
-          with much cleaner API, brand new web and desktop application,
+          <a content="release-3.0-notes">Release 3.0</a> is available
+          with much cleaner API, brand new web interface and desktop application,
           a manual and much more!
         </div>
       </div>
@@ -18,13 +23,6 @@
         <h2>Sponsors and donors</h2>
 
         <c2 /> is kindly supported by a number of <a content="sponsors">companies and organizations</a>
-       <!-- 
-        <a href="http://www.cs.put.poznan.pl"><img src="img/pp-logo.gif" class="donor-logo" style="margin-left: 27px" alt="Institute of Computing Science, Poznań University of Technology" title="Institute of Computing Science, Poznań University of Technology" /></a> <br />
-        <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=85379&amp;type=1" class="donor-logo" alt="SourceForge.net" title="SourceForge.net" /></a> <br />
-        <a href="http://www.yourkit.com"><img src="img/yourkit-logo.gif" class="donor-logo" alt="YourKit Java Profiler" title="YourKit Java Profiler" /></a><br />
-        <a href="http://www.atlassian.com/c/NPOS/10160"><img src="img/jira.gif" class="donor-logo" alt="Atlassian supports our efforts by contributing their bug tracking and issue tracking application, JIRA, to our project." title="Atlassian supports our efforts by contributing their bug tracking and issue tracking application, JIRA, to our project." /></a><br />
-        <a href="http://www.sourcekibitzer.org/index.php?option=com_skproject&amp;task=view&amp;projectid=carrot2"><img src="img/source-kibitzer.gif" class="donor-logo" alt="SourceKibitzer" title="SourceKibitzer" /></a> 
-        -->
       </div>
 
       <div class="side" style="margin-top: 40px; margin-bottom: 10px;">
@@ -39,44 +37,29 @@
     <p>
       Carrot<sup>2</sup> is an Open Source <b>Search Results Clustering
       Engine</b>. It can automatically organize (cluster) search results into thematic
-      categories:
+      categories.
     </p>
 
     <p style="text-align: center; width: 420px">
-      <carrot2-webapp-results-link query="?q=salsa&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></carrot2-webapp-results-link>
+      <carrot2-webapp-results-link query="?query=salsa"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></carrot2-webapp-results-link>
       Search results clustered with Carrot<sup>2</sup> (<carrot2-webapp-results-link query="?q=salsa&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">live demo</carrot2-webapp-results-link>)
     </p>
          
     <p>
-      Carrot<sup>2</sup> provides an <a content="architecture">architecture</a>
-      for acquiring search results from various sources (YahooAPI, GoogleAPI,
-      MSN Search API, <a href="http://www.etools.ch">eTools Meta Search</a>,
-      Alexa Web Search, PubMed, OpenSearch, Lucene index, SOLR), clustering the
-      results and visualising the clusters.  Currently, 5 <a
-      content="algorithms">clustering algorithms</a> are available that are
-      suitable for different kinds of document clustering tasks.
+      Apart from two specialized <a content="algorithms">document clustering
+      algorithms</a>, <c2 /> offers ready-to-use components for fetching search
+      results from various sources including YahooAPI, GoogleAPI, MSN Live API,
+      <a href="http://www.etools.ch">eTools Meta Search</a>, Lucene, SOLR,
+      Google Desktop and more.
     </p>
    
     <p>
-      Thanks to its flexible architecture, high quality and a friendly BSD-like
-      <a content="license">license</a>, Carrot<sup>2</sup> has been
-      successfully used in a number of commercial and research <a
-      content="applications">applications</a> and resulted in a number of interesting <a
-      content="publications">publications</a>.  To get started, please have a
-      look at <a content="demos">live demos</a> and the <a
-      content="download">downloads</a> section. If you have any questions or comments
-      about Carrot<sup>2</sup>, please <a content="support">let us know</a>.
-    </p>
-
-    <p>
-      For consulting services, installation, maintenance and text mining
-      expertise, please contact the Carrot<sup>2</sup> spin-off company called
-      <carrot-search-website-link>Carrot Search</carrot-search-website-link>.
-      Carrot Search offers <carrot-search-website-link
-      extension="lingo-features.html">Lingo3G</carrot-search-website-link> -- the third generation
-      high-performance <carrot-search-webapp-link>document clustering
-      engine</carrot-search-webapp-link> featuring hierarchical clustering,
-      ontologies, synonyms and advanced tuning capabilities.
+      <c2 /> is implemented in Java, but it easily integrates with non-Java
+      software, such as PHP, Ruby or C#.  The <a content="download">downloads
+      page</a> will help you to choose the right package.  For consulting
+      services, installation, maintenance and text mining expertise, contact
+      <carrot-search-website-link>Carrot Search</carrot-search-website-link>
+      -- the Carrot<sup>2</sup> spin-off company.
     </p>
   </content>
 </page>

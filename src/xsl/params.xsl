@@ -6,11 +6,9 @@
   <xsl:param name="copyright.year">2008</xsl:param>
 
   <xsl:param name="carrot2.website.url">http://project.carrot2.org</xsl:param>
-  <xsl:param name="carrot2.webapp.url">http://demo.carrot2.org</xsl:param>
-  <xsl:param name="carrot2.webapp.results.url"><xsl:value-of select="$carrot2.webapp.url" />/demo-stable/search</xsl:param>
+  <xsl:param name="carrot2.webapp.url">http://search.carrot2.org</xsl:param>
+  <xsl:param name="carrot2.webapp.results.url"><xsl:value-of select="$carrot2.webapp.url" />/stable/search</xsl:param>
   <xsl:param name="carrot2.sf.net.url">http://sf.net/projects/carrot2</xsl:param>
-  <xsl:param name="carrot2.api.url">http://demo.carrot2.org/stable/api</xsl:param>
-  <xsl:param name="carrot2.webstart.url">http://demo.carrot2.org/stable/webstart</xsl:param>
 
   <xsl:param name="carrot-search.website.url">http://company.carrot-search.com</xsl:param>
   <xsl:param name="carrot-search.webapp.url">http://demo.carrot-search.com</xsl:param>

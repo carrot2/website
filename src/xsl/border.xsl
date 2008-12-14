@@ -22,23 +22,13 @@
 	
     <link rel="stylesheet" href="http://builds.carrot2.org/styles/bamboo-status.css" type="text/css" media="all" title="Default" />
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="all" title="Default" />
-
-    <!-- All out-of-content scripts end up here. -->
-    <xsl:for-each select="/page/script">
-        <script>
-            <xsl:copy-of select="attribute::*" />
-            <!-- Leave src relative for now. -->
-            <xsl:attribute name="src"><xsl:value-of select="@src" /></xsl:attribute>
-            <xsl:comment>/* (force closing tag.) */</xsl:comment>
-        </script>
-    </xsl:for-each>
+    <xsl:apply-templates select="/page/head" />
   </head>
-
 
   <body>
     <div id="results-utils">
       <a href="{$carrot2.website.url}">About</a> |
-      <a href="support.{$content-extension}">Contact</a> |
+      <a href="contact.{$content-extension}">Contact</a> |
       <a href="{$carrot2.sf.net.url}">Carrot2 @ sf.net</a> |
       <a href="{$carrot2.webapp.url}">Search Clustering Engine</a> |
       <a href="{$carrot-search.website.url}">Carrot Search</a>
@@ -93,22 +83,16 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">release-3.0-rc1-notes</xsl:with-param>
-                    <xsl:with-param name="text">Release 3.0</xsl:with-param>
-                    <xsl:with-param name="section">release-3.0</xsl:with-param>
+                    <xsl:with-param name="url">download</xsl:with-param>
+                    <xsl:with-param name="text">Download</xsl:with-param>
+                    <xsl:with-param name="section">download</xsl:with-param>
                     <xsl:with-param name="class">hot</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">demos</xsl:with-param>
-                    <xsl:with-param name="text">Applications</xsl:with-param>
-                    <xsl:with-param name="section">demo</xsl:with-param>
-                  </xsl:call-template>
-
-                  <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">applications</xsl:with-param>
-                    <xsl:with-param name="text">Powered by C<sup>2</sup></xsl:with-param>
-                    <xsl:with-param name="section">applications</xsl:with-param>
+                    <xsl:with-param name="url">documentation</xsl:with-param>
+                    <xsl:with-param name="text">Documentation</xsl:with-param>
+                    <xsl:with-param name="section">documentation</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
@@ -120,21 +104,9 @@
 
                   <div style="margin-bottom: 15px">
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">download</xsl:with-param>
-                    <xsl:with-param name="text">Download</xsl:with-param>
-                    <xsl:with-param name="section">download</xsl:with-param>
-                  </xsl:call-template>
-
-                  <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">source-code</xsl:with-param>
                     <xsl:with-param name="text">Source Code</xsl:with-param>
                     <xsl:with-param name="section">source</xsl:with-param>
-                  </xsl:call-template>
-
-                  <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">documentation</xsl:with-param>
-                    <xsl:with-param name="text">Documentation</xsl:with-param>
-                    <xsl:with-param name="section">documentation</xsl:with-param>
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
@@ -146,12 +118,6 @@
 
                   <div style="margin-bottom: 15px">
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">architecture</xsl:with-param>
-                    <xsl:with-param name="text">Architecture</xsl:with-param>
-                    <xsl:with-param name="section">architecture</xsl:with-param>
-                  </xsl:call-template>
-
-                  <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">algorithms</xsl:with-param>
                     <xsl:with-param name="text">Algorithms</xsl:with-param>
                     <xsl:with-param name="section">algorithms</xsl:with-param>
@@ -162,7 +128,20 @@
                     <xsl:with-param name="text">Publications</xsl:with-param>
                     <xsl:with-param name="section">publications</xsl:with-param>
                   </xsl:call-template>
+
+                  <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">applications</xsl:with-param>
+                    <xsl:with-param name="text">Powered by C<sup>2</sup></xsl:with-param>
+                    <xsl:with-param name="section">applications</xsl:with-param>
+                  </xsl:call-template>
                   </div>
+
+                  <div style="margin-bottom: 15px">
+                  <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">contact</xsl:with-param>
+                    <xsl:with-param name="text">Contact us</xsl:with-param>
+                    <xsl:with-param name="section">support</xsl:with-param>
+                  </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">authors</xsl:with-param>
@@ -171,16 +150,11 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">support</xsl:with-param>
-                    <xsl:with-param name="text">Support</xsl:with-param>
-                    <xsl:with-param name="section">support</xsl:with-param>
-                  </xsl:call-template>
-
-                  <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">spin-off</xsl:with-param>
                     <xsl:with-param name="text">Spin-off</xsl:with-param>
                     <xsl:with-param name="section">spin-off</xsl:with-param>
                   </xsl:call-template>
+                  </div>
                 </div>
               </td>
 
@@ -215,6 +189,7 @@
         </td>
       </tr>
     </table>
+    <!--
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -224,6 +199,7 @@ var pageTracker = _gat._getTracker("UA-317750-1");
 pageTracker._initData();
 pageTracker._trackPageview();
 </script>
+-->
   </body>
 </html>
   </xsl:template>
@@ -246,128 +222,28 @@ pageTracker._trackPageview();
   <xsl:template match="a[@content]">
     <xsl:choose>
       <xsl:when test="@anchor">
-        <a href="{@content}.{$content-extension}#{@anchor}"><xsl:apply-templates /></a>
+        <a href="{@content}.{$content-extension}#{@anchor}">
+          <xsl:copy-of select="@id" />
+          <xsl:copy-of select="@class" />
+          <xsl:copy-of select="@target" />
+          <xsl:apply-templates />
+        </a>
       </xsl:when>
       <xsl:otherwise>
-        <a href="{@content}.{$content-extension}"><xsl:apply-templates /></a>
+        <a href="{@content}.{$content-extension}">
+          <xsl:copy-of select="@id" />
+          <xsl:copy-of select="@class" />
+          <xsl:copy-of select="@target" />
+          <xsl:apply-templates />
+        </a>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-  <xsl:template match="head-manual-link">
-    <a>
-      <xsl:copy-of select="@class" />
-      <xsl:copy-of select="@target" />
-      <xsl:choose>
-        <xsl:when test="@section">
-          <xsl:attribute name="href"><xsl:value-of select="concat($head.dist.url, '/manual/index.html#', @section)" /></xsl:attribute>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:attribute name="href"><xsl:value-of select="concat($head.dist.url, '/manual/index.html')" /></xsl:attribute>
-        </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates />
-    </a>
-  </xsl:template>
-
-  <xsl:template match="head-manual-download-link">
-    <a href="{$head.dist.url}/{$carrot2.manual.base}-{$carrot2.version.head}.zip">
-      <xsl:copy-of select="@class" />
-      <xsl:copy-of select="@target" />
-      <xsl:apply-templates />
-    </a>
-  </xsl:template>
-
-  <xsl:template match="head-webapp-link">
-    <a href="{$head.webapp.url}">
-      <xsl:copy-of select="@class" />
-      <xsl:copy-of select="@target" />
-      <xsl:apply-templates />
-    </a>
-  </xsl:template>
-
-  <xsl:template match="head-javadoc-link">
-    <a href="{$head.dist.url}/javadoc">
-      <xsl:copy-of select="@class" />
-      <xsl:copy-of select="@target" />
-      <xsl:apply-templates />
-    </a>
-  </xsl:template>
-
-  <xsl:template match="head-java-api-download-link">
-    <a href="{$head.dist.url}/{$carrot2.java-api.base}-{$carrot2.version.head}.zip">
-      <xsl:copy-of select="@class" />
-      <xsl:copy-of select="@target" />
-      <xsl:apply-templates />
-    </a>
-  </xsl:template>
-
-  <xsl:template match="head-workbench-download-link">
-    <a href="{$head.dist.url}/{$carrot2.workbench.base}-{@os}.{@wm}.x86.zip">
-      <xsl:copy-of select="@class" />
-      <xsl:copy-of select="@target" />
-      <xsl:apply-templates />
-    </a>
-  </xsl:template>
-
-  <xsl:template match="head-dcs-download-link">
-    <a href="{$head.dist.url}/{$carrot2.dcs.base}-{$carrot2.version.head}.zip">
-      <xsl:copy-of select="@class" />
-      <xsl:copy-of select="@target" />
-      <xsl:apply-templates />
-    </a>
-  </xsl:template>
-
-  <xsl:template match="head-webapp-download-link">
-    <a href="{$head.dist.url}/{$carrot2.webapp.base}-{$carrot2.version.head}.war">
-      <xsl:copy-of select="@class" />
-      <xsl:copy-of select="@target" />
-      <xsl:apply-templates />
-    </a>
-  </xsl:template>
-
-
-  <xsl:template match="carrot2-webapp-link">
-    <a href="{$carrot2.webapp.url}"><xsl:apply-templates /></a>
-  </xsl:template>
-
-  <xsl:template match="carrot2-webapp-results-link">
-    <a href="{$carrot2.webapp.results.url}{@query}"><xsl:apply-templates /></a>
-  </xsl:template>
-
-  <xsl:template match="carrot2-website-link">
-    <a href="{$carrot2.website.url}/{@extension}"><xsl:apply-templates /></a>
-  </xsl:template>
-
-  <xsl:template match="carrot2-api-link">
-    <a href="{$carrot2.api.url}{@extension}"><xsl:apply-templates /></a>
-  </xsl:template>
-
-  <xsl:template match="carrot2-webstart-link">
-    <a href="{$carrot2.webstart.url}"><xsl:apply-templates /></a>
-  </xsl:template>
-
-  <xsl:template match="carrot2-source-link">
-    <xsl:variable name="suffix"><xsl:if test="not(@dir)">?r=trunk</xsl:if></xsl:variable>
-    <a href="http://fisheye3.atlassian.com/browse/carrot2/trunk/carrot2{@extension}{$suffix}"><xsl:apply-templates /></a>
-  </xsl:template>
-
-  <xsl:template match="carrot-search-webapp-link">
-    <a href="{$carrot-search.webapp.url}"><xsl:apply-templates /></a>
-  </xsl:template>
-
-  <xsl:template match="carrot-search-webapp-results-link">
-    <a href="{$carrot-search.webapp.results.url}{@query}"><xsl:apply-templates /></a>
-  </xsl:template>
-
-  <xsl:template match="carrot-search-website-link">
-    <a href="{$carrot-search.website.url}/{@extension}"><xsl:apply-templates /></a>
-  </xsl:template>
-
+  
   <xsl:template match="title" />
 
   <!-- Certain HTML elements -->
-  <xsl:template match="p|table|caption|tr|th|td|a|b|i|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre|script|textarea|input|dl|dt|dd|strong">
+  <xsl:template match="p|table|caption|tr|th|td|a|b|i|ul|ol|br|img|div|select|option|span|li|form|script|h1|h2|h3|sup|pre|script|textarea|input|dl|dt|dd|strong|hr">
     <xsl:copy>
       <xsl:copy-of select="@*" />
       <xsl:apply-templates />

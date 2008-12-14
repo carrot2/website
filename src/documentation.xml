@@ -5,33 +5,18 @@
   <heading>Documentation</heading>
 
   <content>
-    <p>
-      <b>Carrot<sup>2</sup> documentation</b> is targeted mainly at developers
-      and includes information about building the sources and using
-      <carrot2-api-link>Carrot<sup>2</sup> core API</carrot2-api-link>. As the documentation may lag behind the
-      newest code base, if you have a problem or question that is not covered,
-      please <a content="support">contact us</a>.
-    </p>
-
-    <p style="margin-bottom: 0;">
-      Carrot<sup>2</sup> developer documentation (architecture overview) 
-      is available in the following documents:
-    </p>
+    <manual-link><img src="img/manual.png" class="pic" style="float: right;
+    margin-left: 10px;" alt="Carrot2 User and Developer Manual Download" /> <c2 /> User and Developer Manual</manual-link> is the main
+    source of information about <c2 />. The manual includes:
 
     <ul>
-      <li><carrot2-website-link extension="architecture.html">Short architecture introduction</carrot2-website-link></li>
-      <li><carrot2-website-link extension="architecture-design.html">Design requirements and architecture overview</carrot2-website-link></li>
+      <li><manual-link section="chapter.application-suite">Overview of <c2 /> application suite</manual-link></li>
+      <li><manual-link section="section.getting-started">Getting started with <c2 /> clustering</manual-link></li>
+      <li><manual-link section="section.integration">Integrating <c2 /> with your software</manual-link></li>
     </ul>
 
-    <p>For a step-by-step example of using Carrot<sup>2</sup> API directly in a Java application,
-    checkout the source code from our Subversion repository located at
-    <tt>https://carrot2.svn.sourceforge.net/svnroot/carrot2/trunk/</tt>
-    and look in the <carrot2-source-link dir="t" extension="/applications/carrot2-demo-api-example"><tt>applications/carrot2-demo-api-example</tt></carrot2-source-link> folder. 
-    The <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/Example.java"><tt>Example</tt></carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/Example.html">JavaDoc</carrot2-api-link>),
-    <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/DirectDocumentFeedExample.java"><tt>DirectDocumentFeedExample</tt></carrot2-source-link>
-    and <carrot2-source-link extension="/applications/carrot2-demo-api-example/src/org/carrot2/apiexample/LuceneExample.java"><tt>LuceneExample</tt></carrot2-source-link> (<carrot2-api-link extension="/org/carrot2/apiexample/LuceneExample.html">JavaDoc</carrot2-api-link>)
-classes provide verbose
-    JavaDoc and in-code comments. You can also have a look at the full <carrot2-api-link>Carrot<sup>2</sup> API documentation</carrot2-api-link>.
-    </p>
+    For specific information about <c2 /> Java API, check the <javadoc-link>JavaDocs</javadoc-link>
+    and the <carrot2-source-link extension="applications/carrot2-examples/src/org/carrot2/examples/clustering">code examples</carrot2-source-link>. Finally, if you have questions not covered 
+    in the manual and source code, feel free to <a content="support">contact us</a>.
   </content>
 </page>

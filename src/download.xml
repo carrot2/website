@@ -5,80 +5,120 @@
   <heading>Download</heading>
 
   <content>
-    <div style="width: 450px; padding: 5px 10px; background-color: white; border: 1px solid #fb8d49; margin-bottom: 15px; -moz-border-radius: 4px">
-      If you are new to <c2 />, please consider using the <a
-      content="release-3.0-rc1-notes">3.0 RC1 release</a>, 
-      which has much simpler API, better tuning applications and documentation.
-    </div>
+    <table class="download">
+      <tr style="font-weight: bold">
+        <td class="head">
+          If you want to...
+        </td>
 
-    <div style="margin-bottom: 0ex">
-      <b>Compiled binaries</b> of the Release 2.1.4 of Carrot<sup>2</sup> are
-      available from the <a href="http://demo.carrot2.org/stable/dist/">the
-      build server</a>:
-    </div>
+        <td>
+          <span style="float: right; font-weight: normal"><a content="release-3.0-notes">version <version-stable /> Release Notes</a></span>
+          ...you should download:
+        </td>
+      </tr>
 
-    <ul style="margin-bottom: 5px">
-      <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-webapp-2.1.4.zip">Carrot<sup>2</sup> search clustering web application</a> (a WAR web application file)<br />
-        Please see the readme.txt file in the distribution archive for installation instructions.
-      </li>
+      <tr>
+        <td class="head">
+          <ul>
+            <li>
+              quickly try <c2 /> with your own data
+            </li>
+            <li>
+              tune <c2 /> clustering settings in real time
+            </li>
+          </ul>
+        </td>
 
-      <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-dcs-2.1.4.zip">Carrot<sup>2</sup> Document Clustering Server</a> 
-        (a web application context with built-in Jetty server)<br />
-        Please see the readme.txt file in the distribution archive for further instructions.
-      </li>
+        <td>
+          <a content="download-workbench-win32"><img style="float: right" class="pic" src="img/download-workbench.png" alt="Carrot2 Clustering Workbench Download" /></a>
+          <c2 /> <dcw /> <br />
+          <a content="download-workbench-win32">Windows version</a><br />
+          <a content="download-workbench-linux">Linux version</a>
+        </td>
+      </tr>
 
-      <li>
-        <a href="http://demo.carrot2.org/stable/dist/carrot2-demo-browser-2.1.4.zip">Carrot<sup>2</sup> clustering GUI tool</a><br />
-        Please see the readme.txt file in the distribution archive for information about running the tool.
-      </li>
+      <tr>
+        <td class="head">
+          <ul>
+            <li>
+              integrate <c2 /> with your Java software
+            </li>
+          </ul>
+        </td>
 
-      <li>
-        <a href="http://demo.carrot2.org/stable/webstart/">Carrot<sup>2</sup> clustering GUI tool (WebStart)</a>
-      </li>
+        <td>
+          <a content="download-java-api"><c2 /> <ja /></a>
+          <div class="small-links">
+            <javadoc-link release="stable" class="small">View JavaDocs online</javadoc-link><br />
+            <manual-link section="section.integration.adding-to-maven-project" class="small">Instructions for Maven2 users</manual-link>
+          </div>
+        </td>
+      </tr>
 
-      <li>
-        <a href="http://demo.carrot2.org/stable/api/">Carrot<sup>2</sup> API JavaDoc</a>
-      </li>
-    </ul>
+      <tr>
+        <td class="head">
+          <ul>
+            <li>
+              integrate <c2 /> with your PHP, Ruby, C# or other non-Java system
+            </li>
+          </ul>
+        </td>
 
-    <script type="text/javascript" src="http://builds.carrot2.org/js/showLatestBuildStatus.action?buildKey=C2STABLE-COMMIT">&#160;</script>
-    
-    <div style="clear: both; margin-top: 70px">
-      <b>Latest development version</b> of Carrot<sup>2</sup> is also available
-      on our <a href="http://demo.carrot2.org/head/dist/">the build
-      server</a>. Note that these binaries may not run as expected (or at
-      all):
-    </div>
+        <td>
+          <a content="download-dcs"><img style="float: right" class="pic" src="img/download-dcs.png" alt="Carrot2 Document Clustering Server Download" /><c2 /> <dcs /></a>
+        </td>
+      </tr>
 
-    <ul style="margin-bottom: 5px">
-      <li>
-        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-webapp-head.zip">Carrot<sup>2</sup> search clustering web application</a> (a WAR web application file)<br />
-        Please see the readme.txt file in the distribution archive for installation instructions.
-      </li>
+      <tr>
+        <td class="head">
+          <ul>
+            <li>find out more about <c2 /> architecture and applications</li>
+          </ul>
+        </td>
 
-      <li>
-        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-dcs-head.zip">Carrot<sup>2</sup> Document Clustering Server</a> 
-        (a web application context with built-in Jetty server)<br />
-        Please see the readme.txt file in the distribution archive for further instructions.
-      </li>
+        <td>
+          <a content="download-manual"><img style="float: right" class="pic" src="img/download-manual.png" alt="Carrot2 User and Developer Manual Download" /><c2 /> <man /></a><br />
+          <manual-link class="small">View <c2 /> <man /> online</manual-link>
+        </td>
+      </tr>
 
-      <li>
-        <a href="http://demo.carrot2.org/head/dist/carrot2-demo-browser-head.zip">Carrot<sup>2</sup> clustering GUI tool</a><br />
-        Please see the readme.txt file in the distribution archive for information about running the tool.
-      </li>
+      <tr>
+        <td class="head">
+          <ul>
+            <li>install a <c2 /> search plugin in your browser</li>
+          </ul>
+        </td>
 
-      <li>
-        <a href="http://demo.carrot2.org/head/webstart/">Carrot<sup>2</sup> clustering GUI tool (WebStart)</a>,
-            <a href="http://demo.carrot2.org/head/webstart/index.php?purejava=true">[the same but with pure-Java HTML browser]</a>
-      </li>
+        <td>
+          <a content="download-search-plugins"><img style="float: right" class="pic" src="img/download-search-plugin.png" alt="Carrot2 Firefox and Internet Explorer Search Plugins Download" /><c2 /> Search Plugins for Firefox and Internet Explorer</a>
+        </td>
+      </tr>
 
-      <li>
-        <a href="http://demo.carrot2.org/head/api/">Carrot<sup>2</sup> API JavaDoc</a>
-      </li>
-    </ul>
+      <tr>
+        <td class="head">
+          <ul>
+            <li>deploy your own instance of <c2 /> web application</li>
+          </ul>
+        </td>
 
-    <script type="text/javascript" src="http://builds.carrot2.org/js/showLatestBuildStatus.action?buildKey=C2HEAD-COMMIT">&#160;</script>
+        <td>
+          <a content="download-webapp"><img style="float: right" class="pic" src="img/download-webapp.png" alt="Carrot2 Web Application Download" /><c2 /> <wa /></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          <ul>
+            <li>try latest development or older verisons of <c2 /></li>
+          </ul>
+        </td>
+
+        <td>
+          <dist-link release="head"><c2 /> v<version-head /> binaries</dist-link><br />
+          <dist-link release="stable"><c2 /> v3.x stable binaries</dist-link><br />
+          <dist-link release="legacy"><c2 /> v2.x stable binaries</dist-link> (not recommended)
+        </td>
+      </tr>
+    </table>
   </content>
 </page>

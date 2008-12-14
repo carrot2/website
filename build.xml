@@ -8,6 +8,7 @@
   <property name="website.properties" location="website.properties" />
   <property file="${website.properties}" />
 
+  <property file="etc/stable/carrot2.version" />
   <property file="etc/head/carrot2.version" />
   <property file="etc/head/carrot2.basenames" />
 
@@ -47,9 +48,15 @@
           <param name="carrot2.manual.base" expression="${carrot2.manual.base}" />
           <param name="carrot2.workbench.base" expression="${carrot2.workbench.base}" />
         
+          <param name="carrot2.version.stable" expression="${carrot2.version.stable}" />
           <param name="carrot2.version.head" expression="${carrot2.version.head}" />
+
+          <param name="stable.dist.url" expression="${stable.dist.url}" />
+          <param name="stable.webapp.url" expression="${stable.webapp.url}" />
           <param name="head.dist.url" expression="${head.dist.url}" />
           <param name="head.webapp.url" expression="${head.webapp.url}" />
+
+          <param name="legacy.dist.url" expression="${legacy.dist.url}" />
       </xslt>
       
       <copy todir="${distribution.dir}" filtering="false">
@@ -59,9 +66,9 @@
               <exclude name="**/*.swp" />
               <exclude name="*.xml" />
               <exclude name="**/*.xsl" />
-              <exclude name="xsl" />
-              <exclude name="xml" />
-              <exclude name="img-src" />
+              <exclude name="xsl/**" />
+              <exclude name="xml/**" />
+              <exclude name="img-src/**" />
               <exclude name="**/favicon.ico" />
           </fileset>
           <fileset dir="${website.src}/img">
