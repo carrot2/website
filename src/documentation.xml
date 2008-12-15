@@ -15,7 +15,7 @@
       <li><manual-link section="section.integration">Integrating <c2 /> with your software</manual-link></li>
     </ul>
 
-    For specific information about <c2 /> Java API, check the <javadoc-link>JavaDocs</javadoc-link>
+    For specific information about <c2 /> Java API, check the <javadoc-link release="stable">JavaDocs</javadoc-link>
     and the <carrot2-source-link extension="applications/carrot2-examples/src/org/carrot2/examples/clustering">code examples</carrot2-source-link>. Finally, if you have questions not covered 
     in the manual and source code, feel free to <a content="support">contact us</a>.
   </content>
