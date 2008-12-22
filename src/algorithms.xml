@@ -39,7 +39,7 @@
           <a content="publications" anchor="ieee-lingo">[2]</a>
           <a content="publications" anchor="thesis-lingo">[3]</a>
         </td>
-        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">london</carrot2-webapp-results-link></td>
+        <td><carrot2-webapp-results-link query="?q=london&amp;algorithm=lingo">london</carrot2-webapp-results-link></td>
       </tr>
 
       <tr>
@@ -53,7 +53,7 @@
         <td>
           <a content="publications" anchor="lang-properties">[5]</a>
         </td>
-        <td><carrot2-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=100&amp;alg=STC+%28%2BEnglish%29&amp;opts=h">london</carrot2-webapp-results-link></td>
+        <td><carrot2-webapp-results-link query="?q=london&amp;algorithm=stc">london</carrot2-webapp-results-link></td>
       </tr>
 
       <tr>
