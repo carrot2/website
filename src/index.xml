@@ -4,9 +4,9 @@
 <page section="home">
   <content>
     <div style="float: right">
-      <div style="text-align: right">
-        <a content="download" id="main-download" class="button"><span>Download</span></a>
-        
+      <div style="text-align: right; margin-bottom: 11px">
+        <a content="download" id="main-download" class="button"><span>Download</span></a><br />
+        <javadoc-link release="stable" class="small"><c2 /> API JavaDoc</javadoc-link>
       </div>
 
       <div class="side" style="clear: both">

@@ -23,6 +23,9 @@
   </target>
 
   <target name="xslt" description="Transforms the website XML sources to HTML files">
+      <fail unless="carrot2.version.stable" />
+      <fail unless="carrot2.version.head" />
+
       <tstamp>
           <format property="build.time" pattern="d MMMM yyyy" locale="en" />
       </tstamp>

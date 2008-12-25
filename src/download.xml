@@ -47,7 +47,7 @@
         </td>
 
         <td>
-          <a content="download-java-api"><c2 /> <ja /></a>
+          <a content="download-java-api"><c2 /> <ja /> JAR, JavaDocs and example code</a>
           <div class="small-links">
             <javadoc-link release="stable" class="small">View JavaDocs online</javadoc-link><br />
             <manual-link section="section.integration.adding-to-maven-project" class="small">Instructions for Maven2 users</manual-link>

@@ -535,7 +535,7 @@ a.button span {
   height: 37px;
   background-image: url("../img/button-download-large.png");
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 div.small-links {
