@@ -4,7 +4,7 @@
 <page section="home">
   <content>
     <div style="float: right">
-      <div style="text-align: right; margin-bottom: 11px">
+      <div style="text-align: right; margin-bottom: 30px">
         <a content="download" id="main-download" class="button"><span>Download</span></a><br />
         <javadoc-link release="stable" class="small"><c2 /> API JavaDoc</javadoc-link>
       </div>
@@ -35,9 +35,9 @@
     </div>
           
     <p>
-      Carrot<sup>2</sup> is an Open Source <b>Search Results Clustering
-      Engine</b>. It can automatically organize (cluster) search results into thematic
-      categories.
+      <c2 /> is an Open Source <b>Search Results Clustering
+      Engine</b>. It can automatically organize small collections of 
+      documents, e.g. search results, into thematic categories. 
     </p>
 
     <p style="text-align: center; width: 420px">
