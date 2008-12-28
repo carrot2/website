@@ -20,6 +20,14 @@
     <publication-group>
       <title>Scientific papers</title>
 
+      <paper paper="http://dis.shef.ac.uk/mark/publications/my_papers/Tang-paperCLEF2008.pdf">
+        <authors>J. Tang, T. Arni, M. Sanderson, P. Clough</authors>
+        <title>Building a Diversity Featured Search System by Fusing Existing Tools</title>
+        <where>
+          To appear in CLEF 2008 Working Notes, 2008
+        </where>
+      </paper>
+
       <paper>
         <authors>Andrea Passadore, Giorgio Pezzuto</authors>
         <title>An indexing and clustering architecture to support document retrieval in the maintenance sector</title>
