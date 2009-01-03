@@ -608,3 +608,7 @@ p.note {
 	background-image: none;
 }
 
+body#forum #content-inner {
+  width: auto;
+  padding: 0;
+}

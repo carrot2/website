@@ -26,6 +26,9 @@
   </head>
 
   <body>
+    <xsl:if test="@section">
+      <xsl:attribute name="id"><xsl:value-of select="@section" /></xsl:attribute>
+    </xsl:if>
     <div id="results-utils">
       <a href="{$carrot2.website.url}">About</a> |
       <a href="contact.{$content-extension}">Contact</a> |
@@ -99,6 +102,12 @@
                     <xsl:with-param name="url">faq</xsl:with-param>
                     <xsl:with-param name="text">FAQ</xsl:with-param>
                     <xsl:with-param name="section">faq</xsl:with-param>
+                  </xsl:call-template>
+
+                  <xsl:call-template name="menu-link">
+                    <xsl:with-param name="url">forum</xsl:with-param>
+                    <xsl:with-param name="text">Forum</xsl:with-param>
+                    <xsl:with-param name="section">forum</xsl:with-param>
                   </xsl:call-template>
                   </div>
 

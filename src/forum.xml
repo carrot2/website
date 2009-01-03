@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="forum">
+  <content>
+    <a id="nabblelink" href="http://n2.nabble.com/Carrot2-developers-f607571.html">Loading <c2 /> users and developers forum...</a>
+    <script src="http://n2.nabble.com/embed/f607571">&#160;</script>
+  </content>
+</page>

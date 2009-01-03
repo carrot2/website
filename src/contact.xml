@@ -5,22 +5,23 @@
   <heading>Contact us</heading>
 
   <content>
-    <p>
-      If you have questions or comments about Carrot<sup>2</sup>, please
-      contact us through the <a
-      href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers">Carrot<sup>2</sup>-developers
-      mailing list</a> (subscription is required). For past messages circulated
-      to the mailing list, please <a
-      href="http://sourceforge.net/mailarchive/forum.php?forum_name=carrot2-developers">see
-      the archive</a>.
-    </p>
+    You can contact us in a few ways:
 
-    <p>
-      If you would like to file a bug or a feature request, please use the <a
-      href="http://issues.carrot2.org">Carrot<sup>2</sup>
-      bug tracker</a> powered by <a href="http://www.atlassian.com/c/NPOS/10160">Atlassian JIRA</a>. Finally, if you need consultancy services in the area of
-      document clustering, text mining and the Carrot<sup>2</sup> framework, please
-      contact the <a content="spin-off">Carrot<sup>2</sup> spin-off company</a>.
-    </p>
+    <ul>
+      <li>
+        If you have <b>questions or comments about <c2 /></b>, please subscribe to <a href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers"><c2 /> mailing list</a>
+        and post your questions there. For past messages circulated to the list, please <a content="forum">see the archive</a>.
+      </li>
+
+      <li>
+        If you've found a <b>bug in <c2 /></b>, please file it in our <a href="http://issues.carrot2.org">bug tracking system</a>.
+      </li>
+
+      <li>
+        If you need <b>consultancy services</b> in the area of
+        document clustering, text mining and the Carrot<sup>2</sup> framework, please
+        contact the <a content="spin-off">Carrot<sup>2</sup> spin-off company</a>.
+      </li>
+    </ul>
   </content>
 </page>
