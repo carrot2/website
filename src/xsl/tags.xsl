@@ -83,6 +83,7 @@
     <xsl:param name="node-name" />
     <xsl:param name="wm" />
     <xsl:param name="os" />
+    <xsl:param name="arch">x86</xsl:param>
     <xsl:param name="release" />
 
     <xsl:variable name="dist.url">
@@ -109,7 +110,7 @@
       </xsl:call-template>
     </xsl:variable>
     <xsl:variable name="platform">
-      <xsl:if test="contains($node-name, 'workbench')">-<xsl:value-of select="concat($os, '.', $wm)" />.x86</xsl:if>
+      <xsl:if test="contains($node-name, 'workbench')">-<xsl:value-of select="concat($os, '.', $wm, '.', $arch)" /></xsl:if>
     </xsl:variable>
     <xsl:value-of select="concat($dist.url, '/', $dist.base, $platform, normalize-space($dist.version), $dist.extension)" /> 
   </xsl:template>
@@ -121,6 +122,7 @@
         <xsl:with-param name="wm" select="@wm" />
         <xsl:with-param name="os" select="@os" />
         <xsl:with-param name="release" select="@release" />
+        <xsl:with-param name="arch" select="@arch" />
       </xsl:call-template>
     </xsl:variable>
     <a href="{$dist.file}">
@@ -137,6 +139,7 @@
         <xsl:with-param name="wm" select="@wm" />
         <xsl:with-param name="os" select="@os" />
         <xsl:with-param name="release" select="@release" />
+        <xsl:with-param name="arch" select="@arch" />
       </xsl:call-template>
     </xsl:variable>
 

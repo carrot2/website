@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="download">
+  <head><workbench-download-refresh release="stable" wm="gtk" os="linux" arch="x86_64" /></head>
+  <heading>Download</heading>
+
+  <content>
+    <strong>Downloading <c2 /> <dcw /> for 64-bit Linux</strong> version 3.0...<br />
+    <span class="small">If the download does not start automatically, <workbench-download-link release="stable" wm="gtk" os="linux">click here</workbench-download-link></span>
+
+    <div id="download-info">
+      <img src="img/workbench-linux.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Clustering Workbench Download" />
+
+      <strong>After download completes:</strong>
+
+      <ol>
+        <li>
+          Extract the archive to some local directory
+        </li>
+
+        <li>
+          Run <tt>carro2-workbench</tt>
+        </li>
+
+        <li>
+          Take a look at some <manual-link target="_blank" section="section.getting-started">common getting started scenarios</manual-link>
+        </li>
+      </ol>
+
+      <p class="note">
+        <strong>Note: </strong><c2 /> <dcw /> requires  <a
+        href="http://java.sun.com/javase/downloads/index.jsp"
+        target="_blank">Java Runtime Environment</a> (version 1.5.0 or newer).
+      </p>
+    </div>
+  </content>
+</page>

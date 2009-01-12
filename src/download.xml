@@ -33,7 +33,8 @@
           <a content="download-workbench-win32"><img style="float: right" class="pic" src="img/download-workbench.png" alt="Carrot2 Clustering Workbench Download" /></a>
           <c2 /> <dcw /> <br />
           <a content="download-workbench-win32">Windows version</a><br />
-          <a content="download-workbench-linux">Linux version</a>
+          <a content="download-workbench-linux">Linux 32-bit version</a><br />
+          <a content="download-workbench-linux-64bit">Linux 64-bit version</a>
         </td>
       </tr>
 
