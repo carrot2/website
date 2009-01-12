@@ -122,7 +122,7 @@
         <xsl:with-param name="wm" select="@wm" />
         <xsl:with-param name="os" select="@os" />
         <xsl:with-param name="release" select="@release" />
-        <xsl:with-param name="arch" select="@arch" />
+        <xsl:if test="@arch"><xsl:with-param name="arch" select="@arch" /></xsl:if>
       </xsl:call-template>
     </xsl:variable>
     <a href="{$dist.file}">
@@ -139,7 +139,7 @@
         <xsl:with-param name="wm" select="@wm" />
         <xsl:with-param name="os" select="@os" />
         <xsl:with-param name="release" select="@release" />
-        <xsl:with-param name="arch" select="@arch" />
+        <xsl:if test="@arch"><xsl:with-param name="arch" select="@arch" /></xsl:if>
       </xsl:call-template>
     </xsl:variable>
 
