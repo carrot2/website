@@ -7,7 +7,7 @@
 
   <content>
     <strong>Downloading <c2 /> <dcw /> for 64-bit Linux</strong> version 3.0...<br />
-    <span class="small">If the download does not start automatically, <workbench-download-link release="stable" wm="gtk" os="linux">click here</workbench-download-link></span>
+    <span class="small">If the download does not start automatically, <workbench-download-link release="stable" wm="gtk" os="linux" arch="x86_64">click here</workbench-download-link></span>
 
     <div id="download-info">
       <img src="img/workbench-linux.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Clustering Workbench Download" />

@@ -2,7 +2,7 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><dcs-download-refresh release="stable" wm="win32" os="win32" /></head>
+  <head><manual-download-refresh release="stable" /></head>
   <heading>Download</heading>
 
   <content>
