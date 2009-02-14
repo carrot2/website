@@ -6,6 +6,7 @@
 
   <content>
     <p style="margin-bottom: 0">
+      <newer-release-info />
       <b>The 2.0 Release of Carrot<sup>2</sup></b> brings a lot of
       additions and improvements to the core framework, components and
       applications. Major improvements include:
@@ -36,7 +37,7 @@
       </li>
 
       <li>
-        <a href="http://project.carrot2.org/webstart"><div class="rn-side"><img class="pic"
+        <a href="http://download.carrot2.org/legacy/webstart"><div class="rn-side"><img class="pic"
         src="img/carrot2-cluster-map.gif" alt="Carrot2 Clustering Engine" />New visualization (WebStart)</div></a>
         A new look for the project website.
       </li>

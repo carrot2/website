@@ -464,6 +464,10 @@ table.source-code td.head {
   width: 12em;
 }
 
+table.all-releases td.head {
+  width: 6em;
+}
+
 table.download {
   width: 100%;
 }
@@ -611,4 +615,30 @@ p.note {
 body#forum #content-inner {
   width: auto;
   padding: 0;
+}
+
+.other-releases {
+  float: right;
+  width: 205px;
+  padding-left: 10px;
+}
+
+.other-releases .newer,
+.other-releases .newest {
+  background-repeat: no-repeat;
+  padding-left: 22px;
+}
+
+.other-releases .newest {
+  background-image: url('../img/icon-newest-release.png');
+}
+
+.other-releases .newer {
+  background-image: url('../img/icon-newer-release.png');
+}
+
+.other-releases .all-notes {
+  padding-left: 22px;
+  position: relative;
+  top: -2px;
 }

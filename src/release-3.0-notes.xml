@@ -6,6 +6,7 @@
 
   <content>
     <para>
+      <newest-release-info />
       After <a href="http://fisheye3.atlassian.com/chart/~charttype=Area,stacktype=None/carrot2/branches/3.0-proto" target="_blank">12 months of hard work</a>,
       we are proud to announce the <b>release 3.0 of Carrot2</b>.
       The 3.0 release introduces significant improvements in all areas of the framework:
