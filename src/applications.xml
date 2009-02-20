@@ -39,6 +39,25 @@
     </p>
 
     <p style="clear: both">
+      <a href="http://www.nutch.org/"><img style="float: left; margin-right: 15px" 
+      class="pic app-pic" src="img/nutch.gif" alt="Nutch" title="Nutch" /> Nutch</a>
+      is open source web-search software that features a clustering plugin
+      powered by Carrot<sup>2</sup>'s Lingo algorithm.
+    </p>
+
+    <p style="clear: both">
+      <a href="http://www.gceel.com/"><img style="float: left; margin-right:
+      15px" class="pic app-pic" src="img/gceel.gif" alt="gceel" title="gceel" />
+      gceel.com</a> uses <c2 /> to provide a <i>A New Visual Search Interface for Web Browsing</i>.
+    </p>
+
+    <p style="clear: both">
+      <a href="http://www.struly.com/"><img style="float: left; margin-right:
+      15px" class="pic app-pic" src="img/struly.gif" alt="struly" title="struly" />
+      Struly</a> is a multi search engine that embeds <c2 /> as one of the search sources.
+    </p>
+
+    <p style="clear: both">
       <a href="http://www.focuseek.com/"><img style="float: left; margin-right:
       15px" class="pic app-pic" src="img/focuseek.gif" alt="focuseek" title="focuseek" />
       Focuseek</a> used <c2 /> algorithms to add the dynamic clustering feature
@@ -65,13 +84,6 @@
       15px" class="pic app-pic" src="img/greenona.gif" alt="Greenona"
       title="Greenona" /> Greenona</a> features a SearchBlox search engine with
       <c2 />-powered search results clustering.
-    </p>
-
-    <p style="clear: both">
-      <a href="http://www.nutch.org/"><img style="float: left; margin-right: 15px" 
-      class="pic app-pic" src="img/nutch.gif" alt="Nutch" title="Nutch" /> Nutch</a>
-      is open source web-search software that features a clustering plugin
-      powered by Carrot<sup>2</sup>'s Lingo algorithm.
     </p>
 
     <p style="clear: both">
