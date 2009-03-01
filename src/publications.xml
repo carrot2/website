@@ -5,7 +5,7 @@
   <heading>Publications</heading>
 
   <content>
-    <publication-group>
+    <publication-group id="award">
       <title>Awards</title>
 
       <custom>
@@ -17,7 +17,7 @@
       </custom>
     </publication-group>
   
-    <publication-group>
+    <publication-group id="papers">
       <title>Scientific papers</title>
 
       <paper paper="http://dis.shef.ac.uk/mark/publications/my_papers/Tang-paperCLEF2008.pdf">
@@ -132,7 +132,7 @@
       </paper>
     </publication-group>
 
-    <publication-group>
+    <publication-group id="theses">
       <title>Theses</title>
 
       <thesis thesis-local="krukar-2008-rcp.pdf">
@@ -209,7 +209,7 @@
       </thesis>
     </publication-group>
 
-    <publication-group>
+    <publication-group id="presentations">
       <title>Presentations</title>
 
       <presentation presentation-local="carrot2-dresden-2007.pdf">

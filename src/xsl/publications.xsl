@@ -2,7 +2,10 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
   <xsl:template match="publication-group">
-    <h2><xsl:value-of select="title" /></h2>
+    <h2>
+      <xsl:value-of select="title" />
+      <xsl:if test="@id"><a name="{@id}">&#160;</a></xsl:if>
+    </h2>
 
     <ol class="publication-list">
       <xsl:apply-templates select="paper|poster|thesis|custom|presentation" />
