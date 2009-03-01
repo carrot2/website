@@ -125,17 +125,6 @@
           Profiler</a>. 
         </td>
       </tr>
-
-      <tr>
-        <td class="donor-logo">
-          <a href="http://www.sourcekibitzer.org/ProjectPage.ext?sp=Scarrot2"><img src="img/source-kibitzer.gif" class="donor-logo" alt="SourceKibitzer" title="SourceKibitzer" /></a> 
-        </td>
-
-        <td class="donor-text">
-          <a href="http://www.sourcekibitzer.org/ProjectPage.ext?sp=Scarrot2">SourceKibitzer</a>
-          provides real-time software metrics for the <c2 /> project.
-        </td>
-      </tr>
     </table>
   </content>
 </page>
