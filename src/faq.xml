@@ -34,7 +34,7 @@
       </answer>
     </faq>
 
-    <faq id="crawling">
+    <faq id="other-uses">
       <question>Can I use <c2 /> to cluster something else than search results?</question>
       <answer>
         Absolutely. <c2 /> came about as a framework for building search results clustering
@@ -43,7 +43,7 @@
       </answer>
     </faq>
 
-    <faq id="crawling">
+    <faq id="classification">
       <question>Can I force <c2 /> to cluster my documents to some predefined clusters / labels?</question>
       <answer>
         No. Assigning documents to a set of predefined categories is a problem called
@@ -53,7 +53,7 @@
       </answer>
     </faq>
 
-    <faq id="crawling">
+    <faq id="scalability">
       <question>How does <c2 /> clustering scale with respect to the number and length of documents?</question>
       <answer>
         The most important characteristic of <c2 /> algorithms to keep in mind
