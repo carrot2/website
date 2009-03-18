@@ -223,19 +223,19 @@
     <xsl:choose>
       <xsl:when test="@version = $carrot2.version.stable">
         <div class="side other-releases">
-          <span class="newer">
-            Newer release: <a href="{concat('release-', $carrot2.version.stable, '-notes.', $content-extension)}">Carrot<sup>2</sup> v<xsl:value-of select="$carrot2.version.stable" /></a>
+          <span class="newest">
+            This is the newest release
           </span>
-          <br /><span class="all-notes"><a class="small" href="release-notes.{$content-extension}">All releases</a></span>
+          <br /><span class="all-notes"><a class="small" href="release-notes.{$content-extension}">Previous releases</a></span>
         </div>
       </xsl:when>
       
       <xsl:otherwise>
         <div class="side other-releases">
-          <span class="newest">
-            This is the newest release
+          <span class="newer">
+            Newer release: <a href="{concat('release-', $carrot2.version.stable, '-notes.', $content-extension)}">Carrot<sup>2</sup> v<xsl:value-of select="$carrot2.version.stable" /></a>
           </span>
-          <br /><span class="all-notes"><a class="small" href="release-notes.{$content-extension}">Previous releases</a></span>
+          <br /><span class="all-notes"><a class="small" href="release-notes.{$content-extension}">All releases</a></span>
         </div>
       </xsl:otherwise>
     </xsl:choose>
