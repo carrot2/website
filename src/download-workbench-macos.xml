@@ -28,6 +28,10 @@
         <strong>Note: </strong><c2 /> <dcw /> requires Mac OS 10.4 or later and Java for 
         Mac OS X Release 5 or later.
       </p>
+
+      <p class="note">
+        <strong>Note: </strong>Despite the file name, this release will work under x86 processors. 
+      </p>
     </div>
   </content>
 </page>
