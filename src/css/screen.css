@@ -441,6 +441,7 @@ table.release-notes {
 
 table.release-notes td {
   padding-bottom: 2ex;
+  vertical-align: top;
 }
 
 table.release-notes tr:last-child td {
@@ -455,7 +456,6 @@ table.release-notes tr:first-child td {
 table.release-notes td.head {
   font-weight: bold;
   width: 14em;
-  vertical-align: top;
   text-align: right;
   padding-right: 1em;
 }

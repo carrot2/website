@@ -6,7 +6,7 @@
 
   <content>
     <p style="margin-bottom: 0">
-      <newer-release-info />
+      <release-info version="2.0" />
       <b>The 2.0 Release of Carrot<sup>2</sup></b> brings a lot of
       additions and improvements to the core framework, components and
       applications. Major improvements include:

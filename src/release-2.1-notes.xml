@@ -6,7 +6,7 @@
 
   <content>
     <p style="margin-bottom: 0">
-      <newer-release-info />
+      <release-info version="2.1" />
       <b>The 2.1 Release of Carrot<sup>2</sup></b> brings a number of new
       components and applications as well as important improvements to the
       existing features. Please see also the <a

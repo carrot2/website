@@ -13,9 +13,8 @@
         <h2>News</h2>
        
         <div>
-          <a content="release-3.0-notes">Release 3.0</a> is available
-          with much cleaner API, brand new web interface and desktop application,
-          a manual and much more!
+          <a content="release-3.0.1-notes">Release 3.0.1</a> is available
+          with <dcw /> for Mac OS and many bug fixes and improvements.
         </div>
       </div>
       

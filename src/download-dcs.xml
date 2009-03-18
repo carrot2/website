@@ -6,7 +6,7 @@
   <heading>Download</heading>
 
   <content>
-    <strong>Downloading <c2 /> <dcs /></strong> version 3.0...<br />
+    <strong>Downloading <c2 /> <dcs /></strong> version <version-stable />...<br />
     <span class="small">If the download does not start automatically, <dcs-download-link release="stable">click here</dcs-download-link></span>
 
     <div id="download-info">

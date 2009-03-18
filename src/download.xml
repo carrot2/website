@@ -12,7 +12,7 @@
         </td>
 
         <td>
-          <span style="float: right; font-weight: normal"><a content="release-3.0-notes">version <version-stable /> release notes</a></span>
+          <span style="float: right; font-weight: normal"><stable-release-notes-link>version <version-stable /> release notes</stable-release-notes-link></span>
           ...you should download:
         </td>
       </tr>
@@ -34,7 +34,8 @@
           <c2 /> <dcw /> <br />
           <a content="download-workbench-win32">Windows version</a><br />
           <a content="download-workbench-linux">Linux 32-bit version</a><br />
-          <a content="download-workbench-linux-64bit">Linux 64-bit version</a>
+          <a content="download-workbench-linux-64bit">Linux 64-bit version</a><br />
+          <a content="download-workbench-macos">Mac OS X version</a>
         </td>
       </tr>
 
