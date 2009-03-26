@@ -37,7 +37,8 @@
           <a href="http://builds.carrot2.org/download/C2STABLE-ALL/artifacts/latest/Coverage-Report/index.html">Code Coverage Report</a><br />
           <a href="http://builds.carrot2.org/download/C2STABLE-ALL/artifacts/latest/FindBugs-Report/index.html">Static Code Analysis Report</a><br />
           <a href="http://builds.carrot2.org/download/C2STABLE-ALL/artifacts/latest/Duplication-Report/index.html">Code Duplication Report</a><br />
-          <a href="http://builds.carrot2.org/download/C2STABLE-ALL/artifacts/latest/Webtest-Report/index.html">Webtest Report</a>
+          <a href="http://builds.carrot2.org/download/C2STABLE-ALL/artifacts/latest/Webapp-Webtest-Report/index.html">Web Application Webtest Report</a><br />
+          <a href="http://builds.carrot2.org/download/C2STABLE-ALL/artifacts/latest/DCS-Webtest-Report/index.html">DCS Webtest Report</a>
         </td>
       </tr>
     </table>
@@ -73,7 +74,8 @@
           <a href="http://builds.carrot2.org/download/C2HEAD-SOURCES/artifacts/latest/Coverage-Report/index.html">Code Coverage Report</a><br />
           <a href="http://builds.carrot2.org/download/C2HEAD-SOURCES/artifacts/latest/FindBugs-Report/index.html">Static Code Analysis Report</a><br />
           <a href="http://builds.carrot2.org/download/C2HEAD-SOURCES/artifacts/latest/Duplication-Report/index.html">Code Duplication Report</a><br />
-          <a href="http://builds.carrot2.org/download/C2HEAD-CORE/artifacts/latest/Webtest-Report/index.html">Webtest Report</a>
+          <a href="http://builds.carrot2.org/download/C2HEAD-CORE/artifacts/latest/Webapp-Webtest-Report/index.html">Web Application Webtest Report</a><br />
+          <a href="http://builds.carrot2.org/download/C2HEAD-CORE/artifacts/latest/DCS-Webtest-Report/index.html">DCS Webtest Report</a>
         </td>
       </tr>
     </table>
