@@ -32,10 +32,10 @@
         <td>
           <a content="download-workbench-win32"><img style="float: right" class="pic" src="img/download-workbench.png" alt="Carrot2 Clustering Workbench Download" /></a>
           <c2 /> <dcw /> <br />
-          <a content="download-workbench-win32">Windows version</a><br />
-          <a content="download-workbench-linux">Linux 32-bit version</a><br />
-          <a content="download-workbench-linux-64bit">Linux 64-bit version</a><br />
-          <a content="download-workbench-macos">Mac OS X version</a>
+          <a class="download-small" content="download-workbench-win32">Windows version</a><br />
+          <a class="download-small" content="download-workbench-linux">Linux 32-bit version</a><br />
+          <a class="download-small" content="download-workbench-linux-64bit">Linux 64-bit version</a><br />
+          <a class="download-small" content="download-workbench-macos">Mac OS X version</a>
         </td>
       </tr>
 
@@ -49,7 +49,7 @@
         </td>
 
         <td>
-          <a content="download-java-api"><c2 /> <ja /> JAR, JavaDocs and example code</a>
+          <a class="download-small" content="download-java-api"><ja /> JAR, JavaDocs and example code</a>
           <div class="small-links">
             <javadoc-link release="stable" class="small">View JavaDocs online</javadoc-link><br />
             <manual-link section="section.integration.adding-to-maven-project" class="small">Instructions for Maven2 users</manual-link>
@@ -67,7 +67,7 @@
         </td>
 
         <td>
-          <a content="download-dcs"><img style="float: right" class="pic" src="img/download-dcs.png" alt="Carrot2 Document Clustering Server Download" /><c2 /> <dcs /></a>
+          <a class="download-small" content="download-dcs"><img style="float: right" class="pic" src="img/download-dcs.png" alt="Carrot2 Document Clustering Server Download" /><dcs /></a>
         </td>
       </tr>
 
@@ -79,7 +79,7 @@
         </td>
 
         <td>
-          <a content="download-manual"><img style="float: right" class="pic" src="img/download-manual.png" alt="Carrot2 User and Developer Manual Download" /><c2 /> <man /></a><br />
+          <a class="download-small" content="download-manual"><img style="float: right" class="pic" src="img/download-manual.png" alt="Carrot2 User and Developer Manual Download" /><man /></a><br />
           <manual-link class="small">View <c2 /> <man /> online</manual-link>
         </td>
       </tr>
@@ -104,7 +104,7 @@
         </td>
 
         <td>
-          <a content="download-webapp"><img style="float: right" class="pic" src="img/download-webapp.png" alt="Carrot2 Web Application Download" /><c2 /> <wa /></a>
+          <a class="download-small" content="download-webapp"><img style="float: right" class="pic" src="img/download-webapp.png" alt="Carrot2 Web Application Download" /><wa /></a>
         </td>
       </tr>
 

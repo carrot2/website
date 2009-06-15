@@ -524,6 +524,13 @@ a.button {
 a.download {
   background-image: url("../img/button-download.png");
 }
+a.download-small {
+  background-image: url("../img/button-download-small.png");
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  padding-left: 72px;
+  padding-bottom: 2px;
+}
 a.view {
   background-image: url("../img/button-view.png");
 }
