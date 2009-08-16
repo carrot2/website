@@ -16,7 +16,7 @@
       <tr>
         <td class="head">
           Experimental support for Chinese Simplified
-          <carrot2-webapp-link class="button view" extension="stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%E8%81%9A%E7%B1%BB&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=CHINESE_CHINA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE"><span>View online</span></carrot2-webapp-link>
+          <carrot2-webapp-link class="button view" extension="/stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%E8%81%9A%E7%B1%BB&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=CHINESE_CHINA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE"><span>View online</span></carrot2-webapp-link>
           <div class="small-links">
             <javadoc-link extension="/overview-summary.html#non-english" class="small">Java API Example</javadoc-link>
           </div>
@@ -27,7 +27,7 @@
           Chinese Simplified. Chinese content is supported across all <c2 /> 
           applications as well as in <c2 /> <ja />.
 
-          <carrot2-webapp-link extension="stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%E8%81%9A%E7%B1%BB&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=CHINESE_CHINA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE">
+          <carrot2-webapp-link extension="/stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%E8%81%9A%E7%B1%BB&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=CHINESE_CHINA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE">
             <img class="pic rn" src="img/release-3.1.0/webapp-chinese.png" alt="Chinese query clustered by Carrot2" />
           </carrot2-webapp-link>
         </td>
