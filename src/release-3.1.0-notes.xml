@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.0">
+  <heading>Release 3.1.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.1.0" />
+      The 3.1.0 release introduces experimental support for clustering documents
+      in Chinese Simplified, a number of usability improvements to <dcw /> and
+      bug fixes to clustering algorithms. 
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Experimental support for Chinese Simplified
+          <carrot2-webapp-link class="button view" extension="stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%E8%81%9A%E7%B1%BB&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=CHINESE_CHINA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE"><span>View online</span></carrot2-webapp-link>
+          <div class="small-links">
+            <javadoc-link extension="/overview-summary.html#non-english" class="small">Java API Example</javadoc-link>
+          </div>
+        </td>
+
+        <td>
+          Release 3.1.0 introduces experimental support for clustering content in
+          Chinese Simplified. Chinese content is supported across all <c2 /> 
+          applications as well as in <c2 /> <ja />.
+
+          <carrot2-webapp-link extension="stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%E8%81%9A%E7%B1%BB&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=CHINESE_CHINA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE">
+            <img class="pic rn" src="img/release-3.1.0/webapp-chinese.png" alt="Chinese query clustered by Carrot2" />
+          </carrot2-webapp-link>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Search results clustering plugin for Apache Solr 1.4
+          
+          <a href="http://lucene.apache.org/solr" title="Download Apache Solr" class="button download"><span>Download</span></a>
+          <div class="small-links">
+            <a class="small" href="http://wiki.apache.org/solr/ClusteringComponent">Solr Clustering Component Wiki</a>
+          </div>
+        </td>
+
+        <td>
+          Version 1.4 of Apache Solr offers a search results clustering component based on <c2 />.
+          <a href="http://lucene.apache.org/solr/">
+            <img class="pic rn" src="img/solr-logo.jpg" alt="Apache Solr" /></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Clustering performance benchmarking in <dcw /><br />
+          <a content="download-workbench-win32" class="button download"><span>Download</span></a>
+          <div class="small-links">
+            <a content="download-workbench-linux" class="small"><span>Linux version</span></a><br />
+            <manual-link class="small" section="section.getting-started">Getting started</manual-link>
+          </div>
+        </td>
+
+        <td>
+          Using the <dcw /> you can now quickly benchmark the performance of
+          <c2 /> clustering algorithms.
+
+          <a content="download-workbench-win32"> 
+            <img class="pic rn" src="img/release-3.1.0/workbench-benchmark-view.png" alt="Benchark view in Carrot2 Clustering Workbench" /></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Improved attribute managemeng in <dcw /><br />
+          <a content="download-workbench-win32" class="button download"><span>Download</span></a>
+          <div class="small-links">
+            <a content="download-workbench-linux" class="small"><span>Linux version</span></a><br />
+            <manual-link class="small" section="section.getting-started">Getting started</manual-link>
+          </div>
+        </td>
+
+        <td>
+          Release 3.1.0 brings a number of improvements to the way clustering algorithm's attributes
+          are managed in the <dcw />.
+
+          <p>
+            You can now set a certain set of attributes as defaults for further queries, reset 
+            the attributes back to the saved defaults or factory defaults. This feature may be helpful
+            when <manual-link section="chapter.tuning">tuning <c2 /> clustering</manual-link>.
+
+            <a content="download-workbench-win32"> 
+              <img class="pic rn" src="img/release-3.1.0/workbench-attribute-defaults.png" alt="Attribute management in Carrot2 Clustering Workbench" /></a>
+          </p>
+
+          <p>
+            You can also load and save attribute values in XML files. This is
+            especially useful when <manual-link section="chapter.customizing">customizing <c2 />
+            applications</manual-link>. Finally, folding of attribute groups
+            is preserved across editors and Workbench restarts, so that you can
+            focus on the relevant attributes during tuning.
+
+            <a content="download-workbench-win32"> 
+              <img class="pic rn" src="img/release-3.1.0/workbench-attribute-management.png" alt="Attribute management in Carrot2 Clustering Workbench" /></a>
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Code snippets in JavaDoc
+          <javadoc-link extension="/overview-summary.html#overview_description" class="button view"><span>View online</span></javadoc-link>
+        </td>
+
+        <td>
+          A number of code snippets are now included in the JavaDoc overview page
+          for easier learning of <c2 /> <ja />.
+
+          <javadoc-link extension="/overview-summary.html#overview_description"> 
+            <img class="pic rn" src="img/release-3.1.0/javadoc-examples.png" alt="Carrot2 JavaDoc overview page" /></javadoc-link>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Bugfixes in clustering algorithms
+        </td>
+
+        <td>
+          Release 3.1.0 fixes a number of small issues in clustering algorithms, including:
+          <a href="http://issues.carrot2.org/browse/CARROT-535">CARROT-535</a>,
+          <a href="http://issues.carrot2.org/browse/CARROT-494">CARROT-494</a> and
+          <a href="http://issues.carrot2.org/browse/CARROT-493">CARROT-493</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Dependency updates
+        </td>
+
+        <td>
+          <c2 /> logging is now using SLF4J and no longer depends on Log4J.
+          Additionally, a number of dependencies have been updated:
+          <ul class="compact">
+            <li>Lucene v2.9</li>
+            <li>Google Collections v1.0-rc2</li>
+            <li>Jetty 6.1.19</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of new features and bug fixes, see <a
+      href="http://issues.carrot2.org/browse/CARROT/fixforversion/10132">JIRA
+      issues fixed in version 3.1.0</a>. For more new features, please see <a
+      content="release-3.0.1-notes">release 3.0.1</a> and <a
+      content="release-3.0-notes">release 3.0 notes</a>.
+    </p>
+  </content>
+</page>

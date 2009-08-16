@@ -167,7 +167,7 @@
         <xsl:with-param name="release" select="@release" />
       </xsl:call-template>
     </xsl:variable>
-    <a href="{$url}/javadoc">
+    <a href="{$url}/javadoc/{@extension}">
       <xsl:copy-of select="@class" />
       <xsl:copy-of select="@target" />
       <xsl:apply-templates />
@@ -175,7 +175,7 @@
   </xsl:template>
 
   <xsl:template match="carrot2-webapp-link">
-    <a href="{$carrot2.webapp.url}"><xsl:copy-of select="@class" /><xsl:copy-of select="@target" /><xsl:apply-templates /></a>
+    <a href="{$carrot2.webapp.url}{@extension}"><xsl:copy-of select="@class" /><xsl:copy-of select="@target" /><xsl:apply-templates /></a>
   </xsl:template>
 
   <xsl:template match="carrot2-webapp-results-link">
@@ -189,7 +189,11 @@
   <xsl:template match="carrot2-source-link">
     <xsl:variable name="suffix"><xsl:if test="not(@dir)">?r=trunk</xsl:if></xsl:variable>
     <xsl:variable name="branch">/<xsl:if test="not(@branch)">trunk</xsl:if><xsl:if test="@branch"><xsl:value-of select="@branch" /></xsl:if></xsl:variable>
-    <a href="http://fisheye3.atlassian.com/browse/carrot2{$branch}/{@extension}{$suffix}"><xsl:apply-templates /></a>
+    <a href="http://fisheye3.atlassian.com/browse/carrot2{$branch}/{@extension}{$suffix}">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
   </xsl:template>
 
   <xsl:template match="carrot-search-webapp-link">
