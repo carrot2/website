@@ -139,12 +139,11 @@
         </td>
 
         <td>
-          <c2 /> logging is now using SLF4J and no longer depends on Log4J.
-          Additionally, a number of dependencies have been updated:
+          A number of dependencies have been updated:
           <ul class="compact">
-            <li>Lucene v2.9</li>
-            <li>Google Collections v1.0-rc2</li>
-            <li>Jetty 6.1.19</li>
+            <li>Lucene to version 2.9</li>
+            <li>Google Collections to version 1.0-rc2</li>
+            <li>Jetty to version 6.1.19</li>
           </ul>
         </td>
       </tr>
