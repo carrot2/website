@@ -63,7 +63,7 @@
         <td>0.03</td>
         <td>0.05</td>
         <td>yes</td>
-        <td>multilingual clustering, synonyms, advanced tuning, scalability (5000 snippets in 1.3s*)</td>
+        <td>multilingual clustering, synonyms, advanced tuning, scalability (10,000 snippets in 530ms*)</td>
         <td></td>
         <td><carrot-search-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=200&amp;alg=Lingo+3G&amp;opts=h">london</carrot-search-webapp-results-link></td>
       </tr>
@@ -73,7 +73,7 @@
       *) Clustering speed measurements were done for 100, 200, 400 snippets
       downloaded from Yahoo! for query 'lucene'. Benchmark environment: Intel Core2 Duo E8400 3GHz, 3GB
       MB RAM, Windows XP. Java Virtual Machine: Sun JDK 1.6.0, JVM switches:
-      -server. Time presented in the table is
+      -server -Xmx512m. Time presented in the table is
       an average of 100 runs, for each algorithm time measurement was preceded
       by 100 untimed warm-up runs.
     </p>
