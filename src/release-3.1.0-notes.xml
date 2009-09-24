@@ -52,6 +52,17 @@
 
       <tr>
         <td class="head">
+          Rewritten STC clustering algorithm
+        </td>
+
+        <td>
+          The Suffix Tree Clustering algorithm has been rewritten for 
+          <a content="algorithms">better performance</a> and clustering quality.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
           Clustering performance benchmarking in <dcw /><br />
           <a content="download-workbench-win32" class="button download"><span>Download</span></a>
           <div class="small-links">
@@ -65,13 +76,13 @@
           <c2 /> clustering algorithms.
 
           <a content="download-workbench-win32"> 
-            <img class="pic rn" src="img/release-3.1.0/workbench-benchmark-view.png" alt="Benchark view in Carrot2 Clustering Workbench" /></a>
+            <img class="pic rn" src="img/release-3.1.0/workbench-benchmark-view.png" alt="Benchmark view in Carrot2 Clustering Workbench" /></a>
         </td>
       </tr>
 
       <tr>
         <td class="head">
-          Improved attribute managemeng in <dcw /><br />
+          Improved attribute management in <dcw /><br />
           <a content="download-workbench-win32" class="button download"><span>Download</span></a>
           <div class="small-links">
             <a content="download-workbench-linux" class="small"><span>Linux version</span></a><br />
