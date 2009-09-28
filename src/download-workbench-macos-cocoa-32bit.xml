@@ -2,12 +2,12 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><workbench-download-refresh release="stable" wm="carbon" os="macosx" arch="x86" /></head>
+  <head><workbench-download-refresh release="stable" wm="cocoa" os="macosx" arch="x86" /></head>
   <heading>Download</heading>
 
   <content>
-    <strong>Downloading <c2 /> <dcw /> for Mac OS X Carbon</strong> version <version-stable />...<br />
-    <span class="small">If the download does not start automatically, <workbench-download-link release="stable" wm="carbon" os="macosx" arch="x86">click here</workbench-download-link></span>
+    <strong>Downloading <c2 /> <dcw /> for Mac OS X Cocoa 32-bit</strong> version <version-stable />...<br />
+    <span class="small">If the download does not start automatically, <workbench-download-link release="stable" wm="cocoa" os="macosx" arch="x86">click here</workbench-download-link></span>
 
     <div id="download-info">
       <img src="img/workbench-macos.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Clustering Workbench for Mac OS X Download" />
@@ -28,11 +28,6 @@
         <strong>Note: </strong><c2 /> <dcw /> requires Mac OS 10.4 or later and Java for 
         Mac OS X Release 5 or later.
       </p>
-
-      <p class="note">
-        <strong>Note: </strong>Despite the file name, this release should work under PPC processors as well. 
-      </p>
     </div>
   </content>
 </page>
-

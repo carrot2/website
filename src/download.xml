@@ -35,7 +35,9 @@
           <a class="download-small" content="download-workbench-win32">Windows version</a><br />
           <a class="download-small" content="download-workbench-linux">Linux 32-bit version</a><br />
           <a class="download-small" content="download-workbench-linux-64bit">Linux 64-bit version</a><br />
-          <a class="download-small" content="download-workbench-macos">Mac OS X version</a>
+          <a class="download-small" content="download-workbench-macos">Mac OS X Carbon version</a><br />
+          <a class="download-small" content="download-workbench-macos-cocoa-32bit">Mac OS X Cocoa 32-bit version</a><br />
+          <a class="download-small" content="download-workbench-macos-cocoa-64bit">Mac OS X Cocoa 64-bit version</a>
         </td>
       </tr>
 
