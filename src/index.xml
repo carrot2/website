@@ -17,6 +17,11 @@
           support for clustering Chinese Simplified content, usability
           improvements in the <dcw />, Apache Solr plugin and more.
         </div>
+       
+        <div style="margin-top: 2ex">
+          <c2 /> Lingo.NET powers the search results clustering feature of
+          the just-released <a href="http://www.shumbi.com/2009/09/24/shumbi-announces-collaboration-with-carrot-search/">Shumbi Discover software</a>.
+        </div>
       </div>
       
       <div class="side" style="margin-top: 40px; margin-bottom: 10px; text-align: left">
