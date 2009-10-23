@@ -39,6 +39,14 @@
     </p>
 
     <p style="clear: both">
+      <a href="http://www.constellio.com/"><img style="float: left; margin-right: 15px" 
+      class="pic app-pic" src="img/constellio.png" alt="Constellio Open Source Enterprise Search" title="Constellio Open Source Enterprise Search" /> Constellio</a>
+      is an open source enterprise search that lets you find all your
+      organization's relevant content (Web, Email, ECM, CRM, Databases, etc.)
+      with a single click. Constellio offers <c2 />-powered search results clustering.
+    </p>
+
+    <p style="clear: both">
       <a href="http://www.searchblox.com/"><img style="float: left; margin-right: 15px" class="pic app-pic" src="img/searchblox.gif" alt="SearchBlox" title="SearchBlox" />
       SearchBlox</a> is a high-performance Content Search Software
       designed for corporate intranets, websites, portals and
