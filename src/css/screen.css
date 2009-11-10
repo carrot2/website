@@ -437,6 +437,7 @@ div.qa-index a {
 /** Release notes */
 table.release-notes {
   margin-top: 2ex;
+  width: 100%;
 }
 
 table.release-notes td {

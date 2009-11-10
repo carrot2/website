@@ -13,9 +13,8 @@
         <h2>News</h2>
        
         <div>
-          <a content="release-3.1.0-notes">Release 3.1.0</a> is available with
-          support for clustering Chinese Simplified content, usability
-          improvements in the <dcw />, Apache Solr plugin and more.
+          <a content="release-3.1.1-notes">Release 3.1.1</a> is available with
+          a number of performance improvements.
         </div>
        
         <div style="margin-top: 2ex">
