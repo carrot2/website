@@ -20,6 +20,16 @@
     <publication-group id="papers">
       <title>Scientific papers</title>
 
+      <paper paper="http://portal.acm.org/ft_gateway.cfm?id=1541884&amp;type=pdf&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=61275280&amp;CFTOKEN=60692112"
+             bibtex="http://portal.acm.org/popBibTex.cfm?id=1541884&amp;ids=J204.1541880.1541884&amp;types=periodical.issue.article&amp;reqtype=article&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=61275280&amp;CFTOKEN=60692112">
+        <authors>Claudio Carpineto, Stanislaw Osiński, Giovanni Romano, Dawid Weiss</authors>
+        <title>A survey of Web clustering engines</title>
+        <where>
+          ACM Computing Surveys (CSUR), Volume 41, Issue 3 (July 2009), Article No. 17, ISSN:0360-0300
+        </where>
+        <link href="http://portal.acm.org/citation.cfm?id=1541880.1541884">ACM (publisher)</link>
+      </paper>
+
       <paper paper="http://dis.shef.ac.uk/mark/publications/my_papers/Tang-paperCLEF2008.pdf">
         <authors>J. Tang, T. Arni, M. Sanderson, P. Clough</authors>
         <title>Building a Diversity Featured Search System by Fusing Existing Tools</title>
