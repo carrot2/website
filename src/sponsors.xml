@@ -39,11 +39,11 @@
 
       <tr>
         <td class="donor-logo">
-          <a href="http://www.atlassian.com/c/NPOS/10160"><img src="img/jira.gif" title="Atlassian JIRA" alt="Atlassian JIRA" /></a>
+          <a href="http://www.atlassian.com/software/jira"><img border="0" width="80" height="25" alt="Atlassian JIRA" title="Atlassian JIRA" src="http://www.atlassian.com/software/jira/images/badges/v1/sm_jira.png" /></a>
         </td>
 
         <td class="donor-text">
-          <a href="http://www.atlassian.com/c/NPOS/10160">Atlassian</a>
+          <a href="http://www.atlassian.com/software/jira">Atlassian</a>
           supports our efforts by contributing their bug tracking and issue
           tracking application, JIRA, to our project. <c2 />'s instance of JIRA
           is <a href="http://issues.carrot2.org">here</a>.
@@ -52,7 +52,7 @@
 
       <tr>
         <td class="donor-logo">
-          <a href="http://www.atlassian.com/software/bamboo/"><img src="img/bamboo.gif" title="Atlassian Bamboo" alt="Atlassian Bamboo" /></a>
+          <a href="http://www.atlassian.com/software/bamboo" title="Atlassian Bamboo"><img border="0" width="80" height="25" alt="Atlassian Bamboo" src="http://www.atlassian.com/software/bamboo/images/badges/v1/sm_bamboo.png" /></a>
         </td>
 
         <td class="donor-text">
@@ -65,7 +65,7 @@
 
       <tr>
         <td class="donor-logo">
-          <a href="http://www.atlassian.com/software/clover/"><img src="img/clover.gif" title="Atlassian Clover" alt="Atlassian Clover" /></a>
+          <a href="http://www.atlassian.com/software/clover" title="Atlassian Clover"><img border="0" width="80" height="25" alt="Atlassian Clover" src="http://www.atlassian.com/software/clover/images/badges/v1/sm_clover.png" /></a>
         </td>
 
         <td class="donor-text">
@@ -78,7 +78,7 @@
 
       <tr>
         <td class="donor-logo">
-          <a href="http://www.atlassian.com/software/fisheye/"><img src="img/fisheye.gif" title="Atlassian FishEye" alt="Atlassian FishEye" /></a>
+          <a href="http://www.atlassian.com/software/fisheye" title="Atlassian FishEye"><img border="0" width="80" height="25" alt="Atlassian FishEye" src="http://www.atlassian.com/software/fisheye/images/badges/v1/sm_fisheye.png" /></a>
         </td>
 
         <td class="donor-text">
@@ -88,6 +88,19 @@
           be browsed on the <a
           href="http://fisheye3.atlassian.com/browse/carrot2">FishEye
           instance</a> hosted by Atlassian.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="donor-logo">
+          <a href="http://www.atlassian.com/software/confluence"><img border="0" width="80" height="25" alt="Atlassian Confluence" title="Atlassian Confluence" src="http://www.atlassian.com/software/confluence/images/badges/v1/sm_confluence.png" /></a>
+        </td>
+
+        <td class="donor-text">
+          <a href="http://www.atlassian.com/software/confluence">Atlassian</a>
+          supports our efforts by contributing their enterprise Wiki
+          software, Confluence, to our project. <c2 />'s instance of Confluence
+          is <a href="http://wiki.carrot2.org">here</a>.
         </td>
       </tr>
 
