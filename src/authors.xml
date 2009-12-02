@@ -37,7 +37,9 @@
       </p>
     </div>
 
-    Other contributors:
+    <div style="clear: both">
+      Other contributors:
+    </div>
     <ul>
       <li>
         Urszula Krukar, (Poznan University of Technology (PUT), Poland, initial version of <c2 /> Clustering Workbench, active since 2007), 
