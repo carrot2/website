@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.2.0">
+  <heading>Release 3.2.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.2.0" />
+      The 3.2.0 release introduces experimental support for clustering Korean
+      and Arabic content, adds a command-line batch processing application,
+      updates cluster visualization and removes LGPL-licensed dependencies.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Experimental support for Arabic and Korean
+          <carrot2-webapp-link extension="/stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=ARABIC_ARABIA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE" class="button view"><span>View online</span></carrot2-webapp-link>
+        </td>
+
+        <td>
+          Release 3.2.0 introduces experimental support for clustering content
+          in Arabic and Korean. Arabic and Korean content is supported across
+          all <c2 /> components as well as in <c2 /> Java API. Please note
+          that <c2 /> User Interfaces still use Left To Right layouts. 
+           
+          <carrot2-webapp-link extension="/stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=ARABIC_ARABIA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE">
+            <img class="pic rn" src="img/release-3.2.0/webapp-arabic.png" alt="Arabic query clustered by Carrot2" /></carrot2-webapp-link>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Command-line application for batch clustering
+          <a content="download-cli" class="button download"><span>Download</span></a>
+          <div class="small-links">
+            <manual-link class="small" section="section.cli.bp.installation">Installation and running</manual-link>
+          </div>
+        </td>
+
+        <td>
+          Release 3.2.0 introduces a simple command-line application which
+          performs <c2 /> clustering on one or more files in the <c2 /> XML
+          format and saves the results as XML or JSON. Apart from clustering
+          large number of documents sets at one time, you can use the this
+          application to integrate <c2 /> with your non-Java applications. 
+          
+          <a content="download-cli">
+            <img class="pic rn" src="img/release-3.2.0/cli-batch.png" alt="Carrot2 Batch Processing Application" /></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Significant updates in the Circles visualization 	
+          <carrot2-webapp-link extension="/stable/search?query=data+mining&amp;results=200&amp;source=web&amp;algorithm=url&amp;view=visu&amp;skin=fancy-compact&amp;EToolsDocumentSource.language=ENGLISH&amp;EToolsDocumentSource.country=ALL&amp;EToolsDocumentSource.safeSearch=false" class="button view"><span>View online</span></carrot2-webapp-link>
+        </td>
+
+        <td>
+          The Circles cluster visualization has been significantly improved, including much clearer label rendering, multiple selection support and smoother animation.
+           
+          <carrot2-webapp-link extension="/stable/search?query=data+mining&amp;results=200&amp;source=web&amp;algorithm=url&amp;view=visu&amp;skin=fancy-compact&amp;EToolsDocumentSource.language=ENGLISH&amp;EToolsDocumentSource.country=ALL&amp;EToolsDocumentSource.safeSearch=false">
+            <img class="pic rn" src="img/release-3.2.0/circles.png" alt="Carrot2 Circles Visualization" /></carrot2-webapp-link>
+
+          For fully customizable Flash binaries of this visualization,
+          including color schemes and logos, please <a href="http://company.carrot-search.com">contact Carrot Search</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          LGPL-licensed dependencies removed
+        </td>
+
+        <td>
+          All Carrot2's LGPL dependencies have been replaced with non-LGPL substitutes or made optional.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Document Clustering Workbench performance improvements
+        </td>
+
+        <td>
+          Version 3.2.0 brings a number of improvements to the Document
+          Clustering Workbench, including better performance of the results
+          editor for large numbers of documents.
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.2.0%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.2.0. For more new features, please see <a
+      content="release-3.1.0-notes">release 3.1.0</a> and <a
+      content="release-3.0-notes">release 3.0 notes</a>. 
+    </p>
+  </content>
+</page>
+

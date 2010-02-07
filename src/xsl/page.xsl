@@ -27,6 +27,6 @@
   <xsl:output indent="yes" omit-xml-declaration="yes"
        doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
        doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
-       media-type="application/xhtml+xml" encoding="utf-8" />
+       media-type="application/xhtml+xml" encoding="UTF-8" />
 
 </xsl:stylesheet>
