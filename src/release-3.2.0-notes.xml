@@ -22,8 +22,8 @@
         <td>
           Release 3.2.0 introduces experimental support for clustering content
           in Arabic and Korean. Arabic and Korean content is supported across
-          all <c2 /> components as well as in <c2 /> Java API. Please note
-          that <c2 /> User Interfaces still use Left To Right layouts. 
+          all <c2 /> components as well as in <c2 /> <ja />. Please note
+          that <c2 /> user interfaces still use Left To Right layouts. 
            
           <carrot2-webapp-link extension="/stable/search?source=msn-web&amp;view=tree&amp;skin=fancy-compact&amp;query=%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A7%D8%AA&amp;results=100&amp;algorithm=lingo&amp;MicrosoftLiveDocumentSource.culture=ARABIC_ARABIA&amp;MicrosoftLiveDocumentSource.safeSearch=MODERATE">
             <img class="pic rn" src="img/release-3.2.0/webapp-arabic.png" alt="Arabic query clustered by Carrot2" /></carrot2-webapp-link>

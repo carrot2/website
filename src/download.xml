@@ -35,9 +35,8 @@
           <a class="download-small" content="download-workbench-win32">Windows version</a><br />
           <a class="download-small" content="download-workbench-linux">Linux 32-bit version</a><br />
           <a class="download-small" content="download-workbench-linux-64bit">Linux 64-bit version</a><br />
-          <a class="download-small" content="download-workbench-macos">Mac OS X Carbon version</a><br />
-          <a class="download-small" content="download-workbench-macos-cocoa-32bit">Mac OS X Cocoa 32-bit version</a><br />
-          <a class="download-small" content="download-workbench-macos-cocoa-64bit">Mac OS X Cocoa 64-bit version</a>
+          <a class="download-small" content="download-workbench-macos-cocoa-32bit">Mac OS X 32-bit version</a><br />
+          <a class="download-small" content="download-workbench-macos-cocoa-64bit">Mac OS X 64-bit version</a>
         </td>
       </tr>
 
@@ -70,6 +69,20 @@
 
         <td>
           <a class="download-small" content="download-dcs"><img style="float: right" class="pic" src="img/download-dcs.png" alt="Carrot2 Document Clustering Server Download" /><dcs /></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          <ul>
+            <li>
+              perform <c2 /> clustering from command line
+            </li>
+          </ul>
+        </td>
+
+        <td>
+          <a class="download-small" content="download-cli"><img style="float: right" class="pic" src="img/download-cli.png" alt="Carrot2 Command Line Applications Download" /><cli /></a>
         </td>
       </tr>
 

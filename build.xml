@@ -46,6 +46,7 @@
           <param name="copyright.year" expression="${copyright.year}" />
         
           <param name="carrot2.java-api.base" expression="${carrot2.java-api.base}" />
+          <param name="carrot2.cli.base" expression="${carrot2.cli.base}" />
           <param name="carrot2.dcs.base" expression="${carrot2.dcs.base}" />
           <param name="carrot2.webapp.base" expression="${carrot2.webapp.base}" />
           <param name="carrot2.manual.base" expression="${carrot2.manual.base}" />

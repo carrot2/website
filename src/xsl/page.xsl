@@ -17,6 +17,7 @@
   <xsl:param name="legacy.dist.url" />
   
   <xsl:param name="carrot2.java-api.base" />
+  <xsl:param name="carrot2.cli.base" />
   <xsl:param name="carrot2.dcs.base" />
   <xsl:param name="carrot2.webapp.base" />
   <xsl:param name="carrot2.workbench.base" />
