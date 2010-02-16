@@ -21,6 +21,12 @@
     </p>
 
     <p style="clear: both">
+      <a href="http://www.ebi.ac.uk/ebisearch/search.ebi?db=literature&amp;query=lung"><img style="float: left; margin-right:
+      15px" class="pic app-pic" src="img/ebi.png" alt="European Bioinformatics Institute" title="European Bioinformatics Institute" /> EB-eye Search</a> 
+      engine at the European Bioinformatics Institute uses <c2 /> to aid exploration of the returned search results.
+    </p>
+
+    <p style="clear: both">
       <a href="http://www.shumbi.com/products/shumbi-discover/overview/"><img style="float: left; margin-right:
       15px" class="pic app-pic" src="img/shumbi.gif" alt="Shumbi Discover" title="Shumbi Discover" /> Shumbi Discover</a> 
       is a next generation research tool using deep-web discovery, visual search and annotation.
