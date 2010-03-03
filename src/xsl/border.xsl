@@ -162,6 +162,10 @@
                     <xsl:with-param name="text">Spin-off</xsl:with-param>
                     <xsl:with-param name="section">spin-off</xsl:with-param>
                   </xsl:call-template>
+
+                  <a href="http://labs.carrotsearch.com">
+                    <img alt="bullet" src="img/menu-bullet.gif" class="menu-bullet" />&#160;Labs
+                  </a>
                   </div>
                 </div>
               </td>
