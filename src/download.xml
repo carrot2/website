@@ -32,7 +32,8 @@
         <td>
           <a content="download-workbench-win32"><img style="float: right" class="pic" src="img/download-workbench.png" alt="Carrot2 Clustering Workbench Download" /></a>
           <c2 /> <dcw /> <br />
-          <a class="download-small" content="download-workbench-win32">Windows version</a><br />
+          <a class="download-small" content="download-workbench-win32">Windows 32-bit version</a><br />
+          <a class="download-small" content="download-workbench-win32-64bit">Windows 64-bit version</a><br />
           <a class="download-small" content="download-workbench-linux">Linux 32-bit version</a><br />
           <a class="download-small" content="download-workbench-linux-64bit">Linux 64-bit version</a><br />
           <a class="download-small" content="download-workbench-macos-cocoa-32bit">Mac OS X 32-bit version</a><br />
