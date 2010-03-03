@@ -89,6 +89,22 @@
           editor for large numbers of documents.
         </td>
       </tr>
+
+      <tr>
+        <td class="head">
+          Carrot Search Labs
+        </td>
+
+        <td>
+          <a href="http://labs.carrotsearch.com">Carrot Search Labs</a> opens
+          to share some small pieces of software we created when working on
+          Carrot2 and Lingo3G.  If you find any of the projects valuable, we'd
+          love to hear your feedback!
+
+          <a href="http://labs.carrotsearch.com">
+            <img class="pic rn" src="img/release-3.2.0/carrot-search-labs-website.png" alt="Carrot Search Labs website" /></a>
+        </td>
+      </tr>
     </table>
 
     <hr />
