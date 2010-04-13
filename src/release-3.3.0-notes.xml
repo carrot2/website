@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.3.0">
+  <heading>Release 3.3.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.3.0" />
+      The 3.3.0 release brings significant improvements in the scalability of
+      the STC clustering algorithm, improvements to the Controller API and a
+      number of minor bug fixes.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Significant scalability improvements
+        </td>
+
+        <td>
+          Release 3.3.0 significantly improves scalability of the content
+          preprocessing chain used by <c2 /> clustering algorithms. This results
+          in almost 7x faster clustering in case of the STC algorithm applied
+          to larger collections of documents.
+
+          <img class="pic rn" src="img/release-3.3.0/stc-scalability.png" alt="Scalability of the STC clustering algorithm" />
+
+          Due to a specific algorithmic nature, the Lingo clustering algorithm
+          received only a modest performance gain.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Controller API improvements
+        </td>
+
+        <td>
+          With release 3.3.0, the component instance pooling and data caching
+          facilities of the <a
+          href="http://download.carrot2.org/head/javadoc/org/carrot2/core/CachingController.html"><tt>CachingController</tt></a>
+          have been separated.  <a
+          href="http://download.carrot2.org/head/javadoc/org/carrot2/core/ControllerFactory.html"><tt>ControllerFactory</tt></a>
+          can now create controllers with any combination of pooling
+          (enabled/disabled) and caching (enabled/disabled). For more details,
+          please see the <a
+          href="http://download.carrot2.org/head/javadoc/">JavaDoc</a> and the
+          related <a href="http://issues.carrot2.org/browse/CARROT-644">JIRA
+          issue</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Optional attributes visible by default in Workbench
+        </td>
+
+        <td>
+          Release 3.3.0 of the <dcw /> by default shows both required and optional attributes
+          of document sources in the Search View.
+
+          <img class="pic rn" src="img/release-3.3.0/optional-attributes-in-workbench.png" alt="Optional attributes visible by default in Workbench" />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Dependency updates
+        </td>
+
+        <td>
+          A number of dependencies have been updated:
+
+          <ul>
+            <li>Lucene to version 3.0.1</li>
+            <li><a href="http://labs.carrotsearch.com/hppc.html">High Performance Primitive Collections</a> to version 0.2.0</li>
+            <li>Ehcache to version 1.7.1</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.3.0%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.3.0. For more new features, please see <a
+      content="release-3.2.0-notes">release 3.2.0</a> and <a
+      content="release-3.1.0-notes">release 3.1.0 notes</a>. 
+    </p>
+  </content>
+</page>
+
