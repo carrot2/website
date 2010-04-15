@@ -82,24 +82,22 @@
   </target>
 
   <target name="upload" depends="xslt" description="Uploads the website to the server">
-    <fail unless="website.upload.host">Please define the website.upload.host variable</fail>
-    <fail unless="website.upload.user">Please define the website.upload.user variable</fail>
-    <fail unless="website.upload.password">Please define the website.upload.password variable</fail>
-    <fail unless="website.website.upload.dir">Please define the website.website.upload.dir variable</fail>
-    <echo>
-####
-Uploading website to: ${website.upload.host}/${website.website.upload.dir}
-####
-    </echo> 
-    <ftp server="${website.upload.host}"
-         userid="${website.upload.user}"
-         password="${website.upload.password}"
-         remotedir="${website.website.upload.dir}"
-         depends="yes"
-         verbose="yes"
-         passive="yes">
-      <fileset dir="${distribution.dir}"/>
-    </ftp>
+      <fail unless="upload.rsync.command" />
+      <fail unless="upload.host" />
+      <fail unless="upload.user" />
+      <fail unless="upload.path" />
+      <fail unless="upload.ssh.identity.path" />
+      <fail unless="upload.ssh.port" />
+      
+      <exec executable="${upload.rsync.command}" dir="${distribution.dir}">
+           <arg value="-az" />
+           <arg value="-v" />
+           <arg value="-e" />
+           <arg value="ssh -p ${upload.ssh.port} -o StrictHostKeyChecking=no -i ${upload.ssh.identity.path} -o UserKnownHostsFile=/dev/null" />
+           <arg value="--chmod=u=rwX,g=rX,o=rX" />
+           <arg value="." />
+           <arg value="${upload.user}@${upload.host}:${upload.path}" />
+      </exec>
   </target>
 
   <target name="help" description="Displays help on available targets.">
