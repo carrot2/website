@@ -13,9 +13,8 @@
         <h2>News</h2>
        
         <div>
-          <a content="release-3.2.0-notes">Release 3.2.0</a> is available with
-          experimental support for Arabic and Korean, command line application, updated
-          visualization and more.
+          <a content="release-3.3.0-notes">Release 3.3.0</a> is available with
+          significant clustering scalability improvements.
         </div>
        
         <div style="margin-top: 2ex">
