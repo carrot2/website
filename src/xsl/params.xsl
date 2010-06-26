@@ -10,8 +10,8 @@
   <xsl:param name="carrot2.webapp.results.url"><xsl:value-of select="$carrot2.webapp.url" />/stable/search</xsl:param>
   <xsl:param name="carrot2.sf.net.url">http://sf.net/projects/carrot2</xsl:param>
 
-  <xsl:param name="carrot-search.website.url">http://company.carrot-search.com</xsl:param>
-  <xsl:param name="carrot-search.webapp.url">http://demo.carrot-search.com</xsl:param>
+  <xsl:param name="carrot-search.website.url">http://carrotsearch.com</xsl:param>
+  <xsl:param name="carrot-search.webapp.url">http://search.carrotsearch.com</xsl:param>
   <xsl:param name="carrot-search.webapp.results.url"><xsl:value-of select="$carrot-search.webapp.url" />/carrot2-webapp/search</xsl:param>
 
 </xsl:stylesheet>

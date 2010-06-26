@@ -119,6 +119,15 @@
         if you like.
       </answer>
     </faq>
+
+    <faq id="circles">
+      <question>Can I get the source code of the <a href="http://search.carrot2.org/stable/search?source=web&amp;view=visu&amp;query=data+mining&amp;results=100&amp;algorithm=url" target="_blank">clusters visualization</a>?</question>
+      <answer>
+        Source code of the visualization is not publicly available. For
+        a fully brandable version, please see the <a href="http://carrotsearch.com/circles">Circles 
+        interative clusters visualization</a> from Carrot Search.
+      </answer>
+    </faq>
     </faqs>
   </content>
 </page>
