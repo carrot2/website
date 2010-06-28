@@ -625,6 +625,10 @@ body#forum #content-inner {
   padding: 0;
 }
 
+body#forum #content-inner > p:first-child {
+  padding: 25px 20px 0px 10px;
+}
+
 .other-releases {
   float: right;
   width: 205px;
