@@ -60,6 +60,11 @@
     </p>
 
     <p style="clear: both">
+      <a href="http://inquira.com"><img style="float: left; margin-right: 15px" class="pic app-pic" src="img/inquira.png" alt="InQuira" title="InQuira" />
+      InQuira</a> uses <c2 /> algorithms in their knowledge management products.
+    </p>
+
+    <p style="clear: both">
       <a href="http://www.searchblox.com/"><img style="float: left; margin-right: 15px" class="pic app-pic" src="img/searchblox.gif" alt="SearchBlox" title="SearchBlox" />
       SearchBlox</a> is a high-performance Content Search Software
       designed for corporate intranets, websites, portals and
