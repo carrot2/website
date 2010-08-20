@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.3.0">
+  <heading>Release 3.4.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.4.0" />
+      The 3.4.0 release introduces a native C# / .NET API to <c2 /> clustering algorithms
+      as well as
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          <c2 /> C# / .NET API<br />
+          <a content="download-csharp-api" class="button download"><span>Download</span></a>
+          <div class="small-links">
+            <csharpapi-link release="stable" class="small">View API reference online</csharpapi-link><br />
+            <manual-link class="small" section="section.integration.compiling-csharp-program-with-carrot2">Getting started</manual-link>
+          </div>
+        </td>
+
+        <td>
+          <img class="pic rn" src="img/csharp-api-in-vs.png" alt="Carrot2 C# / .NET API in Visual Studio" style="margin-top: 0" />
+          Starting with release 3.4.0, <c2 /> provides a native C# API for calling clustering
+          from C# / .NET software:
+          
+          <ul>
+            <li>All required DLL files, C# code examples and API reference included</li>
+            <li>No need to install Java JRE/SDK</li>
+            <li>Clustering engine feature set identical to Java version</li>
+            <li>Clustering results identical to Java version</li>
+            <li>
+              Clustering performance comparable to Java version in case of the STC algorithm. 
+              Due to highly computational nature of Lingo, its C# version is slower than the Java counterpart. 
+            </li>
+            <li>Works with .NET Framework 3.5 or later</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Java 1.6.0 required
+        </td>
+
+        <td>
+          As of version 3.4.0, <c2 /> stops supporting Java 1.5, <a href="http://java.sun.com/j2se/1.5/">which 
+          reached its End of Service Life</a> in October 2009.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Dependency on<br />Lucene API removed
+        </td>
+
+        <td>
+          Versions prior to 3.4.0 depended on
+          Lucene 3.x API, which could cause integration problems in systems
+          relying on earlier versions of Lucene. Version 3.4.0 completely removes the
+          dependency on Lucene API and as a result, <c2 /> will not interfere
+          with earlier and future releases of Lucene.        
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Bing document source 
+        </td>
+
+        <td>
+          MSN Live document source has been replaced with Bing.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          OpenSearch document source in Workbench 
+        </td>
+
+        <td>
+          The OpenSearch document source is now available in <dcw />.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Dependency updates
+        </td>
+
+        <td>
+          A number of dependencies have been updated:
+
+          <ul>
+            <li>Mahout Math and Collections to version 0.3</li>
+            <li><a href="http://labs.carrotsearch.com/hppc.html">High Performance Primitive Collections</a> to version 0.3.1</li>
+            <li>Google Collections replaced with Guava</li>
+            <li>SimpleXML to version 2.3.5</li>
+            <li>Jackson JSON to version 1.5.2</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.4.0%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.4.0. For more new features, please see <a
+      content="release-3.3.0-notes">release 3.3.0</a> and <a
+      content="release-3.2.0-notes">release 3.2.0 notes</a>. 
+    </p>
+  </content>
+</page>
+

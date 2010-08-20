@@ -33,7 +33,7 @@
       <p class="note">
         <strong>Note: </strong><c2 /> <cli /> require  <a
         href="http://java.sun.com/javase/downloads/index.jsp"
-        target="_blank">Java Runtime Environment</a> (version 1.5.0 or newer).
+        target="_blank">Java Runtime Environment</a> (version 1.6.0 or later).
       </p>
     </div>
   </content>

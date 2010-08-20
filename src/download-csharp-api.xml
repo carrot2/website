@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="download">
+  <head><csharp-api-download-refresh release="stable" /></head>
+  <heading>Download</heading>
+
+  <content>
+    <strong>Downloading <c2 /> <csa /></strong> version <version-stable />...<br />
+    <span class="small">If the download does not start automatically, <csharp-api-download-link release="stable">click here</csharp-api-download-link></span>
+
+    <div id="download-info">
+      <img src="img/csharp-api-in-vs.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 C# / .NET API in Visual Studio" />
+
+      <strong>After download completes:</strong>
+
+      <ol>
+        <li>
+          Extract the archive to some local directory
+        </li>
+
+        <li>
+          Look in the <tt>examples</tt> directory for code examples
+        </li>
+
+        <li>
+          See <c2 /> Manual for <manual-link target="_blank" section="section.integration.compiling-csharp-program-with-carrot2">instructions on how 
+          to compile a C# with <c2 /></manual-link>.
+        </li>
+      </ol>
+
+      <p class="note">
+        <strong>Note: </strong><c2 /> <csa /> requires .NET Framework version 3.5 or later.
+      </p>
+    </div>
+  </content>
+</page>

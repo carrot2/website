@@ -22,6 +22,7 @@
   <xsl:template match="dcw"> Document Clustering Workbench</xsl:template>
   <xsl:template match="dcs"> Document Clustering Server</xsl:template>
   <xsl:template match="ja"> Java API</xsl:template>
+  <xsl:template match="csa"> C# API</xsl:template>
   <xsl:template match="cli"> Command Line Applications</xsl:template>
   <xsl:template match="wa"> Web Application</xsl:template>
   <xsl:template match="man"> User and Developer Manual</xsl:template>
@@ -61,6 +62,7 @@
       <xsl:when test="contains($node-name, 'manual')"><xsl:value-of select="$carrot2.manual.base" /></xsl:when>
       <xsl:when test="contains($node-name, 'webapp')"><xsl:value-of select="$carrot2.webapp.base" /></xsl:when>
       <xsl:when test="contains($node-name, 'java-api')"><xsl:value-of select="$carrot2.java-api.base" /></xsl:when>
+      <xsl:when test="contains($node-name, 'csharp-api')"><xsl:value-of select="$carrot2.csharp-api.base" /></xsl:when>
       <xsl:when test="contains($node-name, 'cli')"><xsl:value-of select="$carrot2.cli.base" /></xsl:when>
     </xsl:choose>
   </xsl:template>
@@ -117,7 +119,7 @@
     <xsl:value-of select="concat($dist.url, '/', $dist.base, $platform, normalize-space($dist.version), $dist.extension)" /> 
   </xsl:template>
 
-  <xsl:template match="manual-download-link|workbench-download-link|dcs-download-link|webapp-download-link|java-api-download-link|cli-download-link">
+  <xsl:template match="manual-download-link|workbench-download-link|dcs-download-link|webapp-download-link|java-api-download-link|csharp-api-download-link|cli-download-link">
     <xsl:variable name="dist.file">
       <xsl:call-template name="dist-file">
         <xsl:with-param name="node-name" select="local-name()" />
@@ -134,7 +136,7 @@
     </a>
   </xsl:template>
 
-  <xsl:template match="manual-download-refresh|workbench-download-refresh|dcs-download-refresh|webapp-download-refresh|java-api-download-refresh|cli-download-refresh">
+  <xsl:template match="manual-download-refresh|workbench-download-refresh|dcs-download-refresh|webapp-download-refresh|java-api-download-refresh|csharp-api-download-refresh|cli-download-refresh">
     <xsl:variable name="dist.file">
       <xsl:call-template name="dist-file">
         <xsl:with-param name="node-name" select="local-name()" />
@@ -170,6 +172,19 @@
       </xsl:call-template>
     </xsl:variable>
     <a href="{$url}/javadoc/{@extension}">
+      <xsl:copy-of select="@class" />
+      <xsl:copy-of select="@target" />
+      <xsl:apply-templates />
+    </a>
+  </xsl:template>
+
+  <xsl:template match="csharpapi-link">
+    <xsl:variable name="url">
+      <xsl:call-template name="dist-url">
+        <xsl:with-param name="release" select="@release" />
+      </xsl:call-template>
+    </xsl:variable>
+    <a href="{$url}/csharp/api/{@extension}">
       <xsl:copy-of select="@class" />
       <xsl:copy-of select="@target" />
       <xsl:apply-templates />

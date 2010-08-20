@@ -63,6 +63,23 @@
         <td class="head">
           <ul>
             <li>
+              integrate <c2 /> with your C# / .NET software
+            </li>
+          </ul>
+        </td>
+
+        <td>
+          <a class="download-small" content="download-csharp-api"><csa /> DLL, API reference and example code</a>
+          <div class="small-links">
+            <csharpapi-link release="stable" class="small">View API reference online</csharpapi-link>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          <ul>
+            <li>
               integrate <c2 /> with your PHP, Ruby, C# or other non-Java system
             </li>
           </ul>

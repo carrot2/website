@@ -13,13 +13,8 @@
         <h2>News</h2>
        
         <div>
-          <a content="release-3.3.0-notes">Release 3.3.0</a> is available with
-          significant clustering scalability improvements.
-        </div>
-       
-        <div style="margin-top: 2ex">
-          <a href="http://labs.carrotsearch.com">Carrot Search Labs</a> opens to
-          share some small pieces of software we created when working on <c2 />.
+          <a content="release-3.4.0-notes">Release 3.4.0</a> is available with
+          a native C# API for calling <c2 /> clustering from C# / .NET software.
         </div>
       </div>
       
@@ -52,14 +47,15 @@
     <p>
       Apart from two specialized <a content="algorithms">document clustering
       algorithms</a>, <c2 /> offers ready-to-use components for fetching search
-      results from various sources including YahooAPI, GoogleAPI, MSN Live API,
+      results from various sources including YahooAPI, GoogleAPI, Bing API,
       <a href="http://www.etools.ch">eTools Meta Search</a>, Lucene, SOLR,
       Google Desktop and more.
     </p>
    
     <p>
-      <c2 /> is implemented in Java, but it easily integrates with non-Java
-      software, such as PHP, Ruby or C#.  The <a content="download">downloads
+      <c2 /> is implemented in Java, but a native C# / .NET API is also available.
+      Other non-Java platforms, such as PHP or Ruby, can call <c2 /> clustering
+      through its REST interface.  The <a content="download">downloads
       page</a> will help you to choose the right package.  For consulting
       services, installation, maintenance and text mining expertise, contact
       <carrot-search-website-link>Carrot Search</carrot-search-website-link>
