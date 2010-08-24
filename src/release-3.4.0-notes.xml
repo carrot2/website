@@ -8,7 +8,7 @@
     <para>
       <release-info version="3.4.0" />
       The 3.4.0 release introduces a native C# / .NET API to <c2 /> clustering algorithms
-      as well as
+      as well as a number of smaller improvements.
     </para>
 
     <table class="release-notes">
@@ -38,6 +38,9 @@
             </li>
             <li>Works with .NET Framework 3.5 or later</li>
           </ul>
+
+          A similar C# API is available for <a href="http://carrotsearch.com/lingo3g">Lingo3G, 
+          a real-time text clustering engine</a> from Carrot Search.
         </td>
       </tr>
 
