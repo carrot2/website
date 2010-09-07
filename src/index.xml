@@ -13,8 +13,10 @@
         <h2>News</h2>
        
         <div>
-          <a content="release-3.4.0-notes">Release 3.4.0</a> is available with
-          a native C# API for calling <c2 /> clustering from C# / .NET software.
+          Releases <a content="release-3.4.0-notes">3.4.0</a> and <a
+          content="release-3.4.1-notes">3.4.1</a> are available with a native
+          C# API for calling <c2 /> clustering from C# / .NET software,
+          Solr 1.4.x compatibility and bug fixes.
         </div>
       </div>
       
