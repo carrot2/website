@@ -4,9 +4,12 @@
 <page section="home">
   <content>
     <div style="float: right">
-      <div style="text-align: right; margin-bottom: 30px">
+      <div style="text-align: right; margin-bottom: 20px">
         <a content="download" id="main-download" class="button"><span>Download</span></a><br />
-        <javadoc-link release="stable" class="small"><c2 /> API JavaDoc</javadoc-link>
+        <div style="line-height: 1.2">
+        <javadoc-link release="stable" class="small"><c2 /> API JavaDoc</javadoc-link><br />
+        <csharpapi-link release="stable" class="small"><c2 /> C# API reference</csharpapi-link>
+        </div>
       </div>
 
       <div class="side" style="clear: both">
@@ -30,7 +33,7 @@
         <h2>Spin-off company</h2>
        
         <div>
-          <carrot-search-website-link><img src="img/carrot-search.gif" style="margin-top: 15px; margin-bottom: 20px" alt="Carrot Search" title="Carrot Search" /></carrot-search-website-link> 
+          <carrot-search-website-link><img src="img/carrot-search.png" style="margin-top: 15px; margin-bottom: 20px" alt="Carrot Search" title="Carrot Search" /></carrot-search-website-link> 
         </div>
       </div>
     </div>
