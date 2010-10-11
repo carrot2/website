@@ -6,7 +6,7 @@
     <div style="float: right">
       <div style="text-align: right; margin-bottom: 20px">
         <a content="download" id="main-download" class="button"><span>Download</span></a><br />
-        <div style="line-height: 1.2">
+        <div style="line-height: 1.4; margin-top: 3px">
         <javadoc-link release="stable" class="small"><c2 /> API JavaDoc</javadoc-link><br />
         <csharpapi-link release="stable" class="small"><c2 /> C# API reference</csharpapi-link>
         </div>
