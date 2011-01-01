@@ -83,13 +83,14 @@
   </target>
 
   <target name="upload" depends="xslt" description="Uploads the website to the server">
-      <fail unless="upload.rsync.command" />
       <fail unless="upload.host" />
       <fail unless="upload.user" />
       <fail unless="upload.path" />
       <fail unless="upload.ssh.identity.path" />
-      <fail unless="upload.ssh.port" />
-      
+     
+      <property name="upload.rsync.command" value="rsync" />
+      <property name="upload.ssh.port" value="22" />
+
       <exec executable="${upload.rsync.command}" dir="${distribution.dir}">
            <arg value="-az" />
            <arg value="-v" />
