@@ -91,7 +91,7 @@
       <property name="upload.rsync.command" value="rsync" />
       <property name="upload.ssh.port" value="22" />
 
-      <exec executable="${upload.rsync.command}" dir="${distribution.dir}">
+      <exec executable="${upload.rsync.command}" dir="${distribution.dir}" failonerror="true">
            <arg value="-az" />
            <arg value="-v" />
            <arg value="-e" />
