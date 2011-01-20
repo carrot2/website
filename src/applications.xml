@@ -35,15 +35,6 @@
     </p>
 
     <p style="clear: both">
-      <a href="http://www.mex-search.com/"><img style="float: left;
-      margin-right: 15px" class="pic app-pic"
-      src="img/mex-search.gif" alt="meX-Search" title="meX-Search" /> meX-Search</a> is a clustering search engine
-      with a visually pleasing user interface (try version with the human
-      agent!). meX-Search uses Carrot<sup>2</sup>'s Lingo algorithm to cluster
-      search results.
-    </p>
-
-    <p style="clear: both">
       <a href="http://lucene.apache.org/solr"><img style="float: left; margin-right: 15px" 
       class="pic app-pic" src="img/solr.gif" alt="Apache Solr" title="Apache Solr" /> Apache Solr</a>
       is an open source enterprise search server based on the Lucene Java search library.
@@ -73,7 +64,7 @@
     </p>
 
     <p style="clear: both">
-      <a href="http://www.nutch.org/"><img style="float: left; margin-right: 15px" 
+      <a href="http://nutch.apache.org/"><img style="float: left; margin-right: 15px" 
       class="pic app-pic" src="img/nutch.gif" alt="Apache Nutch" title="Apache Nutch" /> Apache Nutch</a>
       is open source web-search software that features a clustering plugin
       powered by Carrot<sup>2</sup>'s Lingo algorithm.
@@ -86,7 +77,7 @@
     </p>
 
     <p style="clear: both">
-      <a href="http://www.struly.com/"><img style="float: left; margin-right:
+      <a href="http://struly.com/"><img style="float: left; margin-right:
       15px" class="pic app-pic" src="img/struly.gif" alt="struly" title="struly" />
       Struly</a> is a multi search engine that embeds <c2 /> as one of the search sources.
     </p>
@@ -96,37 +87,6 @@
       15px" class="pic app-pic" src="img/focuseek.gif" alt="focuseek" title="focuseek" />
       Focuseek</a> used <c2 /> algorithms to add the dynamic clustering feature
       to their enterprise search software called Nautilus.
-    </p>
-
-    <p style="clear: both">
-      <a href="http://www.sidekiq.com/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/sidekiq.gif" alt="SideKiq" title="SideKiq" />
-      SideKiq</a> can send queries to many different search engines and 
-      Carrot<sup>2</sup> is one of SideKiq's search engines showing clustered results.
-    </p>
-
-    <p style="clear: both">
-      <a href="http://www.greenona.com/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/greenona.gif" alt="Greenona"
-      title="Greenona" /> Greenona</a> features a SearchBlox search engine with
-      <c2 />-powered search results clustering.
-    </p>
-
-    <p style="clear: both">
-      <a href="http://search.fivemushrooms.com/food/search.jsp?clustering=yes&amp;query=mozzarella"><img style="float: left; margin-right: 15px" 
-      class="pic app-pic" src="img/five-mushrooms.gif" alt="Five Mushrooms Culinary Search Engine" title="Five Mushrooms Culinary Search Engine" /> Five Mushrooms</a>
-      is a Nutch-based culinary search engine that offers search results clustering
-      powered by Carrot<sup>2</sup>'s Lingo algorithm.
-    </p>
-
-    <p style="clear: both">
-      <a href="http://www.openiris.org/"><img style="float: left; margin-right:
-      15px" class="pic app-pic" src="img/openiris.gif" alt="Iris" title="Iris" /> Iris</a> is an Open
-      Source semantic desktop application framework that enables users to
-      create a personal map across their office-related information objects. It
-      <a
-      href="http://www.openiris.org/screenshots/atct_album_image?b_start=9">uses
-      Carrot<sup>2</sup>'s Lingo</a> algorithm to cluster web search results.
     </p>
   </content>
 </page>
