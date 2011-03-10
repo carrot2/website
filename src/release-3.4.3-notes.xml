@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.4.3">
+  <heading>Release 3.4.3</heading>
+
+  <content>
+    <para>
+      <release-info version="3.4.3" />
+      The 3.4.3 release publishes <a href="http://repo1.maven.org/maven2/org/carrot2/" target="_blank"><c2 /> 
+      JARs in Maven central repository</a>. Please see the <a content="download" anchor="maven">downloads page</a>
+      for the dependency declaration. Release 3.4.3 is functionally identical with
+      the 3.4.2. 
+    </para>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.4.3%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.4.3. For more new features, please see <a
+      content="release-3.4.0-notes">release 3.4.0</a> and <a
+      content="release-3.3.0-notes">release 3.3.0 notes</a>. 
+    </p>
+  </content>
+</page>
+

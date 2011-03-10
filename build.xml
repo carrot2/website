@@ -8,6 +8,8 @@
   <property name="website.properties" location="website.properties" />
   <property file="${website.properties}" />
 
+  <property file="etc/common.properties" />
+
   <property file="etc/stable/carrot2.version" />
   <property file="etc/head/carrot2.version" />
   <property file="etc/head/carrot2.basenames" />

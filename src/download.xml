@@ -59,6 +59,33 @@
         </td>
       </tr>
 
+      <tr id="maven">
+        <td class="head">
+          <ul>
+            <li>
+              add <c2 /> dependency to you Maven project
+            </li>
+          </ul>
+        </td>
+
+        <td>
+          Clustering algorithms and document sources:
+          <pre class="code"><![CDATA[<dependency>
+  <groupId>org.carrot2</groupId>
+  <artifactId>carrot2-core</artifactId>
+  <version>]]><version-stable /><![CDATA[</version>
+</dependency>]]></pre>
+
+          Clustering algorithms only:
+          <pre class="code"><![CDATA[<dependency>
+  <groupId>org.carrot2</groupId>
+  <artifactId>carrot2-mini</artifactId>
+  <version>]]><version-stable /><![CDATA[</version>
+</dependency>]]></pre>
+        </td>
+      </tr>
+
+
       <tr>
         <td class="head">
           <ul>

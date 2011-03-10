@@ -496,18 +496,20 @@ table.download img.pic {
   border: 1px solid #e0e0e0;
 }
 
-#buildStatus strong {
+#plan-status {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+}
+
+#plan-status > p {
+  display: inline;
+  line-height: inherit;
+}
+
+#plan-status > p > strong {
   display: none;
-}
-
-#buildStatus p {
-  line-height: normal;
-  background-position: left 2px;
-  padding: 0 0 0 20px;
-}
-
-#buildStatusInner3 {
-  min-height: 0;
 }
 
 img.rn {
@@ -590,36 +592,6 @@ p.note {
   text-align: left;
 }
 
-/** Bamboo build status */
-#buildStatus
-{
-  font-family:          Trebuchet MS, Tahoma, sans-serif;
-  font-size: 100%;
-	background-image: none;
-  color: black;
-  position: relative;
-  left: -12px;
-}
-
-#buildStatus strong {
-  font-weight: normal;
-}
-
-#buildStatusInner
-{
-	background-image: none;
-}
-
-#buildStatusInner2
-{
-	background-image: none;
-}
-
-#buildStatusInner3
-{
-	background-image: none;
-}
-
 body#forum #content-inner {
   width: auto;
   padding: 0;
@@ -653,4 +625,15 @@ body#forum #content-inner > p:first-child {
   padding-left: 22px;
   position: relative;
   top: -2px;
+}
+
+pre.code {
+	font-family: "Consolas","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+  margin: 0 0 2ex 0;
+  line-height: 1.1;
+  background-color: #fcfbf7;
+  border: 1px solid #eae8e0;
+  border-radius: 3px;
+  padding: 1ex;
+  color: #444;
 }
