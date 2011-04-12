@@ -461,6 +461,15 @@ table.release-notes td.head {
   padding-right: 1em;
 }
 
+table.release-notes p {
+  margin-bottom: 2ex;
+}
+
+ul.renames small {
+  color: #888;
+  font-size: 100%;
+}
+
 table.source-code td.head {
   width: 12em;
 }

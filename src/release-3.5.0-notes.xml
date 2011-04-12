@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.5.0">
+  <heading>Release 3.5.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.5.0" />
+      The 3.5.0 release introduces a new <a target="_blank"
+      href="http://carrotsearch.com/foamtree">physics-inspired tree map
+      visualization called FoamTree</a>, the bisecting k-means clustering
+      algorithm and a number of smaller improvements and bug fixes.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          FoamTree visualization<br />
+          <carrot2-webapp-link extension="/stable/search?query=data+mining&amp;results=100&amp;source=web&amp;algorithm=lingo&amp;view=foamtree" class="button view"><span>View</span></carrot2-webapp-link>
+          <div class="small-links">
+            <a href="http://download.carrotsearch.com/foamtree/demo" class="small">Standalone demo</a><br />
+            <a href="http://download.carrotsearch.com/foamtree/api" class="small">JavaScript API reference</a><br />
+          </div>
+        </td>
+
+        <td>
+          <carrot2-webapp-link extension="/stable/search?query=data+mining&amp;results=100&amp;source=web&amp;algorithm=lingo&amp;view=foamtree"><img class="pic rn" src="img/release-3.5.0/webapp-foamtree.png" alt="FoamTree: physics-inspired tree map visualization in Carrot2 web application" style="margin-top: 0" /></carrot2-webapp-link>
+
+          <p>
+            Release 3.5.0 comes with FoamTree: a tree map visualization with
+            innovative physics-inspired layout algorithms and animations.
+          </p>
+
+          <p>
+            <c2 />-branded binaries of FoamTree are available in <c2 />
+            repository, <c2 /> Web Application and <c2 /> Document Clustering
+            Workbench.  Fully-brandable binaries are available from <a
+            href="http://carrotsearch.com/foamtree">Carrot Search</a>.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          K-means clustering algorithm
+        </td>
+
+        <td>
+          Release 3.5.0 adds a new clustering algorithm: bisecting k-means. As opposed
+          to other algorithms in <c2 />, k-means creates disjoint clusters: each
+          document belongs to exactly one cluster.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Resource management improvements
+        </td>
+
+        <td>
+          Release 3.5.0 introduces an improved mechanism for loading of
+          configuration files such as stop words or algorithm attributes.  For
+          more convenient editing, <manual-link
+          section="section.lexical-resources.location">resources are now read
+          from application-specific locations</manual-link>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Attribute name changes
+        </td>
+
+        <td>
+          Proper implementation of the k-means clustering required a number of
+          attribute name changes:
+
+          <ul class="renames">
+            <li>
+              LingoClusteringAlgorithm.factorizationFactory
+              <small>becomes</small>
+              TermDocumentMatrixReducer.factorizationFactory
+            </li>
+            <li>
+              LingoClusteringAlgorithm.factorizationQuality
+              <small>becomes</small>
+              TermDocumentMatrixReducer.factorizationQuality
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Dependency updates
+        </td>
+
+        <td>
+          A number of dependencies have been updated:
+
+          <ul class="compact">
+            <li><a href="http://labs.carrotsearch.com/hppc.html">High Performance Primitive Collections</a> to version 0.3.3</li>
+            <li>Google Guava to version r08</li>
+            <li>SimpleXML to version 2.4.1</li>
+            <li>Jackson JSON to version 1.7.4</li>
+            <li>Apache Commons Lang to version 2.6</li>
+            <li>SLF4J to version 1.6.1</li>
+            <li>Ehcache to version 1.7.2</li>
+            <li>Lucene to version 3.1.0</li>
+            <li>Apache HTTP client to version 4.1</li>
+            <li>Apache Commons Codec to version 1.4</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.5.0%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.5.0. For more new features, please see <a
+      content="release-3.4.0-notes">release 3.4.0</a> and <a
+      content="release-3.3.0-notes">release 3.3.0 notes</a>. 
+    </p>
+  </content>
+</page>
+
