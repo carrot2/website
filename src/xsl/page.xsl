@@ -20,6 +20,7 @@
   <xsl:param name="carrot2.csharp-api.base" />
   <xsl:param name="carrot2.cli.base" />
   <xsl:param name="carrot2.dcs.base" />
+  <xsl:param name="carrot2.solr-compat.base" />
   <xsl:param name="carrot2.webapp.base" />
   <xsl:param name="carrot2.workbench.base" />
   <xsl:param name="carrot2.manual.base" />

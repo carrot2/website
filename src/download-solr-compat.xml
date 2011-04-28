@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="download">
+  <heading>Download</heading>
+
+  <content>
+    <p>
+      Choose the compatibility package for your version of Solr:
+    </p>
+
+    <p>
+      <solr-compat-download-link solr="1.4.x" class="download-small" release="stable"><solr-compat solr="1.4.x" /></solr-compat-download-link><br />
+      <solr-compat-download-link solr="3.1.x" class="download-small" release="stable"><solr-compat solr="3.1.x" /></solr-compat-download-link>
+    </p>
+    
+
+    <div id="download-info">
+      <strong>After download completes:</strong>
+
+      <ol>
+        <li>
+          Remove the following files from your Solr installation:
+          <ul class="compact">
+            <li><tt>contrib/clustering/lib/*</tt> (all files)</li>
+            <li><tt>dist/apache-solr-clustering-*.jar</tt> (Solr clustering plugin JAR)</li>
+          </ul>
+        </li>
+
+        <li>
+          Copy the contents of the downloaded archive over the Solr home directory.
+        </li>
+
+        <li>
+          Start Solr with the <tt>solr.clustering.enabled</tt> system property set to <tt>true</tt> 
+          to enable the clustering plugin. Clustering should be performed by the updated Carrot2 algorithms.
+        </li>
+      </ol>
+      
+      <p class="note">
+        <strong>Note: </strong><c2 /> <solr-compat /> require  <a
+        href="http://java.sun.com/javase/downloads/index.jsp"
+        target="_blank">Java Runtime Environment</a> (version 1.6.0 or later).
+      </p>
+    </div>
+  </content>
+</page>

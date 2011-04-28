@@ -24,6 +24,7 @@
   <xsl:template match="ja"> Java API</xsl:template>
   <xsl:template match="csa"> C# API</xsl:template>
   <xsl:template match="cli"> Command Line Applications</xsl:template>
+  <xsl:template match="solr-compat"> Solr <xsl:value-of select="@solr" /> Compatibility Package</xsl:template>
   <xsl:template match="wa"> Web Application</xsl:template>
   <xsl:template match="man"> User and Developer Manual</xsl:template>
 
@@ -56,6 +57,7 @@
 
   <xsl:template name="dist-base">
     <xsl:param name="node-name" />
+    <xsl:param name="solr" />
     <xsl:choose>
       <xsl:when test="contains($node-name, 'workbench')"><xsl:value-of select="$carrot2.workbench.base" /></xsl:when>
       <xsl:when test="contains($node-name, 'dcs')"><xsl:value-of select="$carrot2.dcs.base" /></xsl:when>
@@ -64,6 +66,7 @@
       <xsl:when test="contains($node-name, 'java-api')"><xsl:value-of select="$carrot2.java-api.base" /></xsl:when>
       <xsl:when test="contains($node-name, 'csharp-api')"><xsl:value-of select="$carrot2.csharp-api.base" /></xsl:when>
       <xsl:when test="contains($node-name, 'cli')"><xsl:value-of select="$carrot2.cli.base" /></xsl:when>
+      <xsl:when test="contains($node-name, 'solr-compat')"><xsl:value-of select="$carrot2.solr-compat.base" />-<xsl:value-of select="$solr" />-compatibility</xsl:when>
     </xsl:choose>
   </xsl:template>
 
@@ -88,6 +91,7 @@
     <xsl:param name="wm" />
     <xsl:param name="os" />
     <xsl:param name="arch">x86</xsl:param>
+    <xsl:param name="solr" />
     <xsl:param name="release" />
 
     <xsl:variable name="dist.url">
@@ -98,6 +102,7 @@
     <xsl:variable name="dist.base">
       <xsl:call-template name="dist-base">
         <xsl:with-param name="node-name" select="$node-name" />
+        <xsl:with-param name="solr" select="$solr" />
       </xsl:call-template>
     </xsl:variable>
     <xsl:variable name="dist.version">
@@ -119,13 +124,14 @@
     <xsl:value-of select="concat($dist.url, '/', $dist.base, $platform, normalize-space($dist.version), $dist.extension)" /> 
   </xsl:template>
 
-  <xsl:template match="manual-download-link|workbench-download-link|dcs-download-link|webapp-download-link|java-api-download-link|csharp-api-download-link|cli-download-link">
+  <xsl:template match="manual-download-link|workbench-download-link|dcs-download-link|webapp-download-link|java-api-download-link|csharp-api-download-link|cli-download-link|solr-compat-download-link">
     <xsl:variable name="dist.file">
       <xsl:call-template name="dist-file">
         <xsl:with-param name="node-name" select="local-name()" />
         <xsl:with-param name="wm" select="@wm" />
         <xsl:with-param name="os" select="@os" />
         <xsl:with-param name="release" select="@release" />
+        <xsl:with-param name="solr" select="@solr" />
         <xsl:with-param name="arch"><xsl:choose><xsl:when test="@arch"><xsl:value-of select="@arch" /></xsl:when><xsl:otherwise>x86</xsl:otherwise></xsl:choose></xsl:with-param>
       </xsl:call-template>
     </xsl:variable>

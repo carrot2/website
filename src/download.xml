@@ -63,7 +63,7 @@
         <td class="head">
           <ul>
             <li>
-              add <c2 /> dependency to you Maven project
+              add <c2 /> dependency to your Maven project
             </li>
           </ul>
         </td>
@@ -128,6 +128,21 @@
 
         <td>
           <a class="download-small" content="download-cli"><img style="float: right" class="pic" src="img/download-cli.png" alt="Carrot2 Command Line Applications Download" /><cli /></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          <ul>
+            <li>
+              use newest <c2 /> with Apache Solr 1.4.x 
+              or 3.1.x
+            </li>
+          </ul>
+        </td>
+
+        <td>
+          <a class="download-small" content="download-solr-compat"><solr-compat /></a>
         </td>
       </tr>
 
