@@ -16,10 +16,9 @@
         <h2>News</h2>
        
         <div>
-          Releases <a content="release-3.4.0-notes">3.4.0</a>, <a content="release-3.4.1-notes">3.4.1</a> and <a
-          content="release-3.4.2-notes">3.4.2</a> are available with a native
-          C# API for calling <c2 /> clustering from C# / .NET software,
-          Solr 1.4.x compatibility and bug fixes.
+          Release <a content="release-3.5.0-notes">3.5.0</a> is available with
+          a new visualization, bisecting <span style="white-space: nowrap">k-means</span> clustering algorithm and
+          improved resource management.
         </div>
       </div>
       
