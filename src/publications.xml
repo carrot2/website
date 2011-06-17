@@ -145,6 +145,14 @@
     <publication-group id="theses">
       <title>Theses</title>
 
+      <thesis thesis-local="matela-2010-foamtree.pdf">
+        <authors>Mateusz Matela</authors>
+        <title>Visualization of hierarchical data structures changing in time <em>(Metody wizualizacji dla zmieniających się w czasie zbiorów danych o strukturze hierarchicznej)</em></title>
+        <where>
+          Master thesis (in Polish), Poznań University of Technology, Poznań, Poland, 2010
+        </where>
+      </thesis>
+
       <thesis thesis-local="krukar-2008-rcp.pdf">
         <authors>Urszula Krukar</authors>
         <title>Design and Implementation of a Text Processing Application in the Eclipse Rich Client Framework</title>
