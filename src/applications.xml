@@ -64,10 +64,9 @@
     </p>
 
     <p style="clear: both">
-      <a href="http://nutch.apache.org/"><img style="float: left; margin-right: 15px" 
-      class="pic app-pic" src="img/nutch.gif" alt="Apache Nutch" title="Apache Nutch" /> Apache Nutch</a>
-      is open source web-search software that features a clustering plugin
-      powered by Carrot<sup>2</sup>'s Lingo algorithm.
+      <a href="http://www.dataintelligencetech.com/eap/clustering"><img style="float: left; margin-right: 15px" 
+      class="pic app-pic" src="img/dataintelligence.png" alt="Data Intelligence Technologies" title="Data Intelligence Technologies" /> Entity Analytical Platform</a>
+      from Data Intelligence Technologies uses Carrot2 clustering algorithms and visualizations.
     </p>
 
     <p style="clear: both">
