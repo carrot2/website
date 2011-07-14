@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.5.1">
+  <heading>Release 3.5.1</heading>
+
+  <content>
+    <para>
+      <release-info version="3.5.1" />
+      The 3.5.1 release of <c2 /> introduces a number of minor improvements and bug fixes.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Better integration with visualizations
+        </td>
+
+        <td>
+          <p>
+            In the <dcw/> it is now possible to export the current visualization image as PNG.
+          </p>
+          <img class="pic rn" src="img/release-3.5.1/visualization-save-as-png.png" alt="Clustering Workbench: Save visualizaton image" style="margin-top: 0" />
+
+          <p>
+            In the <wa /> the "more like this" link is now also available in visualization views.
+          </p>
+          <img class="pic rn" src="img/release-3.5.1/more-like-this-with-visualization.png" alt="Web application: 'more like this' in visualization view" style="margin-top: 0" />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Autonomy IDOL document source
+        </td>
+
+        <td>
+          <c2 /> can now cluster search results produced by Autonomy IDOL. Please see the <a href="http://issues.carrot2.org/browse/CARROT-801?focusedCommentId=13094&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-13094">CARROT-801 comment</a> for configuration details.
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.5.1%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.5.1. For more new features, please see <a
+      content="release-3.5.0-notes">release 3.5.0</a> and <a
+      content="release-3.4.0-notes">release 3.4.0 notes</a>. 
+    </p>
+  </content>
+</page>
+
