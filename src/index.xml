@@ -16,9 +16,9 @@
         <h2>News</h2>
        
         <div>
-          Release <a content="release-3.5.0-notes">3.5.0</a> is available with
-          a new visualization, bisecting <span style="white-space: nowrap">k-means</span> clustering algorithm and
-          improved resource management.
+          Releases <a content="release-3.5.1-notes">3.5.1</a> and <a content="release-3.5.0-notes">3.5.0</a> are available with
+          a new visualization, bisecting <span style="white-space: nowrap">k-means</span> clustering and
+          improved lexical resource management.
         </div>
       </div>
       
@@ -45,13 +45,13 @@
 
     <p style="text-align: center; width: 420px">
       <carrot2-webapp-results-link query="?query=salsa"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></carrot2-webapp-results-link>
-      Search results clustered with Carrot<sup>2</sup> (<carrot2-webapp-results-link query="?q=salsa&amp;in=Yahoo%21&amp;s=100&amp;alg=Lingo&amp;opts=h">live demo</carrot2-webapp-results-link>)
+      Search results clustered with Carrot<sup>2</sup> (<carrot2-webapp-results-link query="?q=salsa">live demo</carrot2-webapp-results-link>)
     </p>
          
     <p>
       Apart from two specialized <a content="algorithms">document clustering
       algorithms</a>, <c2 /> offers ready-to-use components for fetching search
-      results from various sources including YahooAPI, GoogleAPI, Bing API,
+      results from various sources including GoogleAPI, Bing API,
       <a href="http://www.etools.ch">eTools Meta Search</a>, Lucene, SOLR,
       Google Desktop and more.
     </p>

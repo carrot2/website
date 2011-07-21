@@ -38,6 +38,16 @@
           <c2 /> can now cluster search results produced by Autonomy IDOL. Please see the <a href="http://issues.carrot2.org/browse/CARROT-801?focusedCommentId=13094&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-13094">CARROT-801 comment</a> for configuration details.
         </td>
       </tr>
+
+      <tr>
+        <td class="head">
+          Yahoo document sources removed
+        </td>
+
+        <td>
+          Following the discontinuation of the free access to Yahoo BOSS, support for Yahoo document sources has been removed from <c2 />. If you'd like to have Yahoo BOSS back in <c2 />, please add your vote or comment to <a href="http://issues.carrot2.org/browse/CARROT-828">CARROT-826</a>.
+        </td>
+      </tr>
     </table>
 
     <hr />

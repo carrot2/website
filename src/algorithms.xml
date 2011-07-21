@@ -65,7 +65,7 @@
         <td>yes</td>
         <td>multilingual clustering, synonyms, advanced tuning, scalability (10,000 snippets in 530ms*)</td>
         <td></td>
-        <td><carrot-search-webapp-results-link query="?q=london&amp;in=Yahoo%21&amp;s=200&amp;alg=Lingo+3G&amp;opts=h">london</carrot-search-webapp-results-link></td>
+        <td><carrot-search-webapp-results-link query="?q=london">london</carrot-search-webapp-results-link></td>
       </tr>
     </table>
 
