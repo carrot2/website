@@ -7,6 +7,21 @@
   <content>
     <table class="release-notes all-releases">
       <tr>
+        <td class="head">v3.5.2</td>
+        <td>Released: 2011-09-20, <a href="http://issues.carrot2.org/browse/CARROT/fixforversion/10423">JIRA issues</a>, <a content="release-3.5.2-notes">Release notes</a></td>
+      </tr>
+      
+      <tr>
+        <td class="head">v3.5.1</td>
+        <td>Released: 2011-08-22, <a href="http://issues.carrot2.org/browse/CARROT/fixforversion/10320">JIRA issues</a>, <a content="release-3.5.1-notes">Release notes</a></td>
+      </tr>
+      
+      <tr>
+        <td class="head">v3.5.0</td>
+        <td>Released: 2011-05-05, <a href="http://issues.carrot2.org/browse/CARROT/fixforversion/10232">JIRA issues</a>, <a content="release-3.5.0-notes">Release notes</a></td>
+      </tr>
+
+      <tr>
         <td class="head">v3.4.3</td>
         <td>Released: 2010-03-01, <a href="http://issues.carrot2.org/browse/CARROT/fixforversion/10310">JIRA issues</a>, <a content="release-3.4.3-notes">Release notes</a></td>
       </tr>

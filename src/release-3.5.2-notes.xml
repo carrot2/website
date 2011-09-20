@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.5.2">
+  <heading>Release 3.5.2</heading>
+
+  <content>
+    <para>
+      <release-info version="3.5.2" />
+      The 3.5.2 release of <c2 /> adds Ajax support to the Document Clustering Server, 
+      updates the supported search engines and adds a number of minor improvements. 
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Ajax support in Document Clustering Server
+        </td>
+
+        <td>
+          <p>
+            As of the 3.5.2 release, the Document Clustering Server supports the <tt>GET</tt> 
+            and <tt>POST/x-www-form-urlencoded</tt> request methods, you can now call
+            the DCS directly from your Ajax applications. The Quick Start screen will help you 
+            to generate example DCS requests in all supported methods.
+          </p>
+          <img class="pic rn" src="img/release-3.5.2/dcs-ajax.png" alt="Ajax support in Document Clustering Server" style="margin-top: 0" />
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Support for Yahoo BOSS removed
+        </td>
+
+        <td>
+          <p>
+            Release 3.5.2 removes support for Yahoo! BOSS API, as it is no longer available free of charge.
+            The Bing document source has been improved to expose search options similar
+            to those offered by BOSS, including news/image search and domain restrictions.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Thai support (experimental)
+        </td>
+
+        <td>
+          Release 3.5.2 adds experimental support for clustering Thai content, based on Lucene's 
+          <tt>ThaiWordFilter</tt>.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Support for native matrix computations removed
+        </td>
+
+        <td>
+          Release 3.5.2 removes support for native matrix computations. For further releases,
+          we will consider switching to Apache Mahout Math matrix libraries and adding native 
+          computation support to these libraries.
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Improvements in Document Clustering Workbench
+        </td>
+
+        <td>
+          Release 3.5.2 makes a number of improvements in the Document Clustering workbench:
+          
+          <ul>
+            <li>
+              Consistent key binding for reclustering the content of the active tab: 
+              &lt;Ctrl&gt;+R on Windows/Linux and &#x2318;+R on Mac OS.
+            </li>
+            <li>
+              Expanded/collapsed branches in the cluster tree are now preserved between reclusterings.
+            </li>
+            <li>
+              Separate buttons for collapsing and expanding all clusters in the cluster tree.
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          HPPC update
+        </td>
+
+        <td>
+          <a href="http://labs.carrotsearch.com/hppc.html">High Performance Primitive Collections</a> 
+          has been updated to version 0.4.1.
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.5.2%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.5.2. For more new features, please see <a
+      content="release-3.5.0-notes">release 3.5.0</a> and <a
+      content="release-3.4.0-notes">release 3.4.0 notes</a>. 
+    </p>
+  </content>
+</page>
+
