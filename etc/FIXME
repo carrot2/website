@@ -1,0 +1,4 @@
+Missing externals to head and stable.
+
+There is no 'easy' way to provide a replacement for the previous external links because git submodules link to a fixed commit of an external repository (always).
+We could make a git checkout/ pull from ant (of, correspondingly, master and stable branches) and fetch revisions from there.
