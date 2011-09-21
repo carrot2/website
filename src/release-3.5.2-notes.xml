@@ -22,7 +22,7 @@
             As of the 3.5.2 release, the Document Clustering Server supports the <tt>GET</tt> 
             and <tt>POST/x-www-form-urlencoded</tt> request methods, you can now call
             the DCS directly from your Ajax applications. The Quick Start screen will help you 
-            to generate example DCS requests in all supported methods.
+            to generate example DCS requests using all supported methods.
           </p>
           <img class="pic rn" src="img/release-3.5.2/dcs-ajax.png" alt="Ajax support in Document Clustering Server" style="margin-top: 0" />
         </td>
@@ -71,7 +71,7 @@
         </td>
 
         <td>
-          Release 3.5.2 makes a number of improvements in the Document Clustering workbench:
+          Release 3.5.2 makes a number of improvements in the Document Clustering Workbench:
           
           <ul>
             <li>
