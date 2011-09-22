@@ -39,7 +39,7 @@
        <arg line="clone --no-checkout --depth 1 git://github.com/carrot2/carrot2.git ." />
      </git>
     <git dir="${stable.git.repo}">
-       <arg line="co stable" />
+       <arg line="checkout stable" />
      </git>
 
     <mkdir dir="${master.git.repo}" />
@@ -47,7 +47,7 @@
        <arg line="clone --no-checkout --depth 1 git://github.com/carrot2/carrot2.git ." />
      </git>
     <git dir="${master.git.repo}">
-       <arg line="co master" />
+       <arg line="checkout master" />
      </git>
   </target>
 
