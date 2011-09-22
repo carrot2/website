@@ -14,11 +14,14 @@
 
       <div class="side" style="clear: both">
         <h2>News</h2>
-       
+
+        <div class="qa">
+          We have moved the source code to <a href="https://github.com/carrot2/carrot2">GitHub</a>.
+        </div>
+
         <div>
-          Releases <a content="release-3.5.2-notes">3.5.2</a>, <a content="release-3.5.1-notes">3.5.1</a> and <a content="release-3.5.0-notes">3.5.0</a> are available with
-          a new visualization, bisecting <span style="white-space: nowrap">k-means</span> clustering and
-          improved lexical resource management.
+          Release <a content="release-3.5.2-notes">3.5.2</a> is available with
+          a number of minor bug fixes and usability tweaks.
         </div>
       </div>
       
