@@ -23,7 +23,7 @@
   <target name="clean" description="Removes temporary files.">
         <delete failonerror="false" includeemptydirs="true" quiet="true">
             <fileset dir="tmp">
-	      <exclude name="repositories" />
+	      <exclude name="repositories/**" />
 	    </fileset>
         </delete>
   </target>
