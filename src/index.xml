@@ -43,7 +43,7 @@
     <p>
       <c2 /> is an Open Source <b>Search Results Clustering
       Engine</b>. It can automatically organize small collections of 
-      documents, e.g. search results, into thematic categories. 
+      documents (search results but not only) into thematic categories. 
     </p>
 
     <p style="text-align: center; width: 420px">
@@ -55,8 +55,7 @@
       Apart from two specialized <a content="algorithms">document clustering
       algorithms</a>, <c2 /> offers ready-to-use components for fetching search
       results from various sources including GoogleAPI, Bing API,
-      <a href="http://www.etools.ch">eTools Meta Search</a>, Lucene, SOLR,
-      Google Desktop and more.
+      <a href="http://www.etools.ch">eTools Meta Search</a>, Lucene, SOLR, and more.
     </p>
    
     <p>
