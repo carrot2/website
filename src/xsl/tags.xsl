@@ -37,7 +37,6 @@
     <xsl:param name="release" />
     <xsl:choose>
       <xsl:when test="$release = 'stable'"><xsl:value-of select="$stable.dist.url" /></xsl:when>
-      <xsl:when test="$release = 'legacy'"><xsl:value-of select="$legacy.dist.url" /></xsl:when>
       <xsl:otherwise><xsl:value-of select="$head.dist.url" /></xsl:otherwise>
     </xsl:choose>
   </xsl:template>

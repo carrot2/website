@@ -192,8 +192,7 @@
 
         <td>
           <dist-link release="head"><c2 /> v<version-head /> binaries</dist-link><br />
-          <dist-link release="stable"><c2 /> v3.x stable binaries</dist-link><br />
-          <dist-link release="legacy"><c2 /> v2.x stable binaries</dist-link> (not recommended)
+          <dist-link release="stable"><c2 /> v3.x stable binaries</dist-link>
         </td>
       </tr>
     </table>

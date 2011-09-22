@@ -95,28 +95,5 @@
 
     <hr />
 
-    <b>Legacy release</b> (version 2.x, not recommended):
-
-    <table class="release-notes source-code">
-      <tr>
-        <td class="head">SVN URL</td>
-
-        <td>
-          <tt>https://carrot2.svn.sourceforge.net/svnroot/carrot2/tags/VERSION_2_1_4/</tt><br />
-          <carrot2-source-link branch="tags/VERSION_2_1_4">Browse with FishEye</carrot2-source-link>, <javadoc-link release="legacy">JavaDoc</javadoc-link>
-        </td>
-      </tr>
-
-      <tr>
-        <td class="head">Download</td>
-
-        <td>
-          <dist-link release="legacy">Download artifacts</dist-link>
-        </td>
-      </tr>
-    </table>
-
-    <hr />
-
   </content>
 </page>

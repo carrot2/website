@@ -104,8 +104,6 @@
           <param name="stable.webapp.url" expression="${stable.webapp.url}" />
           <param name="head.dist.url" expression="${head.dist.url}" />
           <param name="head.webapp.url" expression="${head.webapp.url}" />
-
-          <param name="legacy.dist.url" expression="${legacy.dist.url}" />
       </xslt>
       
       <copy todir="${distribution.dir}" filtering="false">

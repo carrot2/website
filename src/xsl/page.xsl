@@ -14,8 +14,6 @@
   <xsl:param name="head.dist.url" />
   <xsl:param name="head.webapp.url" />
 
-  <xsl:param name="legacy.dist.url" />
-  
   <xsl:param name="carrot2.java-api.base" />
   <xsl:param name="carrot2.csharp-api.base" />
   <xsl:param name="carrot2.cli.base" />
