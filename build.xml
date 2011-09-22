@@ -14,9 +14,17 @@
 
   <property name="website.website.upload.dir" value="project.carrot2.org" />
 
-  <target name="clean" description="Removes all temporary files.">
+  <target name="cleanall" description="Removes temporary files.">
         <delete failonerror="false" includeemptydirs="true" quiet="true">
-            <fileset dir="tmp" />
+	    <fileset dir="tmp" />
+        </delete>
+  </target>
+
+  <target name="clean" description="Removes temporary files.">
+        <delete failonerror="false" includeemptydirs="true" quiet="true">
+            <fileset dir="tmp">
+	      <exclude name="repositories" />
+	    </fileset>
         </delete>
   </target>
 
