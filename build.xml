@@ -10,10 +10,6 @@
 
   <property file="etc/common.properties" />
 
-  <property file="etc/stable/carrot2.version" />
-  <property file="etc/head/carrot2.version" />
-  <property file="etc/head/carrot2.basenames" />
-
   <property name="distribution.dir" value="tmp/dist" />
 
   <property name="website.website.upload.dir" value="project.carrot2.org" />
@@ -24,7 +20,52 @@
         </delete>
   </target>
 
-  <target name="xslt" description="Transforms the website XML sources to HTML files">
+  <property name="stable.git.repo" location="tmp/repositories/carrot2.stable" />
+  <property name="master.git.repo" location="tmp/repositories/carrot2.master" />
+
+  <target name="git.check">
+    <condition property="git.cloned">
+      <available file="${stable.git.repo}" type="dir"/>
+    </condition>
+  </target>
+
+  <presetdef name="git">
+    <exec executable="git" failifexecutionfails="true" failonerror="true" vmlauncher="false" />
+  </presetdef>
+
+  <target name="git.clone" unless="git.cloned">
+    <mkdir dir="${stable.git.repo}" />
+    <git dir="${stable.git.repo}">
+       <arg line="clone --no-checkout --depth 1 git://github.com/carrot2/carrot2.git ." />
+     </git>
+    <git dir="${stable.git.repo}">
+       <arg line="co stable" />
+     </git>
+
+    <mkdir dir="${master.git.repo}" />
+    <git dir="${master.git.repo}">
+       <arg line="clone --no-checkout --depth 1 git://github.com/carrot2/carrot2.git ." />
+     </git>
+    <git dir="${master.git.repo}">
+       <arg line="co master" />
+     </git>
+  </target>
+
+  <target name="git.pull" depends="git.check, git.clone">
+    <git dir="${stable.git.repo}"> 
+       <arg line="pull" />
+    </git>
+    <git dir="${master.git.repo}">
+       <arg line="pull" />
+    </git>
+
+    <!-- Load properties. -->
+    <property file="${stable.git.repo}/etc/version/carrot2.version" />
+    <property file="${master.git.repo}/etc/version/carrot2.version" />
+    <property file="${master.git.repo}/etc/version/carrot2.basenames" />
+  </target>
+  
+  <target name="xslt" depends="git.pull" description="Transforms the website XML sources to HTML files">
       <fail unless="carrot2.version.stable" />
       <fail unless="carrot2.version.head" />
 
