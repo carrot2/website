@@ -65,7 +65,7 @@
     </git>
     <echo>Latest determined tag: ${latest.release.tag}</echo>
     <git dir="${carrot2.git.clone}"> 
-       <arg line="checkout --detach --quiet ${latest.release.tag}" />
+       <arg line="checkout --quiet ${latest.release.tag}" />
     </git>
 
     <property file="${carrot2.git.clone}/etc/version/carrot2.version"   prefix="latest" />
