@@ -11,7 +11,6 @@
   <property file="etc/common.properties" />
 
   <property name="distribution.dir" value="tmp/dist" />
-  <property name="website.website.upload.dir" value="project.carrot2.org" />
 
   <property name="carrot2.git.clone" location="tmp/carrot2.git" />
 
@@ -138,26 +137,6 @@
             <include name="favicon.ico" />
           </fileset>
       </copy>
-  </target>
-
-  <target name="upload" depends="xslt" description="Uploads the website to the server">
-      <fail unless="upload.host" />
-      <fail unless="upload.user" />
-      <fail unless="upload.path" />
-      <fail unless="upload.ssh.identity.path" />
-     
-      <property name="upload.rsync.command" value="rsync" />
-      <property name="upload.ssh.port" value="22" />
-
-      <exec executable="${upload.rsync.command}" dir="${distribution.dir}" failonerror="true">
-           <arg value="-az" />
-           <arg value="-v" />
-           <arg value="-e" />
-           <arg value="ssh -p ${upload.ssh.port} -o StrictHostKeyChecking=no -i ${upload.ssh.identity.path} -o UserKnownHostsFile=/dev/null" />
-           <arg value="--chmod=u=rwX,g=rX,o=rX" />
-           <arg value="." />
-           <arg value="${upload.user}@${upload.host}:${upload.path}" />
-      </exec>
   </target>
 
   <target name="help" description="Displays help on available targets.">
