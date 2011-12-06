@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.5.3">
+  <heading>Release 3.5.3</heading>
+
+  <content>
+    <para>
+      <release-info version="3.5.3" />
+      The 3.5.3 is a technical release made after the transition of <c2 /> code
+      repository to <a href="https://github.com/carrot2">github.com/carrot2</a>.
+      It does not introduce any new features or bug fixes.
+    </para>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.5.3%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.5.3. For more new features, please see <a
+      content="release-3.5.0-notes">release 3.5.0</a> and <a
+      content="release-3.4.0-notes">release 3.4.0 notes</a>. 
+    </p>
+  </content>
+</page>
+
