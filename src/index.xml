@@ -18,11 +18,12 @@
         <div class="qa">
           We have moved the source code to <a href="https://github.com/carrot2/carrot2">GitHub</a>.
         </div>
-
+<!--
         <div>
           Release <a content="release-3.5.2-notes">3.5.2</a> is available with
           a number of minor bug fixes and usability tweaks.
         </div>
+  -->
       </div>
       
       <div class="side" style="margin-top: 40px; margin-bottom: 10px; text-align: left">
