@@ -72,7 +72,7 @@
   <xsl:template name="dist-version">
     <xsl:param name="node-name" />
     <xsl:param name="release" />
-    -<xsl:choose><xsl:when test="$release = 'head'"><xsl:value-of select="$carrot2.version.head" /></xsl:when><xsl:otherwise><xsl:value-of select="$carrot2.version.stable" /></xsl:otherwise></xsl:choose>
+    <xsl:choose><xsl:when test="$release = 'head'"><xsl:value-of select="$carrot2.version.head" /></xsl:when><xsl:otherwise><xsl:value-of select="$carrot2.version.stable" /></xsl:otherwise></xsl:choose>
   </xsl:template>
 
   <xsl:template name="dist-extension">
@@ -120,7 +120,7 @@
     <xsl:variable name="platform">
       <xsl:if test="contains($node-name, 'workbench')">-<xsl:value-of select="concat($os, '.', $wm, '.', $arch)" /></xsl:if>
     </xsl:variable>
-    <xsl:value-of select="concat($dist.url, '/', $dist.base, $platform, normalize-space($dist.version), $dist.extension)" /> 
+    <xsl:value-of select="concat($dist.url, '/', $dist.version, '/', $dist.base, $platform, '-', normalize-space($dist.version), $dist.extension)" /> 
   </xsl:template>
 
   <xsl:template match="manual-download-link|workbench-download-link|dcs-download-link|webapp-download-link|java-api-download-link|csharp-api-download-link|cli-download-link|solr-compat-download-link">
