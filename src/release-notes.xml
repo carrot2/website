@@ -7,6 +7,11 @@
   <content>
     <table class="release-notes all-releases">
       <tr>
+        <td class="head">v3.5.3</td>
+        <td>Released: 2011-12-06, <a href="http://issues.carrot2.org/browse/CARROT/fixforversion/10620">JIRA issues</a>, <a content="release-3.5.3-notes">Release notes</a></td>
+      </tr>
+
+      <tr>
         <td class="head">v3.5.2</td>
         <td>Released: 2011-09-20, <a href="http://issues.carrot2.org/browse/CARROT/fixforversion/10423">JIRA issues</a>, <a content="release-3.5.2-notes">Release notes</a></td>
       </tr>
