@@ -128,6 +128,21 @@
         interative clusters visualization</a> from Carrot Search.
       </answer>
     </faq>
+    
+    <faq id="webapp">
+      <question>How do I set up/ modify/ get the output similar to what I see on <a href="http://search.carrot2.org">http://search.carrot2.org</a></question>
+      <answer>
+        The focus of the Carrot2 project is on <i>clustering algorithms</i>. We provide several higher-level applications such as the
+        web application hosted at <a href="http://search.carrot2.org">http://search.carrot2.org</a>, an RCP-based Workbench desktop
+        application for tuning purposes and a simple REST-service server DCS which is a command-line application. All these applications are
+        to some point extensible but are not the core concern of developers, so before you ask a question on the mailing
+        list it's best to checkout the project, see how these applications work first (in particular
+        look at the build files that collect data for these applications) and try to modify them on your own. For generic questions such as 
+        "how can I tune/ modify the web application" we have a generic answer: "by modifying the source code". Ask specific questions and you'll get
+        specific answers.
+      </answer>
+    </faq>
+    
     </faqs>
   </content>
 </page>
