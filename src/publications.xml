@@ -20,6 +20,12 @@
     <publication-group id="papers">
       <title>Scientific papers</title>
 
+      <paper paper-local="gonzales-ramirez-2012.pdf">
+        <authors>Audilio Gonzales-Aguilar y María Ramírez-Posada</authors>
+        <title>Carrot2: Búsqueda y visualización de la información (in Spanish)</title>
+        <where>El Profesional de la Informacion</where>
+      </paper>
+
       <paper paper="http://portal.acm.org/ft_gateway.cfm?id=1541884&amp;type=pdf&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=61275280&amp;CFTOKEN=60692112"
              bibtex="http://portal.acm.org/popBibTex.cfm?id=1541884&amp;ids=J204.1541880.1541884&amp;types=periodical.issue.article&amp;reqtype=article&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=61275280&amp;CFTOKEN=60692112">
         <authors>Claudio Carpineto, Stanislaw Osiński, Giovanni Romano, Dawid Weiss</authors>
