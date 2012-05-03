@@ -5,13 +5,15 @@
   <heading>Carrot<sup>2</sup> License</heading>
 
   <content>
-    <div style="float: right" class="side">
+    <div style="float: right; margin-bottom: 2ex;" class="side">
       <h2>In simple words</h2>
-
       You can use and distribute Carrot<sup>2</sup> in any kind of project
-      (Open Source, research, commercial) as long as you properly <a content="faq" anchor="acknowledging">acknowledge</a>
-      the fact (on the project's website and documentation) and let us know
-      about your project.
+      (Open Source, research, commercial) as long as you retain the license text in your
+      binary distribution. <br /><br />
+      It'd be great if you let us know about your
+      project and/or <a content="faq" anchor="acknowledging">acknowledged</a>
+      the use of Carrot<sup>2</sup> on your project's website or documentation.
+      It's optional, but keeps us motivated :-)
     </div>
   
     <p>
@@ -36,15 +38,7 @@ Neither the name  of the Poznan University  of Technology, Poznan, Poland  nor
 the names  of  its contributors may  be used  to endorse  or promote  products
 derived from this software without specific prior written permission.
       </li>
-
-      <li>
-We request that  you include in the  end-user documentation provided with  the
-redistribution and/or in the software itself  an acknowledgement equivalent to
-the following: "This  product  includes  software  developed  by  the  Carrot2
-Project."
-      </li>
     </ul>
-
 <p>
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"  AND
 ANY EXPRESS OR  IMPLIED WARRANTIES, INCLUDING,  BUT NOT LIMITED  TO, THE IMPLIED
