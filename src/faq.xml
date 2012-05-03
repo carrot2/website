@@ -101,10 +101,11 @@
     <faq id="commercial">
       <question>Can I use <c2 /> in a commercial project?</question>
       <answer>
-        Yes. The only requirement is that you properly acknowledge the use of
-        <c2 /> (on the project's website and documentation) and let
-        us know about your project. Please also remember to read the <a
-        content="license">license</a>.
+        Yes. The only requirement is that you include the <a
+        content="license">license</a> text in your binary distribution.
+        It'd be great if you let us know about your project and/or acknowledged
+        the use of Carrot2 on your project's website or documentation. It's
+        optional, but keeps us motivated :-)
       </answer>
     </faq>
 
