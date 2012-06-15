@@ -7,10 +7,8 @@
   <content>
     <para>
       <release-info version="3.6.0" />
-      The 3.5.0 release introduces a new <a target="_blank"
-      href="http://carrotsearch.com/foamtree">physics-inspired tree map
-      visualization called FoamTree</a>, the bisecting k-means clustering
-      algorithm and a number of smaller improvements and bug fixes.
+      The 3.6.0 release introduces a number of infrastructural changes, refactorings
+      and bug fixes.
     </para>
 
     <table class="release-notes">
@@ -107,7 +105,7 @@
           <ul class="compact">
             <li><a href="http://labs.carrotsearch.com/hppc.html">High Performance Primitive Collections</a> to version 0.4.1</li>
             <li>Google Guava to version r12</li>
-            <li>SimpleXML to version 2.6.3</li>
+            <li>SimpleXML to version 2.6.4</li>
             <li>Morfologik to version 1.5.3</li>
             <li>Lucene to version 3.6.0</li>
             <li>Ehcache removed</li>
