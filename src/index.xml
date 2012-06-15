@@ -15,13 +15,9 @@
       <div class="side" style="clear: both">
         <h2>News</h2>
 
-        <div class="qa">
-          We have moved the source code to <a href="https://github.com/carrot2/carrot2">GitHub</a>.
-        </div>
-
         <div>
-          Release <a content="release-3.5.3-notes">3.5.3</a> is available. This is an infrastructure
-          upgrade release with one minor improvement for Workbench.
+          Release <a content="release-3.6.0-notes">3.6.6</a> is available with infrastructure
+          changes and clustering bug fixes.
         </div>
 
       </div>
