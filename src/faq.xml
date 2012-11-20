@@ -144,6 +144,16 @@
       </answer>
     </faq>
     
+    <faq id="bing">
+      <question>Why is Bing Search not working on <a href="http://search.carrot2.org">http://search.carrot2.org</a>?</question>
+      <answer>
+        Microsoft provides a search API for Bing with a free monthly limit of 5000 requests. Once this
+        free limit is used up, Bing-powered tabs on Carrot2 will cease working. If you'd like to use
+        Bing then issue an API key for yourself, download Carrot2 applications and run them locally
+        with your key.
+      </answer>
+    </faq>
+
     </faqs>
   </content>
 </page>
