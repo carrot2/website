@@ -154,6 +154,18 @@
       </answer>
     </faq>
 
+    <faq id="browser">
+      <question>Why is Workbench whining about not being able to instantiate a Browser?</question>
+      <answer>
+        This is typically a Linux/ Unix issue - we cannot test on all the environments and packages out 
+        there. For Workbench to work you must have WebKit browser libraries present in your system.
+        On Ubuntu 12.04 this means installing:
+        <pre>
+sudo apt-get install libwebkitgtk-1.0-0
+        </pre>
+      </answer>
+    </faq>
+
     </faqs>
   </content>
 </page>
