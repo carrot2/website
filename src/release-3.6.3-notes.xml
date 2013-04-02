@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.6.3">
+  <heading>Release 3.6.3</heading>
+
+  <content>
+    <para>
+      <release-info version="3.6.3" />
+      The 3.6.3 release introduces minor bug fixes and improvements.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Dependencies bugfix updates.
+        </td>
+
+        <td>
+          <p>
+            HPPC updated to version 0.4.3. Attribute binder updated
+            to version 1.1.0.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Pass-through mode for input clusters
+        </td>
+
+        <td>
+          <p>
+            Added pass-through clustering algorithm and
+            accepting input clusters in XML input component.
+          </p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="head">
+          Workbench tweaks.
+        </td>
+
+        <td>
+          <p>
+            Added configurable snippet length in the Workbench.
+            Added "reload and flush caches" button and shortcut.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Solr component tweaks.
+        </td>
+
+        <td>
+          <p>
+            Added custom XSLT stylesheets for Solr output adapter.
+          </p>
+        </td>
+      </tr>
+
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.6.3%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.6.3. 
+    </p>
+  </content>
+</page>
+
