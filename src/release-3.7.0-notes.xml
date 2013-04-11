@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.7.0">
+  <heading>Release 3.7.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.7.0" />
+      The 3.7.9 release fixes over 40 issues: bug fixes, ehancements and third party
+      library upgrades.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Value factories for attributes
+        </td>
+
+        <td>
+          <p>
+            Value factories have been added to the binder to support
+            components with non-directly instantiable values.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          String document identifiers
+        </td>
+
+        <td>
+          <p>
+            Document identifiers can be arbitrary strings. This
+            facilitates integration with existing document providers
+            such as Solr.
+          </p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="head">
+          Solr integration cleanups
+        </td>
+
+        <td>
+          <p>
+            Easier integration with the default Solr functionality (highlighters, in-Solr clustering).
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Third party library updates
+        </td>
+
+        <td>
+          <p>
+            Lucene 4.x, Morfologik 1.6, Guava 14.x.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Memory requirements decreased
+        </td>
+
+        <td>
+          <p>
+            This in particular affects the Workbench.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Bug fixes and minor enhancements from 3.6.x bugfix line.
+        </td>
+
+        <td>
+          <p>
+            A number of bug fixes and enhancements already applied to the maintenance
+            line of 3.6.x have also been ported (see full issue list in JIRA).
+          </p>
+        </td>
+      </tr>
+
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a
+      href="http://issues.carrot2.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+CARROT+AND+fixVersion+%3D+%223.7.0%22+ORDER+BY+priority+DESC">JIRA
+      issues fixed</a> in version 3.7.0. 
+    </p>
+  </content>
+</page>
+
