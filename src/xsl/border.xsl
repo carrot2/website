@@ -104,9 +104,9 @@
                   </xsl:call-template>
 
                   <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">forum</xsl:with-param>
-                    <xsl:with-param name="text">Forum</xsl:with-param>
-                    <xsl:with-param name="section">forum</xsl:with-param>
+                    <xsl:with-param name="url">contact</xsl:with-param>
+                    <xsl:with-param name="text">Support</xsl:with-param>
+                    <xsl:with-param name="section">support</xsl:with-param>
                   </xsl:call-template>
                   </div>
 
@@ -145,12 +145,6 @@
                   </div>
 
                   <div style="margin-bottom: 15px">
-                  <xsl:call-template name="menu-link">
-                    <xsl:with-param name="url">contact</xsl:with-param>
-                    <xsl:with-param name="text">Contact us</xsl:with-param>
-                    <xsl:with-param name="section">support</xsl:with-param>
-                  </xsl:call-template>
-
                   <xsl:call-template name="menu-link">
                     <xsl:with-param name="url">authors</xsl:with-param>
                     <xsl:with-param name="text">Authors</xsl:with-param>

@@ -2,15 +2,20 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="support">
-  <heading>Contact us</heading>
+  <heading>Support</heading>
 
   <content>
-    You can contact us in a few ways:
-
     <ul>
       <li>
-        If you have <b>questions or comments about <c2 /></b>, please subscribe to <a href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers"><c2 /> mailing list</a>
-        and post your questions there. For past messages circulated to the list, please <a content="forum">see the archive</a>.
+        If you have specific <b>questions about <c2 /></b>, post them on
+        <a
+        href="http://stackoverflow.com/questions/tagged/carrot2">StackOverflow
+        under the carrot2 tag</a>.
+      </li>
+
+      <li>
+        Alternatively, subscribe to <a href="http://lists.sourceforge.net/lists/listinfo/carrot2-developers"><c2 /> mailing list</a>
+        and post your questions there. For past messages circulated to the list, please <a href="http://carrot2-users-and-developers-forum.607571.n2.nabble.com/">see the archive</a>.
       </li>
 
       <li>
