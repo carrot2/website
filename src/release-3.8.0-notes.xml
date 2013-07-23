@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.8.0">
+  <heading>Release 3.8.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.8.0" />
+      The 3.8.0 release fixes a number of bugs fixes and updates library dependencies.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Bug fixes and improvements
+        </td>
+
+        <td>
+          <p>
+            A number of minor bug fixes and tweaks have been patched. These affected the DCS,
+            ETools, bisecting k-means and Bing document source.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Third party library updates
+        </td>
+
+        <td>
+          <p>
+            Morfologik 1.7, simplexml 2.7, HPPC 0.5.2.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="http://goo.gl/pPSpMy">JIRA</a> 
+    </p>
+  </content>
+</page>
+
