@@ -154,6 +154,24 @@
       </answer>
     </faq>
 
+    <faq id="ipbanned">
+      <question>Why do I get lpBannedException when I search on <a href="http://search.carrot2.org">http://search.carrot2.org</a>?</question>
+      <answer>
+        <p>We provide the search interface as a demo of the technology and we use partnership with 
+        a company called <a href="http://www.comcepta.com">Comcepta (eTools)</a> for providing a 
+        limited number of free search requests. Unfortunately some people have been abusing this
+        free service and we had to introduce per-IP limitations.</p>
+        
+        <p>If you wish to extend your query limits please install Carrot<sup>2</sup>
+        locally and contact Comcepta for custom query limit arrangements. Or use Microsoft
+        Bing's search API: issue an <a href="http://datamarket.azure.com/dataset/bing/search">API key for yourself</a>
+        then copy-paste that key in the "Application API key" form box 
+        of the Bing tab (shown after you click on "More advanced options").</p>
+        
+        <p>Apologies for inconvenience.</p>
+      </answer>
+    </faq>
+
     <faq id="browser">
       <question>Why is Workbench whining about not being able to instantiate a Browser?</question>
       <answer>
