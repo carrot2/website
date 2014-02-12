@@ -3,7 +3,6 @@
 
 <page section="source">
   <head>
-    <link rel="stylesheet" href="http://builds.carrot2.org/styles/bamboo-status.css" type="text/css" media="all" title="Default" />
     <script type="text/javascript">
       var BAMBOO = { };
     </script>
@@ -19,22 +18,25 @@
 
         <td>
 	  <tt>git clone git://github.com/carrot2/carrot2.git</tt><br />
-	  <tt>git co stable</tt><br />
-	  (read-only, stable branch)<br />
+	  <tt>git co release/<version-stable /></tt><br />
+	  (read-only, stable tag)<br />
 	  <!-- <carrot2-source-link branch="branches/stable">Browse with FishEye</carrot2-source-link>, -->
 	  <javadoc-link release="stable">JavaDoc</javadoc-link>
         </td>
       </tr>
 
+      <!--
       <tr>
         <td class="head">Build Status</td>
 
         <td>
-          <script type="text/javascript" src="http://builds.carrot2.org/js/showLatestBuildStatus.action?buildKey=C2STABLE-ALL">&#160;</script><br />
+          <script type="text/javascript" src="http://bamboo.carrot2.org/js/showLatestBuildStatus.action?buildKey=C2-SOFTWARE">&#160;</script><br />
           <dist-link release="stable">Download artifacts</dist-link>
         </td>
       </tr>
+      -->
 
+      <!--
       <tr>
         <td class="head">Code Quality Reports</td>
 
@@ -47,6 +49,7 @@
           <a href="http://builds.carrot2.org/browse/C2STABLE-ALL/latest/artifact/JOB1/DCS-Webtest-Report/index.html">DCS Webtest Report</a>
         </td>
       </tr>
+      -->
     </table>
 
     <hr />
@@ -59,9 +62,8 @@
 
         <td>
           <tt>git clone git://github.com/carrot2/carrot2.git</tt><br />
-	  (read-only, master branch)<br />
-	  <!-- <carrot2-source-link>Browse with FishEye</carrot2-source-link>, -->
-	  <javadoc-link release="head">JavaDoc</javadoc-link>
+          (read-only, master branch)<br />
+          <javadoc-link release="head">JavaDoc</javadoc-link>
         </td>
       </tr>
 
@@ -69,8 +71,8 @@
         <td class="head">Build Status</td>
 
         <td>
-          <script type="text/javascript" src="http://builds.carrot2.org/js/showLatestBuildStatus.action?buildKey=C2HEAD-CORE">&#160;</script><br />
-          <dist-link release="head">Download artifacts</dist-link>
+          <a href="http://bamboo.carrot2.org/browse/C2-SOFTWARE/latest"><img src="http://bamboo.carrot2.org/plugins/servlet/buildStatusImage/C2-SOFTWARE" /></a>
+          <a href="http://bamboo.carrot2.org/browse/C2-SOFTWARE/latest/artifact">Download binaries</a>
         </td>
       </tr>
 
@@ -78,13 +80,12 @@
         <td class="head">Code Quality Reports</td>
 
         <td>
-          <a href="http://builds.carrot2.org/browse/C2HEAD-SOURCES/latest/artifact/JOB1/JUnit-Test-Report/index.html">Unit Test Report</a><br />
-          <a href="http://builds.carrot2.org/browse/C2HEAD-SOURCES/latest/artifact/JOB1/Coverage-Report/index.html">Code Coverage Report</a><br />
-          <a href="http://builds.carrot2.org/browse/C2HEAD-SOURCES/latest/artifact/JOB1/FindBugs-Report/index.html">Static Code Analysis Report</a><br />
-          <a href="http://builds.carrot2.org/browse/C2HEAD-SOURCES/latest/artifact/JOB1/Duplication-Report/index.html">Code Duplication Report</a><br />
-          <a href="http://builds.carrot2.org/browse/C2HEAD-SOURCES/latest/artifact/JOB1/Java-API-Backwards-Compatibility-Report/api-compatibility.html">Java API Backward Compatibility Report</a><br />
-          <a href="http://builds.carrot2.org/browse/C2HEAD-WEBAPP/latest/artifact/JOB1/Webapp-Webtest-Report/index.html">Web Application Webtest Report</a><br />
-          <a href="http://builds.carrot2.org/browse/C2HEAD-DCS/latest/artifact/JOB1/DCS-Webtest-Report/index.html">DCS Webtest Report</a>
+          <a href="http://bamboo.carrot2.org/browse/C2-SOFTWARE/latest/artifact/shared/Unit-Test-Report/">Unit Test Report</a><br />
+          <a href="http://bamboo.carrot2.org/browse/C2-SOFTWARE/latest/artifact/shared/Coverage-Report/">Code Coverage Report</a><br />
+          <a href="http://bamboo.carrot2.org/browse/C2-SOFTWARE/latest/artifact/shared/FindBugs-Report/">Static Code Analysis Report</a><br />
+          <a href="http://bamboo.carrot2.org/browse/C2-SOFTWARE/latest/artifact/shared/Duplication-Report/">Code Duplication Report</a><br />
+          <a href="http://bamboo.carrot2.org/browse/C2-SOFTWARE/latest/artifact/shared/Carrot2-Web-Application-webtest-report">Web Application Webtest Report</a><br />
+          <a href="http://bamboo.carrot2.org/browse/C2-SOFTWARE/latest/artifact/shared/Carrot2-DCS-webtest-report">DCS Webtest Report</a>
         </td>
       </tr>
     </table>
