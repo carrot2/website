@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.9.0">
+  <heading>Release 3.9.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.9.0" />
+      The 3.9.0 release updates Lucene and other library
+      dependencies, abandons Flash-based visualizations migrating
+      to HTML5-only equivalents and provides an aggregate set of
+      of bug fixes from previous minor releases.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          HTML5 visualizations replace Flash
+        </td>
+
+        <td>
+          <p>
+            Flash visualizations are gone from the Workbench and the web application,
+            replaced by HTML5-based, shiny new visualizations from Carrot Search.
+            This also means that Workbench and the webapp will require a modern browser
+            for full functionality (IE9+, a recent version of Chrome or Firefox).
+          </p>
+          
+          <p>
+            The update comes with a few minor improvements, such as multiple-cluster selection
+            in the Web application (and the Workbench). Try it by selecting clusters while
+            holding the the control (or the Mac) key.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Add rudimentary support for Hindi.
+        </td>
+
+        <td>
+          <p>
+            Added basic preprocessing and associated lexical resources for Hindi.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Minor bugs squashed.
+        </td>
+
+        <td>
+          <p>
+            This release includes over 25 bugfixes previously rolled out in minor bugfix 
+            revisions to 3.8.x line.
+          </p>
+        </td>
+      </tr>      
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="http://goo.gl/082H36">JIRA</a> 
+    </p>
+  </content>
+</page>
+
