@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.9.2">
+  <heading>Release 3.9.2</heading>
+
+  <content>
+    <para>
+      <release-info version="3.9.2" />
+      The 3.9.2 release updates a HTML5 FoamTree bug.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Cluster selection in Workbench
+        </td>
+
+        <td>
+          <p>
+            HTML5 FoamTree updated to work in the Workbench (cluster
+            selection was previously not working properly).
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="http://goo.gl/b4R1B7">JIRA</a> 
+    </p>
+  </content>
+</page>
+
