@@ -209,9 +209,13 @@
   </xsl:template>
 
   <xsl:template match="carrot2-source-link">
-    <xsl:variable name="suffix"><xsl:if test="not(@dir)">?r=trunk</xsl:if></xsl:variable>
-    <xsl:variable name="branch">/<xsl:if test="not(@branch)">trunk</xsl:if><xsl:if test="@branch"><xsl:value-of select="@branch" /></xsl:if></xsl:variable>
-    <a href="http://fisheye3.atlassian.com/browse/carrot2{$branch}/{@extension}{$suffix}">
+    <xsl:variable name="branch">
+      <xsl:choose>
+        <xsl:when test="@branch"><xsl:value-of select="@branch" /></xsl:when>
+        <xsl:otherwise>master</xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <a href="http://fisheye3.atlassian.com/browse/~br={$branch}/carrot2/{@extension}">
       <xsl:copy-of select="@class" />
       <xsl:copy-of select="@target" />
       <xsl:apply-templates />
