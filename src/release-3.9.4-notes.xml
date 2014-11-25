@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.9.4">
+  <heading>Release 3.9.4</heading>
+
+  <content>
+    <para>
+      <release-info version="3.9.4" />
+      The 3.9.4 release fixes the following issues.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Credentials passing for HTTP BASIC or DIGEST authorization 
+          is now supported.
+        </td>
+
+        <td>
+          <p>
+            URLResourceWithParams and RemoteXmlSimpleSearchEngineBase now accept 
+            properties for basic http authorization to proceed. The properties can be 
+            passed either dynamically (via controller attributes) or via system properties
+            <code>http.auth.username</code> and <code>http.auth.username</code>.
+          </p>
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td class="head">
+          Truncate long documents in the webapp.
+        </td>
+
+        <td>
+          <p>
+            The webapp now has an option to truncate long document content
+            (<code>QueryWordHighlighter.maxContentLength</code>).
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Updated foamtree visualization to version 3.2.3.
+        </td>
+
+        <td>
+          <p>
+            FoamTree visualization has been updated to the new shiny version.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Clustering by majority language.
+        </td>
+
+        <td>
+          <p>
+            New attributes are available in <code>MultilingualClusteringDescriptor</code>. It is now possible
+            to cluster using the language prevailing in the set of input documents. This is particularly useful
+            if language detection is a heuristic that makes occasional mistakes (then majority-voting will pick
+            the language for clustering).
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="http://goo.gl/PYzQAV">JIRA</a> 
+    </p>
+  </content>
+</page>
+
