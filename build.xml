@@ -60,7 +60,7 @@
 
     <!-- Figure out the latest release/* tag. -->
     <git dir="${carrot2.git.clone}" outputproperty="latest.release.tag">
-       <arg line="for-each-ref refs/tags/release/* --sort=-refname --format='%(refname)' --count=1" />
+       <arg line="for-each-ref refs/tags/release/* --sort=-*authordate --format='%(refname)' --count=1" />
     </git>
     <echo>Latest determined tag: ${latest.release.tag}</echo>
     <git dir="${carrot2.git.clone}"> 
