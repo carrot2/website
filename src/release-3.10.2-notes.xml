@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.10.2">
+  <heading>Release 3.10.2</heading>
+
+  <content>
+    <para>
+      <release-info version="3.10.2" />
+      The 3.10.2 release fixes the following issues.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Arabic cluster labels
+        </td>
+
+        <td>
+          <p>
+             Arabic cluster labels and their numbers were incorrectly
+             adjusted in the Workbench.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="http://goo.gl/CbW6lN">JIRA</a> 
+    </p>
+  </content>
+</page>
+
