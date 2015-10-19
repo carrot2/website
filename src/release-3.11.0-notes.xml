@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.11.0">
+  <heading>Release 3.11.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.11.0" />
+      The 3.11.0 release fixes a number of issues and comes
+      with updates of third party libraries.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Apache Lucene
+        </td>
+
+        <td>
+          <p>
+             Upgrade of Apache Lucene to version 5.3.1.
+          </p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="head">
+          DCS freezing
+        </td>
+
+        <td>
+          <p>
+             The DCS could freeze at startup on machines with a high CPU count.
+             We upgraded Jetty and rewrote the thread pool configuration code
+             to handle this issue.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Circles and FoamTree
+        </td>
+
+        <td>
+          <p>
+             Upgrade of Circles and FoamTree to their newest version.
+          </p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="head">
+          Apache Mahout
+        </td>
+
+        <td>
+          <p>
+             Removed direct dependency on Apache Mahout (inlined
+             just a subset of required classes).
+          </p>
+        </td>
+      </tr>      
+      
+
+      <tr>
+        <td class="head">
+          Security Manager
+        </td>
+
+        <td>
+          <p>
+             Minor improvements and tweaks to allow the
+             framework to work in a security manager 
+             controlled environment.
+          </p>
+        </td>
+      </tr>           
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="http://goo.gl/fpGnbN">JIRA</a> 
+    </p>
+  </content>
+</page>
+
