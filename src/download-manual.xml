@@ -2,12 +2,10 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><manual-download-refresh release="stable" /></head>
   <heading>Download</heading>
 
   <content>
-    <strong>Downloading <c2 /> <man /></strong> for version <version-stable />...<br />
-    <span class="small">If the download does not start automatically, <manual-download-link release="stable">click here</manual-download-link></span>
+    <strong><manual-download-link release="stable">Downloading <c2 /> <man /> for version <version-stable /></manual-download-link></strong>
 
     <div id="download-info">
       <img src="img/manual.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 User and Developer Manual Download" />

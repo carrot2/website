@@ -2,12 +2,10 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><webapp-download-refresh release="stable" wm="win32" os="win32" /></head>
   <heading>Download</heading>
 
   <content>
-    <strong>Downloading <c2 /> <wa /></strong> version <version-stable />...<br />
-    <span class="small">If the download does not start automatically, <webapp-download-link release="stable">click here</webapp-download-link></span>
+    <strong><webapp-download-link release="stable">Downloading <c2 /> <wa /> version <version-stable /></webapp-download-link></strong>
 
     <div id="download-info">
       <img src="img/webapp-tree.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Web Application Download" />

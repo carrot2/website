@@ -2,12 +2,10 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><cli-download-refresh release="stable" /></head>
   <heading>Download</heading>
 
   <content>
-    <strong>Downloading <c2 /> <cli /></strong> version <version-stable />...<br />
-    <span class="small">If the download does not start automatically, <cli-download-link release="stable">click here</cli-download-link></span>
+    <strong><cli-download-link release="stable">Download <c2 /> <cli /> version <version-stable /></cli-download-link></strong>
 
     <div id="download-info">
       <img src="img/release-3.2.0/cli-batch.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Command Line Interface Download" />

@@ -2,12 +2,10 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><csharp-api-download-refresh release="stable" /></head>
   <heading>Download</heading>
 
   <content>
-    <strong>Downloading <c2 /> <csa /></strong> version <version-stable />...<br />
-    <span class="small">If the download does not start automatically, <csharp-api-download-link release="stable">click here</csharp-api-download-link></span>
+    <strong><csharp-api-download-link release="stable">Downloading <c2 /> <csa /> version <version-stable /></csharp-api-download-link></strong>
 
     <div id="download-info">
       <img src="img/csharp-api-in-vs.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 C# / .NET API in Visual Studio" />

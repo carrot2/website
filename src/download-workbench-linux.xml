@@ -2,12 +2,10 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><workbench-download-refresh release="stable" wm="gtk" os="linux" /></head>
   <heading>Download</heading>
 
   <content>
-    <strong>Downloading <c2 /> <dcw /> for Linux</strong> version <version-stable />...<br />
-    <span class="small">If the download does not start automatically, <workbench-download-link release="stable" wm="gtk" os="linux">click here</workbench-download-link></span>
+    <strong><workbench-download-link release="stable" wm="gtk" os="linux">Downloading <c2 /> <dcw /> for Linux version <version-stable /></workbench-download-link></strong>
 
     <div id="download-info">
       <img src="img/workbench-linux.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Clustering Workbench Download" />

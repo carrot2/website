@@ -2,13 +2,11 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><dcs-download-refresh release="stable" wm="win32" os="win32" /></head>
   <heading>Download</heading>
 
   <content>
-    <strong>Downloading <c2 /> <dcs /></strong> version <version-stable />...<br />
-    <span class="small">If the download does not start automatically, <dcs-download-link release="stable">click here</dcs-download-link></span>
-
+    <strong><dcs-download-link release="stable">Downloading <c2 /> <dcs /> version <version-stable /></dcs-download-link></strong>
+    
     <div id="download-info">
       <img src="img/dcs.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Document Clustering Server Download" />
 
