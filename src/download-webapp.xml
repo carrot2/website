@@ -5,7 +5,9 @@
   <heading>Download</heading>
 
   <content>
-    <strong><webapp-download-link release="stable">Downloading <c2 /> <wa /> version <version-stable /></webapp-download-link></strong>
+    <p>
+      Go to <github-releases-stable /> and download <strong><webapp-download-file /></strong>.
+    </p>
 
     <div id="download-info">
       <img src="img/webapp-tree.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Web Application Download" />

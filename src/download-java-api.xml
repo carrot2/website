@@ -5,7 +5,9 @@
   <heading>Download</heading>
 
   <content>
-    <strong><java-api-download-link release="stable">Downloading <c2 /> <ja /> version <version-stable /></java-api-download-link></strong>
+    <p>
+      Go to <github-releases-stable /> and download <strong><java-api-download-file /></strong>.
+    </p>
 
     <div id="download-info">
       <img src="img/java-api-in-eclipse.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Java API Download" />

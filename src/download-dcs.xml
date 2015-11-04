@@ -5,8 +5,10 @@
   <heading>Download</heading>
 
   <content>
-    <strong><dcs-download-link release="stable">Downloading <c2 /> <dcs /> version <version-stable /></dcs-download-link></strong>
-    
+    <p>
+      Go to <github-releases-stable /> and download <strong><dcs-download-file /></strong>.
+    </p>
+
     <div id="download-info">
       <img src="img/dcs.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Document Clustering Server Download" />
 

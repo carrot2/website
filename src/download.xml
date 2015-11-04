@@ -167,19 +167,6 @@
           <a class="download-small" content="download-webapp"><img style="float: right" class="pic" src="img/download-webapp.png" alt="Carrot2 Web Application Download" /><wa /></a>
         </td>
       </tr>
-
-      <tr>
-        <td class="head">
-          <ul>
-            <li>try latest development or older verisons of <c2 /></li>
-          </ul>
-        </td>
-
-        <td>
-          <dist-link release="head"><c2 /> v<version-head /> binaries</dist-link><br />
-          <dist-link release="stable"><c2 /> v3.x stable binaries</dist-link>
-        </td>
-      </tr>
     </table>
   </content>
 </page>

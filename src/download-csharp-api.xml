@@ -5,7 +5,9 @@
   <heading>Download</heading>
 
   <content>
-    <strong><csharp-api-download-link release="stable">Downloading <c2 /> <csa /> version <version-stable /></csharp-api-download-link></strong>
+    <p>
+      Go to <github-releases-stable /> and download <strong><csharp-api-download-file /></strong>.
+    </p>
 
     <div id="download-info">
       <img src="img/csharp-api-in-vs.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 C# / .NET API in Visual Studio" />

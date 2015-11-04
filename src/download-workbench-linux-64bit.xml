@@ -5,7 +5,9 @@
   <heading>Download</heading>
 
   <content>
-    <strong><workbench-download-link release="stable" wm="gtk" os="linux" arch="x86_64">Downloading <c2 /> <dcw /> for 64-bit Linux version <version-stable /></workbench-download-link></strong>
+    <p>
+      Go to <github-releases-stable /> and download <strong><workbench-download-file release="stable" wm="gtk" os="linux" arch="x86_64" /></strong>.
+    </p>
 
     <div id="download-info">
       <img src="img/workbench-linux.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Clustering Workbench Download" />

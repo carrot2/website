@@ -5,7 +5,9 @@
   <heading>Download</heading>
 
   <content>
-    <strong><workbench-download-link release="stable" wm="cocoa" os="macosx" arch="x86">Downloading <c2 /> <dcw /> for Mac OS X Cocoa 32-bit version <version-stable /></workbench-download-link></strong>
+    <p>
+      Go to <github-releases-stable /> and download <strong><workbench-download-file release="stable" wm="cocoa" os="macosx" arch="x86" /></strong>.
+    </p>
 
     <div id="download-info">
       <img src="img/workbench-macos.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Clustering Workbench for Mac OS X Download" />

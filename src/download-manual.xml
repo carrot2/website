@@ -5,7 +5,9 @@
   <heading>Download</heading>
 
   <content>
-    <strong><manual-download-link release="stable">Downloading <c2 /> <man /> for version <version-stable /></manual-download-link></strong>
+    <p>
+      Go to <github-releases-stable /> and download <strong><manual-download-file /></strong>.
+    </p>
 
     <div id="download-info">
       <img src="img/manual.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 User and Developer Manual Download" />

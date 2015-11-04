@@ -5,7 +5,9 @@
   <heading>Download</heading>
 
   <content>
-    <strong><cli-download-link release="stable">Download <c2 /> <cli /> version <version-stable /></cli-download-link></strong>
+    <p>
+      Go to <github-releases-stable /> and download <strong><cli-download-file /></strong>.
+    </p>
 
     <div id="download-info">
       <img src="img/release-3.2.0/cli-batch.png" class="pic" style="float: right; margin-left: 10px;" alt="Carrot2 Command Line Interface Download" />

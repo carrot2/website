@@ -123,6 +123,44 @@
     <xsl:value-of select="concat($dist.url, '/', $dist.version, '/', $dist.base, $platform, '-', normalize-space($dist.version), $dist.extension)" /> 
   </xsl:template>
 
+  <xsl:template name="dist-file-name">
+    <xsl:param name="node-name" />
+    <xsl:param name="wm" />
+    <xsl:param name="os" />
+    <xsl:param name="arch">x86</xsl:param>
+    <xsl:param name="solr" />
+    <xsl:param name="release" />
+
+    <xsl:variable name="dist.url">
+      <xsl:call-template name="dist-url">
+        <xsl:with-param name="release" select="$release" />
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:variable name="dist.base">
+      <xsl:call-template name="dist-base">
+        <xsl:with-param name="node-name" select="$node-name" />
+        <xsl:with-param name="solr" select="$solr" />
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:variable name="dist.version">
+      <xsl:call-template name="dist-version">
+        <xsl:with-param name="node-name" select="$node-name" />
+        <xsl:with-param name="release" select="$release" />
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:variable name="dist.extension">
+      <xsl:call-template name="dist-extension">
+        <xsl:with-param name="node-name" select="$node-name" />
+        <xsl:with-param name="wm" select="$wm" />
+        <xsl:with-param name="os" select="$os" />
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:variable name="platform">
+      <xsl:if test="contains($node-name, 'workbench')">-<xsl:value-of select="concat($os, '.', $wm, '.', $arch)" /></xsl:if>
+    </xsl:variable>
+    <xsl:value-of select="concat($dist.base, $platform, '-', normalize-space($dist.version), $dist.extension)" /> 
+  </xsl:template>
+
   <xsl:template match="manual-download-link|workbench-download-link|dcs-download-link|webapp-download-link|java-api-download-link|csharp-api-download-link|cli-download-link|solr-compat-download-link">
     <xsl:variable name="dist.file">
       <xsl:call-template name="dist-file">
@@ -141,6 +179,20 @@
     </a>
   </xsl:template>
 
+  <xsl:template match="manual-download-file|workbench-download-file|dcs-download-file|webapp-download-file|java-api-download-file|csharp-api-download-file|cli-download-file|solr-compat-download-file">
+    <xsl:variable name="dist.file">
+      <xsl:call-template name="dist-file-name">
+        <xsl:with-param name="node-name" select="local-name()" />
+        <xsl:with-param name="wm" select="@wm" />
+        <xsl:with-param name="os" select="@os" />
+        <xsl:with-param name="release" select="@release" />
+        <xsl:with-param name="solr" select="@solr" />
+        <xsl:with-param name="arch"><xsl:choose><xsl:when test="@arch"><xsl:value-of select="@arch" /></xsl:when><xsl:otherwise>x86</xsl:otherwise></xsl:choose></xsl:with-param>
+      </xsl:call-template>
+    </xsl:variable>
+    <xsl:value-of select="$dist.file" />
+  </xsl:template>
+
   <xsl:template match="manual-download-refresh|workbench-download-refresh|dcs-download-refresh|webapp-download-refresh|java-api-download-refresh|csharp-api-download-refresh|cli-download-refresh">
     <xsl:variable name="dist.file">
       <xsl:call-template name="dist-file">
@@ -153,6 +205,12 @@
     </xsl:variable>
 
     <meta http-equiv="refresh" content="0;url={$dist.file}" />
+  </xsl:template>
+
+  <xsl:template match="github-releases-stable">
+    <xsl:variable name="url">https://github.com/carrot2/carrot2/releases/tag/release%2F<xsl:value-of select="$carrot2.version.stable" /></xsl:variable>
+
+    <a href="{$url}" target="_blank">release <xsl:value-of select="$carrot2.version.stable" /> packages page</a>
   </xsl:template>
 
   <xsl:template match="manual-link">
