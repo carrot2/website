@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.14.0">
+  <heading>Release 3.14.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.15.0" />
+      The 3.15.0 release removes support for Bing API V2 and
+      implements Bing API V3. Several third-party library 
+      dependencies have been updated to newer versions.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Bing API V5
+        </td>
+
+        <td>
+          <p>
+             Microsoft Bing API V2 is officially deprecated and will be removed. A new
+             API (cognitive services) replaces it entirely.
+          </p>
+
+          <p>
+             This upgrade removes code for old Bing API V2 and adds new Bing API V5 
+             support. Note that the document source class and attributes are different;
+             the new document source is called <code>org.carrot2.source.microsoft.v5.Bing5DocumentSource</code>
+             for web search results and <code>org.carrot2.source.microsoft.v5.Bing5NewsDocumentSource</code>
+             for news results. Image search document source has been removed without a replacement.
+          </p>
+          
+          <p>
+             A new API key is required to use these document inputs. 
+             <a href="https://www.microsoft.com/cognitive-services/en-us/apis">Refer to Microsoft's on-line help</a> 
+             on how to issue API keys. There is a monthly free query limit.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="head">
+          Dependencies updated
+        </td>
+
+        <td>
+          <p>
+             A couple of dependencies have been updated to newer versions:
+             Jackson (2.5.4), Apache commons collections (2.6), Morfologik
+             (2.1.1).
+          </p>
+        </td>
+      </tr>           
+      
+      <tr>
+        <td class="head">
+          Internal cosmetics
+        </td>
+
+        <td>
+          <p>
+             A few minor tweaks have been made internally (switching to NIO in a few places,
+             upgrading testing libraries).
+          </p>
+        </td>
+      </tr>           
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="https://goo.gl/rZ52Y8">JIRA</a> 
+    </p>
+  </content>
+</page>
+
