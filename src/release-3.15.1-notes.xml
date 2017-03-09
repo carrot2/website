@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.15.1">
+  <heading>Release 3.15.1</heading>
+
+  <content>
+    <para>
+      <release-info version="3.15.1" />
+      The 3.15.1 fixes a small bug in .NET release that could
+      throw unchecked exceptions on inaccessible current working
+      directory (for example when run as a service process).
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          .NET bugfix
+        </td>
+
+        <td>
+          <p>
+             The .NET build of Carrot<sup>2</sup> could fail with an unchecked exception thrown
+             from the underlying I/O subsystem if the process's current working directory was
+             inaccessible. This bugfix works around the problem.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="https://goo.gl/gBWYUr">JIRA</a> 
+    </p>
+  </content>
+</page>
+
