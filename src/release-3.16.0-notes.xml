@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.16.0">
+  <heading>Release 3.16.0</heading>
+
+  <content>
+    <para>
+      <release-info version="3.16.0" />
+      Release 3.16.0 includes a number of fixes to make
+      Carrot<sup>2</sup> compatible with newer Java revisions
+      (it remains to be backward compatible with Java 1.7+).
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Java 1.9+
+        </td>
+
+        <td>
+          <p>
+             Addressed several incompatibilities with newer Java versions, 
+             both at build-level and at runtime. Workbench now works with 
+             Java 1.9+.
+          </p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="head">
+          Workbench improvements
+        </td>
+
+        <td>
+          <p>
+             Workbench bug fixes and workarounds for newer Ubuntu releases,
+             odd characters in installation path and Java 1.9 compatibility.
+          </p>
+        </td>
+      </tr>      
+      
+      <tr>
+        <td class="head">
+          Document sources
+        </td>
+
+        <td>
+          <p>
+             Updates ETools document source URLs to use HTTPS. Removed Indeed 
+             document source (no longer functional)
+          </p>
+        </td>
+      </tr>
+      
+
+      <tr>
+        <td class="head">
+          .NET API
+        </td>
+
+        <td>
+          <p>
+             Added a constructor for the Document class that takes an external ID,
+             making it consistent with Java API Document class.
+          </p>
+        </td>
+      </tr>      
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="https://goo.gl/JHvQx9">JIRA</a> 
+    </p>
+  </content>
+</page>
+
