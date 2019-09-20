@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
+
+<page section="release-3.16.2">
+  <heading>Release 3.16.2</heading>
+
+  <content>
+    <para>
+      <release-info version="3.16.2" />
+      Release 3.16.2 updates third party libraries (jackson, simple-xml) 
+      to accomodate for security-related patches.
+    </para>
+
+    <table class="release-notes">
+      <tr>
+        <td class="head">
+          Security
+        </td>
+
+        <td>
+          <p>
+             Jackson library has been upgraded to version 2.9.9. Simple-xml library has been repackaged
+             and now comes in a "safe" variant that prevents XXE attacks. <strong>If you use the DCS, please
+             upgrade immediately.</strong>
+          </p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="head">
+          Java 1.8
+        </td>
+
+        <td>
+          <p>
+             Java 1.8 is required for this release to work. Note that the Workbench requires exactly
+             Java 1.8 (it will not work with any newer Java version).
+          </p>
+        </td>
+      </tr>      
+    </table>
+
+    <hr />
+
+    <p>
+      For a complete list of improvements and bug fixes, see <a href="https://issues.carrot2.org/projects/CARROT/versions/14320">JIRA</a> 
+    </p>
+  </content>
+</page>
+
