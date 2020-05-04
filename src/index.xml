@@ -42,8 +42,8 @@
     </p>
 
     <p style="text-align: center; width: 420px">
-      <carrot2-webapp-results-link query="?query=salsa"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></carrot2-webapp-results-link>
-      Search results clustered with Carrot<sup>2</sup> (<carrot2-webapp-results-link query="?q=salsa">live demo</carrot2-webapp-results-link>)
+      <carrot2-webapp-results-link query="salsa"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></carrot2-webapp-results-link>
+      Search results clustered with Carrot<sup>2</sup> (<carrot2-webapp-results-link query="salsa">live demo</carrot2-webapp-results-link>)
     </p>
          
     <p>

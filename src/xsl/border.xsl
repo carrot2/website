@@ -31,7 +31,7 @@
     <div id="results-utils">
       <a href="{$carrot2.website.url}">About</a> |
       <a href="contact.{$content-extension}">Contact</a> |
-      <a href="{$carrot2.sf.net.url}">Carrot2 @ sf.net</a> |
+      <a href="https://github.com/carrot2/carrot2">Carrot2 @ github</a> |
       <a href="{$carrot2.webapp.url}">Search Clustering Engine</a> |
       <a href="{$carrot-search.website.url}">Carrot Search</a>
     </div>

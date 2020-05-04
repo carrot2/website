@@ -2,9 +2,9 @@
 <?xml-stylesheet href="xsl/page.xsl" type="text/xsl" ?>
 
 <page section="download">
-  <head><meta http-equiv="refresh" content="0;url=http://download.carrot2.org" /></head>
+  <head><meta http-equiv="refresh" content="0;url=https://download.carrot2.org" /></head>
 
   <content>
-    Redirecting to <a href="http://download.carrot2.org">downloads</a>...
+    Redirecting to <a href="https://download.carrot2.org">downloads</a>...
   </content>
 </page>

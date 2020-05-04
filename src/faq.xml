@@ -122,19 +122,20 @@
     </faq>
 
     <faq id="circles">
-      <question>Can I get the source code of the <a href="http://search.carrot2.org/stable/search?source=web&amp;view=visu&amp;query=data+mining&amp;results=100&amp;algorithm=url" target="_blank">clusters visualization</a>?</question>
+      <question>Can I get the source code of the <a href="https://search.carrot2.org/#/search/web/data%20mining/treemap" target="_blank">clusters visualization</a>?</question>
       <answer>
         Source code of the visualization is not publicly available. For
-        a fully brandable version, please see the <a href="http://carrotsearch.com/circles">Circles 
-        interative clusters visualization</a> from Carrot Search.
+        a fully brandable version, please see the <a href="https://carrotsearch.com/circles">Circles</a>
+        or <a href="https://carrotsearch.com/foamtree">FoamTree</a>
+        interative visualizations from Carrot Search.
       </answer>
     </faq>
     
     <faq id="webapp">
-      <question>How do I set up/ modify/ get the output similar to what I see on <a href="http://search.carrot2.org">http://search.carrot2.org</a></question>
+      <question>How do I set up/ modify/ get the output similar to what I see on <a href="https://search.carrot2.org">search.carrot2.org</a></question>
       <answer>
         The focus of the Carrot2 project is on <i>clustering algorithms</i>. We provide several higher-level applications such as the
-        web application hosted at <a href="http://search.carrot2.org">http://search.carrot2.org</a>, an RCP-based Workbench desktop
+        web application hosted at <a href="https://search.carrot2.org">https://search.carrot2.org</a>, an RCP-based Workbench desktop
         application for tuning purposes and a simple REST-service server DCS which is a command-line application. All these applications are
         to some point extensible but are not the core concern of developers, so before you ask a question on the mailing
         list it's best to checkout the project, see how these applications work first (in particular
@@ -144,43 +145,19 @@
       </answer>
     </faq>
     
-    <faq id="bing">
-      <question>Why is Bing Search not working on <a href="http://search.carrot2.org">http://search.carrot2.org</a>?</question>
-      <answer>
-        Microsoft provides a search API for Bing with a free monthly limit of 5000 requests. Once this
-        free limit is used up, Bing-powered tabs on Carrot2 will cease working. If you'd like to use
-        Bing then issue an API key for yourself, download Carrot2 applications and run them locally
-        with your key.
-      </answer>
-    </faq>
-
     <faq id="ipbanned">
-      <question>Why do I get lpBannedException when I search on <a href="http://search.carrot2.org">http://search.carrot2.org</a>?</question>
+      <question>Why do I get lpBannedException when I search on <a href="https://search.carrot2.org">https://search.carrot2.org</a>?</question>
       <answer>
         <p>We provide the search interface as a demo of the technology and we use partnership with 
-        a company called <a href="http://www.comcepta.com">Comcepta (eTools)</a> for providing a 
+        a company called <a href="https://www.comcepta.com">Comcepta (eTools)</a> for providing a 
         limited number of free search requests. Unfortunately some people have been abusing this
         free service and we had to introduce per-IP limitations.</p>
         
         <p>If you wish to extend your query limits please install Carrot<sup>2</sup>
-        locally and contact Comcepta for custom query limit arrangements. Or use Microsoft
-        Bing's search API: issue an <a href="http://datamarket.azure.com/dataset/bing/search">API key for yourself</a>
-        then copy-paste that key in the "Application API key" form box 
-        of the Bing tab (shown after you click on "More advanced options").</p>
-        
-        <p>Apologies for inconvenience.</p>
-      </answer>
-    </faq>
+        locally and contact Comcepta for custom query limit arrangements. Or use custom search
+        results feed such as Microsoft Bing search API.</p>
 
-    <faq id="browser">
-      <question>Why is Workbench whining about not being able to instantiate a Browser?</question>
-      <answer>
-        This is typically a Linux/ Unix issue - we cannot test on all the environments and packages out 
-        there. For Workbench to work you must have WebKit browser libraries present in your system.
-        On Ubuntu 12.04 this means installing:
-        <pre>
-sudo apt-get install libwebkitgtk-1.0-0
-        </pre>
+        <p>Apologies for inconvenience.</p>
       </answer>
     </faq>
 
