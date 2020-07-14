@@ -16,7 +16,7 @@
         <h2>News</h2>
 
         <div>
-          Release <a content="release-3.16.2-notes">3.16.2</a> is available.
+          Release <a content="release-4.0.0-notes">4.0.0</a> is available.
         </div>
       </div>
       
@@ -42,7 +42,7 @@
     </p>
 
     <p style="text-align: center; width: 420px">
-      <carrot2-webapp-results-link query="salsa"><img src="img/carrot2-demo-screenshot.gif" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></carrot2-webapp-results-link>
+      <carrot2-webapp-results-link query="salsa"><img src="img/carrot2-demo-screenshot.png" width="400px" class="pic" alt="Search results clustered with Carrot2" title="Search results clustered with Carrot2" /></carrot2-webapp-results-link>
       Search results clustered with Carrot<sup>2</sup> (<carrot2-webapp-results-link query="salsa">live demo</carrot2-webapp-results-link>)
     </p>
          
