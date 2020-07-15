@@ -11,11 +11,11 @@
   <property name="distribution.dir" value="tmp/dist" />
 
   <target name="cleanall" description="Removes temporary files.">
-    <delete failonerror="false" includeemptydirs="true" quiet="true" />
+    <delete failonerror="false" includeemptydirs="true" quiet="true" dir="${distribution.dir}" />
   </target>
 
   <target name="clean" description="Removes temporary files.">
-    <delete failonerror="false" includeemptydirs="true" quiet="true" />
+    <delete failonerror="false" includeemptydirs="true" quiet="true" dir="${distribution.dir}" />
   </target>
   
   <target name="xslt" description="">
