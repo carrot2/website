@@ -8,119 +8,17 @@
   <property name="website.properties" location="website.properties" />
   <property file="${website.properties}" />
 
-  <property file="etc/common.properties" />
-
   <property name="distribution.dir" value="tmp/dist" />
 
-  <property name="carrot2.git.clone" location="tmp/carrot2.git" />
-
-  <presetdef name="git">
-    <exec executable="git" failifexecutionfails="true" failonerror="true" vmlauncher="false" />
-  </presetdef>
-
   <target name="cleanall" description="Removes temporary files.">
-    <delete failonerror="false" includeemptydirs="true" quiet="true">
-      <fileset dir="tmp" />
-    </delete>
+    <delete failonerror="false" includeemptydirs="true" quiet="true" />
   </target>
 
   <target name="clean" description="Removes temporary files.">
-    <delete failonerror="false" includeemptydirs="true" quiet="true">
-      <fileset dir="tmp">
-        <exclude name="*.git/**" />
-      </fileset>
-    </delete>
-  </target>
-
-  <target name="git.check">
-    <condition property="git.cloned">
-      <available file="${carrot2.git.clone}/.git/config" type="file" />
-    </condition>
-  </target>
-
-  <target name="git.clone" unless="git.cloned">
-    <mkdir dir="${carrot2.git.clone}" />
-    <git dir="${carrot2.git.clone}">
-       <arg line="clone --no-checkout git://github.com/carrot2/carrot2.git ." />
-    </git>
-  </target>
-
-  <target name="git.versions" depends="git.check, git.clone">
-    <!-- Go to master branch and pull changes. -->
-    <git dir="${carrot2.git.clone}"> 
-       <arg line="reset --hard" />
-    </git>
-    <git dir="${carrot2.git.clone}"> 
-       <arg line="pull" />
-    </git>
-
-    <!-- Master version numbers and basenames. -->
-    <property file="${carrot2.git.clone}/carrot2.version"               prefix="master" />
-    <property file="${carrot2.git.clone}/etc/version/carrot2.basenames" />
-
-    <!-- Figure out the latest release/* tag. -->
-    <git dir="${carrot2.git.clone}" outputproperty="latest.release.tag">
-       <arg line="for-each-ref refs/tags/release/* --sort=-*authordate --format='%(refname)' --count=1" />
-    </git>
-    <echo>Latest determined tag: ${latest.release.tag}</echo>
-    <git dir="${carrot2.git.clone}"> 
-       <arg line="checkout -f --quiet ${latest.release.tag}" />
-    </git>
-
-    <property file="${carrot2.git.clone}/carrot2.version"   prefix="latest" />
-    
-    <property name="carrot2.version.head"   value="${master.carrot2.version}" />
-    <property name="carrot2.version.stable" value="${latest.carrot2.version}" />
-
-    <echo>head: ${carrot2.version.head}, stable: ${carrot2.version.stable}</echo>
-
-    <!-- Go back to master. -->
-    <git dir="${carrot2.git.clone}"> 
-       <arg line="checkout -f --quiet master" />
-    </git>    
+    <delete failonerror="false" includeemptydirs="true" quiet="true" />
   </target>
   
-  <target name="xslt" depends="git.versions" description="Transforms the website XML sources to HTML files">
-      <fail unless="carrot2.version.stable" />
-      <fail unless="carrot2.version.head" />
-
-      <tstamp>
-          <format property="build.time" pattern="d MMMM yyyy" locale="en" />
-      </tstamp>
-      <tstamp>
-          <format property="copyright.year" pattern="yyyy" locale="en" />
-      </tstamp>
-
-      <xslt basedir="${website.src}" destdir="${distribution.dir}" style="${stylesheet}">
-          <include name="*.xml" />
-
-          <outputproperty name="method" value="xml" />
-          <outputproperty name="standalone" value="yes"/>
-          <outputproperty name="encoding" value="UTF-8"/>
-          <outputproperty name="indent" value="no" />
-
-          <param name="content-extension" expression="html" />
-          <param name="build.time" expression="${build.time}" />
-          <param name="copyright.year" expression="${copyright.year}" />
-        
-          <param name="carrot2.java-api.base" expression="${carrot2.java-api.base}" />
-          <param name="carrot2.csharp-api.base" expression="${carrot2.csharp-api.base}" />
-          <param name="carrot2.cli.base" expression="${carrot2.cli.base}" />
-          <param name="carrot2.dcs.base" expression="${carrot2.dcs.base}" />
-          <param name="carrot2.solr-compat.base" expression="${carrot2.solr-compat.base}" />
-          <param name="carrot2.webapp.base" expression="${carrot2.webapp.base}" />
-          <param name="carrot2.manual.base" expression="${carrot2.manual.base}" />
-          <param name="carrot2.workbench.base" expression="${carrot2.workbench.base}" />
-        
-          <param name="carrot2.version.stable" expression="${carrot2.version.stable}" />
-          <param name="carrot2.version.head" expression="${carrot2.version.head}" />
-
-          <param name="stable.dist.url" expression="${stable.dist.url}" />
-          <param name="stable.webapp.url" expression="${stable.webapp.url}" />
-          <param name="head.dist.url" expression="${head.dist.url}" />
-          <param name="head.webapp.url" expression="${head.webapp.url}" />
-      </xslt>
-      
+  <target name="xslt" description="">
       <copy todir="${distribution.dir}" filtering="false">
           <fileset dir="${website.src}">
               <exclude name="**/*.bat" />
@@ -133,22 +31,7 @@
               <exclude name="img-src/**" />
               <exclude name="**/favicon.ico" />
           </fileset>
-          <fileset dir="${website.src}/img">
-            <include name="favicon.ico" />
-          </fileset>
       </copy>
-  </target>
-
-  <target name="help" description="Displays help on available targets.">
-    <echo>
-
-    Current JDK: ${ant.java.version}
-    Basedir    : ${basedir}
-    -----------------------------------------------------
-
-    Type ant -projecthelp for more information about available tasks.
-
-    </echo>
   </target>
 </project>
 

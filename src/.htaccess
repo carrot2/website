@@ -1,4 +1,1 @@
-RewriteEngine on
-RewriteBase /
-
-RewriteRule ^release-([0-9.]*)$            release-$1-notes.html [L]
+Redirect 301 / https://github.com/carrot2/carrot2
